@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Nudeln kochen",
+    "categories": ["FromScratch", "Italy", "Noodles"],
+    "PrepTime": 1,
+    "CookingTime": 8,
+    "TotalTime": 10,
+    "Servings": 2,
+    "Link": "",
+    "ingredients": [
+      { "name": "Nudeln", "amount": 200, "unit": "g" },
+      { "name": "Salz", "amount": 2, "unit": "TL" },
+      { "name": "Wasser", "amount": 2.5, "unit": "l" }
+    ],
+    "image": "N/A",
+    "file": "recipes/NudelnKochen.html"
+  }
+]

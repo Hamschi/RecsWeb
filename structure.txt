@@ -1,0 +1,6 @@
+Filter categories
+- country
+- Main Ingredient
+
+- Filter on homepage to filter out wanted recipes (alternative filter per available ingredients or used ingredients)
+- Filter recipes with ingredients that are almost fulfilled (only 1 or 2 ingredients left)

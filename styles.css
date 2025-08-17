@@ -1,0 +1,71 @@
+:root {
+  --max: 900px;
+  --gap: 1rem;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+.container {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1rem;
+}
+header {
+  border-bottom: 1px solid #ddd;
+}
+nav a {
+  margin-right: 0.75rem;
+  text-decoration: none;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--gap);
+  margin-top: 1rem;
+}
+.karte {
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+.karte h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+#suche {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+.rezept {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: var(--gap);
+}
+.rezept aside {
+  border-right: 1px solid #eee;
+  padding-right: var(--gap);
+}
+.btn {
+  display: inline-block;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-decoration: none;
+}
+@media (max-width: 720px) {
+  .rezept {
+    grid-template-columns: 1fr;
+  }
+  .rezept aside {
+    border: 0;
+    padding: 0;
+  }
+}
