@@ -1,71 +1,60 @@
-:root {
-  --max: 900px;
-  --gap: 1rem;
+/*Overwrite Bootstrap*/
+.navbar {
+	background-color: #F5ECDC !important;
 }
-* {
-  box-sizing: border-box;
+
+.navbar .navbar-nav .nav-link {
+	color: #333 !important;
 }
+
+.navbar .navbar-nav .nav-link:hover {
+	color: #00897B !important;
+}
+
+.navbar .navbar-brand {
+	color: #333 !important;
+}
+
+.navbar .navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(51,51,51,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar .navbar-toggler {
+border-color: #333 !important;
+}
+
+.navbar .navbar-toggler:hover,
+.navbar .navbar-toggler:focus {
+border-color: #333 !important;
+box-shadow: 0 0 0 0.2rem rgba(51, 51, 51, 0.4);
+}
+
+
+/*General*/
 body {
-  font-family: system-ui, sans-serif;
-  line-height: 1.5;
-  margin: 0;
+background-color: #FAF7F2;
+color: #333333;
 }
-.container {
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 1rem;
+
+footer {
+background-color: #333333;  
+color: #F5ECDC;
+padding: 1.25em;
+text-align: center;
 }
-header {
-  border-bottom: 1px solid #ddd;
+
+
+/*Custom Classes*/
+.overview-section{
+	color: white;
+	background-color: #004D40;
+	clear: both;
+	text-align: center;
+	padding: 2em;
 }
-nav a {
-  margin-right: 0.75rem;
-  text-decoration: none;
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: var(--gap);
+
+
+.time-item {
   margin-top: 1rem;
-}
-.karte {
-  padding: 1rem;
-  border: 1px solid #eee;
-  border-radius: 12px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-}
-.karte h2 {
-  margin: 0 0 0.5rem;
-  font-size: 1.1rem;
-}
-#suche {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-}
-.rezept {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: var(--gap);
-}
-.rezept aside {
-  border-right: 1px solid #eee;
-  padding-right: var(--gap);
-}
-.btn {
-  display: inline-block;
-  padding: 0.6rem 0.9rem;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  text-decoration: none;
-}
-@media (max-width: 720px) {
-  .rezept {
-    grid-template-columns: 1fr;
-  }
-  .rezept aside {
-    border: 0;
-    padding: 0;
-  }
+  margin-bottom: 1rem;
 }

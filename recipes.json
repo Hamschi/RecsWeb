@@ -1,18 +1,20 @@
 [
-  {
-    "title": "Nudeln kochen",
-    "categories": ["FromScratch", "Italy", "Noodles"],
-    "PrepTime": 1,
-    "CookingTime": 8,
-    "TotalTime": 10,
-    "Servings": 2,
-    "Link": "",
-    "ingredients": [
-      { "name": "Nudeln", "amount": 200, "unit": "g" },
-      { "name": "Salz", "amount": 2, "unit": "TL" },
-      { "name": "Wasser", "amount": 2.5, "unit": "l" }
-    ],
-    "image": "N/A",
-    "file": "recipes/NudelnKochen.html"
-  }
+{
+	"title": "Nudeln kochen",
+	"categories": ["FromScratch", "Italy", "Noodles", "vegan", "vegetarian"],
+	"ActiveTime": 1,
+	"PassiveTime": 8,
+	"TotalTime": 10,
+	"Servings": 2,
+	"Link": "",
+	"Rating": 10,
+	"Status": "Need pic",
+	"ingredients": [
+	{ "name": "Nudeln", "amount": 200, "unit": "g" },
+	{ "name": "Salz", "amount": 2, "unit": "TL" },
+	{ "name": "Wasser", "amount": 2.5, "unit": "l" }
+	],
+	"image": "N/A",
+	"file": "recipes/Basics/CookNoodles.html"
+}
 ]
