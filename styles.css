@@ -46,11 +46,23 @@ text-align: center;
 
 /*Custom Classes*/
 .overview-section{
+	font-family: 'Poppins', sans-serif;
 	color: white;
 	background-color: #004D40;
 	clear: both;
 	text-align: center;
 	padding: 2em;
+}
+
+
+.overview-section img {
+  max-width: 30vw;    /* höchstens 30% der Bildschirmbreite */
+  max-height: 30vh;   /* höchstens 30% der Bildschirmhöhe */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
 

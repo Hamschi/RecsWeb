@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="../../styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
@@ -99,51 +100,113 @@
 	</div>
 </div>
 </nav>
-
+<!--
 <section class="overview-section">
 	<h1>Nudeln kochen</h1>
-	<img src="../../img/icons/image_not_found.png" class="img-thumbnail" alt="image not found"> 
+	<img src="../../img/img_food/CookNoodles.jpg" class="img-fluid rounded shadow" alt="image not found"> 
+</section>-->
+
+
+
+<section class="overview-section py-4">
+<div class="container">
+	<h1 class="mb-3">Nudeln kochen</h1>
+
+	<div class="row g-4 align-items-center">
+	<div class="col-12 col-md-auto">
+		<img src="../../img/img_food/CookNoodles.jpg"
+			class="img-thumbnail overview-img"
+			alt="image not found">
+	</div>
+
+	<div class="col">
+		<div class="d-flex flex-wrap gap-2 mb-3" aria-label="Kategorien">
+		<span class="badge text-bg-secondary">Grundlagen</span>
+		<span class="badge text-bg-success">vegan</span>
+		<span class="badge text-bg-success">vegetarisch</span>
+		<span class="badge text-bg-primary">Nudeln</span>
+		<span class="badge text-bg-danger">italienisch</span>
+		</div>
+
+		<div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3 mb-3">
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Nachgekochte Anzahl</div>
+			<div class="fs-5" aria-label="Bewertung: 0 von 5 Sternen">
+				<span class="text-warning">15</span>
+			</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Kosten</div>
+			<div class="fs-5" aria-label="Bewertung: 0 von 5 Sternen">
+				<span class="text-warning">☆ ☆ ☆ ☆ ☆</span>
+			</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Narrensicherheit</div>
+			<div class="fs-5" aria-label="Bewertung: 0 von 5 Sternen">
+				<span class="text-warning">☆ ☆ ☆ ☆ ☆</span>
+			</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Geschmack</div>
+			<div class="fs-5" aria-label="Bewertung: 0 von 5 Sternen">
+				<span class="text-warning">★ ★ ★ ★ ★</span>
+			</div>
+			</div>
+		</div>
+		</div>
+
+		<!-- Quelle -->
+		<div class="small text-muted">
+		Quelle: <a href="#" class="link-dark link-underline-opacity-0 link-underline-opacity-75-hover">–</a>
+		</div>
+	</div>
+	</div>
+</div>
 </section>
+
 
 
 <section class="ingredients-section">
 <div class="overview-div">
 	<div class="container my-4">
-		<div class="border rounded-3 p-3 shadow-sm bg-white">
-			<div class="row row-cols-2 row-cols-md-4 text-center time-grid">
+	<div class="border rounded-3 p-3 shadow-sm bg-white">
+		<div class="row row-cols-1 row-cols-md-3 text-center time-grid">
 
-			<div class="col my-3 time-item">
-				<div class="small text-uppercase text-muted mb-1">Vorbereitung	</div>
-				<div class="d-flex justify-content-center align-items-center gap-2">
-				<i class="fa-regular fa-clock"></i><span>0 Min.</span>
-				</div>
-			</div>
-
-			<div class="col my-3 time-item">
-				<div class="small text-uppercase text-muted mb-1">Arbeitszeit</div>
-				<div class="d-flex justify-content-center align-items-center gap-2">
-				<i class="fa-regular fa-clock"></i><span>20 Min.</span>
-				</div>
-			</div>
-
-			<div class="col my-3 time-item">
-				<div class="small text-uppercase text-muted mb-1">Passivzeit</div>
-				<div class="d-flex justify-content-center align-items-center gap-2">
-				<i class="fa-regular fa-clock"></i><span>40 Min.</span>
-				</div>
-			</div>
-
-			<div class="col my-3 time-item">
-				<div class="small text-uppercase text-muted mb-1">Gesamtzeit</div>
-				<div class="d-flex justify-content-center align-items-center gap-2">
-				<i class="fa-regular fa-clock"></i><span>80 Min.</span>
-				</div>
-			</div>
-
+		<div class="col my-3 time-item">
+			<div class="small text-uppercase text-muted mb-1">Arbeitszeit</div>
+			<div class="d-flex justify-content-center align-items-center gap-2">
+			<i class="fa-regular fa-clock"></i><span>1 Min.</span>
 			</div>
 		</div>
+
+		<div class="col my-3 time-item">
+			<div class="small text-uppercase text-muted mb-1">Passivzeit</div>
+			<div class="d-flex justify-content-center align-items-center gap-2">
+			<i class="fa-regular fa-clock"></i><span>8 Min.</span>
+			</div>
+		</div>
+
+		<div class="col my-3 time-item">
+			<div class="small text-uppercase text-muted mb-1">Gesamtzeit</div>
+			<div class="d-flex justify-content-center align-items-center gap-2">
+			<i class="fa-regular fa-clock"></i><span>9 Min.</span>
+			</div>
+		</div>
+
+		</div>
+	</div>
 	</div>
 </div>
+</section>
+
 
 <div class="ingredient-div">
 	<div class="container my-4">
