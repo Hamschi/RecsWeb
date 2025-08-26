@@ -25,6 +25,14 @@
 	<div class="collapse navbar-collapse" id="collapsibleNavbar">
 	<ul class="navbar-nav">
 		<li class="nav-item dropdown">
+		<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Tools</a>
+		<ul class="dropdown-menu">
+			<li><a class="dropdown-item" href="#">Mengenangabenumrechner</a></li>
+			<li><a class="dropdown-item" href="#">Zutaten-Rezept-Abgleich</a></li>
+			<li><a class="dropdown-item" href="#">Rezept-Filter</a></li>
+		</ul>
+		</li>
+		<li class="nav-item dropdown">
 		<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Grundzutaten</a>
 		<ul class="dropdown-menu">
 			<li><a class="dropdown-item" href="#">from scratch</a></li>
@@ -100,12 +108,6 @@
 	</div>
 </div>
 </nav>
-<!--
-<section class="overview-section">
-	<h1>Nudeln kochen</h1>
-	<img src="../../img/img_food/CookNoodles.jpg" class="img-fluid rounded shadow" alt="image not found"> 
-</section>-->
-
 
 
 <section class="overview-section py-4">
@@ -131,33 +133,33 @@
 		<div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3 mb-3">
 		<div class="col">
 			<div class="p-3 border rounded-3 bg-body">
-			<div class="small text-uppercase text-muted fw-semibold">Nachgekochte Anzahl</div>
-			<div class="fs-5" aria-label="Bewertung: 0 von 5 Sternen">
-				<span class="text-warning">15</span>
+			<div class="small text-uppercase text-muted fw-semibold">Gesamtzeit</div>
+			<div class="fs-5" aria-label="Gesamtzeit in Minuten">
+				<span class="text-warning">9 Minuten	</span>
 			</div>
 			</div>
 		</div>
 		<div class="col">
 			<div class="p-3 border rounded-3 bg-body">
-			<div class="small text-uppercase text-muted fw-semibold">Kosten</div>
-			<div class="fs-5" aria-label="Bewertung: 0 von 5 Sternen">
-				<span class="text-warning">☆ ☆ ☆ ☆ ☆</span>
+			<div class="small text-uppercase text-muted fw-semibold">Schwierigkeit</div>
+			<div class="fs-5" aria-label="Schwierigkeitsgrad: Einfach, Mittel, Schwierig">
+				<span class="text-warning">Einfach</span>
 			</div>
 			</div>
 		</div>
 		<div class="col">
 			<div class="p-3 border rounded-3 bg-body">
-			<div class="small text-uppercase text-muted fw-semibold">Narrensicherheit</div>
-			<div class="fs-5" aria-label="Bewertung: 0 von 5 Sternen">
-				<span class="text-warning">☆ ☆ ☆ ☆ ☆</span>
+			<div class="small text-uppercase text-muted fw-semibold">Nachkochbarkeit</div>
+			<div class="fs-5" aria-label="Nachkochbarkeit: 0 von 5 Sternen">
+				<span class="text-warning">★ ★ ★ ★ ★</span>
 			</div>
 			</div>
 		</div>
 		<div class="col">
 			<div class="p-3 border rounded-3 bg-body">
 			<div class="small text-uppercase text-muted fw-semibold">Geschmack</div>
-			<div class="fs-5" aria-label="Bewertung: 0 von 5 Sternen">
-				<span class="text-warning">★ ★ ★ ★ ★</span>
+			<div class="fs-5" aria-label="Geschmack: 0 von 5 Sternen">
+				<span class="text-warning">★ ★ ★ ★ ☆</span>
 			</div>
 			</div>
 		</div>
@@ -253,9 +255,22 @@
 </section>
 
 
-<footer>
-	<p>Placeholder</p>
+<footer class="mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-3 mb-md-0">
+        <p class="mb-0">&copy; 2025 RecsWeb</p>
+        <small>Erstellt mit ❤️ und Hunger</small>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <a href="/impressum" class="text-decoration-none me-3 text-light">Impressum</a>
+        <a href="/datenschutz" class="text-decoration-none me-3 text-light">Datenschutz</a>
+        <a href="https://github.com/deinprofil" target="_blank" class="text-decoration-none text-light">GitHub</a>
+      </div>
+    </div>
+  </div>
 </footer>
+
 </body>
 
 </html>

@@ -56,17 +56,27 @@ text-align: center;
 
 
 .overview-section img {
-  max-width: 30vw;    /* höchstens 30% der Bildschirmbreite */
-  max-height: 30vh;   /* höchstens 30% der Bildschirmhöhe */
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
+max-width: 30vw;    /* höchstens 30% der Bildschirmbreite */
+max-height: 30vh;   /* höchstens 30% der Bildschirmhöhe */
+width: auto;
+height: auto;
+object-fit: contain;
+display: block;
+margin: 0 auto;
 }
 
 
 .time-item {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+margin-top: 1rem;
+margin-bottom: 1rem;
+}
+
+.banner-section {
+	background: url("img/icons/banner.png") no-repeat center center;
+	background-size: cover;
+	min-height: 32em;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	clear: both;
+	text-align: center;
 }
