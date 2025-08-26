@@ -1,18 +1,19 @@
 [
 {
 	"title": "Nudeln kochen",
-	"categories": ["FromScratch", "Italy", "Noodles", "vegan", "vegetarian"],
-	"ActiveTime": 1,
-	"PassiveTime": 8,
-	"TotalTime": 9,
-	"Servings": 2,
-	"Link": "",
-	"Rating": 10,
+	"categories": ["basics", "Italy", "noodles", "vegan", "vegetarian"],
+	"activeTime": 1,
+	"passiveTime": 8,
+	"totalTime": 9,
+	"servings": 2,
+	"difficulty": "easy",
+	"reproducibility": 5,
+	"Taste": 4,
 	"Status": "Need pic",
 	"ingredients": [
-	{ "name": "Nudeln", "amount": 200, "unit": "g" },
-	{ "name": "Salz", "amount": 2, "unit": "TL" },
-	{ "name": "Wasser", "amount": 2.5, "unit": "l" }
+	{ "name": "noodles", "amount": 200, "unit": "g" },
+	{ "name": "salt", "amount": 2, "unit": "TL" },
+	{ "name": "water", "amount": 2.5, "unit": "l" }
 	],
 	"image": "N/A",
 	"file": "recipes/Basics/CookNoodles.html"

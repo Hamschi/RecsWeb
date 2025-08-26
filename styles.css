@@ -56,8 +56,8 @@ text-align: center;
 
 
 .overview-section img {
-max-width: 30vw;    /* höchstens 30% der Bildschirmbreite */
-max-height: 30vh;   /* höchstens 30% der Bildschirmhöhe */
+max-width: 30vw;
+max-height: 30vh;
 width: auto;
 height: auto;
 object-fit: contain;
@@ -80,3 +80,4 @@ margin-bottom: 1rem;
 	clear: both;
 	text-align: center;
 }
+
