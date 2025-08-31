@@ -83,44 +83,42 @@ margin-bottom: 1rem;
 
 
 /* Viewport & Track */
-	.mi-viewport { overflow: hidden; position: relative; }
-	.mi-track { display: flex; will-change: transform; }
+.mi-viewport { overflow: hidden; position: relative; }
+.mi-track { display: flex; will-change: transform; gap: 1rem; }
 
-	/* Kartenbreiten: 4 auf lg, 3 auf md, 2 auf sm, 1 auf xs */
-	.mi-item { flex: 0 0 100%; max-width: 100%; }
-	@media (min-width: 576px) { .mi-item { flex-basis: 49%;   max-width: 49%;   } }
-	@media (min-width: 768px) { .mi-item { flex-basis: 32%; max-width: 32%; } }
-	@media (min-width: 992px) { .mi-item { flex-basis: 24%;   max-width: 24%;   } }
+/* Kartenbreiten: 4 auf lg, 3 auf md, 2 auf sm, 1 auf xs */
+.mi-item { flex: 0 0 100%; max-width: 100%; }
+@media (min-width: 576px) { .mi-item { flex-basis: 49%;  max-width: 49%;  } }
+@media (min-width: 768px) { .mi-item { flex-basis: 32%;  max-width: 32%;  } }
+@media (min-width: 992px) { .mi-item { flex-basis: 24%;  max-width: 24%;  } }
 
-	/* Abstand zwischen Karten optional: */
-	.mi-track { gap: 1rem; }
+/* Seitliche Pfeile */
+.mi-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px; height: 42px;
+  border-radius: 9999px;
+  border: 0;
+  background: rgba(0,0,0,.55);
+  color: #FAF7F2;
+  display: grid; place-items: center;
+  z-index: 10;
+}
+.mi-prev { left: .25rem; }
+.mi-next { right: .25rem; }
+.mi-control:focus-visible { outline: 2px solid #0d6efd; outline-offset: 2px; }
 
-	/* Seitliche Pfeile */
-	.mi-control {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 42px; height: 42px;
-	border-radius: 9999px;
-	border: 0;
-	background: rgba(0,0,0,.55);
-	color: #FAF7F2;
-	display: grid; place-items: center;
-	z-index: 10;
-	}
-	.mi-control.mi-prev { left: .25rem; }
-	.mi-control.mi-next { right: .25rem; }
-	.mi-control:focus-visible { outline: 2px solid #0d6efd; outline-offset: 2px; }
-	@media (hover: hover) {
-	.mi-control { opacity: 0; transition: opacity .2s; }
-	.mi-viewport:hover .mi-control { opacity: 1; }
-	}
+@media (hover: hover) {
+  .mi-control { opacity: 0; transition: opacity .2s; }
+  .mi-viewport:hover .mi-control { opacity: 1; }
+}
 
-	/* Optional: dezente Kanten-Shader, damit die Pfeile sich besser abheben */
-	.mi-viewport::before,
-	.mi-viewport::after {
-	content: "";
-	position: absolute; top: 0; bottom: 0; width: 3rem; z-index: 5; pointer-events: none;
-	}
-	.mi-viewport::before { left: 0; background: linear-gradient(90deg, rgba(250,247,242,1), rgba(255,255,255,0)); }
-	.mi-viewport::after  { right: 0; background: linear-gradient(270deg, rgba(250,247,242,1), rgba(255,255,255,0)); }
+/* Kanten-Shader */
+.mi-viewport::before,
+.mi-viewport::after {
+  content: "";
+  position: absolute; top: 0; bottom: 0; width: 3rem; z-index: 5; pointer-events: none;
+}
+.mi-viewport::before { left: 0; background: linear-gradient(90deg, rgba(250,247,242,1), rgba(255,255,255,0)); }
+.mi-viewport::after  { right: 0; background: linear-gradient(270deg, rgba(250,247,242,1), rgba(255,255,255,0)); }
