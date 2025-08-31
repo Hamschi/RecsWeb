@@ -1,144 +1,248 @@
-// adding Navbar and Footer
-document.addEventListener("DOMContentLoaded", () => {
-const loadPartial = (id, url) => {
-	const el = document.getElementById(id);
-	if (el) {
-	fetch(url)
-		.then(r => r.text())
-		.then(html => el.innerHTML = html)
-		.catch(err => console.error(`Fehler beim Laden von ${url}:`, err));
-	}
-};
+// =====================================================
+// Gemeinsame Helfer
+// =====================================================
+const $id = (id) => document.getElementById(id);
+const $qs = (sel, root = document) => root.querySelector(sel);
+const on = (el, ev, fn, opts) => el && el.addEventListener(ev, fn, opts);
 
-loadPartial("site-navbar", "navbar.html");
-loadPartial("site-footer", "footer.html");
+// defensives console-Wrapper
+const warn = (...args) => console.warn('[script.js]', ...args);
+
+// =====================================================
+// Start, wenn DOM bereit ist
+// =====================================================
+document.addEventListener('DOMContentLoaded', () => {
+  try {
+    initPartials();
+  } catch (e) {
+    warn('Fehler in initPartials:', e);
+  }
+
+  try {
+    initBootstrapMultiCardCarousel();
+  } catch (e) {
+    warn('Fehler in initBootstrapMultiCardCarousel:', e);
+  }
+
+  try {
+    initCustomMarqueeCarousel();
+  } catch (e) {
+    warn('Fehler in initCustomMarqueeCarousel:', e);
+  }
 });
 
+// =====================================================
+// Partials (Navbar & Footer) nur laden, wenn Ziel existiert
+// =====================================================
+function initPartials() {
+  const loadPartial = (id, url) => {
+    const el = $id(id);
+    if (!el) return; // Seite hat diesen Container nicht
+    fetch(url)
+      .then(r => r.text())
+      .then(html => (el.innerHTML = html))
+      .catch(err => warn(`Fehler beim Laden von ${url}:`, err));
+  };
 
-// Carousel
-document.addEventListener('DOMContentLoaded', function () {
-	let multipleCardCarousel = document.querySelector("#carouselExampleControls");
+  loadPartial('site-navbar', '/navbar.html');
+  loadPartial('site-footer', '/footer.html');
+}
 
-	if (window.matchMedia("(min-width: 768px)").matches) {
-		let carousel = new bootstrap.Carousel(multipleCardCarousel, {
-			interval: false,
-			wrap: false
-		});
+// =====================================================
+// Bootstrap Multi-Card Carousel (optional)
+// erwartet Markup mit #carouselExampleControls
+// =====================================================
+function initBootstrapMultiCardCarousel() {
+  const rootSel = '#carouselExampleControls';
+  const root = $qs(rootSel);
+  if (!root) return; // keine Carousel-Struktur auf dieser Seite
 
-		let carouselInner = document.querySelector("#carouselExampleControls .carousel-inner");
-		let carouselWidth = carouselInner.scrollWidth;
-		let cardWidth = document.querySelector(".carousel-item").offsetWidth;
-		let scrollPosition = 0;
+  // Wenn Bootstrap nicht eingebunden ist, gracefully aussteigen
+  if (typeof window.bootstrap === 'undefined' || !bootstrap.Carousel) {
+    warn('Bootstrap nicht gefunden; überspringe Multi-Card Carousel.');
+    return;
+  }
 
-		// NEXT
-		document.querySelector("#carouselExampleControls .carousel-control-next")
-			.addEventListener("click", function () {
-				if (scrollPosition < carouselWidth - cardWidth * 4) {
-					scrollPosition += cardWidth;
-					carouselInner.scroll({ left: scrollPosition, behavior: 'smooth' });
-				} else {
-					// am Ende -> zurück zum Anfang
-					scrollPosition = 0;
-					carouselInner.scroll({ left: scrollPosition, behavior: 'smooth' });
-				}
-			});
+  const isDesktop = window.matchMedia('(min-width: 768px)').matches;
 
-		// PREV
-		document.querySelector("#carouselExampleControls .carousel-control-prev")
-			.addEventListener("click", function () {
-				if (scrollPosition > 0) {
-					scrollPosition -= cardWidth;
-					carouselInner.scroll({ left: scrollPosition, behavior: 'smooth' });
-				} else {
-					// am Anfang -> springe ans Ende
-					scrollPosition = carouselWidth - cardWidth * 4;
-					carouselInner.scroll({ left: scrollPosition, behavior: 'smooth' });
-				}
-			});
-	} else {
-		multipleCardCarousel.classList.add("slide");
-	}
-});
+  if (isDesktop) {
+    // innere Elemente prüfen
+    const carouselInner = $qs(`${rootSel} .carousel-inner`);
+    const firstItem = $qs(`${rootSel} .carousel-item`);
+    if (!carouselInner || !firstItem) {
+      warn('Carousel-Inhalt unvollständig; überspringe Logik.');
+      return;
+    }
 
+    // Carousel-Instanz nur erzeugen, wenn Wurzel vorhanden
+    const carousel = new bootstrap.Carousel(root, {
+      interval: false,
+      wrap: false,
+    });
 
+    // Maße sicher bestimmen
+    const getCardWidth = () => {
+      // Fallback, falls offsetWidth 0 ist (z. B. im versteckten Tab)
+      const w = firstItem.offsetWidth;
+      return w > 0 ? w : firstItem.getBoundingClientRect().width || 0;
+    };
 
-// Carousel
-(function () {
-	const track = document.getElementById('miTrack');
-	const btnNext = document.getElementById('btnNext');
-	const btnPrev = document.getElementById('btnPrev');
+    let scrollPosition = 0;
 
-	let animating = false;
+    const recalcAndClamp = () => {
+      const carouselWidth = carouselInner.scrollWidth || 0;
+      const cardWidth = getCardWidth();
+      const visibleCards = 4; // ggf. anpassen: Anzahl sichtbarer Karten
+      const maxScroll = Math.max(0, carouselWidth - cardWidth * visibleCards);
+      // clamp
+      scrollPosition = Math.min(scrollPosition, maxScroll);
+      return { carouselWidth, cardWidth, maxScroll, visibleCards };
+    };
 
-	const getStep = () => {
-		const first = track.children[0];
-		const rect = first.getBoundingClientRect();
-		let gap = 0;
-		if (track.children.length > 1) {
-		const second = track.children[1];
-		gap = second.getBoundingClientRect().left - rect.right;
-		}
-		return rect.width + gap;
-	};
+    // Controls nur verknüpfen, wenn vorhanden
+    const btnNext = $qs(`${rootSel} .carousel-control-next`);
+    const btnPrev = $qs(`${rootSel} .carousel-control-prev`);
 
-	const animateTo = (x, cb) => {
-		track.style.transition = 'transform .45s ease';
-		track.style.transform = `translateX(${x}px)`;
-		const done = () => {
-		track.style.transition = 'none';
-		track.style.transform = 'translateX(0px)';
-		track.removeEventListener('transitionend', done);
-		cb && cb();
-		animating = false;
-		};
-		track.addEventListener('transitionend', done, { once: true });
-	};
+    on(btnNext, 'click', () => {
+      const { cardWidth, maxScroll, visibleCards } = recalcAndClamp();
+      if (cardWidth <= 0) return;
+      if (scrollPosition < maxScroll) {
+        scrollPosition += cardWidth;
+      } else {
+        // am Ende -> zurück zum Anfang
+        scrollPosition = 0;
+      }
+      carouselInner.scroll({ left: scrollPosition, behavior: 'smooth' });
+    });
 
-	const next = () => {
-		if (animating) return;
-		animating = true;
-		const step = getStep();
-		animateTo(-step, () => {
-		track.appendChild(track.firstElementChild);
-		});
-	};
+    on(btnPrev, 'click', () => {
+      const { cardWidth, maxScroll } = recalcAndClamp();
+      if (cardWidth <= 0) return;
+      if (scrollPosition > 0) {
+        scrollPosition -= cardWidth;
+      } else {
+        // am Anfang -> springe ans Ende
+        scrollPosition = maxScroll;
+      }
+      carouselInner.scroll({ left: scrollPosition, behavior: 'smooth' });
+    });
 
-	const prev = () => {
-		if (animating) return;
-		animating = true;
-		const step = getStep();
-		track.style.transition = 'none';
-		track.insertBefore(track.lastElementChild, track.firstElementChild);
-		track.style.transform = `translateX(${-step}px)`;
-		requestAnimationFrame(() => {
-		requestAnimationFrame(() => {
-			animateTo(0);
-		});
-		});
-	};
+    // Bei Resize neu einklemmen
+    on(window, 'resize', () => {
+      recalcAndClamp();
+      carouselInner.scroll({ left: scrollPosition });
+    });
+  } else {
+    // Mobile: Klasse nur setzen, wenn root existiert
+    root.classList.add('slide');
+  }
+}
 
-	btnNext.addEventListener('click', next);
-	btnPrev.addEventListener('click', prev);
+// =====================================================
+// Custom „Marquee“-Carousel (Endloslauf) (optional)
+// erwartet: #miTrack, #btnNext, #btnPrev
+// =====================================================
+function initCustomMarqueeCarousel() {
+  const track = $id('miTrack');
+  const btnNext = $id('btnNext');
+  const btnPrev = $id('btnPrev');
 
-	// Auto-Slide alle 2.5s
-	const AUTOPLAY_MS = 2500;
-	setInterval(() => {
-	if (!animating) next();
-	}, AUTOPLAY_MS);
+  // Wenn eine der Kern-Komponenten fehlt, überspringen
+  if (!track) return;
 
+  // Buttons sind optional – ohne sie nur Autoplay/Swipe
+  let animating = false;
 
-	// Optional: Swipe-Unterstützung für Touch
-	let startX = 0;
-	track.addEventListener('pointerdown', (e) => { startX = e.clientX; });
-	track.addEventListener('pointerup', (e) => {
-		const dx = e.clientX - startX;
-		if (Math.abs(dx) > 30) {
-		dx < 0 ? next() : prev();
-		}
-	});
+  const getStep = () => {
+    // Sicherstellen, dass genügend Kinder existieren
+    if (!track.children || track.children.length === 0) return 0;
 
-	window.addEventListener('resize', () => {
-		track.style.transition = 'none';
-		track.style.transform = 'translateX(0px)';
-	});
-	})();
+    const first = track.children[0];
+    const rect = first.getBoundingClientRect();
+    let gap = 0;
+
+    if (track.children.length > 1) {
+      const second = track.children[1];
+      gap = second.getBoundingClientRect().left - rect.right;
+    }
+    return (rect.width || 0) + (gap || 0);
+  };
+
+  const animateTo = (x, cb) => {
+    track.style.transition = 'transform .45s ease';
+    track.style.transform = `translateX(${x}px)`;
+    const done = () => {
+      track.style.transition = 'none';
+      track.style.transform = 'translateX(0px)';
+      track.removeEventListener('transitionend', done);
+      cb && cb();
+      animating = false;
+    };
+    track.addEventListener('transitionend', done, { once: true });
+  };
+
+  const next = () => {
+    if (animating) return;
+    const step = getStep();
+    if (step <= 0) return; // nichts zu bewegen
+    animating = true;
+    animateTo(-step, () => {
+      if (track.firstElementChild) {
+        track.appendChild(track.firstElementChild);
+      }
+    });
+  };
+
+  const prev = () => {
+    if (animating) return;
+    const step = getStep();
+    if (step <= 0) return;
+    animating = true;
+    track.style.transition = 'none';
+    if (track.lastElementChild) {
+      track.insertBefore(track.lastElementChild, track.firstElementChild);
+    }
+    track.style.transform = `translateX(${-step}px)`;
+    // zwei RAFs für sauberes Reflow
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        animateTo(0);
+      });
+    });
+  };
+
+  // Buttons nur anbinden, wenn vorhanden
+  on(btnNext, 'click', next);
+  on(btnPrev, 'click', prev);
+
+  // Auto-Slide (optional)
+  const AUTOPLAY_MS = 2500;
+  let autoplayId = null;
+  if (track.children && track.children.length > 1) {
+    autoplayId = setInterval(() => {
+      if (!animating) next();
+    }, AUTOPLAY_MS);
+  }
+
+  // Swipe-Unterstützung (optional)
+  let startX = 0;
+  on(track, 'pointerdown', (e) => {
+    startX = e.clientX ?? 0;
+  }, { passive: true });
+
+  on(track, 'pointerup', (e) => {
+    const dx = (e.clientX ?? 0) - startX;
+    if (Math.abs(dx) > 30) {
+      dx < 0 ? next() : prev();
+    }
+  });
+
+  // Bei Resize: Position zurücksetzen
+  on(window, 'resize', () => {
+    track.style.transition = 'none';
+    track.style.transform = 'translateX(0px)';
+  });
+
+  // Cleanup (optional, falls du SPA-Navigation nutzt)
+  // window.addEventListener('beforeunload', () => clearInterval(autoplayId));
+}
