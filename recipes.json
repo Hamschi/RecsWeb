@@ -16,6 +16,6 @@
 	{ "name": "water", "amount": 2.5, "unit": "l" }
 	],
 	"image": "N/A",
-	"file": "recipes/Basics/CookNoodles.html"
+	"file": "/recipes/Basics/CookNoodles.html"
 }
 ]

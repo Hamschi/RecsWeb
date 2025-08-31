@@ -1,0 +1,39 @@
+// constants.js
+
+// Difficulties
+const DIFFICULTY = {
+easy: "easy",
+medium: "medium",
+hard: "hard",
+};
+
+// Categories → Badge (English labels!)
+const CATEGORY_BADGES = {
+vegan:      { label: "vegan",      cls: "bg-success" },
+vegetarian: { label: "vegetarian", cls: "bg-success" },
+basics:     { label: "basics",     cls: "bg-secondary" },
+noodles:    { label: "noodles",    cls: "bg-primary" },
+italy:      { label: "italy",      cls: "bg-danger" },
+germany:    { label: "germany",    cls: "bg-danger" },
+dessert:    { label: "dessert",    cls: "bg-warning" },
+soup:       { label: "soup",       cls: "bg-info" },
+};
+
+// Countries → Flag code
+const COUNTRY_FLAGS = {
+italy: "it",
+germany: "de",
+france: "fr",
+spain: "es",
+usa: "us",
+};
+
+// Title glossary (only in English here, translations handled separately)
+const TITLE_GLOSSARY = new Map([
+["cook noodles", "cook noodles"],
+["basic pasta", "basic pasta"],
+]);
+
+// Fallback image
+const FALLBACK_IMG =
+"https://ik.imagekit.io/o9fejv2tr/Food%20Images/CookNoodles.jpg";
