@@ -27,6 +27,9 @@ const COUNTRY_FLAGS = {
   spain: "es",
   usa: "us",
   japan: "jp",
+  china: "cn",
+  vietnam: "vn",
+  
 };
 
 // Title glossary (keep English here; translations in translations.js)
