@@ -251,7 +251,7 @@ function initCustomMarqueeCarousel() {
 // scripts.js
 (async () => {
   // Hardcoded JSON path
-  const RECIPES_JSON_URL = "/recipes.json";
+  const RECIPES_JSON_URL = "recipes.json";
 
   // --- Helpers ---
   const toKey = (s) => (s || "").toString().trim().toLowerCase();
@@ -384,7 +384,7 @@ function initCustomMarqueeCarousel() {
     recipes = await res.json();
     if (!Array.isArray(recipes)) recipes = [];
   } catch (err) {
-    console.error("Failed to load /recipes.json:", err);
+    console.error("Failed to load recipes.json:", err);
   }
 
   // --- render each carousel ---
