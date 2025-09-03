@@ -51,10 +51,12 @@ const TITLE_TRANSLATIONS = {
   enToDe: {
     "cook noodles": "Nudeln kochen",
     "basic pasta": "Einfache Pasta",
+	"Wan Tan Noodlesoup": "Wan Tan Nudelsuppe"
   },
   deToEn: {
     "Nudeln kochen": "cook noodles",
     "Einfache Pasta": "basic pasta",
+	"Wan Tan Nudelsuppe": "Wan Tan Noodlesoup"
   },
 };
 
