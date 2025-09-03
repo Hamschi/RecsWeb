@@ -44,8 +44,8 @@ function initPartials() {
       .catch(err => warn(`Fehler beim Laden von ${url}:`, err));
   };
 
-  loadPartial('site-navbar', '/partials/navbar.html');
-  loadPartial('site-footer', '/partials/footer.html');
+  loadPartial('site-navbar', '../../partials/navbar.html');
+  loadPartial('site-footer', '../../partials/footer.html');
 }
 
 // =====================================================
