@@ -13,7 +13,7 @@
     "totalTime": 9,
     "servings": 2,
     "difficulty": "easy",
-    "reproducibility": 5,
+    "originality": 5,
     "taste": 4,
     "status": "Need pic",
     "ingredients": [
@@ -47,7 +47,7 @@
     "totalTime": 15,
     "servings": 3,
     "difficulty": "easy",
-    "reproducibility": 5,
+    "originality": 5,
     "taste": 5,
     "status": "done",
     "ingredients": [
@@ -82,5 +82,74 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/WanTanNoodleSoup.jpg?updatedAt=1756589018310",
     "file": "/recipes/noodle/NewRecipe.html"
+  },
+  {
+    "title": "Matcha Cheesecake",
+    "categories": [
+      "cake",
+      "dessert"
+    ],
+    "activeTime": 30,
+    "passiveTime": 240,
+    "totalTime": 270,
+    "servings": 8,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "noPicture",
+    "ingredients": [
+      {
+        "name": "Butterkekse",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "Butter",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "name": "Frischkäse (Doppelrahm)",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "Sahne",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "Joghurt",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "name": "Zucker",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "name": "Blattgelatine",
+        "amount": 1.5,
+        "unit": "Blätter"
+      },
+      {
+        "name": "Vanille-Extrakt (alternativ Vanillepaste)",
+        "amount": 1,
+        "unit": "Schuss"
+      },
+      {
+        "name": "Matchapulver",
+        "amount": 7,
+        "unit": "g"
+      },
+      {
+        "name": "Milch (heiß)",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MatchaCheesecake.jpg?updatedAt=1756588930033",
+    "file": "/recipes/cakesAndPastries/MatchaCheesecake.html"
   }
 ]

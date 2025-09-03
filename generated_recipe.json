@@ -1,49 +1,71 @@
 [
   {
-    "title": "Wan Tan Noudlesoup",
+    "title": "Matcha Cheesecake",
     "categories": [
-      "China",
-      "noodles"
+      "cake",
+      "dessert"
     ],
-    "activeTime": 5,
-    "passiveTime": 10,
-    "totalTime": 15,
-    "servings": 3,
+    "activeTime": 30,
+    "passiveTime": 240,
+    "totalTime": 270,
+    "servings": 8,
     "difficulty": "easy",
-    "reproducibility": 5,
+    "originality": 5,
     "taste": 5,
-    "status": "done",
+    "status": "noPicture",
     "ingredients": [
       {
-        "name": "Brokkoli",
-        "amount": 0.5,
-        "unit": "Stk."
+        "name": "Butterkekse",
+        "amount": 100,
+        "unit": "g"
       },
       {
-        "name": "Instantnudeln",
-        "amount": 4,
-        "unit": "Portionen"
+        "name": "Butter",
+        "amount": 60,
+        "unit": "g"
       },
       {
-        "name": "Hühnerbrühe",
+        "name": "Frischkäse (Doppelrahm)",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "Sahne",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "Joghurt",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "name": "Zucker",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "name": "Blattgelatine",
+        "amount": 1.5,
+        "unit": "Blätter"
+      },
+      {
+        "name": "Vanille-Extrakt (alternativ Vanillepaste)",
         "amount": 1,
-        "unit": "l"
+        "unit": "Schuss"
       },
       {
-        "name": "Hühnerbrühepulver",
-        "amount": 1,
-        "unit": "TL"
+        "name": "Matchapulver",
+        "amount": 7,
+        "unit": "g"
       },
       {
-        "name": "Frühlingszwiebeln",
-        "amount": 2,
-        "unit": "Halme"
-      },
-      {
-        "name": "Wan Tans"
+        "name": "Milch (heiß)",
+        "amount": 30,
+        "unit": "ml"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/WanTanNoodleSoup.jpg?updatedAt=1756589018310",
-    "file": "/recipes/noodle/NewRecipe.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MatchaCheesecake.jpg?updatedAt=1756588930033",
+    "file": "/recipes/cakesAndPastries/MatchaCheesecake.html"
   }
 ]

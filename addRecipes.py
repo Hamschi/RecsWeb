@@ -87,7 +87,7 @@ def generate_html(data: dict, instructions: list[str]) -> str:
     difficulty = GERMAN_DIFF.get(str(data.get("difficulty", "easy")).lower(), "Einfach")
     originality = clamp(data.get("originality", 5), 0, 5)
     taste = clamp(data.get("taste", 5), 0, 5)
-    image = data.get("image", "") or "../../img/img_food/placeholder.jpg"
+    image = data.get("image", "") or "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935"
 
     # Category badges (all same color as requested)
     cat_badges = "".join(

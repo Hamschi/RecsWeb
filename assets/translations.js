@@ -30,6 +30,7 @@ const CATEGORY_TRANSLATIONS = {
     italy: "italienisch",
     germany: "deutsch",
     dessert: "Dessert",
+	cake: "Kuchen",
     soup: "Suppe",
   },
   deToEn: {
@@ -40,6 +41,7 @@ const CATEGORY_TRANSLATIONS = {
     italienisch: "italy",
     deutsch: "germany",
     Dessert: "dessert",
+	Kuchen: "cake",
     Suppe: "soup",
   },
 };
