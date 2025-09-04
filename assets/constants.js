@@ -11,9 +11,11 @@ const DIFFICULTY = {
 const CATEGORY_BADGES = {
   vegan:      { label: "vegan",      cls: "bg-success" },
   vegetarian: { label: "vegetarian", cls: "bg-success" },
+  chicken: { label: "chicken", cls: "bg-danger" },
   basics:     { label: "basics",     cls: "bg-secondary" },
   noodles:    { label: "noodles",    cls: "bg-primary" },
   italy:      { label: "italy",      cls: "bg-danger" },
+  india:      { label: "india",      cls: "bg-danger" },
   germany:    { label: "germany",    cls: "bg-danger" },
   dessert:    { label: "dessert",    cls: "bg-warning" },
   cake:    	  { label: "cake",    cls: "bg-warning" },
@@ -30,7 +32,7 @@ const COUNTRY_FLAGS = {
   japan: "jp",
   china: "cn",
   vietnam: "vn",
-  
+  india: "in"
 };
 
 // Title glossary (keep English here; translations in translations.js)

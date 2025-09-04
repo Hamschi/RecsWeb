@@ -25,9 +25,11 @@ const CATEGORY_TRANSLATIONS = {
   enToDe: {
     vegan: "vegan",
     vegetarian: "vegetarisch",
+	chicken: "Hähnchen",
     basics: "Grundlagen",
     noodles: "Nudeln",
     italy: "italienisch",
+	india: "indisch",
     germany: "deutsch",
     dessert: "Dessert",
 	cake: "Kuchen",
@@ -36,9 +38,11 @@ const CATEGORY_TRANSLATIONS = {
   deToEn: {
     vegan: "vegan",
     vegetarisch: "vegetarian",
+	hähnchen: "chicken",
     Grundlagen: "basics",
     Nudeln: "noodles",
     italienisch: "italy",
+	indisch: "india",
     deutsch: "germany",
     Dessert: "dessert",
 	Kuchen: "cake",
@@ -51,12 +55,14 @@ const TITLE_TRANSLATIONS = {
   enToDe: {
     "cook noodles": "Nudeln kochen",
     "basic pasta": "Einfache Pasta",
-	"Wan Tan Noodlesoup": "Wan Tan Nudelsuppe"
+	"Wan Tan Noodlesoup": "Wan Tan Nudelsuppe",
+	"Butter Chicken (simplefied)": "Butter Chicken (vereinfacht)"
   },
   deToEn: {
     "Nudeln kochen": "cook noodles",
     "Einfache Pasta": "basic pasta",
-	"Wan Tan Nudelsuppe": "Wan Tan Noodlesoup"
+	"Wan Tan Nudelsuppe": "Wan Tan Noodlesoup",
+	"Butter Chicken (vereinfacht)": "Butter Chicken (simplefied)"
   },
 };
 
