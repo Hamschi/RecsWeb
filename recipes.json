@@ -34,7 +34,7 @@
       }
     ],
     "image": "N/A",
-    "file": "../../recipes/noodles/CookNoodles.html"
+    "file": "recipes/noodles/CookNoodles.html"
   },
   {
     "title": "Wan Tan Noudlesoup",
@@ -81,7 +81,7 @@
       }
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/WanTanNoodleSoup.jpg?updatedAt=1756589018310",
-    "file": "../../recipes/noodle/NewRecipe.html"
+    "file": "recipes/noodle/NewRecipe.html"
   },
   {
     "title": "Matcha Cheesecake",
@@ -150,6 +150,6 @@
       }
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MatchaCheesecake.jpg?updatedAt=1756588930033",
-    "file": "../../recipes/cakesAndPastries/MatchaCheesecake.html"
+    "file": "recipes/cakesAndPastries/MatchaCheesecake.html"
   }
 ]
