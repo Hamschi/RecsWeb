@@ -11,9 +11,10 @@ const DIFFICULTY = {
 const CATEGORY_BADGES = {
   vegan:      { label: "vegan",      cls: "bg-success" },
   vegetarian: { label: "vegetarian", cls: "bg-success" },
-  chicken: { label: "chicken", cls: "bg-danger" },
+  chicken: 	  { label: "chicken", cls: "bg-danger" },
   basics:     { label: "basics",     cls: "bg-secondary" },
   noodles:    { label: "noodles",    cls: "bg-primary" },
+  rice:    { label: "rice",    cls: "bg-primary" },
   italy:      { label: "italy",      cls: "bg-danger" },
   india:      { label: "india",      cls: "bg-danger" },
   germany:    { label: "germany",    cls: "bg-danger" },
@@ -45,4 +46,4 @@ const TITLE_GLOSSARY = new Map([
 const FALLBACK_IMG = "https://ik.imagekit.io/o9fejv2tr/Food%20Images/CookNoodles.jpg";
 
 // Optional: global JSON URL (alternativ via data-json an einer Section)
-window.RECIPES_JSON_URL = "/data/recipes.json";
+window.RECIPES_JSON_URL = "data/recipes.json";
