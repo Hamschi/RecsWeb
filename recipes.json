@@ -246,5 +246,100 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ButterChickenSimplefied.jpg?updatedAt=1757002121229",
     "file": "recipes/chicken/ButterChickenSimplefied.html"
+  },
+  {
+    "title": "Pork belly sweet-sour",
+    "categories": [
+      "Vietnam",
+      "Pork"
+    ],
+    "activeTime": 5,
+    "passiveTime": 70,
+    "totalTime": 75,
+    "servings": 3,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "Mama",
+    "ingredients": [
+      {
+        "name": "Schweinebauch",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 0.25,
+        "unit": "Stk"
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 1,
+        "unit": "Zehe"
+      },
+      {
+        "name": "Chili",
+        "amount": 1,
+        "unit": "Stk"
+      },
+      {
+        "name": "Zucker",
+        "amount": 1,
+        "unit": "EL"
+      },
+      {
+        "name": "Essig",
+        "amount": 1,
+        "unit": "EL"
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL"
+      },
+      {
+        "name": "Fischsoße",
+        "amount": 2,
+        "unit": "EL"
+      },
+      {
+        "name": "Speisestärke",
+        "amount": 2,
+        "unit": "EL"
+      },
+      {
+        "name": "Wasser",
+        "amount": 250,
+        "unit": "ml"
+      },
+      {
+        "name": "Zucker",
+        "amount": 1,
+        "unit": "EL"
+      },
+      {
+        "name": "Essig",
+        "amount": 1,
+        "unit": "EL"
+      },
+      {
+        "name": "Fischsoße",
+        "amount": 1,
+        "unit": "EL"
+      },
+      {
+        "name": "Sojasoße (dunkel)",
+        "amount": 0.5,
+        "unit": "EL"
+      },
+      {
+        "name": "Speisestärke",
+        "amount": 0.5,
+        "unit": "EL"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/PorkBellySweetSour.jpg?updatedAt=1757328460239",
+    "file": "recipes/pork/PorkBellySweetSour.html"
   }
 ]

@@ -26,12 +26,15 @@ const CATEGORY_TRANSLATIONS = {
     vegan: "vegan",
     vegetarian: "vegetarisch",
 	chicken: "Hähnchen",
+	pork: "Schwein",
     basics: "Grundlagen",
     noodles: "Nudeln",
 	rice: "Reis",
     italy: "italienisch",
 	india: "indisch",
+	china: "chinesisch",
     germany: "deutsch",
+	vietnam: "vietnamesisch",
     dessert: "Dessert",
 	cake: "Kuchen",
     soup: "Suppe",
@@ -40,11 +43,14 @@ const CATEGORY_TRANSLATIONS = {
     vegan: "vegan",
     vegetarisch: "vegetarian",
 	Hähnchen: "chicken",
+	Schwein: "pork",
     Grundlagen: "basics",
     Nudeln: "noodles",
 	Reis: "rice",
     italienisch: "italy",
 	indisch: "india",
+	chinesisch: "china",
+	vietnamesisch: "vietnam",
     deutsch: "germany",
     Dessert: "dessert",
 	Kuchen: "cake",
@@ -58,13 +64,15 @@ const TITLE_TRANSLATIONS = {
     "cook noodles": "Nudeln kochen",
     "basic pasta": "Einfache Pasta",
 	"Wan Tan Noodlesoup": "Wan Tan Nudelsuppe",
-	"Butter Chicken (simplefied)": "Butter Chicken (vereinfacht)"
+	"Butter Chicken (simplefied)": "Butter Chicken (vereinfacht)",
+	"Pork Belly sweet-sour": "Schweinebauch süß-sauer"
   },
   deToEn: {
     "Nudeln kochen": "cook noodles",
     "Einfache Pasta": "basic pasta",
 	"Wan Tan Nudelsuppe": "Wan Tan Noodlesoup",
-	"Butter Chicken (vereinfacht)": "Butter Chicken (simplefied)"
+	"Butter Chicken (vereinfacht)": "Butter Chicken (simplefied)",
+	"Schweinebauch süß-sauer": "Pork Belly sweet-sour"
   },
 };
 

@@ -1,165 +1,97 @@
 [
   {
-    "title": "Chicken Biryani",
+    "title": "Pork belly sweet-sour",
     "categories": [
-      "India",
-      "Rice",
-      "Chicken"
+      "Vietnamese",
+      "Pork"
     ],
-    "activeTime": 10,
-    "passiveTime": 75,
-    "totalTime": 85,
-    "servings": 2,
+    "activeTime": 5,
+    "passiveTime": 70,
+    "totalTime": 75,
+    "servings": 3,
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/PmqdA05OXuI?si=apncI38GESP7S1Sh",
+    "source": "Mama",
     "ingredients": [
       {
-        "name": "Basmatireis",
-        "amount": 300,
+        "name": "Schweinebauch",
+        "amount": 500,
         "unit": "g"
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 0.25,
+        "unit": "Stk"
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 1,
+        "unit": "Zehe"
+      },
+      {
+        "name": "Chili",
+        "amount": 1,
+        "unit": "Stk"
+      },
+      {
+        "name": "Zucker",
+        "amount": 1,
+        "unit": "EL"
+      },
+      {
+        "name": "Essig",
+        "amount": 1,
+        "unit": "EL"
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL"
+      },
+      {
+        "name": "Fischsoße",
+        "amount": 2,
+        "unit": "EL"
+      },
+      {
+        "name": "Speisestärke",
+        "amount": 2,
+        "unit": "EL"
       },
       {
         "name": "Wasser",
-        "amount": 2,
-        "unit": "l"
+        "amount": 250,
+        "unit": "ml"
       },
       {
-        "name": "Salz"
-      },
-      {
-        "name": "Ghee",
-        "amount": 2,
+        "name": "Zucker",
+        "amount": 1,
         "unit": "EL"
       },
       {
-        "name": "Öl",
+        "name": "Essig",
         "amount": 1,
-        "unit": "TL"
-      },
-      {
-        "name": "Lorbeerblatt",
-        "amount": 1,
-        "unit": "Stk"
-      },
-      {
-        "name": "Kardamom (grün)",
-        "amount": 2,
-        "unit": "Stk"
-      },
-      {
-        "name": "Kardamom (schwarz)",
-        "amount": 1,
-        "unit": "Stk"
-      },
-      {
-        "name": "Zimt",
-        "amount": 2.5,
-        "unit": "cm"
-      },
-      {
-        "name": "Pfeffer (schwarz)",
-        "amount": 8,
-        "unit": "Körner"
-      },
-      {
-        "name": "Nelken",
-        "amount": 4,
-        "unit": "Stk"
-      },
-      {
-        "name": "Öl",
-        "amount": 3,
         "unit": "EL"
       },
       {
-        "name": "Ghee",
-        "amount": 2,
-        "unit": "TL"
-      },
-      {
-        "name": "Kartoffeln",
-        "amount": 2,
-        "unit": "Stk"
-      },
-      {
-        "name": "Kardamom (grün)",
-        "amount": 3,
-        "unit": "Stk"
-      },
-      {
-        "name": "Kardamom (schwarz)",
+        "name": "Fischsoße",
         "amount": 1,
-        "unit": "Stk"
+        "unit": "EL"
       },
       {
-        "name": "Nelken",
-        "amount": 4,
-        "unit": "Stk"
-      },
-      {
-        "name": "Zimt",
-        "amount": 2.5,
-        "unit": "cm"
-      },
-      {
-        "name": "Lorbeerblatt",
-        "amount": 1,
-        "unit": "Stk"
-      },
-      {
-        "name": "Hähnchen",
-        "amount": 600,
-        "unit": "g"
-      },
-      {
-        "name": "Salz"
-      },
-      {
-        "name": "Kurkuma",
+        "name": "Sojasoße (dunkel)",
         "amount": 0.5,
-        "unit": "TL"
-      },
-      {
-        "name": "Chilipulver",
-        "amount": 1,
         "unit": "EL"
       },
       {
-        "name": "Dahi",
-        "amount": 280,
-        "unit": "g"
-      },
-      {
-        "name": "Ingwer-Knoblauch-Paste",
-        "amount": 1,
+        "name": "Speisestärke",
+        "amount": 0.5,
         "unit": "EL"
-      },
-      {
-        "name": "Zwiebel (groß)",
-        "amount": 1,
-        "unit": "Stk"
-      },
-      {
-        "name": "Tomaten",
-        "amount": 150,
-        "unit": "g"
-      },
-      {
-        "name": "Wasser"
-      },
-      {
-        "name": "Eier",
-        "amount": 2,
-        "unit": "Stk"
-      },
-      {
-        "name": "Röstzwiebeln und Minzblätter zum Garnieren"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
-    "file": "recipes/rice/ChickenBiryani.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/PorkBellySweetSour.jpg?updatedAt=1757328460239",
+    "file": "recipes/pork/PorkBellySweetSour.html"
   }
 ]
