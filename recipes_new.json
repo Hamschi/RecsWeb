@@ -1,89 +1,5 @@
 [
   {
-    "title": "cook noodles",
-    "categories": [
-      "basics",
-      "Italy",
-      "noodles",
-      "vegan",
-      "vegetarian"
-    ],
-    "activeTime": 1,
-    "passiveTime": 8,
-    "totalTime": 9,
-    "servings": 2,
-    "difficulty": "easy",
-    "originality": 5,
-    "taste": 4,
-    "status": "noPicture",
-    "ingredients": [
-      {
-        "name": "noodles",
-        "amount": 200,
-        "unit": "g"
-      },
-      {
-        "name": "salt",
-        "amount": 2,
-        "unit": "TL"
-      },
-      {
-        "name": "water",
-        "amount": 2.5,
-        "unit": "l"
-      }
-    ],
-    "image": "N/A",
-    "file": "recipes/noodle/CookNoodles.html"
-  },
-  {
-    "title": "Wan Tan Noudlesoup",
-    "categories": [
-      "China",
-      "noodles"
-    ],
-    "activeTime": 5,
-    "passiveTime": 10,
-    "totalTime": 15,
-    "servings": 3,
-    "difficulty": "easy",
-    "originality": 5,
-    "taste": 5,
-    "status": "done",
-    "ingredients": [
-      {
-        "name": "Brokkoli",
-        "amount": 0.5,
-        "unit": "Stk."
-      },
-      {
-        "name": "Instantnudeln",
-        "amount": 4,
-        "unit": "Portionen"
-      },
-      {
-        "name": "Hühnerbrühe",
-        "amount": 1,
-        "unit": "l"
-      },
-      {
-        "name": "Hühnerbrühepulver",
-        "amount": 1,
-        "unit": "TL"
-      },
-      {
-        "name": "Frühlingszwiebeln",
-        "amount": 2,
-        "unit": "Halme"
-      },
-      {
-        "name": "Wan Tans"
-      }
-    ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/WanTanNoodleSoup.jpg?updatedAt=1756589018310",
-    "file": "recipes/noodle/WanTanNoodlesoup.html"
-  },
-  {
     "title": "Matcha Cheesecake",
     "categories": [
       "cake",
@@ -99,52 +15,52 @@
     "status": "noPicture",
     "ingredients": [
       {
-        "name": "Butterkekse",
+        "name": "butter cookies",
         "amount": 100,
         "unit": "g"
       },
       {
-        "name": "Butter",
+        "name": "butter",
         "amount": 60,
         "unit": "g"
       },
       {
-        "name": "Frischkäse (Doppelrahm)",
+        "name": "cream cheese (double cream)",
         "amount": 250,
         "unit": "g"
       },
       {
-        "name": "Sahne",
+        "name": "whip cream",
         "amount": 200,
         "unit": "g"
       },
       {
-        "name": "Joghurt",
+        "name": "yogurt",
         "amount": 50,
         "unit": "g"
       },
       {
-        "name": "Zucker",
+        "name": "sugar",
         "amount": 60,
         "unit": "g"
       },
       {
-        "name": "Blattgelatine",
+        "name": "gelatin sheets",
         "amount": 1.5,
-        "unit": "Blätter"
+        "unit": "sheets"
       },
       {
-        "name": "Vanille-Extrakt (alternativ Vanillepaste)",
+        "name": "vanilla extract (alternatively vanilla paste)",
         "amount": 1,
-        "unit": "Schuss"
+        "unit": "dash"
       },
       {
-        "name": "Matchapulver",
+        "name": "matcha powder",
         "amount": 7,
         "unit": "g"
       },
       {
-        "name": "Milch (heiß)",
+        "name": "milk (hot)",
         "amount": 30,
         "unit": "ml"
       }
@@ -153,110 +69,14 @@
     "file": "recipes/cakesAndPastries/MatchaCheesecake.html"
   },
   {
-    "title": "Butter Chicken (simplefied)",
+    "title": "Chicken Stock",
     "categories": [
-      "India",
-      "Chicken"
+      "fromScratch"
     ],
-    "activeTime": 15,
-    "passiveTime": 70,
-    "totalTime": 85,
+    "activeTime": 1,
+    "passiveTime": 60,
+    "totalTime": 61,
     "servings": 2,
-    "difficulty": "easy",
-    "originality": 3,
-    "taste": 5,
-    "status": "done",
-    "source": "https://youtu.be/w1QHMyIf6rg",
-    "ingredients": [
-      {
-        "name": "Nelken",
-        "amount": 2,
-        "unit": "Stk."
-      },
-      {
-        "name": "Zimtstange (klein)",
-        "amount": 1,
-        "unit": "Stk."
-      },
-      {
-        "name": "Kardamomkapseln",
-        "amount": 3,
-        "unit": "Stk."
-      },
-      {
-        "name": "Korianderpulver",
-        "amount": 1,
-        "unit": "TL"
-      },
-      {
-        "name": "Chilipulver",
-        "amount": 1,
-        "unit": "TL"
-      },
-      {
-        "name": "Salz",
-        "amount": 1,
-        "unit": "TL"
-      },
-      {
-        "name": "Knoblauchpaste",
-        "amount": 1,
-        "unit": "TL"
-      },
-      {
-        "name": "Butter",
-        "amount": 4,
-        "unit": "EL"
-      },
-      {
-        "name": "Joghurt",
-        "amount": 2,
-        "unit": "EL"
-      },
-      {
-        "name": "Hähnchenbrust",
-        "amount": 300,
-        "unit": "g"
-      },
-      {
-        "name": "Tomaten",
-        "amount": 2,
-        "unit": "Stk."
-      },
-      {
-        "name": "Tomatenmark",
-        "amount": 40,
-        "unit": "g"
-      },
-      {
-        "name": "Knoblauchpaste",
-        "amount": 0.5,
-        "unit": "TL"
-      },
-      {
-        "name": "Ingwerpaste",
-        "amount": 1.5,
-        "unit": "TL"
-      },
-      {
-        "name": "Sahne",
-        "amount": 150,
-        "unit": "ml"
-      }
-    ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ButterChickenSimplefied.jpg?updatedAt=1757002121229",
-    "file": "recipes/chicken/ButterChickenSimplefied.html"
-  },
-  {
-    "title": "Pork belly sweet-sour",
-    "categories": [
-      "Vietnamese",
-      "Pork"
-    ],
-    "activeTime": 5,
-    "passiveTime": 70,
-    "totalTime": 75,
-    "servings": 3,
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
@@ -264,82 +84,35 @@
     "source": "Mama",
     "ingredients": [
       {
-        "name": "Schweinebauch",
+        "name": "chicken bones",
         "amount": 500,
         "unit": "g"
       },
       {
-        "name": "Zwiebel",
-        "amount": 0.25,
-        "unit": "Stk"
-      },
-      {
-        "name": "Knoblauch",
+        "name": "water",
         "amount": 1,
-        "unit": "Zehe"
+        "unit": "l"
       },
       {
-        "name": "Chili",
+        "name": "salt",
         "amount": 1,
-        "unit": "Stk"
+        "unit": "teaspoon"
       },
       {
-        "name": "Zucker",
+        "name": "chicken bouillon powder",
         "amount": 1,
-        "unit": "EL"
+        "unit": "teaspoon"
       },
       {
-        "name": "Essig",
-        "amount": 1,
-        "unit": "EL"
-      },
-      {
-        "name": "Salz",
-        "amount": 1,
-        "unit": "TL"
-      },
-      {
-        "name": "Fischsoße",
-        "amount": 2,
-        "unit": "EL"
-      },
-      {
-        "name": "Speisestärke",
-        "amount": 2,
-        "unit": "EL"
-      },
-      {
-        "name": "Wasser",
-        "amount": 250,
-        "unit": "ml"
-      },
-      {
-        "name": "Zucker",
-        "amount": 1,
-        "unit": "EL"
-      },
-      {
-        "name": "Essig",
-        "amount": 1,
-        "unit": "EL"
-      },
-      {
-        "name": "Fischsoße",
-        "amount": 1,
-        "unit": "EL"
-      },
-      {
-        "name": "Sojasoße (dunkel)",
+        "name": "onion",
         "amount": 0.5,
-        "unit": "EL"
+        "unit": "piece"
       },
       {
-        "name": "Speisestärke",
-        "amount": 0.5,
-        "unit": "EL"
+        "name": "ginger"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/PorkBellySweetSour.jpg?updatedAt=1757328460239",
-    "file": "recipes/pork/PorkBellySweetSour.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ChickenBroth.jpg?updatedAt=1756588700258",
+    "file": "recipes/fromScratch/ChickenStock.html"
   }
 ]

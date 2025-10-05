@@ -1,14 +1,13 @@
 [
   {
-    "title": "Pork belly sweet-sour",
+    "title": "Chicken Stock",
     "categories": [
-      "Vietnamese",
-      "Pork"
+      "fromScratch"
     ],
-    "activeTime": 5,
-    "passiveTime": 70,
-    "totalTime": 75,
-    "servings": 3,
+    "activeTime": 1,
+    "passiveTime": 60,
+    "totalTime": 61,
+    "servings": 2,
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
@@ -16,82 +15,35 @@
     "source": "Mama",
     "ingredients": [
       {
-        "name": "Schweinebauch",
+        "name": "chicken bones",
         "amount": 500,
         "unit": "g"
       },
       {
-        "name": "Zwiebel",
-        "amount": 0.25,
-        "unit": "Stk"
-      },
-      {
-        "name": "Knoblauch",
+        "name": "water",
         "amount": 1,
-        "unit": "Zehe"
+        "unit": "l"
       },
       {
-        "name": "Chili",
+        "name": "salt",
         "amount": 1,
-        "unit": "Stk"
+        "unit": "teaspoon"
       },
       {
-        "name": "Zucker",
+        "name": "chicken bouillon powder",
         "amount": 1,
-        "unit": "EL"
+        "unit": "teaspoon"
       },
       {
-        "name": "Essig",
-        "amount": 1,
-        "unit": "EL"
-      },
-      {
-        "name": "Salz",
-        "amount": 1,
-        "unit": "TL"
-      },
-      {
-        "name": "Fischsoße",
-        "amount": 2,
-        "unit": "EL"
-      },
-      {
-        "name": "Speisestärke",
-        "amount": 2,
-        "unit": "EL"
-      },
-      {
-        "name": "Wasser",
-        "amount": 250,
-        "unit": "ml"
-      },
-      {
-        "name": "Zucker",
-        "amount": 1,
-        "unit": "EL"
-      },
-      {
-        "name": "Essig",
-        "amount": 1,
-        "unit": "EL"
-      },
-      {
-        "name": "Fischsoße",
-        "amount": 1,
-        "unit": "EL"
-      },
-      {
-        "name": "Sojasoße (dunkel)",
+        "name": "onion",
         "amount": 0.5,
-        "unit": "EL"
+        "unit": "piece"
       },
       {
-        "name": "Speisestärke",
-        "amount": 0.5,
-        "unit": "EL"
+        "name": "ginger"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/PorkBellySweetSour.jpg?updatedAt=1757328460239",
-    "file": "recipes/pork/PorkBellySweetSour.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ChickenBroth.jpg?updatedAt=1756588700258",
+    "file": "recipes/fromScratch/ChickenStock.html"
   }
 ]

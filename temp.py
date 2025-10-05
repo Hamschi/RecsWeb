@@ -80,58 +80,6 @@ def clamp(n, lo=0, hi=5):
 # Convert difficulty to English label for HTML
 ENGLISH_DIFF = {"easy": "Easy", "medium": "Medium", "hard": "Hard"}
 
-
-# Defining the categories' badge colors
-CATEGORIE_BADGE = {
-	"pork": "bg-danger",
-	"chicken": "bg-danger",
-	"beef": "bg-danger",
-	"fish": "bg-danger",
-
-	"vegan": "bg-success",
-	"vegetarian": "bg-success",
-	"vegetables": "bg-success",
-
-	"noodles": "bg-warning",
-	"rice": "bg-warning",
-	"potatoe": "bg-warning",
-	"breads": "bg-warning",
-	"sandwiches": "bg-warning",
-	"egg": "bg-warning",
-
-	"streetfood": "bg-secondary",
-	"basics": "bg-secondary",
-	"from scratch": "bg-secondary",
-	"drinks": "bg-secondary",
-	"appetizers": "bg-secondary",
-
-	"cake": "bg-primary",
-	"pastry": "bg-primary",
-	"other desserts": "bg-primary",
-	"dessert": "bg-primary",
-	"snacks": "bg-primary",
-
-	"America": "bg-danger",
-	"Great Britain": "bg-danger",
-	"China": "bg-danger",
-	"Germany": "bg-danger",
-	"France": "bg-danger",
-	"Greece": "bg-danger",
-	"India": "bg-danger",
-	"Italy": "bg-danger",
-	"Japan": "bg-danger",
-	"Mexico": "bg-danger",
-	"Spain": "bg-danger",
-	"Thailand": "bg-danger",
-	"Turkey": "bg-danger",
-	"Vietnam": "bg-danger"
-}
-
-
-def get_category_badge(category: str) -> str:
-	"""Returns badge-color based on the category-string"""
-	return CATEGORIE_BADGE.get(category, "bg-secondary")
-
 # Star string for HTML (default 5 stars if value missing)
 def stars(n):
 	n = clamp(n if n is not None else 5, 0, 5)
@@ -192,7 +140,7 @@ def generate_html(data: dict, instructions: list[str]) -> str:
 
 	# Category badges (all same color as requested)
 	cat_badges = "".join(
-		[f'<a href="../../recipeFilter.html#{tk_html_escape(c)}" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-{get_category_badge(c)}">{tk_html_escape(c)}</span></a>' for c in categories]
+		[f'<a href="../../recipeFilter.html#{tk_html_escape(c)}" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-bg-secondary">{tk_html_escape(c)}</span></a>' for c in categories]
 	)
 	# Ingredients list items (handle name-only gracefully)
 	ingredients_li = []
@@ -373,6 +321,7 @@ def generate_html(data: dict, instructions: list[str]) -> str:
 
 <div id="site-footer"></div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../assets/translations.js"></script>
 <script src="../../assets/constants.js"></script>
 <script src="../../assets/scripts.js"></script>
 </body>

@@ -255,30 +255,6 @@ function initCustomMarqueeCarousel() {
 
   // --- Helpers ---
   const toKey = (s) => (s || "").toString().trim().toLowerCase();
-  const tUI = (key) => (UI_STRINGS[APP_LANG]?.[key] ?? key);
-
-  const tDifficulty = (val) => {
-    const k = toKey(val);
-    return APP_LANG === "de"
-      ? (DIFFICULTY_TRANSLATIONS.enToDe[k] || val)
-      : (DIFFICULTY_TRANSLATIONS.deToEn[val] || val);
-  };
-
-  const tCategoryLabel = (key) => {
-    const k = toKey(key);
-    if (APP_LANG === "de") {
-      return CATEGORY_TRANSLATIONS.enToDe[k] || CATEGORY_BADGES[k]?.label || key;
-    }
-    return CATEGORY_BADGES[k]?.label || CATEGORY_TRANSLATIONS.deToEn[key] || key;
-  };
-
-  const tTitle = (title) => {
-    const key = toKey(title);
-    if (APP_LANG === "de") {
-      return TITLE_TRANSLATIONS.enToDe[key] || title;
-    }
-    return TITLE_TRANSLATIONS.deToEn[title] || title;
-  };
 
   const pickCountryFlag = (categories = []) => {
     for (const c of categories) {
@@ -297,7 +273,7 @@ function initCustomMarqueeCarousel() {
       seen.add(k);
 
       const conf = CATEGORY_BADGES[k];
-      const label = tCategoryLabel(k);
+      const label = (conf && conf.label) ? conf.label : k;
 
       const span = document.createElement("span");
       span.className = `badge ${conf ? conf.cls : "bg-light text-dark border"} me-1 mb-1`;
@@ -318,23 +294,23 @@ function initCustomMarqueeCarousel() {
     const img = document.createElement("img");
     img.className = "card-img-top";
     img.src = (recipe.image && recipe.image !== "N/A") ? recipe.image : FALLBACK_IMG;
-    img.alt = recipe.title || "recipe image";
+    img.alt = recipe.title || "Rezeptbild";
 
     const body = document.createElement("div");
     body.className = "card-body";
 
     const h4 = document.createElement("h4");
     h4.className = "card-title mb-2";
-    h4.textContent = tTitle(recipe.title || "Recipe");
+    h4.textContent = recipe.title || "Rezept";
 
     const pCountry = document.createElement("p");
     pCountry.className = "card-text mb-1";
     const flag = pickCountryFlag(recipe.categories);
-    pCountry.innerHTML = `<strong>${tUI("country")}:</strong> ${flag ? `<span class="fi fi-${flag}"></span>` : "-"}`;
+    pCountry.innerHTML = `<strong>Country:</strong> ${flag ? `<span class="fi fi-${flag}"></span>` : "-"}`;
 
     const pDiff = document.createElement("p");
     pDiff.className = "card-text mb-1";
-    pDiff.innerHTML = `<strong>${tUI("difficulty")}:</strong> ${tDifficulty(recipe.difficulty)}`;
+    pDiff.innerHTML = `<strong>Difficulty:</strong> ${recipe.difficulty || "-"}`;
 
     const badges = document.createElement("div");
     badges.className = "mt-2 d-flex flex-wrap";
@@ -388,14 +364,14 @@ function initCustomMarqueeCarousel() {
   }
 
   // --- render each carousel ---
-  const locale = APP_LANG === "en" ? "en" : "de";
   for (const section of sections) {
     const wanted = toKey(section.dataset.category || section.dataset.categorie || "");
     const track = getTrack(section);
     if (!track) continue;
 
-    const list = recipes.filter(r => recipeMatches(r, wanted))
-                        .sort((a, b) => tTitle(a.title).localeCompare(tTitle(b.title), locale));
+    const list = recipes
+      .filter(r => recipeMatches(r, wanted))
+      .sort((a, b) => (a.title || "").localeCompare(b.title || "", "de"));
 
     track.innerHTML = "";
     for (const r of list) track.appendChild(buildCard(r));
@@ -403,7 +379,7 @@ function initCustomMarqueeCarousel() {
     if (!track.children.length) {
       const empty = document.createElement("div");
       empty.className = "text-muted p-3";
-      empty.textContent = tUI("empty");
+      empty.textContent = "Keine Einträge gefunden.";
       track.appendChild(empty);
     }
 
