@@ -4,3 +4,11 @@ Filter categories
 
 - Filter on homepage to filter out wanted recipes (alternative filter per available ingredients or used ingredients)
 - Filter recipes with ingredients that are almost fulfilled (only 1 or 2 ingredients left)
+
+- ingredients in plural form if possible
+- Country-category as their Country-name
+- Category-names start with a capital letter
+
+python -m http.server 8000
+http://localhost:8000/
+<li class="list-group-item d-flex align-items-center gap-2"></li>
