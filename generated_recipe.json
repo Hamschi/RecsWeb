@@ -1,26 +1,43 @@
 [
   {
-    "title": "Gurkensalat",
+    "title": "Rahmspinat",
     "categories": [
+      "Germany",
       "vegetables",
-      "vegan",
-      "vegetarian",
-      "salad"
+      "vegetarian"
     ],
-    "activeTime": 15,
-    "passiveTime": 20,
+    "activeTime": 25,
+    "passiveTime": 10,
     "totalTime": 35,
-    "servings": 2,
+    "servings": 4,
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/bJLRYT3iqmo?si=nqtuF5TSzZ583xlt",
+    "source": "https://youtu.be/vbhtBPLlgUA?si=yIP44M-r0w1DAz78",
     "ingredients": [
       {
-        "name": "cucumber",
-        "amount": 1,
+        "name": "spinach leaves",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "shallots",
+        "amount": 2,
         "unit": "pcs"
+      },
+      {
+        "name": "garlic",
+        "amount": 1,
+        "unit": "clove"
+      },
+      {
+        "name": "butter"
+      },
+      {
+        "name": "cream",
+        "amount": 500,
+        "unit": "ml"
       },
       {
         "name": "salt"
@@ -29,32 +46,10 @@
         "name": "pepper"
       },
       {
-        "name": "sugar",
-        "amount": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "onion",
-        "amount": 0.5,
-        "unit": "pcs"
-      },
-      {
-        "name": "dill",
-        "amount": 1,
-        "unit": "tbsp"
-      },
-      {
-        "name": "apple vinegar",
-        "amount": 2,
-        "unit": "tbsp"
-      },
-      {
-        "name": "vegetable oil",
-        "amount": 1,
-        "unit": "tbsp"
+        "name": "nutmeg"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Gurkensalat.jpg?updatedAt=1756588883075",
-    "file": "recipes/vegetables/Gurkensalat.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Rahmspinat.jpg?updatedAt=1756588974344",
+    "file": "recipes/vegetables/Rahmspinat.html"
   }
 ]
