@@ -41,7 +41,8 @@ const COUNTRY_FLAGS = {
   japan: "jp",
   china: "cn",
   vietnam: "vn",
-  india: "in"
+  india: "in",
+  mongolia: "mn"
 };
 
 // Title glossary (keep English here; translations in translations.js)

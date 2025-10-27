@@ -215,5 +215,108 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MongolianBeef.jpg?updatedAt=1756588943307",
     "file": "recipes/beef/MongolianGroundBeef.html"
+  },
+  {
+    "title": "Currywurst",
+    "categories": [
+      "Germany",
+      "Streetfood"
+    ],
+    "activeTime": 10,
+    "passiveTime": 10,
+    "totalTime": 20,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 4,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/b3LKBp3KliQ?si=_Vcg0deSep1rEIGH",
+    "ingredients": [
+      {
+        "name": "bratwurst",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "bell pepper (red)",
+        "amount": 0.5,
+        "unit": "pcs"
+      },
+      {
+        "name": "onion (white)",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "orange juice",
+        "amount": 250,
+        "unit": "ml"
+      },
+      {
+        "name": "cola",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "name": "ketchup",
+        "amount": 650,
+        "unit": "g"
+      },
+      {
+        "name": "curry powder",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/CurryWurst.jpg?updatedAt=1756588725175",
+    "file": "recipes/streetfood/Currywurst.html"
+  },
+  {
+    "title": "Bánh Dầy",
+    "categories": [
+      "Vietnam",
+      "Streetfood"
+    ],
+    "activeTime": 25,
+    "passiveTime": 85,
+    "totalTime": 110,
+    "servings": 8,
+    "difficulty": "medium",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/4QVaSE9v7RE?si=PeXVB_3-8X5oNiEV",
+    "ingredients": [
+      {
+        "name": "glutinous rice flour",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "water (boiled)",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "name": "vegetable oil",
+        "amount": 0.66,
+        "unit": "tbsp"
+      },
+      {
+        "name": "water",
+        "amount": 60,
+        "unit": "ml"
+      },
+      {
+        "name": "giò"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/BanhGiay.jpg?updatedAt=1757778203905",
+    "file": "recipes/streetfood/BanhDay.html"
   }
 ]

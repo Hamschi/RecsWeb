@@ -1,103 +1,50 @@
 [
   {
-    "title": "Mongolian Ground Beef",
+    "title": "Bánh Dầy",
     "categories": [
-      "Mongolia",
-      "Beef"
+      "Vietnam",
+      "Streetfood"
     ],
-    "activeTime": 5,
-    "passiveTime": 15,
-    "totalTime": 20,
-    "servings": 3,
-    "difficulty": "easy",
-    "originality": 1,
+    "activeTime": 25,
+    "passiveTime": 85,
+    "totalTime": 110,
+    "servings": 8,
+    "difficulty": "medium",
+    "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/ImEDbyWuswU?si=VzX9VNzUFgjhMOP4",
+    "source": "https://youtu.be/4QVaSE9v7RE?si=PeXVB_3-8X5oNiEV",
     "ingredients": [
       {
-        "name": "spring onions",
-        "amount": 5,
-        "unit": "pcs"
-      },
-      {
-        "name": "garlic",
-        "amount": 3,
-        "unit": "cloves"
-      },
-      {
-        "name": "ginger (grated)",
-        "amount": 2.5,
-        "unit": "tsp"
-      },
-      {
-        "name": "oil"
-      },
-      {
-        "name": "ground beef",
-        "amount": 500,
+        "name": "glutinous rice flour",
+        "amount": 200,
         "unit": "g"
       },
       {
-        "name": "chili",
-        "amount": 1,
-        "unit": "pcs"
-      },
-      {
-        "name": "sesame oil (toasted)",
-        "amount": 0.5,
-        "unit": "tbsp"
-      },
-      {
-        "name": "soy sauce (light)",
-        "amount": 3,
-        "unit": "tbsp"
-      },
-      {
-        "name": "sugar",
-        "amount": 2,
-        "unit": "tbsp"
-      },
-      {
-        "name": "oyster sauce",
-        "amount": 1,
-        "unit": "tbsp"
-      },
-      {
-        "name": "chicken bouillon powder",
-        "amount": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "soy sauce (dark)",
+        "name": "salt",
         "amount": 0.5,
         "unit": "tsp"
       },
       {
-        "name": "light corn syrum (alternatively honey)",
-        "amount": 1,
-        "unit": "tbsp"
+        "name": "water (boiled)",
+        "amount": 100,
+        "unit": "ml"
       },
       {
-        "name": "Shaoxing wine (alternatively mirin)",
-        "amount": 2,
+        "name": "vegetable oil",
+        "amount": 0.66,
         "unit": "tbsp"
-      },
-      {
-        "name": "pepper (black)"
       },
       {
         "name": "water",
-        "amount": 5,
-        "unit": "tbsp"
+        "amount": 60,
+        "unit": "ml"
       },
       {
-        "name": "cornstarch",
-        "amount": 1,
-        "unit": "tbsp"
+        "name": "giò"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MongolianBeef.jpg?updatedAt=1756588943307",
-    "file": "recipes/beef/MongolianGroundBeef.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/BanhGiay.jpg?updatedAt=1757778203905",
+    "file": "recipes/streetfood/BanhDay.html"
   }
 ]
