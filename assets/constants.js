@@ -12,6 +12,7 @@ const CATEGORY_BADGES = {
   vegan:      { label: "vegan",      cls: "bg-success" },
   vegetarian: { label: "vegetarian", cls: "bg-success" },
   vegetables: {label: "vegetables", cls: "bg-success"},
+  salad: {label: "salad", cls: "bg-success"},
 
   chicken: 	  { label: "chicken", cls: "bg-danger" },
   beef: {label: "beef", cls: "bg-danger"},

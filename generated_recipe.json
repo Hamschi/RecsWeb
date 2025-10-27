@@ -1,50 +1,60 @@
 [
   {
-    "title": "Bánh Dầy",
+    "title": "Gurkensalat",
     "categories": [
-      "Vietnam",
-      "Streetfood"
+      "vegetables",
+      "vegan",
+      "vegetarian",
+      "salad"
     ],
-    "activeTime": 25,
-    "passiveTime": 85,
-    "totalTime": 110,
-    "servings": 8,
-    "difficulty": "medium",
+    "activeTime": 15,
+    "passiveTime": 20,
+    "totalTime": 35,
+    "servings": 2,
+    "difficulty": "easy",
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/4QVaSE9v7RE?si=PeXVB_3-8X5oNiEV",
+    "source": "https://youtu.be/bJLRYT3iqmo?si=nqtuF5TSzZ583xlt",
     "ingredients": [
       {
-        "name": "glutinous rice flour",
-        "amount": 200,
-        "unit": "g"
+        "name": "cucumber",
+        "amount": 1,
+        "unit": "pcs"
       },
       {
-        "name": "salt",
-        "amount": 0.5,
+        "name": "salt"
+      },
+      {
+        "name": "pepper"
+      },
+      {
+        "name": "sugar",
+        "amount": 1,
         "unit": "tsp"
       },
       {
-        "name": "water (boiled)",
-        "amount": 100,
-        "unit": "ml"
+        "name": "onion",
+        "amount": 0.5,
+        "unit": "pcs"
       },
       {
-        "name": "vegetable oil",
-        "amount": 0.66,
+        "name": "dill",
+        "amount": 1,
         "unit": "tbsp"
       },
       {
-        "name": "water",
-        "amount": 60,
-        "unit": "ml"
+        "name": "apple vinegar",
+        "amount": 2,
+        "unit": "tbsp"
       },
       {
-        "name": "giò"
+        "name": "vegetable oil",
+        "amount": 1,
+        "unit": "tbsp"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/BanhGiay.jpg?updatedAt=1757778203905",
-    "file": "recipes/streetfood/BanhDay.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Gurkensalat.jpg?updatedAt=1756588883075",
+    "file": "recipes/vegetables/Gurkensalat.html"
   }
 ]

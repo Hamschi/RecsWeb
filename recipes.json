@@ -318,5 +318,64 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/BanhGiay.jpg?updatedAt=1757778203905",
     "file": "recipes/streetfood/BanhDay.html"
+  },
+  {
+    "title": "Gurkensalat",
+    "categories": [
+      "vegetables",
+      "vegan",
+      "vegetarian",
+      "salad",
+      "Germany"
+    ],
+    "activeTime": 15,
+    "passiveTime": 20,
+    "totalTime": 35,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/bJLRYT3iqmo?si=nqtuF5TSzZ583xlt",
+    "ingredients": [
+      {
+        "name": "cucumber",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "salt"
+      },
+      {
+        "name": "pepper"
+      },
+      {
+        "name": "sugar",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "onion",
+        "amount": 0.5,
+        "unit": "pcs"
+      },
+      {
+        "name": "dill",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "apple vinegar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "vegetable oil",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Gurkensalat.jpg?updatedAt=1756588883075",
+    "file": "recipes/vegetables/Gurkensalat.html"
   }
 ]
