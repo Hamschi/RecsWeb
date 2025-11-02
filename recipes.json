@@ -575,5 +575,45 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Aioli.jpg?updatedAt=1756588648469",
     "file": "recipes/dressings-dips-sauces/aioli.html"
+  },
+  {
+    "title": "Nước chấm bún chả",
+    "categories": [
+      "Vietnam",
+      "dressing"
+    ],
+    "activeTime": 5,
+    "passiveTime": 5,
+    "totalTime": 10,
+    "servings": 3,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/SQ1j8WkOUZM?si=UXA1g7nha3cj3kf9",
+    "ingredients": [
+      {
+        "name": "water",
+        "amount": 300,
+        "unit": "ml"
+      },
+      {
+        "name": "sugar",
+        "amount": 2.5,
+        "unit": "tbsp"
+      },
+      {
+        "name": "fish sauce",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "vinegar",
+        "amount": 0.66,
+        "unit": "tbsp"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/NuocChamBunCha.jpg?updatedAt=1757778248190",
+    "file": "recipes/dressings-dips-sauces/NuocMamBunCha.html"
   }
 ]
