@@ -1,42 +1,56 @@
 [
   {
-    "title": "Nước chấm bún chả",
+    "title": "Tomato sauce",
     "categories": [
-      "Vietnam",
-      "dressing"
+      "sauce",
+      "basics",
+      "Italy",
+      "vegan",
+      "vegatarian"
     ],
-    "activeTime": 5,
-    "passiveTime": 5,
-    "totalTime": 10,
-    "servings": 3,
+    "activeTime": 20,
+    "passiveTime": 30,
+    "totalTime": 50,
+    "servings": 2,
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/SQ1j8WkOUZM?si=UXA1g7nha3cj3kf9",
+    "source": "https://youtu.be/tPfCZrk5mGY?si=gaPy5M-ARprWLw4P",
     "ingredients": [
       {
-        "name": "water",
-        "amount": 300,
-        "unit": "ml"
+        "name": "water (boiled)"
+      },
+      {
+        "name": "tomatoes",
+        "amount": 1,
+        "unit": "kg"
+      },
+      {
+        "name": "onion",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "olive oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp"
       },
       {
         "name": "sugar",
-        "amount": 2.5,
-        "unit": "tbsp"
+        "amount": 1,
+        "unit": "tsp"
       },
       {
-        "name": "fish sauce",
-        "amount": 3,
-        "unit": "tbsp"
-      },
-      {
-        "name": "vinegar",
-        "amount": 0.66,
-        "unit": "tbsp"
+        "name": "basil leaves (fresh)"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/NuocChamBunCha.jpg?updatedAt=1757778248190",
-    "file": "recipes/dressings-dips-sauces/NuocMamBunCha.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/TomatoSauce.jpg?updatedAt=1762116819362",
+    "file": "recipes/dressings-dips-sauces/TomatoSauce.html"
   }
 ]
