@@ -669,5 +669,55 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/TomatoSauce.jpg?updatedAt=1762116819362",
     "file": "recipes/dressings-dips-sauces/TomatoSauce.html"
+  },
+  {
+    "title": "Sauce Hollandaise",
+    "categories": [
+      "sauce",
+      "France",
+      "vegetarian"
+    ],
+    "activeTime": 15,
+    "passiveTime": 5,
+    "totalTime": 20,
+    "servings": 6,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://www.chefkoch.de/rezepte/232131094977348/Sauce-Hollandaise.html",
+    "ingredients": [
+      {
+        "name": "butter",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "egg yolks",
+        "amount": 3,
+        "unit": "pcs"
+      },
+      {
+        "name": "water",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "lemon juice",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "salt"
+      },
+      {
+        "name": "pepper (white)"
+      },
+      {
+        "name": "cayenne pepper"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/SauceHollandaise.jpg?updatedAt=1762117727527",
+    "file": "recipes/dressings-dips-sauces/SauceHollandaise.html"
   }
 ]
