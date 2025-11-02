@@ -481,5 +481,56 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ThachLaDua.jpg?updatedAt=1757778312983",
     "file": "recipes/fromScratch/PandanJelly.html"
+  },
+  {
+    "title": "Hạt lựu",
+    "categories": [
+      "fromScratch",
+      "vegan",
+      "vegetarian"
+    ],
+    "activeTime": 20,
+    "passiveTime": 15,
+    "totalTime": 35,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "needPic",
+    "source": "https://youtu.be/7C6Bj4f2Yv0?si=BuEW8ELRYq6RjA16",
+    "ingredients": [
+      {
+        "name": "water chestnuts",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "food coloring (red)",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "water",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "tapioca starch",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "lychee syrup",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "toddy palm seed syrup",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
+    "file": "recipes/fromScratch/HatLuu.html"
   }
 ]
