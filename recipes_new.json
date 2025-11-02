@@ -726,7 +726,7 @@
       "snacks",
       "vegan",
       "vegetarian",
-      "potatoe"
+      "potato"
     ],
     "activeTime": 25,
     "passiveTime": 10,
@@ -750,5 +750,57 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MicrowavePotatoChips.jpg?updatedAt=1762118197307",
     "file": "recipes/snacks/MicrowavePotatoChips.html"
+  },
+  {
+    "title": "Pickled Vegetables (e.g. for Bún Chả)",
+    "categories": [
+      "vegan",
+      "vegetarian",
+      "vegetables",
+      "basics"
+    ],
+    "activeTime": 15,
+    "passiveTime": 180,
+    "totalTime": 195,
+    "servings": 6,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 4,
+    "status": "needPic",
+    "source": "https://youtu.be/SQ1j8WkOUZM?si=UXA1g7nha3cj3kf9",
+    "ingredients": [
+      {
+        "name": "carrots",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "kohlrabi",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "sugar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "vinegar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "water",
+        "amount": 4,
+        "unit": "tbsp"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
+    "file": "recipes/vegetables/PickledVegetables.html"
   }
 ]
