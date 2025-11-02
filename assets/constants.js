@@ -26,6 +26,7 @@ const CATEGORY_BADGES = {
   italy:      { label: "italy",      cls: "bg-danger" },
   india:      { label: "india",      cls: "bg-danger" },
   germany:    { label: "germany",    cls: "bg-danger" },
+  spain: {label: "spain", cls: "bg-danger"},
   vietnam:    { label: "vietnam",    cls: "bg-danger" },
   dessert:    { label: "dessert",    cls: "bg-warning" },
   cake:    	  { label: "cake",    cls: "bg-primary" },

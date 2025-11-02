@@ -124,7 +124,8 @@ CATEGORIE_BADGE = {
 	"Spain": "bg-danger",
 	"Thailand": "bg-danger",
 	"Turkey": "bg-danger",
-	"Vietnam": "bg-danger"
+	"Vietnam": "bg-danger",
+	"Spain": "bg-danger"
 }
 
 

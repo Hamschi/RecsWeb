@@ -1,53 +1,44 @@
 [
   {
-    "title": "Hạt lựu",
+    "title": "Aioli",
     "categories": [
-      "fromScratch",
-      "vegan",
-      "vegetarian"
+      "sauce"
     ],
-    "activeTime": 20,
-    "passiveTime": 15,
-    "totalTime": 35,
+    "activeTime": 10,
+    "passiveTime": 0,
+    "totalTime": 10,
     "servings": 2,
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
-    "status": "needPic",
-    "source": "https://youtu.be/7C6Bj4f2Yv0?si=BuEW8ELRYq6RjA16",
+    "status": "done",
+    "source": "https://youtu.be/p3Xb9aPwpdc?si=V6zDGSpHpo3_wKgw",
     "ingredients": [
       {
-        "name": "water chestnuts",
-        "amount": 150,
-        "unit": "g"
+        "name": "garlic",
+        "amount": 4,
+        "unit": "cloves"
       },
       {
-        "name": "food coloring (red)",
-        "amount": 1,
-        "unit": "tsp"
+        "name": "whole milk",
+        "amount": 70,
+        "unit": "ml"
       },
       {
-        "name": "water",
-        "amount": 1,
-        "unit": "tsp"
+        "name": "salt"
       },
       {
-        "name": "tapioca starch",
+        "name": "(sunflower) oil",
         "amount": 100,
-        "unit": "g"
+        "unit": "ml"
       },
       {
-        "name": "lychee syrup",
-        "amount": 1,
-        "unit": "tbsp"
-      },
-      {
-        "name": "toddy palm seed syrup",
-        "amount": 1,
-        "unit": "tbsp"
+        "name": "olive oil (alternatively sunflower oil)",
+        "amount": 50,
+        "unit": "ml"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
-    "file": "recipes/fromScratch/HatLuu.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Aioli.jpg?updatedAt=1756588648469",
+    "file": "recipes/dressings-dips-sauces/aioli.html"
   }
 ]

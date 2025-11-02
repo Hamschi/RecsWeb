@@ -532,5 +532,47 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
     "file": "recipes/fromScratch/HatLuu.html"
+  },
+  {
+    "title": "Aioli",
+    "categories": [
+      "sauce"
+    ],
+    "activeTime": 10,
+    "passiveTime": 0,
+    "totalTime": 10,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/p3Xb9aPwpdc?si=V6zDGSpHpo3_wKgw",
+    "ingredients": [
+      {
+        "name": "garlic",
+        "amount": 4,
+        "unit": "cloves"
+      },
+      {
+        "name": "whole milk",
+        "amount": 70,
+        "unit": "ml"
+      },
+      {
+        "name": "salt"
+      },
+      {
+        "name": "(sunflower) oil",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "name": "olive oil (alternatively sunflower oil)",
+        "amount": 50,
+        "unit": "ml"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Aioli.jpg?updatedAt=1756588648469",
+    "file": "recipes/dressings-dips-sauces/aioli.html"
   }
 ]
