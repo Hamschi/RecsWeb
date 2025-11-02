@@ -94,7 +94,7 @@ CATEGORIE_BADGE = {
 
 	"noodles": "bg-warning",
 	"rice": "bg-warning",
-	"potatoe": "bg-warning",
+	"potato": "bg-warning",
 	"breads": "bg-warning",
 	"sandwiches": "bg-warning",
 	"egg": "bg-warning",

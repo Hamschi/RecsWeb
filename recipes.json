@@ -719,5 +719,36 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/SauceHollandaise.jpg?updatedAt=1762117727527",
     "file": "recipes/dressings-dips-sauces/SauceHollandaise.html"
+  },
+  {
+    "title": "Microwave Potato Chips",
+    "categories": [
+      "snacks",
+      "vegan",
+      "vegetarian",
+      "potato"
+    ],
+    "activeTime": 25,
+    "passiveTime": 10,
+    "totalTime": 35,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 2,
+    "taste": 3,
+    "status": "done",
+    "source": "https://youtu.be/v514hwoC_fY?si=KxbEVOGPHW5EF2uw",
+    "ingredients": [
+      {
+        "name": "potato (starchy)"
+      },
+      {
+        "name": "oil"
+      },
+      {
+        "name": "salt"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MicrowavePotatoChips.jpg?updatedAt=1762118197307",
+    "file": "recipes/snacks/MicrowavePotatoChips.html"
   }
 ]
