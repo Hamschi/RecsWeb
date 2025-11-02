@@ -1,55 +1,52 @@
 [
   {
-    "title": "Rahmspinat",
+    "title": "Pandan Jelly",
     "categories": [
-      "Germany",
-      "vegetables",
-      "vegetarian"
+      "fromScratch",
+      "vegan"
     ],
-    "activeTime": 25,
-    "passiveTime": 10,
-    "totalTime": 35,
-    "servings": 4,
+    "activeTime": 15,
+    "passiveTime": 75,
+    "totalTime": 90,
+    "servings": 10,
     "difficulty": "easy",
     "originality": 5,
-    "taste": 5,
+    "taste": 4,
     "status": "done",
-    "source": "https://youtu.be/vbhtBPLlgUA?si=yIP44M-r0w1DAz78",
+    "source": "https://youtu.be/7C6Bj4f2Yv0?si=BuEW8ELRYq6RjA16",
     "ingredients": [
       {
-        "name": "spinach leaves",
-        "amount": 400,
+        "name": "agar agar",
+        "amount": 10,
         "unit": "g"
       },
       {
-        "name": "shallots",
-        "amount": 2,
+        "name": "sugar",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "pandan leave (alternatively: pandan extract)",
+        "amount": 3,
         "unit": "pcs"
       },
       {
-        "name": "garlic",
-        "amount": 1,
-        "unit": "clove"
-      },
-      {
-        "name": "butter"
-      },
-      {
-        "name": "cream",
-        "amount": 500,
+        "name": "water",
+        "amount": 100,
         "unit": "ml"
       },
       {
-        "name": "salt"
+        "name": "water",
+        "amount": 900,
+        "unit": "ml"
       },
       {
-        "name": "pepper"
-      },
-      {
-        "name": "nutmeg"
+        "name": "salt",
+        "amount": 1,
+        "unit": "pinch"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Rahmspinat.jpg?updatedAt=1756588974344",
-    "file": "recipes/vegetables/Rahmspinat.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ThachLaDua.jpg?updatedAt=1757778312983",
+    "file": "recipes/fromScratch/PandanJelly.html"
   }
 ]
