@@ -20,6 +20,7 @@ const CATEGORY_BADGES = {
   fish: {label: "fish", cls: "bg-danger"},
   
   basics:     { label: "basics",     cls: "bg-secondary" },
+  sauce:     { label: "sauce",     cls: "bg-secondary" },
   noodles:    { label: "noodles",    cls: "bg-warning" },
   rice:    { label: "rice",    cls: "bg-warning" },
   potato: {label: "potato", cls: "bg-warning"},
@@ -28,6 +29,7 @@ const CATEGORY_BADGES = {
   india:      { label: "india",      cls: "bg-danger" },
   france: {label: "france", cls: "bg-danger"},
   germany:    { label: "germany",    cls: "bg-danger" },
+  mexico: {label: "mexico", cls: "bg-danger"},
   spain: {label: "spain", cls: "bg-danger"},
   vietnam:    { label: "vietnam",    cls: "bg-danger" },
   dessert:    { label: "dessert",    cls: "bg-warning" },
@@ -45,6 +47,7 @@ const COUNTRY_FLAGS = {
   usa: "us",
   japan: "jp",
   china: "cn",
+  mexico: "mx",
   vietnam: "vn",
   india: "in",
   mongolia: "mn"

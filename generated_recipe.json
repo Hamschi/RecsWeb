@@ -1,75 +1,64 @@
 [
   {
-    "title": "Cơm Hoàng Hậu",
+    "title": "Mexican Cilantro Rice",
     "categories": [
-      "Vietnam",
+      "Mexico",
       "rice",
-      "chicken"
+      "vegan",
+      "vegatarian"
     ],
-    "activeTime": 30,
-    "passiveTime": 80,
-    "totalTime": 110,
+    "activeTime": 10,
+    "passiveTime": 20,
+    "totalTime": 30,
     "servings": 3,
     "difficulty": "easy",
-    "originality": 5,
-    "taste": 5,
+    "originality": 4,
+    "taste": 4,
     "status": "done",
-    "source": "Mama",
+    "source": "https://www.youtube.com/watch?v=p3HK5jzuQGo&t=124s&ab_channel=KaitlynTaylor",
     "ingredients": [
       {
-        "name": "chicken tigh",
-        "amount": 500,
-        "unit": "g"
+        "name": "jasmine rice",
+        "amount": 2,
+        "unit": "cups"
       },
       {
-        "name": "fish sauce",
+        "name": "lime",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "water",
+        "amount": 3,
+        "unit": "cups"
+      },
+      {
+        "name": "olive oil",
         "amount": 2,
         "unit": "tbsp"
       },
       {
-        "name": "chicken bouillon powder",
+        "name": "bay leaf",
         "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "salt",
+        "amount": 2,
         "unit": "tsp"
       },
       {
-        "name": "MSG",
-        "amount": 1,
-        "unit": "pinch"
+        "name": "cilantro (finely chopped)",
+        "amount": 6,
+        "unit": "tbsp"
       },
       {
-        "name": "pepper"
-      },
-      {
-        "name": "coriander"
-      },
-      {
-        "name": "shiitake mushroom",
-        "amount": 15,
-        "unit": "pcs"
-      },
-      {
-        "name": "onion",
-        "amount": 1.5,
-        "unit": "pcs"
-      },
-      {
-        "name": "coconut oil"
-      },
-      {
-        "name": "spring onion",
-        "amount": 2,
-        "unit": "pcs"
-      },
-      {
-        "name": "rice",
-        "amount": 2.5,
-        "unit": "cups"
-      },
-      {
-        "name": "coconut milk (optional)"
+        "name": "olive oil",
+        "amount": 4,
+        "unit": "tbsp"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ComHoangHau.jpg?updatedAt=1756588717497",
-    "file": "recipes/rice/ComHoangHau.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MexicanCilantroRice.jpg?updatedAt=1762173721222",
+    "file": "recipes/rice/MexicanCilantroRice.html"
   }
 ]

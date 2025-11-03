@@ -875,5 +875,67 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ComHoangHau.jpg?updatedAt=1756588717497",
     "file": "recipes/rice/ComHoangHau.html"
+  },
+  {
+    "title": "Mexican Cilantro Rice",
+    "categories": [
+      "Mexico",
+      "rice",
+      "vegan",
+      "vegatarian"
+    ],
+    "activeTime": 10,
+    "passiveTime": 20,
+    "totalTime": 30,
+    "servings": 3,
+    "difficulty": "easy",
+    "originality": 4,
+    "taste": 4,
+    "status": "done",
+    "source": "https://www.youtube.com/watch?v=p3HK5jzuQGo&t=124s&ab_channel=KaitlynTaylor",
+    "ingredients": [
+      {
+        "name": "jasmine rice",
+        "amount": 2,
+        "unit": "cups"
+      },
+      {
+        "name": "lime",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "water",
+        "amount": 3,
+        "unit": "cups"
+      },
+      {
+        "name": "olive oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "bay leaf",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "salt",
+        "amount": 2,
+        "unit": "tsp"
+      },
+      {
+        "name": "cilantro (finely chopped)",
+        "amount": 6,
+        "unit": "tbsp"
+      },
+      {
+        "name": "olive oil",
+        "amount": 4,
+        "unit": "tbsp"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MexicanCilantroRice.jpg?updatedAt=1762173721222",
+    "file": "recipes/rice/MexicanCilantroRice.html"
   }
 ]
