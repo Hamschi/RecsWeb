@@ -1,54 +1,75 @@
 [
   {
-    "title": "Pickled Vegetables (e.g. for Bún Chả)",
+    "title": "Cơm Hoàng Hậu",
     "categories": [
-      "vegan",
-      "vegetarian",
-      "vegetables",
-      "basics"
+      "Vietnam",
+      "rice",
+      "chicken"
     ],
-    "activeTime": 15,
-    "passiveTime": 180,
-    "totalTime": 195,
-    "servings": 6,
+    "activeTime": 30,
+    "passiveTime": 80,
+    "totalTime": 110,
+    "servings": 3,
     "difficulty": "easy",
     "originality": 5,
-    "taste": 4,
-    "status": "needPic",
-    "source": "https://youtu.be/SQ1j8WkOUZM?si=UXA1g7nha3cj3kf9",
+    "taste": 5,
+    "status": "done",
+    "source": "Mama",
     "ingredients": [
       {
-        "name": "carrots",
-        "amount": 100,
+        "name": "chicken tigh",
+        "amount": 500,
         "unit": "g"
       },
       {
-        "name": "kohlrabi",
-        "amount": 100,
-        "unit": "g"
+        "name": "fish sauce",
+        "amount": 2,
+        "unit": "tbsp"
       },
       {
-        "name": "salt",
+        "name": "chicken bouillon powder",
         "amount": 1,
         "unit": "tsp"
       },
       {
-        "name": "sugar",
-        "amount": 2,
-        "unit": "tbsp"
+        "name": "MSG",
+        "amount": 1,
+        "unit": "pinch"
       },
       {
-        "name": "vinegar",
-        "amount": 2,
-        "unit": "tbsp"
+        "name": "pepper"
       },
       {
-        "name": "water",
-        "amount": 4,
-        "unit": "tbsp"
+        "name": "coriander"
+      },
+      {
+        "name": "shiitake mushroom",
+        "amount": 15,
+        "unit": "pcs"
+      },
+      {
+        "name": "onion",
+        "amount": 1.5,
+        "unit": "pcs"
+      },
+      {
+        "name": "coconut oil"
+      },
+      {
+        "name": "spring onion",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "rice",
+        "amount": 2.5,
+        "unit": "cups"
+      },
+      {
+        "name": "coconut milk (optional)"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
-    "file": "recipes/vegetables/PickledVegetables.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ComHoangHau.jpg?updatedAt=1756588717497",
+    "file": "recipes/rice/ComHoangHau.html"
   }
 ]

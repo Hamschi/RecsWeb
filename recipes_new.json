@@ -802,5 +802,78 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
     "file": "recipes/vegetables/PickledVegetables.html"
+  },
+  {
+    "title": "Cơm Hoàng Hậu",
+    "categories": [
+      "Vietnam",
+      "rice",
+      "chicken"
+    ],
+    "activeTime": 30,
+    "passiveTime": 80,
+    "totalTime": 110,
+    "servings": 3,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "Mama",
+    "ingredients": [
+      {
+        "name": "chicken tigh",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "fish sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "chicken bouillon powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "MSG",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "pepper"
+      },
+      {
+        "name": "coriander"
+      },
+      {
+        "name": "shiitake mushroom",
+        "amount": 15,
+        "unit": "pcs"
+      },
+      {
+        "name": "onion",
+        "amount": 1.5,
+        "unit": "pcs"
+      },
+      {
+        "name": "coconut oil"
+      },
+      {
+        "name": "spring onion",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "rice",
+        "amount": 2.5,
+        "unit": "cups"
+      },
+      {
+        "name": "coconut milk (optional)"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ComHoangHau.jpg?updatedAt=1756588717497",
+    "file": "recipes/rice/ComHoangHau.html"
   }
 ]
