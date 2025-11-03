@@ -1,64 +1,99 @@
 [
   {
-    "title": "Mexican Cilantro Rice",
+    "title": "Seafood Paella",
     "categories": [
-      "Mexico",
+      "Spain",
       "rice",
-      "vegan",
-      "vegatarian"
+      "seafood"
     ],
-    "activeTime": 10,
+    "activeTime": 30,
     "passiveTime": 20,
-    "totalTime": 30,
-    "servings": 3,
+    "totalTime": 50,
+    "servings": 2,
     "difficulty": "easy",
-    "originality": 4,
-    "taste": 4,
+    "originality": 5,
+    "taste": 5,
     "status": "done",
-    "source": "https://www.youtube.com/watch?v=p3HK5jzuQGo&t=124s&ab_channel=KaitlynTaylor",
+    "source": "https://youtu.be/vNBuXsTY15E?si=dldkbQVomoKppRAV",
     "ingredients": [
       {
-        "name": "jasmine rice",
-        "amount": 2,
-        "unit": "cups"
+        "name": "garlic",
+        "amount": 3,
+        "unit": "cloves"
       },
       {
-        "name": "lime",
+        "name": "onion",
+        "amount": 0.5,
+        "unit": "pcs"
+      },
+      {
+        "name": "bellpepper",
+        "amount": 0.5,
+        "unit": "pcs"
+      },
+      {
+        "name": "squid (head)",
         "amount": 1,
         "unit": "pcs"
       },
       {
-        "name": "water",
-        "amount": 3,
-        "unit": "cups"
+        "name": "shrimp (peeled and deveined)",
+        "amount": 12,
+        "unit": "pcs"
+      },
+      {
+        "name": "mussels",
+        "amount": 8,
+        "unit": "pcs"
       },
       {
         "name": "olive oil",
-        "amount": 2,
-        "unit": "tbsp"
+        "amount": 80,
+        "unit": "ml"
       },
       {
-        "name": "bay leaf",
-        "amount": 1,
-        "unit": "pcs"
+        "name": "tomatoes (sieved)",
+        "amount": 112,
+        "unit": "g"
       },
       {
-        "name": "salt",
-        "amount": 2,
+        "name": "paprika powder",
+        "amount": 0.5,
         "unit": "tsp"
       },
       {
-        "name": "cilantro (finely chopped)",
-        "amount": 6,
-        "unit": "tbsp"
+        "name": "fish broth",
+        "amount": 600,
+        "unit": "ml"
       },
       {
-        "name": "olive oil",
-        "amount": 4,
-        "unit": "tbsp"
+        "name": "saffron threads (or powder)",
+        "amount": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "short-grain rice",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "lemon wedges",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "parsley",
+        "amount": 1,
+        "unit": "handful"
+      },
+      {
+        "name": "salt"
+      },
+      {
+        "name": "pepper"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MexicanCilantroRice.jpg?updatedAt=1762173721222",
-    "file": "recipes/rice/MexicanCilantroRice.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/SeafoodPaella.jpg?updatedAt=1762175646182",
+    "file": "recipes/rice/SeafoodPaella.html"
   }
 ]

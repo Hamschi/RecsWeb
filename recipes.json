@@ -937,5 +937,102 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MexicanCilantroRice.jpg?updatedAt=1762173721222",
     "file": "recipes/rice/MexicanCilantroRice.html"
+  },
+  {
+    "title": "Seafood Paella",
+    "categories": [
+      "Spain",
+      "rice",
+      "seafood"
+    ],
+    "activeTime": 30,
+    "passiveTime": 20,
+    "totalTime": 50,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/vNBuXsTY15E?si=dldkbQVomoKppRAV",
+    "ingredients": [
+      {
+        "name": "garlic",
+        "amount": 3,
+        "unit": "cloves"
+      },
+      {
+        "name": "onion",
+        "amount": 0.5,
+        "unit": "pcs"
+      },
+      {
+        "name": "bellpepper",
+        "amount": 0.5,
+        "unit": "pcs"
+      },
+      {
+        "name": "squid (head)",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "shrimp (peeled and deveined)",
+        "amount": 12,
+        "unit": "pcs"
+      },
+      {
+        "name": "mussels",
+        "amount": 8,
+        "unit": "pcs"
+      },
+      {
+        "name": "olive oil",
+        "amount": 80,
+        "unit": "ml"
+      },
+      {
+        "name": "tomatoes (sieved)",
+        "amount": 112,
+        "unit": "g"
+      },
+      {
+        "name": "paprika powder",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "fish broth",
+        "amount": 600,
+        "unit": "ml"
+      },
+      {
+        "name": "saffron threads (or powder)",
+        "amount": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "short-grain rice",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "lemon wedges",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "parsley",
+        "amount": 1,
+        "unit": "handful"
+      },
+      {
+        "name": "salt"
+      },
+      {
+        "name": "pepper"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/SeafoodPaella.jpg?updatedAt=1762175646182",
+    "file": "recipes/rice/SeafoodPaella.html"
   }
 ]

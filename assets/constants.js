@@ -17,7 +17,8 @@ const CATEGORY_BADGES = {
   chicken: 	  { label: "chicken", cls: "bg-danger" },
   beef: {label: "beef", cls: "bg-danger"},
   pork: 	  { label: "pork", cls: "bg-danger" },
-  fish: {label: "fish", cls: "bg-danger"},
+  fish: {label: "fish", cls: "bg-primary"},
+  seafood: {label: "seafood", cls: "bg-primary"},
   
   basics:     { label: "basics",     cls: "bg-secondary" },
   sauce:     { label: "sauce",     cls: "bg-secondary" },
