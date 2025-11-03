@@ -1,99 +1,71 @@
 [
   {
-    "title": "Seafood Paella",
+    "title": "Meatballs in mushroom gravy",
     "categories": [
-      "Spain",
-      "rice",
-      "seafood"
+      "Germany",
+      "sauce",
+      "pork"
     ],
-    "activeTime": 30,
+    "activeTime": 10,
     "passiveTime": 20,
-    "totalTime": 50,
-    "servings": 2,
+    "totalTime": 30,
+    "servings": 4,
     "difficulty": "easy",
-    "originality": 5,
-    "taste": 5,
+    "originality": 4,
+    "taste": 4,
     "status": "done",
-    "source": "https://youtu.be/vNBuXsTY15E?si=dldkbQVomoKppRAV",
+    "source": "Mama",
     "ingredients": [
       {
-        "name": "garlic",
-        "amount": 3,
-        "unit": "cloves"
-      },
-      {
-        "name": "onion",
-        "amount": 0.5,
-        "unit": "pcs"
-      },
-      {
-        "name": "bellpepper",
-        "amount": 0.5,
-        "unit": "pcs"
-      },
-      {
-        "name": "squid (head)",
-        "amount": 1,
-        "unit": "pcs"
-      },
-      {
-        "name": "shrimp (peeled and deveined)",
-        "amount": 12,
-        "unit": "pcs"
-      },
-      {
-        "name": "mussels",
-        "amount": 8,
-        "unit": "pcs"
-      },
-      {
-        "name": "olive oil",
-        "amount": 80,
-        "unit": "ml"
-      },
-      {
-        "name": "tomatoes (sieved)",
-        "amount": 112,
+        "name": "meatballs",
+        "amount": 450,
         "unit": "g"
       },
       {
-        "name": "paprika powder",
+        "name": "onion",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "champignon",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "Schmorbraten-Powder",
+        "amount": 1,
+        "unit": "pack"
+      },
+      {
+        "name": "butter",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "water",
+        "amount": 750,
+        "unit": "ml"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "chili powder (optional)"
+      },
+      {
+        "name": "sugar",
         "amount": 0.5,
         "unit": "tsp"
       },
       {
-        "name": "fish broth",
-        "amount": 600,
-        "unit": "ml"
-      },
-      {
-        "name": "saffron threads (or powder)",
-        "amount": 0.25,
-        "unit": "tsp"
-      },
-      {
-        "name": "short-grain rice",
-        "amount": 1,
-        "unit": "cup"
-      },
-      {
-        "name": "lemon wedges",
-        "amount": 2,
-        "unit": "pcs"
-      },
-      {
-        "name": "parsley",
-        "amount": 1,
-        "unit": "handful"
-      },
-      {
-        "name": "salt"
-      },
-      {
-        "name": "pepper"
+        "name": "heavy cream",
+        "amount": 200,
+        "unit": "g"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/SeafoodPaella.jpg?updatedAt=1762175646182",
-    "file": "recipes/rice/SeafoodPaella.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MeatballsInMushroomGravy.jpg?updatedAt=1762177624440",
+    "file": "recipes/dressings-dips-sauces/MeatballsInMushroomGravy.html"
   }
 ]

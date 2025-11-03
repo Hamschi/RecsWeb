@@ -1034,5 +1034,73 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/SeafoodPaella.jpg?updatedAt=1762175646182",
     "file": "recipes/rice/SeafoodPaella.html"
+  },
+  {
+    "title": "Meatballs in mushroom gravy",
+    "categories": [
+      "Germany",
+      "sauce"
+    ],
+    "activeTime": 10,
+    "passiveTime": 20,
+    "totalTime": 30,
+    "servings": 4,
+    "difficulty": "easy",
+    "originality": 4,
+    "taste": 4,
+    "status": "done",
+    "source": "Mama",
+    "ingredients": [
+      {
+        "name": "meatballs",
+        "amount": 450,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "champignon",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "Schmorbraten-Powder",
+        "amount": 1,
+        "unit": "pack"
+      },
+      {
+        "name": "butter",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "water",
+        "amount": 750,
+        "unit": "ml"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "chili powder (optional)"
+      },
+      {
+        "name": "sugar",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "heavy cream",
+        "amount": 200,
+        "unit": "g"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MeatballsInMushroomGravy.jpg?updatedAt=1762177624440",
+    "file": "recipes/dressings-dips-sauces/MeatballsInMushroomGravy.html"
   }
 ]
