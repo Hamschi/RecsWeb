@@ -22,12 +22,14 @@ const CATEGORY_BADGES = {
   
   basics:     { label: "basics",     cls: "bg-secondary" },
   sauce:     { label: "sauce",     cls: "bg-secondary" },
+  
   noodles:    { label: "noodles",    cls: "bg-warning" },
   rice:    { label: "rice",    cls: "bg-warning" },
   potato: {label: "potato", cls: "bg-warning"},
   china:      { label: "china",      cls: "bg-danger" },
   italy:      { label: "italy",      cls: "bg-danger" },
   india:      { label: "india",      cls: "bg-danger" },
+  japan: {label: "japan", cls: "bg-danger"},  
   france: {label: "france", cls: "bg-danger"},
   germany:    { label: "germany",    cls: "bg-danger" },
   mexico: {label: "mexico", cls: "bg-danger"},

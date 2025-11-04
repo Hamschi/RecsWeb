@@ -1,40 +1,45 @@
 [
   {
-    "title": "Meatballs in mushroom gravy",
+    "title": "Japanese Curry",
     "categories": [
-      "Germany",
-      "sauce",
-      "pork"
+      "stew",
+      "curry",
+      "beef",
+      "rice",
+      "Japan"
     ],
-    "activeTime": 10,
-    "passiveTime": 20,
-    "totalTime": 30,
-    "servings": 4,
+    "activeTime": 30,
+    "passiveTime": 45,
+    "totalTime": 75,
+    "servings": 3,
     "difficulty": "easy",
-    "originality": 4,
-    "taste": 4,
+    "originality": 5,
+    "taste": 5,
     "status": "done",
-    "source": "Mama",
+    "source": "https://www.youtube.com/watch?v=u5U-FH7o7v8&list=PLwXqhx9ZM-a_VsqCvTGJoXphf10mSI_Jf&index=163&ab_channel=Sudachi%7CJapaneseRecipes",
     "ingredients": [
       {
-        "name": "meatballs",
-        "amount": 450,
+        "name": "onions",
+        "amount": 300,
         "unit": "g"
       },
       {
-        "name": "onion",
+        "name": "olive oil",
         "amount": 1,
-        "unit": "pcs"
+        "unit": "tbsp"
       },
       {
-        "name": "champignon",
-        "amount": 500,
+        "name": "salt",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "water"
+      },
+      {
+        "name": "beef",
+        "amount": 300,
         "unit": "g"
-      },
-      {
-        "name": "Schmorbraten-Powder",
-        "amount": 1,
-        "unit": "pack"
       },
       {
         "name": "butter",
@@ -42,30 +47,47 @@
         "unit": "tbsp"
       },
       {
-        "name": "water",
-        "amount": 750,
-        "unit": "ml"
-      },
-      {
         "name": "salt",
         "amount": 1,
-        "unit": "tsp"
+        "unit": "pinch"
       },
       {
-        "name": "chili powder (optional)"
+        "name": "garlic",
+        "amount": 2,
+        "unit": "cloves"
       },
       {
-        "name": "sugar",
-        "amount": 0.5,
-        "unit": "tsp"
+        "name": "carrots",
+        "amount": 150,
+        "unit": "g"
       },
       {
-        "name": "heavy cream",
+        "name": "potatoes",
         "amount": 200,
         "unit": "g"
+      },
+      {
+        "name": "Japanese curry roux",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "water according to the roux package instructions",
+        "amount": 90,
+        "unit": "%"
+      },
+      {
+        "name": "wine bases on the water amount from the roux package",
+        "amount": 10,
+        "unit": "%"
+      },
+      {
+        "name": "instant coffee (optional)",
+        "amount": 2,
+        "unit": "tsp"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MeatballsInMushroomGravy.jpg?updatedAt=1762177624440",
-    "file": "recipes/dressings-dips-sauces/MeatballsInMushroomGravy.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/JapaneseCurry.jpg?updatedAt=1761480902593",
+    "file": "recipes/rice/JapaneseCurry.html"
   }
 ]
