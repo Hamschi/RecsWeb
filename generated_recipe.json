@@ -1,93 +1,65 @@
 [
   {
-    "title": "Japanese Curry",
+    "title": "Sushi",
     "categories": [
-      "stew",
-      "curry",
-      "beef",
+      "Japan",
       "rice",
-      "Japan"
+      "snacks",
+      "fingerfood"
     ],
-    "activeTime": 30,
-    "passiveTime": 45,
-    "totalTime": 75,
-    "servings": 3,
+    "activeTime": 5,
+    "passiveTime": 50,
+    "totalTime": 55,
+    "servings": 4,
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "https://www.youtube.com/watch?v=u5U-FH7o7v8&list=PLwXqhx9ZM-a_VsqCvTGJoXphf10mSI_Jf&index=163&ab_channel=Sudachi%7CJapaneseRecipes",
+    "source": "https://youtu.be/X5PyhkwymNY?si=ElJxA0RQoGirlyAb",
     "ingredients": [
       {
-        "name": "onions",
+        "name": "sushi rice",
         "amount": 300,
         "unit": "g"
       },
       {
-        "name": "olive oil",
+        "name": "water (cold)",
+        "amount": 350,
+        "unit": "ml"
+      },
+      {
+        "name": "kombu",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "name": "sake",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "rice vinegar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "sugar",
         "amount": 1,
         "unit": "tbsp"
       },
       {
         "name": "salt",
-        "amount": 1,
-        "unit": "pinch"
-      },
-      {
-        "name": "water"
-      },
-      {
-        "name": "beef",
-        "amount": 300,
-        "unit": "g"
-      },
-      {
-        "name": "butter",
-        "amount": 1,
+        "amount": 0.5,
         "unit": "tbsp"
       },
       {
-        "name": "salt",
-        "amount": 1,
-        "unit": "pinch"
+        "name": "filling or toppings (e.g. cucumber, tuna, salmon, sesame,...)"
       },
       {
-        "name": "garlic",
-        "amount": 2,
-        "unit": "cloves"
-      },
-      {
-        "name": "carrots",
-        "amount": 150,
-        "unit": "g"
-      },
-      {
-        "name": "potatoes",
-        "amount": 200,
-        "unit": "g"
-      },
-      {
-        "name": "Japanese curry roux",
-        "amount": 100,
-        "unit": "g"
-      },
-      {
-        "name": "water according to the roux package instructions",
-        "amount": 90,
-        "unit": "%"
-      },
-      {
-        "name": "wine bases on the water amount from the roux package",
-        "amount": 10,
-        "unit": "%"
-      },
-      {
-        "name": "instant coffee (optional)",
-        "amount": 2,
-        "unit": "tsp"
+        "name": "nori sheets"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/JapaneseCurry.jpg?updatedAt=1761480902593",
-    "file": "recipes/rice/JapaneseCurry.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Sushi.jpg?updatedAt=1756588998692",
+    "file": "recipes/snacks/Sushi.html"
   }
 ]

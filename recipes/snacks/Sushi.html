@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>RecsWeb - Sushi</title>
+<link rel="icon" type="image/x-icon" href="https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/logo.png?updatedAt=1756760270932"> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="site-navbar"></div>
+
+<section class="overview-section py-4">
+<div class="container">
+	<h1 class="mb-3">Sushi</h1>
+
+	<div class="row g-4 align-items-center">
+	<div class="col-12 col-md-auto">
+		<img src="https://ik.imagekit.io/o9fejv2tr/Food%20Images/Sushi.jpg?updatedAt=1756588998692"
+			class="img-thumbnail overview-img"
+			alt="image not found">
+	</div>
+
+	<div class="col">
+		<div class="d-flex flex-wrap gap-2 mb-3">
+		<a href="../../recipeFilter.html#Japan" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-bg-danger">Japan</span></a><a href="../../recipeFilter.html#rice" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-bg-warning">rice</span></a><a href="../../recipeFilter.html#snacks" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-bg-primary">snacks</span></a><a href="../../recipeFilter.html#fingerfood" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-bg-secondary">fingerfood</span></a>
+		</div>
+
+		<div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3 mb-3">
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Total Time</div>
+			<div class="fs-5">
+				<span class="text-warning">55 minutes</span>
+			</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Difficulty</div>
+			<div class="fs-5">
+				<span class="text-warning">Easy</span>
+			</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Originality</div>
+			<div class="fs-5">
+				<span class="text-warning">★ ★ ★ ★ ★</span>
+			</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Taste</div>
+			<div class="fs-5">
+				<span class="text-warning">★ ★ ★ ★ ★</span>
+			</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="small text">
+		Source: <a href="https://youtu.be/X5PyhkwymNY?si=ElJxA0RQoGirlyAb" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover">https://youtu.be/X5PyhkwymNY?si=ElJxA0RQoGirlyAb</a>
+		</div>
+	</div>
+	</div>
+</div>
+</section>
+
+
+
+<section class="ingredients-section">
+<div class="overview-div">
+	<div class="container my-4">
+	<div class="border rounded-3 p-3 shadow-sm bg-white">
+		<div class="row row-cols-1 row-cols-md-3 text-center time-grid">
+
+		<div class="col my-3 time-item">
+			<div class="small text-uppercase text-muted mb-1">Active Time</div>
+			<div class="d-flex justify-content-center align-items-center gap-2">
+			<i class="fa-regular fa-clock"></i><span>5 min.</span>
+			</div>
+		</div>
+
+		<div class="col my-3 time-item">
+			<div class="small text-uppercase text-muted mb-1">Passive Time</div>
+			<div class="d-flex justify-content-center align-items-center gap-2">
+			<i class="fa-regular fa-clock"></i><span>50 min.</span>
+			</div>
+		</div>
+
+		<div class="col my-3 time-item">
+			<div class="small text-uppercase text-muted mb-1">Total Time</div>
+			<div class="d-flex justify-content-center align-items-center gap-2">
+			<i class="fa-regular fa-clock"></i><span>55 min.</span>
+			</div>
+		</div>
+
+		</div>
+	</div>
+	</div>
+</div>
+
+<div class="ingredient-div">
+	<div class="container my-4">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="border rounded-3 p-3 shadow-sm bg-white">
+					<h2 class="h4 mb-3 fw-bold">Ingredients</h2>
+					<ul class="list-group list-group-flush" id="ingredients">
+						<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="300">300</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">sushi rice</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="350">350</span><span class="unit" data-basis="ml">ml</span>   <span class="ingredient flex-fill">water (cold)</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="5">5</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">kombu</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="1">1</span><span class="unit" data-basis="tbsp">tbsp</span>   <span class="ingredient flex-fill">sake</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="2">2</span><span class="unit" data-basis="tbsp">tbsp</span>   <span class="ingredient flex-fill">rice vinegar</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="1">1</span><span class="unit" data-basis="tbsp">tbsp</span>   <span class="ingredient flex-fill">sugar</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="0.5">0.5</span><span class="unit" data-basis="tbsp">tbsp</span>   <span class="ingredient flex-fill">salt</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="ingredient flex-fill">filling or toppings (e.g. cucumber, tuna, salmon, sesame,...)</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="ingredient flex-fill">nori sheets</span></li>
+				
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-7">
+				<div class="border rounded-3 p-3 shadow-sm bg-light h-100">
+					<h2 class="h4 mb-3 fw-bold">Instructions</h2>
+					<ol class="list-group list-group-numbered">
+						<li class="list-group-item">Wash the rice and transfer it into a rice cooker</li>
+							<li class="list-group-item">Add the water and the kombu and leave it soak for 1 hour</li>
+							<li class="list-group-item">After that: add 1 tbsp sake and mix</li>
+							<li class="list-group-item">Start the rice cooker and cook the rice</li>
+							<li class="list-group-item">Mix the rice gently so that it comes out of it&#39;s shape. Don&#39;t scrape the bottom of the pot, since these grains are usually a bit crispy and not suitable for sushi</li>
+							<li class="list-group-item">Mix sugar, salt and vinegar in a bowl</li>
+							<li class="list-group-item">Pour the vinegar mixture into the rice and mix gently with a rice paddle while fanning</li>
+							<li class="list-group-item">Optional: spread the rice into a thin layer to help it cool quickly. It&#39;s recommended to roll sushi once the rice reaches around body temperature</li>
+							<li class="list-group-item">Use immediately or place a damp tea towel over the top to stop it from drying out (use within 2 hours)</li>
+							<li class="list-group-item">Form your sushis by using the toppings and fillings.</li>
+							
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</section>
+
+
+<div id="site-footer"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../assets/constants.js"></script>
+<script src="../../assets/scripts.js"></script>
+</body>
+
+</html>

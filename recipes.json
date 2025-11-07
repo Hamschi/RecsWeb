@@ -1039,7 +1039,7 @@
     "title": "Meatballs in mushroom gravy",
     "categories": [
       "Germany",
-      "sauce"
+      "stew"
     ],
     "activeTime": 10,
     "passiveTime": 20,
@@ -1193,5 +1193,68 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/JapaneseCurry.jpg?updatedAt=1761480902593",
     "file": "recipes/rice/JapaneseCurry.html"
+  },
+  {
+    "title": "Sushi",
+    "categories": [
+      "Japan",
+      "rice",
+      "snacks",
+      "fingerfood"
+    ],
+    "activeTime": 5,
+    "passiveTime": 50,
+    "totalTime": 55,
+    "servings": 4,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/X5PyhkwymNY?si=ElJxA0RQoGirlyAb",
+    "ingredients": [
+      {
+        "name": "sushi rice",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "name": "water (cold)",
+        "amount": 350,
+        "unit": "ml"
+      },
+      {
+        "name": "kombu",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "name": "sake",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "rice vinegar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "salt",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "name": "filling or toppings (e.g. cucumber, tuna, salmon, sesame,...)"
+      },
+      {
+        "name": "nori sheets"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Sushi.jpg?updatedAt=1756588998692",
+    "file": "recipes/snacks/Sushi.html"
   }
 ]
