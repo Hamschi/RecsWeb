@@ -120,6 +120,7 @@ CATEGORIE_BADGE = {
 	"India": "bg-danger",
 	"Italy": "bg-danger",
 	"Japan": "bg-danger",
+	"Korea": "bg-danger",
 	"Mexico": "bg-danger",
 	"Spain": "bg-danger",
 	"Thailand": "bg-danger",

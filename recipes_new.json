@@ -1039,7 +1039,7 @@
     "title": "Meatballs in mushroom gravy",
     "categories": [
       "Germany",
-      "sauce"
+      "stew"
     ],
     "activeTime": 10,
     "passiveTime": 20,
@@ -1256,5 +1256,117 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Sushi.jpg?updatedAt=1756588998692",
     "file": "recipes/snacks/Sushi.html"
+  },
+  {
+    "title": "Gimbap",
+    "categories": [
+      "Korea",
+      "snacks",
+      "rice",
+      "fingerfood"
+    ],
+    "activeTime": 40,
+    "passiveTime": 10,
+    "totalTime": 50,
+    "servings": 4,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 4,
+    "status": "done",
+    "source": "https://youtu.be/Y-Y9CXGRJPU?si=QELC4MfHd1amjOQw",
+    "ingredients": [
+      {
+        "name": "nori sheet",
+        "amount": 5,
+        "unit": "pcs"
+      },
+      {
+        "name": "short-grain-rice",
+        "amount": 2,
+        "unit": "cups"
+      },
+      {
+        "name": "sesame oil",
+        "amount": 2,
+        "unit": "tsp"
+      },
+      {
+        "name": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "carrot (large)",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "spinach",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "garlic",
+        "amount": 2,
+        "unit": "cloves"
+      },
+      {
+        "name": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "sesame oil",
+        "amount": 2,
+        "unit": "tsp"
+      },
+      {
+        "name": "ground beef",
+        "amount": 230,
+        "unit": "g"
+      },
+      {
+        "name": "soy sauce",
+        "amount": 2,
+        "unit": "tsp"
+      },
+      {
+        "name": "garlic",
+        "amount": 1,
+        "unit": "clove"
+      },
+      {
+        "name": "pepper",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "brown sugar",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "egg",
+        "amount": 3,
+        "unit": "pcs"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "pickled yellow radish (5 longs strips, 1cm thick)",
+        "amount": 5,
+        "unit": "pcs"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Gimbap.jpg?updatedAt=1756588882819",
+    "file": "recipes/snacks/Gimbap.html"
   }
 ]
