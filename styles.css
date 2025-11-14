@@ -81,6 +81,13 @@ margin-bottom: 1rem;
 	text-align: center;
 }
 
+.bg-stew { background-color: #3a140c; color: white; }
+.bg-curry { background-color: #f1c214; color: black; }
+.bg-meat { background-color: #ef888b; color: white; }
+.bg-dessert { background-color: #e1498e; color: white; }
+.bg-grain { background-color: #aa9d6b; color: white; }
+
+
 
 /* Viewport & Track */
 .mi-viewport { overflow: hidden; position: relative; }
