@@ -103,34 +103,56 @@ function initBootstrapMultiCardCarousel() {
     const btnNext = $qs(`${rootSel} .carousel-control-next`);
     const btnPrev = $qs(`${rootSel} .carousel-control-prev`);
 
-    on(btnNext, 'click', () => {
-      const { cardWidth, maxScroll, visibleCards } = recalcAndClamp();
+    const nextSlide = () => {
+      const { cardWidth, maxScroll } = recalcAndClamp();
       if (cardWidth <= 0) return;
       if (scrollPosition < maxScroll) {
-        scrollPosition += cardWidth;
+        scrollPosition += cardWidth; // Move by 1 card width
       } else {
         // am Ende -> zurück zum Anfang
         scrollPosition = 0;
       }
       carouselInner.scroll({ left: scrollPosition, behavior: 'smooth' });
-    });
+    };
 
-    on(btnPrev, 'click', () => {
+    const prevSlide = () => {
       const { cardWidth, maxScroll } = recalcAndClamp();
       if (cardWidth <= 0) return;
       if (scrollPosition > 0) {
-        scrollPosition -= cardWidth;
+        scrollPosition -= cardWidth; // Move by 1 card width
       } else {
         // am Anfang -> springe ans Ende
         scrollPosition = maxScroll;
       }
       carouselInner.scroll({ left: scrollPosition, behavior: 'smooth' });
-    });
+    };
 
-    // Bei Resize neu einklemmen
+    on(btnNext, 'click', nextSlide);
+    on(btnPrev, 'click', prevSlide);
+
+    // Auto-Slide alle 2 Sekunden
+    let autoSlideInterval;
+    const startAutoSlide = () => {
+      autoSlideInterval = setInterval(nextSlide, 2000);
+    };
+    const stopAutoSlide = () => {
+      clearInterval(autoSlideInterval);
+    };
+
+    // Auto-Slide starten
+    startAutoSlide();
+
+    // Auto-Slide pausieren bei Hover
+    on(root, 'mouseenter', stopAutoSlide);
+    on(root, 'mouseleave', startAutoSlide);
+
+    // Bei Resize neu einklemmen und Auto-Slide zurücksetzen
     on(window, 'resize', () => {
       recalcAndClamp();
       carouselInner.scroll({ left: scrollPosition });
+      // Auto-Slide neu starten
+      stopAutoSlide();
+      startAutoSlide();
     });
   } else {
     // Mobile: Klasse nur setzen, wenn root existiert
@@ -215,19 +237,37 @@ function initCustomMarqueeCarousel() {
   on(btnNext, 'click', next);
   on(btnPrev, 'click', prev);
 
-  // Auto-Slide (optional)
-  const AUTOPLAY_MS = 2500;
+  // Auto-Slide (2 Sekunden)
+  const AUTOPLAY_MS = 2000;
   let autoplayId = null;
-  if (track.children && track.children.length > 1) {
-    autoplayId = setInterval(() => {
-      if (!animating) next();
-    }, AUTOPLAY_MS);
-  }
+  
+  const startAutoplay = () => {
+    if (track.children && track.children.length > 1) {
+      autoplayId = setInterval(() => {
+        if (!animating) next();
+      }, AUTOPLAY_MS);
+    }
+  };
+
+  const stopAutoplay = () => {
+    if (autoplayId) {
+      clearInterval(autoplayId);
+      autoplayId = null;
+    }
+  };
+
+  // Auto-Slide starten
+  startAutoplay();
+
+  // Auto-Slide pausieren bei Hover
+  on(track, 'mouseenter', stopAutoplay);
+  on(track, 'mouseleave', startAutoplay);
 
   // Swipe-Unterstützung (optional)
   let startX = 0;
   on(track, 'pointerdown', (e) => {
     startX = e.clientX ?? 0;
+    stopAutoplay(); // Pausieren während Swipe
   }, { passive: true });
 
   on(track, 'pointerup', (e) => {
@@ -235,12 +275,16 @@ function initCustomMarqueeCarousel() {
     if (Math.abs(dx) > 30) {
       dx < 0 ? next() : prev();
     }
+    // Auto-Slide nach kurzer Verzögerung wieder starten
+    setTimeout(startAutoplay, 1000);
   });
 
-  // Bei Resize: Position zurücksetzen
+  // Bei Resize: Position zurücksetzen und Auto-Slide neu starten
   on(window, 'resize', () => {
     track.style.transition = 'none';
     track.style.transform = 'translateX(0px)';
+    stopAutoplay();
+    startAutoplay();
   });
 
   // Cleanup (optional, falls du SPA-Navigation nutzt)
@@ -255,8 +299,6 @@ function initCustomMarqueeCarousel() {
   const RECIPES_JSON_URL = "recipes.json";
   const FALLBACK_IMG = "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935";
   
-
-
   // --- Helpers ---
   const toKey = (s) => (s || "").toString().trim().toLowerCase();
 
@@ -346,29 +388,76 @@ function initCustomMarqueeCarousel() {
     const viewport = getViewport(section);
     const prev = getPrevBtn(section);
     const next = getNextBtn(section);
-    if (!viewport) return;
+    const track = getTrack(section);
+    if (!viewport || !track) return;
 
     const stepPx = () => {
-      // Calculate step based on viewport width and item count
-      const viewportWidth = viewport.clientWidth;
-      const itemCount = viewport.querySelector('.mi-track').children.length;
+      // Calculate step based on the width of one item including gap
+      if (!track.children.length) return 0;
       
-      // On mobile, scroll one item at a time
-      if (viewportWidth < 576) {
-        return viewportWidth * 0.8; // 80% of viewport width
+      const firstItem = track.children[0];
+      const itemWidth = firstItem.offsetWidth;
+      
+      // Get gap from computed style
+      const trackStyle = window.getComputedStyle(track);
+      const gap = parseFloat(trackStyle.gap) || 0;
+      
+      return itemWidth + gap;
+    };
+
+    const nextSlide = () => {
+      const step = stepPx();
+      const currentScroll = viewport.scrollLeft;
+      const maxScroll = track.scrollWidth - viewport.clientWidth;
+      
+      if (currentScroll >= maxScroll - 10) { // Am Ende angekommen
+        // Zurück zum Anfang
+        viewport.scroll({ left: 0, behavior: 'smooth' });
+      } else {
+        // Nächster Slide (1 Element)
+        viewport.scrollBy({ left: step, behavior: 'smooth' });
       }
-      // On tablet, scroll two items at a time  
-      else if (viewportWidth < 992) {
-        return viewportWidth * 0.65; // 65% of viewport width
-      }
-      // On desktop, scroll three items at a time
-      else {
-        return viewportWidth * 0.75; // 75% of viewport width
+    };
+
+    const prevSlide = () => {
+      const step = stepPx();
+      const currentScroll = viewport.scrollLeft;
+      
+      if (currentScroll <= 10) { // Am Anfang angekommen
+        // Zum Ende springen
+        const maxScroll = track.scrollWidth - viewport.clientWidth;
+        viewport.scroll({ left: maxScroll, behavior: 'smooth' });
+      } else {
+        // Vorheriger Slide (1 Element)
+        viewport.scrollBy({ left: -step, behavior: 'smooth' });
       }
     };
     
-    prev?.addEventListener("click", () => viewport.scrollBy({ left: -stepPx(), behavior: "smooth" }));
-    next?.addEventListener("click", () => viewport.scrollBy({ left:  stepPx(), behavior: "smooth" }));
+    // Auto-Slide Funktionen
+    let autoSlideInterval;
+    const startAutoSlide = () => {
+      autoSlideInterval = setInterval(nextSlide, 2000);
+    };
+    const stopAutoSlide = () => {
+      clearInterval(autoSlideInterval);
+    };
+
+    // Event Listeners
+    prev?.addEventListener("click", prevSlide);
+    next?.addEventListener("click", nextSlide);
+
+    // Auto-Slide starten
+    startAutoSlide();
+
+    // Auto-Slide pausieren bei Hover
+    viewport.addEventListener('mouseenter', stopAutoSlide);
+    viewport.addEventListener('mouseleave', startAutoSlide);
+
+    // Bei Resize Auto-Slide neu starten
+    window.addEventListener('resize', () => {
+      stopAutoSlide();
+      startAutoSlide();
+    });
   };
 
   // --- find all carousels ---
