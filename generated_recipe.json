@@ -1,85 +1,44 @@
 [
   {
-    "title": "Cháo",
+    "title": "Pasta Cacio e Pepe",
     "categories": [
-      "Vietnam",
-      "China",
-      "rice",
-      "chicken"
+      "Italy",
+      "noodles",
+      "vegetarian"
     ],
-    "activeTime": 30,
-    "passiveTime": 30,
-    "totalTime": 60,
+    "activeTime": 18,
+    "passiveTime": 12,
+    "totalTime": 30,
     "servings": 2,
     "difficulty": "easy",
     "originality": 5,
-    "taste": 5,
+    "taste": 4,
     "status": "done",
-    "source": "https://youtu.be/t2SahnNVULA?si=NsCA9_aTSGUrFPgr",
+    "source": "https://youtu.be/Cx-KmIa-zco?si=Mo9Vgezt4Sa49qtR",
     "ingredients": [
       {
-        "name": "rice",
-        "amount": 1,
-        "unit": "cup"
-      },
-      {
-        "name": "water",
-        "amount": 8,
-        "unit": "cups"
-      },
-      {
-        "name": "chicken breast",
+        "name": "spaghettoni",
         "amount": 300,
         "unit": "g"
       },
       {
-        "name": "cornstarch",
-        "amount": 2,
-        "unit": "tsp"
-      },
-      {
-        "name": "oyster sauce",
-        "amount": 1,
-        "unit": "tbsp"
-      },
-      {
-        "name": "water",
-        "amount": 2,
-        "unit": "tbsp"
-      },
-      {
-        "name": "chicken bouillon powder",
-        "amount": 0.5,
-        "unit": "tbsp"
-      },
-      {
-        "name": "vegetable oil",
-        "amount": 2,
-        "unit": "tbsp"
-      },
-      {
-        "name": "ginger (optional)",
-        "amount": 14,
+        "name": "Pecorino Romano",
+        "amount": 200,
         "unit": "g"
       },
       {
-        "name": "salt",
-        "amount": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "chicken bouillon powder",
-        "amount": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "spring onions (green part)"
-      },
-      {
         "name": "pepper"
+      },
+      {
+        "name": "rock salt"
+      },
+      {
+        "name": "water",
+        "amount": 3,
+        "unit": "l"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Chao.jpg?updatedAt=1756588699668",
-    "file": "recipes/rice/Chao.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/CacioEPepe.jpg?updatedAt=1756588691716",
+    "file": "recipes/noodle/CacioEPepe.html"
   }
 ]

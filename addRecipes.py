@@ -95,6 +95,7 @@ CATEGORIE_BADGE = {
     "salad": "bg-success",
 
     "noodles": "bg-grain",
+	"pasta": "bg-grain",
     "rice": "bg-grain",
     "potato": "bg-grain",
     "breads": "bg-bakedDishes",

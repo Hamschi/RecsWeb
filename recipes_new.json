@@ -1452,5 +1452,47 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Chao.jpg?updatedAt=1756588699668",
     "file": "recipes/rice/Chao.html"
+  },
+  {
+    "title": "Pasta Cacio e Pepe",
+    "categories": [
+      "Italy",
+      "noodles",
+      "vegetarian"
+    ],
+    "activeTime": 18,
+    "passiveTime": 12,
+    "totalTime": 30,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 4,
+    "status": "done",
+    "source": "https://youtu.be/Cx-KmIa-zco?si=Mo9Vgezt4Sa49qtR",
+    "ingredients": [
+      {
+        "name": "spaghettoni",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "name": "Pecorino Romano",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "pepper"
+      },
+      {
+        "name": "rock salt"
+      },
+      {
+        "name": "water",
+        "amount": 3,
+        "unit": "l"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/CacioEPepe.jpg?updatedAt=1756588691716",
+    "file": "recipes/noodle/CacioEPepe.html"
   }
 ]
