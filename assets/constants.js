@@ -68,16 +68,9 @@ const COUNTRY_FLAGS = {
   mongolia: "mn"
 };
 
-// Title glossary (keep English here; translations in translations.js)
-const TITLE_GLOSSARY = new Map([
-  ["cook noodles", "cook noodles"],
-  ["basic pasta", "basic pasta"],
-  ["Wan Tan Noodlesoup", "Wan Tan Noodlesoup"],
-  ["Pork Belly sweet-sour", "Pork Belly sweet-sour"]
-]);
 
 // Fallback image
-const FALLBACK_IMG = "https://ik.imagekit.io/o9fejv2tr/Food%20Images/CookNoodles.jpg";
+const FALLBACK_IMG = "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935";
 
 // Optional: global JSON URL (alternativ via data-json an einer Section)
 window.RECIPES_JSON_URL = "data/recipes.json";

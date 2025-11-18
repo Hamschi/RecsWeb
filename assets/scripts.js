@@ -139,7 +139,7 @@ function initBootstrapMultiCardCarousel() {
 }
 
 // =====================================================
-// Custom „Marquee“-Carousel (Endloslauf) (optional)
+// Custom „Marquee"-Carousel (Endloslauf) (optional)
 // erwartet: #miTrack, #btnNext, #btnPrev
 // =====================================================
 function initCustomMarqueeCarousel() {
@@ -247,11 +247,15 @@ function initCustomMarqueeCarousel() {
   // window.addEventListener('beforeunload', () => clearInterval(autoplayId));
 }
 
-
-// scripts.js
+// =====================================================
+// Recipe Carousel Initialization
+// =====================================================
 (async () => {
-  // Hardcoded JSON path
+  // Configuration
   const RECIPES_JSON_URL = "recipes.json";
+  const FALLBACK_IMG = "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935";
+  
+
 
   // --- Helpers ---
   const toKey = (s) => (s || "").toString().trim().toLowerCase();
@@ -344,7 +348,25 @@ function initCustomMarqueeCarousel() {
     const next = getNextBtn(section);
     if (!viewport) return;
 
-    const stepPx = () => Math.max(240, Math.floor(viewport.clientWidth)); // mind. 240px oder 1 viewport
+    const stepPx = () => {
+      // Calculate step based on viewport width and item count
+      const viewportWidth = viewport.clientWidth;
+      const itemCount = viewport.querySelector('.mi-track').children.length;
+      
+      // On mobile, scroll one item at a time
+      if (viewportWidth < 576) {
+        return viewportWidth * 0.8; // 80% of viewport width
+      }
+      // On tablet, scroll two items at a time  
+      else if (viewportWidth < 992) {
+        return viewportWidth * 0.65; // 65% of viewport width
+      }
+      // On desktop, scroll three items at a time
+      else {
+        return viewportWidth * 0.75; // 75% of viewport width
+      }
+    };
+    
     prev?.addEventListener("click", () => viewport.scrollBy({ left: -stepPx(), behavior: "smooth" }));
     next?.addEventListener("click", () => viewport.scrollBy({ left:  stepPx(), behavior: "smooth" }));
   };
@@ -378,7 +400,7 @@ function initCustomMarqueeCarousel() {
 
     if (!track.children.length) {
       const empty = document.createElement("div");
-      empty.className = "text-muted p-3";
+      empty.className = "text-muted p-3 text-center";
       empty.textContent = "Keine Einträge gefunden.";
       track.appendChild(empty);
     }
