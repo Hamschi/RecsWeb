@@ -490,7 +490,7 @@ function initCustomMarqueeCarousel() {
     if (!track.children.length) {
       const empty = document.createElement("div");
       empty.className = "text-muted p-3 text-center";
-      empty.textContent = "Keine Einträge gefunden.";
+      empty.textContent = "No recipes found.";
       track.appendChild(empty);
     }
 

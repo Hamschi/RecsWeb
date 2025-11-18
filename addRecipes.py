@@ -106,13 +106,12 @@ CATEGORIE_BADGE = {
     "from scratch": "bg-secondary",
     "fromscratch": "bg-secondary",
     "drinks": "bg-secondary",
-    "appetizers": "bg-secondary",
     "appetizer": "bg-appetizer",
     "fingerfood": "bg-fingerfood",
 
     "cake": "bg-dessert",
-    "pastry": "bg-primary",
-    "other desserts": "bg-primary", 
+    "pastry": "bg-dessert",
+    "other desserts": "bg-dessert", 
     "dessert": "bg-dessert",
     "snacks": "bg-primary",
 
@@ -123,21 +122,21 @@ CATEGORIE_BADGE = {
     "soup": "bg-soup",
 
     # Countries
-    "America": "bg-danger",
-    "Great Britain": "bg-danger", 
+    "America": "bg-country",
+    "Great Britain": "bg-country", 
     "china": "bg-country",
     "mongolia": "bg-country",
     "germany": "bg-country",
     "france": "bg-country", 
-    "greece": "bg-danger",
+    "greece": "bg-country",
     "india": "bg-country",
     "italy": "bg-country",
     "japan": "bg-country",
     "korea": "bg-country",
     "mexico": "bg-country", 
     "spain": "bg-country",
-    "thailand": "bg-danger",
-    "turkey": "bg-danger",
+    "thailand": "bg-country",
+    "turkey": "bg-country",
     "vietnam": "bg-country"
 }
 

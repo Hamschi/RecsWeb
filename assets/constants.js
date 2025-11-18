@@ -50,6 +50,8 @@ const CATEGORY_BADGES = {
   cake:    	  { label: "cake",    cls: "bg-dessert" },
   snacks: {label: "snacks", cls: "bg-snacks"},
   soup:       { label: "soup",       cls: "bg-soup" },
+
+  drink:       { label: "drink",       cls: "bg-drink" }
 };
 
 // Countries → flag code (for flag-icons CSS)
