@@ -122,8 +122,8 @@ CATEGORIE_BADGE = {
     "soup": "bg-soup",
 
     # Countries
-    "America": "bg-country",
-    "Great Britain": "bg-country", 
+    "america": "bg-country",
+    "great britain": "bg-country", 
     "china": "bg-country",
     "mongolia": "bg-country",
     "germany": "bg-country",

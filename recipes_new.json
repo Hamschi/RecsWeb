@@ -71,7 +71,8 @@
   {
     "title": "Chicken Stock",
     "categories": [
-      "fromScratch"
+      "fromScratch",
+      "basics"
     ],
     "activeTime": 1,
     "passiveTime": 60,
@@ -530,7 +531,7 @@
         "unit": "tbsp"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/HatLuu.jpg",
     "file": "recipes/fromScratch/HatLuu.html"
   },
   {
@@ -1368,5 +1369,88 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Gimbap.jpg?updatedAt=1756588882819",
     "file": "recipes/snacks/Gimbap.html"
+  },
+  {
+    "title": "Cháo",
+    "categories": [
+      "Vietnam",
+      "China",
+      "rice",
+      "chicken"
+    ],
+    "activeTime": 30,
+    "passiveTime": 30,
+    "totalTime": 60,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/t2SahnNVULA?si=NsCA9_aTSGUrFPgr",
+    "ingredients": [
+      {
+        "name": "rice",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "water",
+        "amount": 8,
+        "unit": "cups"
+      },
+      {
+        "name": "chicken breast",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "name": "cornstarch",
+        "amount": 2,
+        "unit": "tsp"
+      },
+      {
+        "name": "oyster sauce",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "water",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "chicken bouillon powder",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "name": "vegetable oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "ginger (optional)",
+        "amount": 14,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "chicken bouillon powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "spring onions (green part)"
+      },
+      {
+        "name": "pepper"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Chao.jpg?updatedAt=1756588699668",
+    "file": "recipes/rice/Chao.html"
   }
 ]

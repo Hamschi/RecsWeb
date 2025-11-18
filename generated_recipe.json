@@ -1,114 +1,85 @@
 [
   {
-    "title": "Gimbap",
+    "title": "Cháo",
     "categories": [
-      "Korea",
-      "snacks",
+      "Vietnam",
+      "China",
       "rice",
-      "fingerfood"
+      "chicken"
     ],
-    "activeTime": 40,
-    "passiveTime": 10,
-    "totalTime": 50,
-    "servings": 4,
+    "activeTime": 30,
+    "passiveTime": 30,
+    "totalTime": 60,
+    "servings": 2,
     "difficulty": "easy",
     "originality": 5,
-    "taste": 4,
+    "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/Y-Y9CXGRJPU?si=QELC4MfHd1amjOQw",
+    "source": "https://youtu.be/t2SahnNVULA?si=NsCA9_aTSGUrFPgr",
     "ingredients": [
       {
-        "name": "nori sheet",
-        "amount": 5,
-        "unit": "pcs"
+        "name": "rice",
+        "amount": 1,
+        "unit": "cup"
       },
       {
-        "name": "short-grain-rice",
-        "amount": 2,
+        "name": "water",
+        "amount": 8,
         "unit": "cups"
       },
       {
-        "name": "sesame oil",
-        "amount": 2,
-        "unit": "tsp"
-      },
-      {
-        "name": "salt",
-        "amount": 0.5,
-        "unit": "tsp"
-      },
-      {
-        "name": "carrot (large)",
-        "amount": 1,
-        "unit": "pcs"
-      },
-      {
-        "name": "salt",
-        "amount": 1,
-        "unit": "pinch"
-      },
-      {
-        "name": "spinach",
-        "amount": 250,
+        "name": "chicken breast",
+        "amount": 300,
         "unit": "g"
       },
       {
-        "name": "garlic",
+        "name": "cornstarch",
         "amount": 2,
-        "unit": "cloves"
+        "unit": "tsp"
       },
       {
-        "name": "salt",
+        "name": "oyster sauce",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "water",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "chicken bouillon powder",
         "amount": 0.5,
-        "unit": "tsp"
+        "unit": "tbsp"
       },
       {
-        "name": "sesame oil",
+        "name": "vegetable oil",
         "amount": 2,
-        "unit": "tsp"
+        "unit": "tbsp"
       },
       {
-        "name": "ground beef",
-        "amount": 230,
+        "name": "ginger (optional)",
+        "amount": 14,
         "unit": "g"
       },
       {
-        "name": "soy sauce",
-        "amount": 2,
-        "unit": "tsp"
-      },
-      {
-        "name": "garlic",
-        "amount": 1,
-        "unit": "clove"
-      },
-      {
-        "name": "pepper",
-        "amount": 1,
-        "unit": "pinch"
-      },
-      {
-        "name": "brown sugar",
-        "amount": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "egg",
-        "amount": 3,
-        "unit": "pcs"
-      },
-      {
         "name": "salt",
         "amount": 1,
-        "unit": "pinch"
+        "unit": "tsp"
       },
       {
-        "name": "pickled yellow radish (5 longs strips, 1cm thick)",
-        "amount": 5,
-        "unit": "pcs"
+        "name": "chicken bouillon powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "spring onions (green part)"
+      },
+      {
+        "name": "pepper"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Gimbap.jpg?updatedAt=1756588882819",
-    "file": "recipes/snacks/Gimbap.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Chao.jpg?updatedAt=1756588699668",
+    "file": "recipes/rice/Chao.html"
   }
 ]
