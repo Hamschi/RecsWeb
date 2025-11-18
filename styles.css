@@ -96,6 +96,8 @@ margin-bottom: 1rem;
 .bg-streetfood { background-color: #b78f6b; color: white; }
 .bg-vegetarian { background-color: #84c83e; color: white; }
 .bg-drink { background-color: #9dc9e3; color: white; }
+.bg-bakedDishes { background-color: #d8a661; color: white; }
+.bg-egg { background-color: #f4b600; color: white; }
 
 .text-bg-country { background-color: #000000; color: white; }
 .text-bg-stew { background-color: #3a140c; color: white; }
@@ -112,6 +114,8 @@ margin-bottom: 1rem;
 .text-bg-streetfood { background-color: #b78f6b; color: white; }
 .text-bg-vegetarian { background-color: #84c83e; color: white; }
 .text-bg-drink { background-color: #9dc9e3; color: white; }
+.text-bg-bakedDishes { background-color: #d8a661; color: white; }
+.text-bg-egg { background-color: #f4b600; color: white; }
 
 
 /* Viewport & Track */

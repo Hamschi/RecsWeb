@@ -97,9 +97,10 @@ CATEGORIE_BADGE = {
     "noodles": "bg-grain",
     "rice": "bg-grain",
     "potato": "bg-grain",
-    "breads": "bg-warning",
-    "sandwiches": "bg-warning",
-    "egg": "bg-warning",
+    "breads": "bg-bakedDishes",
+    "sandwiches": "bg-bakedDishes",
+	"bakedDishes": "bg-bakedDishes",
+    "egg": "bg-egg",
 
     "streetfood": "bg-streetfood",
     "basics": "bg-secondary",
@@ -113,7 +114,7 @@ CATEGORIE_BADGE = {
     "pastry": "bg-dessert",
     "other desserts": "bg-dessert", 
     "dessert": "bg-dessert",
-    "snacks": "bg-primary",
+    "snacks": "bg-snacks",
 
     "sauce": "bg-sauce",
     "dressing": "bg-sauce",
@@ -122,22 +123,22 @@ CATEGORIE_BADGE = {
     "soup": "bg-soup",
 
     # Countries
-    "america": "bg-country",
-    "great britain": "bg-country", 
-    "china": "bg-country",
-    "mongolia": "bg-country",
-    "germany": "bg-country",
-    "france": "bg-country", 
-    "greece": "bg-country",
-    "india": "bg-country",
-    "italy": "bg-country",
-    "japan": "bg-country",
-    "korea": "bg-country",
-    "mexico": "bg-country", 
-    "spain": "bg-country",
-    "thailand": "bg-country",
-    "turkey": "bg-country",
-    "vietnam": "bg-country"
+    "America": "bg-country",
+    "Great Britain": "bg-country", 
+    "China": "bg-country",
+    "Mongolia": "bg-country",
+    "Germany": "bg-country",
+    "France": "bg-country", 
+    "Greece": "bg-country",
+    "India": "bg-country",
+    "Italy": "bg-country",
+    "Japan": "bg-country",
+    "Korea": "bg-country",
+    "Mexico": "bg-country", 
+    "Spain": "bg-country",
+    "Thailand": "bg-country",
+    "Turkey": "bg-country",
+    "Vietnam": "bg-country"
 }
 
 
