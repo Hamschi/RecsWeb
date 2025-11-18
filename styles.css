@@ -81,12 +81,18 @@ margin-bottom: 1rem;
 	text-align: center;
 }
 
+.bg-country { background-color: #000000; color: white; }
 .bg-stew { background-color: #3a140c; color: white; }
 .bg-curry { background-color: #f1c214; color: black; }
 .bg-meat { background-color: #ef888b; color: white; }
 .bg-dessert { background-color: #e1498e; color: white; }
 .bg-grain { background-color: #aa9d6b; color: white; }
-
+.bg-soup { background-color: #ff6501; color: white; }
+.bg-sauce { background-color: #fffd8d; color: black; }
+.bg-dressing { background-color: #fffd8d; color: black; }
+.bg-fingerfood { background-color: #abc993; color: white; }
+.bg-appetizer { background-color: #abc993; color: white; }
+.bg-streetfood { background-color: #b78f6b; color: white; }
 
 
 /* Viewport & Track */
