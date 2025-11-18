@@ -48,7 +48,7 @@ const CATEGORY_BADGES = {
   streetfood:    	  { label: "streetfood",    cls: "bg-streetfood" },
   dessert:    { label: "dessert",    cls: "bg-dessert" },
   cake:    	  { label: "cake",    cls: "bg-dessert" },
-  snacks: {label: "snacks", cls: "bg-primary"},
+  snacks: {label: "snacks", cls: "bg-snacks"},
   soup:       { label: "soup",       cls: "bg-soup" },
 };
 

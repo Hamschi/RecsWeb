@@ -91,9 +91,25 @@ margin-bottom: 1rem;
 .bg-sauce { background-color: #fffd8d; color: black; }
 .bg-dressing { background-color: #fffd8d; color: black; }
 .bg-fingerfood { background-color: #abc993; color: white; }
+.bg-snacks { background-color: #abc993; color: white; }
 .bg-appetizer { background-color: #abc993; color: white; }
 .bg-streetfood { background-color: #b78f6b; color: white; }
 .bg-vegetarian { background-color: #84c83e; color: white; }
+
+.text-bg-country { background-color: #000000; color: white; }
+.text-bg-stew { background-color: #3a140c; color: white; }
+.text-bg-curry { background-color: #f1c214; color: black; }
+.text-bg-meat { background-color: #ef888b; color: white; }
+.text-bg-dessert { background-color: #e1498e; color: white; }
+.text-bg-grain { background-color: #aa9d6b; color: white; }
+.text-bg-soup { background-color: #ff6501; color: white; }
+.text-bg-sauce { background-color: #fffd8d; color: black; }
+.text-bg-dressing { background-color: #fffd8d; color: black; }
+.text-bg-fingerfood { background-color: #abc993; color: white; }
+.text-bg-appetizer { background-color: #abc993; color: white; }
+.text-bg-snacks { background-color: #abc993; color: white; }
+.text-bg-streetfood { background-color: #b78f6b; color: white; }
+.text-bg-vegetarian { background-color: #84c83e; color: white; }
 
 
 /* Viewport & Track */

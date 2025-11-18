@@ -71,7 +71,8 @@
   {
     "title": "Chicken Stock",
     "categories": [
-      "fromScratch"
+      "fromScratch",
+      "basics"
     ],
     "activeTime": 1,
     "passiveTime": 60,
@@ -530,7 +531,7 @@
         "unit": "tbsp"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/HatLuu.jpg",
     "file": "recipes/fromScratch/HatLuu.html"
   },
   {
