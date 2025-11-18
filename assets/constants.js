@@ -9,8 +9,8 @@ const DIFFICULTY = {
 
 // Categories → badge class (labels in English; translation happens in translations.js)
 const CATEGORY_BADGES = {
-  vegan:      { label: "vegan",      cls: "bg-success" },
-  vegetarian: { label: "vegetarian", cls: "bg-success" },
+  vegan:      { label: "vegan",      cls: "bg-vegetarian" },
+  vegetarian: { label: "vegetarian", cls: "bg-vegetarian" },
   vegetables: {label: "vegetables", cls: "bg-success"},
   salad: {label: "salad", cls: "bg-success"},
 
