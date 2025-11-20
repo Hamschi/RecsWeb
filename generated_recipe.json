@@ -1,44 +1,59 @@
 [
   {
-    "title": "Pasta Cacio e Pepe",
+    "title": "Pasta Broccoli",
     "categories": [
       "Italy",
       "noodles",
       "vegetarian"
     ],
-    "activeTime": 18,
+    "activeTime": 12,
     "passiveTime": 12,
-    "totalTime": 30,
+    "totalTime": 24,
     "servings": 2,
     "difficulty": "easy",
     "originality": 5,
-    "taste": 4,
+    "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/Cx-KmIa-zco?si=Mo9Vgezt4Sa49qtR",
+    "source": "https://youtu.be/N3PFBKx-AH8?si=90UroUrQKlq_dyNs",
     "ingredients": [
       {
-        "name": "spaghettoni",
+        "name": "broccoli",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "spaghetti",
         "amount": 300,
         "unit": "g"
       },
       {
-        "name": "Pecorino Romano",
-        "amount": 200,
-        "unit": "g"
+        "name": "salt",
+        "amount": 1,
+        "unit": "tbsp"
       },
       {
-        "name": "pepper"
+        "name": "garlic",
+        "amount": 2,
+        "unit": "cloves"
       },
       {
-        "name": "rock salt"
+        "name": "olive oil"
       },
       {
-        "name": "water",
-        "amount": 3,
-        "unit": "l"
+        "name": "Pecorino Romano"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "pepper",
+        "amount": 1,
+        "unit": "pinch"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/CacioEPepe.jpg?updatedAt=1756588691716",
-    "file": "recipes/noodle/CacioEPepe.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/SpaghettiBroccoli.jpg?updatedAt=1756588994906",
+    "file": "recipes/noodle/PastaBroccoli.html"
   }
 ]

@@ -801,7 +801,7 @@
         "unit": "tbsp"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/PickledVegetables.jpg",
     "file": "recipes/vegetables/PickledVegetables.html"
   },
   {
@@ -1494,5 +1494,62 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/CacioEPepe.jpg?updatedAt=1756588691716",
     "file": "recipes/noodle/CacioEPepe.html"
+  },
+  {
+    "title": "Pasta Broccoli",
+    "categories": [
+      "Italy",
+      "noodles",
+      "vegetarian"
+    ],
+    "activeTime": 12,
+    "passiveTime": 12,
+    "totalTime": 24,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/N3PFBKx-AH8?si=90UroUrQKlq_dyNs",
+    "ingredients": [
+      {
+        "name": "broccoli",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "spaghetti",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "garlic",
+        "amount": 2,
+        "unit": "cloves"
+      },
+      {
+        "name": "olive oil"
+      },
+      {
+        "name": "Pecorino Romano"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "pepper",
+        "amount": 1,
+        "unit": "pinch"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/SpaghettiBroccoli.jpg?updatedAt=1756588994906",
+    "file": "recipes/noodle/PastaBroccoli.html"
   }
 ]
