@@ -1,38 +1,38 @@
 [
   {
-    "title": "Bean in syrup (for chè thập cẩm)",
+    "title": "Cook mung beans",
     "categories": [
       "component",
-      "vegan",
-      "vegetarian"
+      "vegetarian",
+      "vegan"
     ],
-    "activeTime": 2,
-    "passiveTime": 8,
-    "totalTime": 10,
-    "servings": 8,
+    "activeTime": 5,
+    "passiveTime": 500,
+    "totalTime": 505,
+    "servings": 2,
     "difficulty": "easy",
-    "originality": 4,
-    "taste": 4,
-    "status": "need pic",
-    "source": "https://youtu.be/xwq7TLbmqbs?si=FJfX6I7uPbrCJw7o",
+    "originality": 5,
+    "taste": 5,
+    "status": "not done yet",
+    "source": "https://youtu.be/Nw-BTahmx5M?si=_V_p-zLtgHH2GXvw",
     "ingredients": [
       {
-        "name": "kidney bean (precooked)",
-        "amount": 350,
+        "name": "mung bean",
+        "amount": 100,
         "unit": "g"
+      },
+      {
+        "name": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
       },
       {
         "name": "water",
-        "amount": 100,
+        "amount": 400,
         "unit": "ml"
-      },
-      {
-        "name": "sugar",
-        "amount": 50,
-        "unit": "g"
       }
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
-    "file": "recipes/basics/BeanInSyrup.html"
+    "file": "recipes/component/CookMungBean.html"
   }
 ]

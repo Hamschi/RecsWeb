@@ -1586,6 +1586,42 @@
       }
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
-    "file": "recipes/basics/BeanInSyrup.html"
+    "file": "recipes/component/BeanInSyrup.html"
+  },
+  {
+    "title": "Cook mung beans",
+    "categories": [
+      "component",
+      "vegetarian",
+      "vegan"
+    ],
+    "activeTime": 5,
+    "passiveTime": 500,
+    "totalTime": 505,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "not done yet",
+    "source": "https://youtu.be/Nw-BTahmx5M?si=_V_p-zLtgHH2GXvw",
+    "ingredients": [
+      {
+        "name": "mung bean",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "water",
+        "amount": 400,
+        "unit": "ml"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
+    "file": "recipes/component/CookMungBean.html"
   }
 ]
