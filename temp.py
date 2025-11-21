@@ -107,7 +107,7 @@ RECIPE_FOLDERS = [
 	"drinks",
 	"egg",
 	"fish",
-	"fromScratch",
+	"component",
 	"noodle",
 	"otherDesserts",
 	"pork",

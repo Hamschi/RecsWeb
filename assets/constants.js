@@ -21,7 +21,7 @@ const CATEGORY_BADGES = {
   seafood: {label: "seafood", cls: "bg-primary"},
   
   basics:     { label: "basics",     cls: "bg-secondary" },
-  fromscratch:     { label: "fromScratch",     cls: "bg-secondary" },
+  component: {label: "component", cls: "bg-secondary"},
   sauce:     { label: "sauce",     cls: "bg-sauce" },
   dressing:     { label: "dressing",     cls: "bg-sauce" },
   stew: {label: "stew", cls: "bg-stew"},

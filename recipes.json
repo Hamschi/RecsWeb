@@ -71,7 +71,7 @@
   {
     "title": "Chicken Stock",
     "categories": [
-      "fromScratch",
+      "component",
       "basics"
     ],
     "activeTime": 1,
@@ -114,7 +114,7 @@
       }
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ChickenBroth.jpg?updatedAt=1756588700258",
-    "file": "recipes/fromScratch/ChickenStock.html"
+    "file": "recipes/component/ChickenStock.html"
   },
   {
     "title": "Mongolian Ground Beef",
@@ -435,7 +435,7 @@
   {
     "title": "Pandan Jelly",
     "categories": [
-      "fromScratch",
+      "component",
       "vegan",
       "vegetarian"
     ],
@@ -481,12 +481,12 @@
       }
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ThachLaDua.jpg?updatedAt=1757778312983",
-    "file": "recipes/fromScratch/PandanJelly.html"
+    "file": "recipes/component/PandanJelly.html"
   },
   {
     "title": "Hạt lựu",
     "categories": [
-      "fromScratch",
+      "component",
       "vegan",
       "vegetarian"
     ],
@@ -532,7 +532,7 @@
       }
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/HatLuu.jpg",
-    "file": "recipes/fromScratch/HatLuu.html"
+    "file": "recipes/component/HatLuu.html"
   },
   {
     "title": "Aioli",
@@ -1551,5 +1551,41 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/SpaghettiBroccoli.jpg?updatedAt=1756588994906",
     "file": "recipes/noodle/PastaBroccoli.html"
+  },
+  {
+    "title": "Bean in syrup (for chè thập cẩm)",
+    "categories": [
+      "component",
+      "vegan",
+      "vegetarian"
+    ],
+    "activeTime": 2,
+    "passiveTime": 8,
+    "totalTime": 10,
+    "servings": 8,
+    "difficulty": "easy",
+    "originality": 4,
+    "taste": 4,
+    "status": "need pic",
+    "source": "https://youtu.be/xwq7TLbmqbs?si=FJfX6I7uPbrCJw7o",
+    "ingredients": [
+      {
+        "name": "kidney bean (precooked)",
+        "amount": 350,
+        "unit": "g"
+      },
+      {
+        "name": "water",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "name": "sugar",
+        "amount": 50,
+        "unit": "g"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
+    "file": "recipes/component/BeanInSyrup.html"
   }
 ]
