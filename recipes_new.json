@@ -1623,5 +1623,56 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
     "file": "recipes/component/CookMungBean.html"
+  },
+  {
+    "title": "Mung Bean (for chè thập cẩm)",
+    "categories": [
+      "component",
+      "vegetarian",
+      "vegan"
+    ],
+    "activeTime": 2,
+    "passiveTime": 0,
+    "totalTime": 2,
+    "servings": 6,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 4,
+    "status": "not done yet",
+    "source": "https://youtu.be/xwq7TLbmqbs?si=hMT9eaGEW97v5AJo",
+    "ingredients": [
+      {
+        "name": "mung bean",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "amount": 0.3,
+        "unit": "tsp"
+      },
+      {
+        "name": "water",
+        "amount": 400,
+        "unit": "ml"
+      },
+      {
+        "name": "water (boiled)",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "name": "sugar",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "name": "vanilla sugar (alternatively 1 tsp vanilla extract)",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
+    "file": "recipes/component/MungBeanCheThapCam.html"
   }
 ]
