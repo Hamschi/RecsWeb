@@ -1733,7 +1733,7 @@
         "unit": "handful"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/QuattroFormaggi.jpg?updatedAt=1756588964588",
     "file": "recipes/noodle/PastaQuattroFormaggi.html"
   },
   {
@@ -1795,7 +1795,7 @@
         "name": "pepper"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/PestoAllaSicilliana.jpg?updatedAt=1756588957885",
     "file": "recipes/noodle/PestoAllaSiciliana.html"
   },
   {
@@ -1992,5 +1992,58 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
     "file": "recipes/dressings-dips-sauces/PilzRahmsauce.html"
+  },
+  {
+    "title": "Käsespätzle",
+    "categories": [
+      "Germany",
+      "noodles",
+      "vegetarian"
+    ],
+    "activeTime": 20,
+    "passiveTime": 15,
+    "totalTime": 35,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/FfoN2hwWimE?si=HABgA1ZpgJ7YBIET",
+    "ingredients": [
+      {
+        "name": "onion",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "spätzle",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "hard cheese (e.g. Tilsiter, Emmentaler, Appenzeller, Bergkäse,...)",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "salt"
+      },
+      {
+        "name": "pepper"
+      },
+      {
+        "name": "chives (chopped)",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "butter"
+      },
+      {
+        "name": "fried onions"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/KaeseSpaetzle.jpg?updatedAt=1756588894989",
+    "file": "recipes/noodle/Kaesespaetzle.html"
   }
 ]
