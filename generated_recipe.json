@@ -1,53 +1,70 @@
 [
   {
-    "title": "Mung Bean (for chè thập cẩm)",
+    "title": "Pilz-Rahmsauce",
     "categories": [
-      "component",
-      "vegetarian",
-      "vegan"
+      "Germany",
+      "sauce",
+      "noodles",
+      "vegetarian"
     ],
-    "activeTime": 2,
-    "passiveTime": 0,
-    "totalTime": 2,
-    "servings": 6,
+    "activeTime": 15,
+    "passiveTime": 10,
+    "totalTime": 25,
+    "servings": 2,
     "difficulty": "easy",
     "originality": 5,
-    "taste": 4,
-    "status": "not done yet",
-    "source": "https://youtu.be/xwq7TLbmqbs?si=hMT9eaGEW97v5AJo",
+    "taste": 5,
+    "status": "need pic",
+    "source": "Familie Gherke",
     "ingredients": [
       {
-        "name": "mung bean",
-        "amount": 100,
+        "name": "mushrooms",
+        "amount": 250,
         "unit": "g"
       },
       {
-        "name": "salt",
-        "amount": 0.3,
-        "unit": "tsp"
+        "name": "onion",
+        "amount": 1,
+        "unit": "pcs"
       },
       {
-        "name": "water",
+        "name": "cream",
         "amount": 400,
         "unit": "ml"
       },
       {
-        "name": "water (boiled)",
-        "amount": 100,
-        "unit": "ml"
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp"
       },
       {
-        "name": "sugar",
-        "amount": 20,
-        "unit": "g"
+        "name": "pepper",
+        "amount": 0.5,
+        "unit": "tsp"
       },
       {
-        "name": "vanilla sugar (alternatively 1 tsp vanilla extract)",
-        "amount": 5,
+        "name": "paprika powder",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "oil"
+      },
+      {
+        "name": "cornstarch",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "spring onions or chives (for garnish)"
+      },
+      {
+        "name": "gnocchi",
+        "amount": 800,
         "unit": "g"
       }
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
-    "file": "recipes/component/MungBeanCheThapCam.html"
+    "file": "recipes/dressings-dips-sauces/PilzRahmsauce.html"
   }
 ]

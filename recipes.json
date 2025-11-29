@@ -1674,5 +1674,323 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
     "file": "recipes/component/MungBeanCheThapCam.html"
+  },
+  {
+    "title": "Pasta Quattro Formaggi",
+    "categories": [
+      "Italy",
+      "noodles",
+      "vegetarian"
+    ],
+    "activeTime": 7,
+    "passiveTime": 8,
+    "totalTime": 15,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 4,
+    "status": "done",
+    "source": "https://www.vincenzosplate.com/four-cheese-pasta/#wprm-recipe-video-container-13555",
+    "ingredients": [
+      {
+        "name": "gorgonzola (alternatively blue cheese)",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "name": "stracchino (alternatively ricotta or cottage cheese)",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "name": "mascarpone",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "name": "Pecorino Romano",
+        "amount": 4,
+        "unit": "tbsp"
+      },
+      {
+        "name": "penne",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "whole milk",
+        "amount": 80,
+        "unit": "ml"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "walnuts (chopped)",
+        "amount": 1,
+        "unit": "handful"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/QuattroFormaggi.jpg?updatedAt=1756588964588",
+    "file": "recipes/noodle/PastaQuattroFormaggi.html"
+  },
+  {
+    "title": "Pesto Alla Siciliana",
+    "categories": [
+      "Italy",
+      "noodles",
+      "vegetarian"
+    ],
+    "activeTime": 10,
+    "passiveTime": 10,
+    "totalTime": 10,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/A4zE16mqrXg?si=nXH8ztuhOyMbClEy",
+    "ingredients": [
+      {
+        "name": "pasta",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "cherry tomatoes",
+        "amount": "8-10",
+        "unit": "pcs"
+      },
+      {
+        "name": "almonds (peeled)",
+        "amount": 20,
+        "unit": "pcs"
+      },
+      {
+        "name": "basil leaves",
+        "amount": 10,
+        "unit": "pcs"
+      },
+      {
+        "name": "garlic",
+        "amount": 2,
+        "unit": "cloves"
+      },
+      {
+        "name": "pecorino (grated)",
+        "amount": "20-30",
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "amount": 40,
+        "unit": "ml"
+      },
+      {
+        "name": "salt"
+      },
+      {
+        "name": "pepper"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/PestoAllaSicilliana.jpg?updatedAt=1756588957885",
+    "file": "recipes/noodle/PestoAllaSiciliana.html"
+  },
+  {
+    "title": "Pasta in cream and cheese Sauce",
+    "categories": [
+      "Italy",
+      "noodles"
+    ],
+    "activeTime": 10,
+    "passiveTime": 10,
+    "totalTime": 20,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/M3QxMEyK3mk?si=hxBCKBtvBEQREL1C",
+    "ingredients": [
+      {
+        "name": "pasta",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "camembert",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "cream",
+        "amount": 400,
+        "unit": "ml"
+      },
+      {
+        "name": "cooked ham",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "name": "Parmesan"
+      },
+      {
+        "name": "salt"
+      },
+      {
+        "name": "pepper"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/KaeseSahneSosse.jpg?updatedAt=1756588895929",
+    "file": "recipes/noodle/PastaInCreamCheeseSauce.html"
+  },
+  {
+    "title": "Babish’s Go-To Late-Night Pasta",
+    "categories": [
+      "Italy",
+      "noodles",
+      "vegetarian"
+    ],
+    "activeTime": 15,
+    "passiveTime": 12,
+    "totalTime": 27,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/Tj26Na3q2d8?si=jpOnK2zWFJU-HtII",
+    "ingredients": [
+      {
+        "name": "fussili",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "shallots",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "garlic",
+        "amount": 4,
+        "unit": "cloves"
+      },
+      {
+        "name": "butter",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "salt"
+      },
+      {
+        "name": "pepper"
+      },
+      {
+        "name": "olive oil"
+      },
+      {
+        "name": "tomato paste",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "cherry tomatoes",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "Mozzarella",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "Parmesan",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "name": "basil"
+      },
+      {
+        "name": "parsley",
+        "amount": 0.5,
+        "unit": "bunch"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/BabishPasta.jpg?updatedAt=1756588648060",
+    "file": "recipes/noodle/BabishsGoToLateNightPasta.html"
+  },
+  {
+    "title": "Pilz-Rahmsauce",
+    "categories": [
+      "Germany",
+      "sauce",
+      "noodles",
+      "vegetarian"
+    ],
+    "activeTime": 15,
+    "passiveTime": 10,
+    "totalTime": 25,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "need pic",
+    "source": "Familie Gherke",
+    "ingredients": [
+      {
+        "name": "mushrooms",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "cream",
+        "amount": 400,
+        "unit": "ml"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "pepper",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "paprika powder",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "oil"
+      },
+      {
+        "name": "cornstarch",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "spring onions or chives (for garnish)"
+      },
+      {
+        "name": "gnocchi",
+        "amount": 800,
+        "unit": "g"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
+    "file": "recipes/dressings-dips-sauces/PilzRahmsauce.html"
   }
 ]
