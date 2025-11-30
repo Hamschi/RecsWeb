@@ -2204,5 +2204,51 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/NudelsalatJannis.jpg?updatedAt=1756588945492",
     "file": "recipes/noodle/SommerlicherNudelsalat.html"
+  },
+  {
+    "title": "Kartoffelpuffer/Reibekuchen",
+    "categories": [
+      "Germany",
+      "potato",
+      "streetfood",
+      "snacks",
+      "vegetarian",
+      "vegan"
+    ],
+    "activeTime": 25,
+    "passiveTime": 30,
+    "totalTime": 55,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Kartoffelpuffer.jpg?updatedAt=1756588909567",
+    "ingredients": [
+      {
+        "name": "potatoes (waxy)",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "amount": 0.5,
+        "unit": "pcs"
+      },
+      {
+        "name": "nutmeg"
+      },
+      {
+        "name": "salt"
+      },
+      {
+        "name": "pepper"
+      },
+      {
+        "name": "oil"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Kartoffelpuffer.jpg?updatedAt=1756588909567",
+    "file": "recipes/potatoe/Kartoffelpuffer.html"
   }
 ]
