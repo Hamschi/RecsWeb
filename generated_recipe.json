@@ -1,35 +1,80 @@
 [
   {
-    "title": "Käsespätzle",
+    "title": "Sommerlicher Nudelsalat",
     "categories": [
       "Germany",
       "noodles",
-      "vegetarian"
+      "salad"
     ],
-    "activeTime": 20,
-    "passiveTime": 15,
-    "totalTime": 35,
-    "servings": 2,
+    "activeTime": 30,
+    "passiveTime": 70,
+    "totalTime": 90,
+    "servings": 6,
     "difficulty": "easy",
     "originality": 5,
-    "taste": 5,
+    "taste": 4,
     "status": "done",
-    "source": "https://youtu.be/FfoN2hwWimE?si=HABgA1ZpgJ7YBIET",
+    "source": "Jannis' Dad",
     "ingredients": [
       {
-        "name": "onion",
-        "amount": 2,
-        "unit": "pcs"
-      },
-      {
-        "name": "spätzle",
+        "name": "Hörnchennudeln",
         "amount": 500,
         "unit": "g"
       },
       {
-        "name": "hard cheese (e.g. Tilsiter, Emmentaler, Appenzeller, Bergkäse,...)",
-        "amount": 200,
+        "name": "tomatoes",
+        "amount": 5,
+        "unit": "pcs"
+      },
+      {
+        "name": "bell pepper (red)",
+        "amount": 3,
+        "unit": "pcs"
+      },
+      {
+        "name": "cucumber",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "onion (red)",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "bologna sausage",
+        "amount": 1,
+        "unit": "ring"
+      },
+      {
+        "name": "sheep cheese",
+        "amount": 1,
+        "unit": "pck"
+      },
+      {
+        "name": "corn",
+        "amount": 285,
         "unit": "g"
+      },
+      {
+        "name": "Miracle Whip",
+        "amount": 500,
+        "unit": "ml"
+      },
+      {
+        "name": "Schmand",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "balsamic vinegar (white)",
+        "amount": 4,
+        "unit": "tbsp"
+      },
+      {
+        "name": "sugar",
+        "amount": 1,
+        "unit": "pinch"
       },
       {
         "name": "salt"
@@ -38,18 +83,12 @@
         "name": "pepper"
       },
       {
-        "name": "chives (chopped)",
-        "amount": 3,
-        "unit": "tbsp"
-      },
-      {
-        "name": "butter"
-      },
-      {
-        "name": "fried onions"
+        "name": "parsley",
+        "amount": 1,
+        "unit": "bunch"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/KaeseSpaetzle.jpg?updatedAt=1756588894989",
-    "file": "recipes/noodle/Kaesespaetzle.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/NudelsalatJannis.jpg?updatedAt=1756588945492",
+    "file": "recipes/noodle/SommerlicherNudelsalat.html"
   }
 ]
