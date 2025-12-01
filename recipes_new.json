@@ -2223,7 +2223,7 @@
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Kartoffelpuffer.jpg?updatedAt=1756588909567",
+    "source": "https://youtu.be/rODf39kwEys?si=6pwrWkETfm_sHNcQ",
     "ingredients": [
       {
         "name": "potatoes (waxy)",
@@ -2250,5 +2250,110 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Kartoffelpuffer.jpg?updatedAt=1756588909567",
     "file": "recipes/potatoe/Kartoffelpuffer.html"
+  },
+  {
+    "title": "Gratin dauphinois",
+    "categories": [
+      "France",
+      "potato",
+      "vegetarian"
+    ],
+    "activeTime": 50,
+    "passiveTime": 75,
+    "totalTime": 135,
+    "servings": 3,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/gs429aLCMdE?si=ODSc3TYB7iYkKvep",
+    "ingredients": [
+      {
+        "name": "potatoes (waxy)",
+        "amount": 1.5,
+        "unit": "kg"
+      },
+      {
+        "name": "cream",
+        "amount": 500,
+        "unit": "ml"
+      },
+      {
+        "name": "rosemary",
+        "amount": 2,
+        "unit": "sprigs"
+      },
+      {
+        "name": "garlic",
+        "amount": 2,
+        "unit": "cloves"
+      },
+      {
+        "name": "salt"
+      },
+      {
+        "name": "pepper"
+      },
+      {
+        "name": "nutmeg"
+      },
+      {
+        "name": "Butter for greasing the baking dish"
+      },
+      {
+        "name": "Parmesan",
+        "amount": 50,
+        "unit": "g"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Kartoffelgratin.jpg?updatedAt=1756588910983",
+    "file": "recipes/potatoe/GratinDauphinois.html"
+  },
+  {
+    "title": "Brötchen",
+    "categories": [
+      "Germany",
+      "breads",
+      "vegan",
+      "vegetarian"
+    ],
+    "activeTime": 20,
+    "passiveTime": 540,
+    "totalTime": 560,
+    "servings": 9,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 4,
+    "status": "done",
+    "source": "https://youtu.be/zCoTy0Tz4h8?si=sTd-jggpu-X-JJXt",
+    "ingredients": [
+      {
+        "name": "spelt flour type 630 (alternatively wheat flour type 550)",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "cold water",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "name": "Hefe (frisch, alternativ 0.5g trocken)",
+        "amount": 1,
+        "unit": "g"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Broetchen.jpg?updatedAt=1756588686855",
+    "file": "recipes/breadAndBakedDishes/Broetchen.html"
   }
 ]

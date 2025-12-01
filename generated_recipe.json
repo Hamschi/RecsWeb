@@ -1,48 +1,49 @@
 [
   {
-    "title": "Kartoffelpuffer/Reibekuchen",
+    "title": "Brötchen",
     "categories": [
       "Germany",
-      "potato",
-      "streetfood",
-      "snacks",
-      "vegetarian",
-      "vegan"
+      "breads",
+      "vegan",
+      "vegetarian"
     ],
-    "activeTime": 25,
-    "passiveTime": 30,
-    "totalTime": 55,
-    "servings": 2,
+    "activeTime": 20,
+    "passiveTime": 540,
+    "totalTime": 560,
+    "servings": 9,
     "difficulty": "easy",
     "originality": 5,
-    "taste": 5,
+    "taste": 4,
     "status": "done",
-    "source": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Kartoffelpuffer.jpg?updatedAt=1756588909567",
+    "source": "https://youtu.be/zCoTy0Tz4h8?si=sTd-jggpu-X-JJXt",
     "ingredients": [
       {
-        "name": "potatoes (waxy)",
+        "name": "spelt flour type 630 (alternatively wheat flour type 550)",
         "amount": 500,
         "unit": "g"
       },
       {
-        "name": "onion",
-        "amount": 0.5,
-        "unit": "pcs"
+        "name": "cold water",
+        "amount": 300,
+        "unit": "g"
       },
       {
-        "name": "nutmeg"
+        "name": "olive oil",
+        "amount": 20,
+        "unit": "g"
       },
       {
-        "name": "salt"
+        "name": "salt",
+        "amount": 10,
+        "unit": "g"
       },
       {
-        "name": "pepper"
-      },
-      {
-        "name": "oil"
+        "name": "Hefe (frisch, alternativ 0.5g trocken)",
+        "amount": 1,
+        "unit": "g"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Kartoffelpuffer.jpg?updatedAt=1756588909567",
-    "file": "recipes/potatoe/Kartoffelpuffer.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Broetchen.jpg?updatedAt=1756588686855",
+    "file": "recipes/breadAndBakedDishes/Broetchen.html"
   }
 ]

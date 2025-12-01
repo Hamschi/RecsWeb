@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>RecsWeb - Brötchen</title>
+<link rel="icon" type="image/x-icon" href="https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/logo.png?updatedAt=1756760270932"> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="site-navbar"></div>
+
+<section class="overview-section py-4">
+<div class="container">
+	<h1 class="mb-3">Brötchen</h1>
+
+	<div class="row g-4 align-items-center">
+	<div class="col-12 col-md-auto">
+		<img src="https://ik.imagekit.io/o9fejv2tr/Food%20Images/Broetchen.jpg?updatedAt=1756588686855"
+			class="img-thumbnail overview-img"
+			alt="image not found">
+	</div>
+
+	<div class="col">
+		<div class="d-flex flex-wrap gap-2 mb-3">
+		<a href="../../recipeFilter.html#Germany" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-bg-country">Germany</span></a><a href="../../recipeFilter.html#breads" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-bg-bakedDishes">breads</span></a><a href="../../recipeFilter.html#vegan" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-bg-vegetarian">vegan</span></a><a href="../../recipeFilter.html#vegetarian" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-bg-vegetarian">vegetarian</span></a>
+		</div>
+
+		<div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3 mb-3">
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Total Time</div>
+			<div class="fs-5">
+				<span class="text-warning">560 minutes</span>
+			</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Difficulty</div>
+			<div class="fs-5">
+				<span class="text-warning">Easy</span>
+			</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Originality</div>
+			<div class="fs-5">
+				<span class="text-warning">★ ★ ★ ★ ★</span>
+			</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Taste</div>
+			<div class="fs-5">
+				<span class="text-warning">★ ★ ★ ★ ☆</span>
+			</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="small text">
+		Source: <a href="https://youtu.be/zCoTy0Tz4h8?si=sTd-jggpu-X-JJXt" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover">https://youtu.be/zCoTy0Tz4h8?si=sTd-jggpu-X-JJXt</a>
+		</div>
+	</div>
+	</div>
+</div>
+</section>
+
+
+
+<section class="ingredients-section">
+<div class="overview-div">
+	<div class="container my-4">
+	<div class="border rounded-3 p-3 shadow-sm bg-white">
+		<div class="row row-cols-1 row-cols-md-3 text-center time-grid">
+
+		<div class="col my-3 time-item">
+			<div class="small text-uppercase text-muted mb-1">Active Time</div>
+			<div class="d-flex justify-content-center align-items-center gap-2">
+			<i class="fa-regular fa-clock"></i><span>20 min.</span>
+			</div>
+		</div>
+
+		<div class="col my-3 time-item">
+			<div class="small text-uppercase text-muted mb-1">Passive Time</div>
+			<div class="d-flex justify-content-center align-items-center gap-2">
+			<i class="fa-regular fa-clock"></i><span>540 min.</span>
+			</div>
+		</div>
+
+		<div class="col my-3 time-item">
+			<div class="small text-uppercase text-muted mb-1">Total Time</div>
+			<div class="d-flex justify-content-center align-items-center gap-2">
+			<i class="fa-regular fa-clock"></i><span>560 min.</span>
+			</div>
+		</div>
+
+		</div>
+	</div>
+	</div>
+</div>
+
+<div class="ingredient-div">
+	<div class="container my-4">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="border rounded-3 p-3 shadow-sm bg-white">
+					<h2 class="h4 mb-3 fw-bold">Ingredients</h2>
+					<ul class="list-group list-group-flush" id="ingredients">
+						<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="500">500</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">spelt flour type 630 (alternatively wheat flour type 550)</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="300">300</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">cold water</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="20">20</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">olive oil</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="10">10</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">salt</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="1">1</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">Hefe (frisch, alternativ 0.5g trocken)</span></li>
+				
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-7">
+				<div class="border rounded-3 p-3 shadow-sm bg-light h-100">
+					<h2 class="h4 mb-3 fw-bold">Instructions</h2>
+					<ol class="list-group list-group-numbered">
+						<li class="list-group-item">Dissolve the yeast in the water</li>
+							<li class="list-group-item">Add the olive oil</li>
+							<li class="list-group-item">Mix the salt with the flour</li>
+							<li class="list-group-item">Add the flour to the liquid and mix until all the flour is fully incorporated</li>
+							<li class="list-group-item">Cover the dough and let it rest at room temperature overnight. The dough should roughly double in size</li>
+							<li class="list-group-item">Dust the dough and the work surface with a little flour</li>
+							<li class="list-group-item">Place the dough on the work surface and divide it into 9 pieces (about 90 g each)</li>
+							<li class="list-group-item">For each piece: pull the edges repeatedly toward the center, then shape into a roll. Repeat for all pieces</li>
+							<li class="list-group-item">Place the rolls on a baking sheet lined with parchment paper, cover them, and let them proof for 30–45 minutes</li>
+							<li class="list-group-item">Preheat the oven to 250°C (top and bottom heat)</li>
+							<li class="list-group-item">Place an oven-safe dish on the bottom rack</li>
+							<li class="list-group-item">Score the rolls with a serrated or sharp knife (about 2 mm deep)</li>
+							<li class="list-group-item">Mist the rolls with water</li>
+							<li class="list-group-item">Put the rolls into the oven and pour the 1/2 cup of hot water into the dish</li>
+							<li class="list-group-item">Bake for 20 minutes</li>
+							<li class="list-group-item">Let the rolls cool on a wire rack</li>
+							
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</section>
+
+
+<div id="site-footer"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../assets/constants.js"></script>
+<script src="../../assets/scripts.js"></script>
+</body>
+
+</html>
