@@ -38,6 +38,7 @@ const CATEGORY_BADGES = {
   mongolia: {label: "mongolia", cls: "bg-country"},
   italy:      { label: "italy",      cls: "bg-country" },
   india:      { label: "india",      cls: "bg-country" },
+  hungary: {label: "hungary", cls: "bg-country"},
   korea: {label: "korea", cls: "bg-country"},
   japan: {label: "japan", cls: "bg-country"},  
   france: {label: "france", cls: "bg-country"},

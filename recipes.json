@@ -2421,5 +2421,82 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Flammkuchen.jpg?updatedAt=1756588836369",
     "file": "recipes/breadAndBakedDishes/Flammkuchen.html"
+  },
+  {
+    "title": "Lángos",
+    "categories": [
+      "Hungary",
+      "streetfood",
+      "vegetarian"
+    ],
+    "activeTime": 40,
+    "passiveTime": 85,
+    "totalTime": 105,
+    "servings": 6,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 4,
+    "status": "done",
+    "source": "https://youtu.be/hIgdBWdWvIc?si=eZ3PIt0cIbfXGMaa",
+    "ingredients": [
+      {
+        "name": "garlic",
+        "amount": "2-3",
+        "unit": "cloves"
+      },
+      {
+        "name": "oil",
+        "amount": 50,
+        "unit": "ml"
+      },
+      {
+        "name": "water",
+        "amount": 50,
+        "unit": "ml"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "flour",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "water (lukewarm)",
+        "amount": 350,
+        "unit": "ml"
+      },
+      {
+        "name": "sugar",
+        "amount": 2,
+        "unit": "tsp"
+      },
+      {
+        "name": "yeast (fresh)",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "oil",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "name": "oil for frying"
+      },
+      {
+        "name": "Toppings: sour cream, cheese (cheddar, gouda),..."
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Langos.jpg?updatedAt=1756588923878",
+    "file": "recipes/streetfood/Langos.html"
   }
 ]

@@ -1,68 +1,79 @@
 [
   {
-    "title": "Flammkuchen",
+    "title": "Lángos",
     "categories": [
-      "France",
-      "Germany",
-      "bakedDishes",
-      "streetfood"
+      "Hungary",
+      "streetfood",
+      "vegetarian"
     ],
-    "activeTime": 25,
-    "passiveTime": 35,
-    "totalTime": 60,
-    "servings": 2,
+    "activeTime": 40,
+    "passiveTime": 85,
+    "totalTime": 105,
+    "servings": 6,
     "difficulty": "easy",
     "originality": 5,
-    "taste": 5,
+    "taste": 4,
     "status": "done",
-    "source": "https://youtu.be/Pl13Atfzq-s?si=i3bxiIAeg4iJOsx4",
+    "source": "https://youtu.be/hIgdBWdWvIc?si=eZ3PIt0cIbfXGMaa",
     "ingredients": [
       {
-        "name": "flour (type 550)",
-        "amount": 250,
-        "unit": "g"
+        "name": "garlic",
+        "amount": "2-3",
+        "unit": "cloves"
       },
       {
-        "name": "water",
-        "amount": 125,
+        "name": "oil",
+        "amount": 50,
         "unit": "ml"
       },
       {
-        "name": "olive oil",
-        "amount": 2,
-        "unit": "tbsp"
+        "name": "water",
+        "amount": 50,
+        "unit": "ml"
       },
       {
         "name": "salt",
-        "amount": 5,
-        "unit": "g"
-      },
-      {
-        "name": "crème fraîche",
-        "amount": 250,
-        "unit": "g"
-      },
-      {
-        "name": "onion",
         "amount": 1,
-        "unit": "pcs"
+        "unit": "tsp"
       },
       {
-        "name": "bacon",
-        "amount": 200,
+        "name": "flour",
+        "amount": 500,
         "unit": "g"
       },
       {
-        "name": "spring onion"
+        "name": "water (lukewarm)",
+        "amount": 350,
+        "unit": "ml"
       },
       {
-        "name": "salt"
+        "name": "sugar",
+        "amount": 2,
+        "unit": "tsp"
       },
       {
-        "name": "pepper"
+        "name": "yeast (fresh)",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "oil",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "name": "oil for frying"
+      },
+      {
+        "name": "Toppings: sour cream, cheese (cheddar, gouda),..."
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Flammkuchen.jpg?updatedAt=1756588836369",
-    "file": "recipes/breadAndBakedDishes/Flammkuchen.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Langos.jpg?updatedAt=1756588923878",
+    "file": "recipes/streetfood/Langos.html"
   }
 ]
