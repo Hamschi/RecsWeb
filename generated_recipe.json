@@ -1,49 +1,68 @@
 [
   {
-    "title": "Brötchen",
+    "title": "Flammkuchen",
     "categories": [
+      "France",
       "Germany",
-      "breads",
-      "vegan",
-      "vegetarian"
+      "bakedDishes",
+      "streetfood"
     ],
-    "activeTime": 20,
-    "passiveTime": 540,
-    "totalTime": 560,
-    "servings": 9,
+    "activeTime": 25,
+    "passiveTime": 35,
+    "totalTime": 60,
+    "servings": 2,
     "difficulty": "easy",
     "originality": 5,
-    "taste": 4,
+    "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/zCoTy0Tz4h8?si=sTd-jggpu-X-JJXt",
+    "source": "https://youtu.be/Pl13Atfzq-s?si=i3bxiIAeg4iJOsx4",
     "ingredients": [
       {
-        "name": "spelt flour type 630 (alternatively wheat flour type 550)",
-        "amount": 500,
+        "name": "flour (type 550)",
+        "amount": 250,
         "unit": "g"
       },
       {
-        "name": "cold water",
-        "amount": 300,
-        "unit": "g"
+        "name": "water",
+        "amount": 125,
+        "unit": "ml"
       },
       {
         "name": "olive oil",
-        "amount": 20,
-        "unit": "g"
+        "amount": 2,
+        "unit": "tbsp"
       },
       {
         "name": "salt",
-        "amount": 10,
+        "amount": 5,
         "unit": "g"
       },
       {
-        "name": "Hefe (frisch, alternativ 0.5g trocken)",
-        "amount": 1,
+        "name": "crème fraîche",
+        "amount": 250,
         "unit": "g"
+      },
+      {
+        "name": "onion",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "bacon",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "spring onion"
+      },
+      {
+        "name": "salt"
+      },
+      {
+        "name": "pepper"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Broetchen.jpg?updatedAt=1756588686855",
-    "file": "recipes/breadAndBakedDishes/Broetchen.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Flammkuchen.jpg?updatedAt=1756588836369",
+    "file": "recipes/breadAndBakedDishes/Flammkuchen.html"
   }
 ]

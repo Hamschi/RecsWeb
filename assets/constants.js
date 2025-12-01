@@ -26,6 +26,8 @@ const CATEGORY_BADGES = {
   dressing:     { label: "dressing",     cls: "bg-sauce" },
   stew: {label: "stew", cls: "bg-stew"},
   curry: {label: "curry", cls: "bg-curry"},
+  bakeddishes: {label: "bakedDishes", cls: "bg-bakedDishes"},
+  sandwiches: {label: "sandwiches", cls: "bg-bakedDishes"},
   
   noodles:    { label: "noodles",    cls: "bg-grain" },
   rice:    { label: "rice",    cls: "bg-grain" },
@@ -51,7 +53,6 @@ const CATEGORY_BADGES = {
   cake:    	  { label: "cake",    cls: "bg-dessert" },
   snacks: {label: "snacks", cls: "bg-snacks"},
   soup:       { label: "soup",       cls: "bg-soup" },
-
   drink:       { label: "drink",       cls: "bg-drink" }
 };
 
