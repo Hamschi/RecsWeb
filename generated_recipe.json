@@ -1,76 +1,92 @@
 [
   {
-    "title": "Canh Cá",
+    "title": "Chili con Carne",
     "categories": [
-      "Vietnam",
-      "soup",
-      "fish"
+      "America",
+      "stew",
+      "beef"
     ],
     "activeTime": 20,
-    "passiveTime": 15,
-    "totalTime": 35,
-    "servings": 4,
+    "passiveTime": 65,
+    "totalTime": 85,
+    "servings": 3,
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "Mama",
+    "source": "https://youtu.be/5Do5f8b4cfY?feature=shared",
     "ingredients": [
       {
-        "name": "lemongrass",
-        "amount": 1,
-        "unit": "stalk"
+        "name": "ground beef",
+        "amount": 500,
+        "unit": "g"
       },
       {
-        "name": "tomato",
-        "amount": 1,
-        "unit": "pcs"
-      },
-      {
-        "name": "dracontomelon fruits",
+        "name": "onions",
         "amount": 2,
         "unit": "pcs"
       },
       {
-        "name": "pineapple",
-        "amount": "5-6",
-        "unit": "pcs"
-      },
-      {
         "name": "garlic",
-        "amount": 1,
-        "unit": "clove"
+        "amount": 4,
+        "unit": "cloves"
       },
       {
-        "name": "onion",
-        "amount": 0.5,
+        "name": "chili",
+        "amount": 1,
         "unit": "pcs"
       },
       {
-        "name": "salt",
+        "name": "thai chili",
         "amount": 1,
-        "unit": "tsp"
+        "unit": "pcs"
       },
       {
-        "name": "water",
-        "amount": 750,
+        "name": "tomatoes (peeled)",
+        "amount": 2,
+        "unit": "cans"
+      },
+      {
+        "name": "kidney beans",
+        "amount": 2,
+        "unit": "small cans"
+      },
+      {
+        "name": "vegetable broth",
+        "amount": 300,
         "unit": "ml"
       },
       {
-        "name": "fish",
-        "amount": 300,
-        "unit": "g"
+        "name": "tomato paste",
+        "amount": 1.5,
+        "unit": "tbsp"
       },
       {
-        "name": "sugar",
+        "name": "cinnamon",
+        "amount": 1,
+        "unit": "stick"
+      },
+      {
+        "name": "paprika powder",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "ground cumin",
         "amount": 0.5,
         "unit": "tsp"
       },
       {
-        "name": "dill"
+        "name": "salt"
+      },
+      {
+        "name": "pepper"
+      },
+      {
+        "name": "corn (optional)"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/VietnameseFishSoup.jpg?updatedAt=1765195401077",
-    "file": "recipes/soups/CanhCa.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ChiliConCarne.jpg?updatedAt=1756588718180",
+    "file": "recipes/soups/ChiliConCarne.html"
   }
 ]

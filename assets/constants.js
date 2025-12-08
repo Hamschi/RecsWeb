@@ -34,6 +34,7 @@ const CATEGORY_BADGES = {
   potato: {label: "potato", cls: "bg-grain"},
   breads: {label: "breads", cls: "bg-grain"},
 
+  america: {label: "america", cls: "bg-country"},
   china:      { label: "china",      cls: "bg-country" },
   mongolia: {label: "mongolia", cls: "bg-country"},
   italy:      { label: "italy",      cls: "bg-country" },
@@ -64,6 +65,7 @@ const COUNTRY_FLAGS = {
   france: "fr",
   spain: "es",
   usa: "us",
+  america: "us",
   korea: "kr",  
   japan: "jp",
   china: "cn",
