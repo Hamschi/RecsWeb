@@ -1,79 +1,76 @@
 [
   {
-    "title": "Lángos",
+    "title": "Canh Cá",
     "categories": [
-      "Hungary",
-      "streetfood",
-      "vegetarian"
+      "Vietnam",
+      "soup",
+      "fish"
     ],
-    "activeTime": 40,
-    "passiveTime": 85,
-    "totalTime": 105,
-    "servings": 6,
+    "activeTime": 20,
+    "passiveTime": 15,
+    "totalTime": 35,
+    "servings": 4,
     "difficulty": "easy",
     "originality": 5,
-    "taste": 4,
+    "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/hIgdBWdWvIc?si=eZ3PIt0cIbfXGMaa",
+    "source": "Mama",
     "ingredients": [
       {
-        "name": "garlic",
-        "amount": "2-3",
-        "unit": "cloves"
+        "name": "lemongrass",
+        "amount": 1,
+        "unit": "stalk"
       },
       {
-        "name": "oil",
-        "amount": 50,
-        "unit": "ml"
+        "name": "tomato",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "dracontomelon fruits",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "pineapple",
+        "amount": "5-6",
+        "unit": "pcs"
+      },
+      {
+        "name": "garlic",
+        "amount": 1,
+        "unit": "clove"
+      },
+      {
+        "name": "onion",
+        "amount": 0.5,
+        "unit": "pcs"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp"
       },
       {
         "name": "water",
-        "amount": 50,
+        "amount": 750,
         "unit": "ml"
       },
       {
-        "name": "salt",
-        "amount": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "flour",
-        "amount": 500,
+        "name": "fish",
+        "amount": 300,
         "unit": "g"
-      },
-      {
-        "name": "water (lukewarm)",
-        "amount": 350,
-        "unit": "ml"
       },
       {
         "name": "sugar",
-        "amount": 2,
+        "amount": 0.5,
         "unit": "tsp"
       },
       {
-        "name": "yeast (fresh)",
-        "amount": 20,
-        "unit": "g"
-      },
-      {
-        "name": "salt",
-        "amount": 1,
-        "unit": "tbsp"
-      },
-      {
-        "name": "oil",
-        "amount": 100,
-        "unit": "ml"
-      },
-      {
-        "name": "oil for frying"
-      },
-      {
-        "name": "Toppings: sour cream, cheese (cheddar, gouda),..."
+        "name": "dill"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Langos.jpg?updatedAt=1756588923878",
-    "file": "recipes/streetfood/Langos.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/VietnameseFishSoup.jpg?updatedAt=1765195401077",
+    "file": "recipes/soups/CanhCa.html"
   }
 ]

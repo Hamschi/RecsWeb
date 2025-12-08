@@ -2498,5 +2498,79 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Langos.jpg?updatedAt=1756588923878",
     "file": "recipes/streetfood/Langos.html"
+  },
+  {
+    "title": "Canh Cá",
+    "categories": [
+      "Vietnam",
+      "soup",
+      "fish"
+    ],
+    "activeTime": 20,
+    "passiveTime": 15,
+    "totalTime": 35,
+    "servings": 4,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "Mama",
+    "ingredients": [
+      {
+        "name": "lemongrass",
+        "amount": 1,
+        "unit": "stalk"
+      },
+      {
+        "name": "tomato",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "dracontomelon fruits",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "pineapple",
+        "amount": "5-6",
+        "unit": "pcs"
+      },
+      {
+        "name": "garlic",
+        "amount": 1,
+        "unit": "clove"
+      },
+      {
+        "name": "onion",
+        "amount": 0.5,
+        "unit": "pcs"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "water",
+        "amount": 750,
+        "unit": "ml"
+      },
+      {
+        "name": "fish",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "name": "sugar",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "dill"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/VietnameseFishSoup.jpg?updatedAt=1765195401077",
+    "file": "recipes/soups/CanhCa.html"
   }
 ]
