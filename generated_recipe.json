@@ -1,92 +1,146 @@
 [
   {
-    "title": "Chili con Carne",
+    "title": "Bò hầm kiểu Pháp",
     "categories": [
-      "America",
+      "Vietnam",
       "stew",
       "beef"
     ],
-    "activeTime": 20,
-    "passiveTime": 65,
-    "totalTime": 85,
-    "servings": 3,
+    "activeTime": 50,
+    "passiveTime": 50,
+    "totalTime": 100,
+    "servings": 4,
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/5Do5f8b4cfY?feature=shared",
+    "source": "https://youtu.be/4X2ksdsF400?si=knRAdLthJsqzWmio",
     "ingredients": [
       {
-        "name": "ground beef",
+        "name": "water",
         "amount": 500,
-        "unit": "g"
-      },
-      {
-        "name": "onions",
-        "amount": 2,
-        "unit": "pcs"
-      },
-      {
-        "name": "garlic",
-        "amount": 4,
-        "unit": "cloves"
-      },
-      {
-        "name": "chili",
-        "amount": 1,
-        "unit": "pcs"
-      },
-      {
-        "name": "thai chili",
-        "amount": 1,
-        "unit": "pcs"
-      },
-      {
-        "name": "tomatoes (peeled)",
-        "amount": 2,
-        "unit": "cans"
-      },
-      {
-        "name": "kidney beans",
-        "amount": 2,
-        "unit": "small cans"
-      },
-      {
-        "name": "vegetable broth",
-        "amount": 300,
         "unit": "ml"
       },
       {
-        "name": "tomato paste",
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "potatoes",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "carrots",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "name": "celery",
+        "amount": 2,
+        "unit": "stalks"
+      },
+      {
+        "name": "shallot",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "name": "garlic",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "parsley",
+        "amount": 1,
+        "unit": "handful"
+      },
+      {
+        "name": "beef",
+        "amount": 1,
+        "unit": "kg"
+      },
+      {
+        "name": "shimeji mashroom (alternatively champignon)",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "butter"
+      },
+      {
+        "name": "chili sauce (e.g. Chin Su)",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "strained tomatoes",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "oyster sauce",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "red wine",
+        "amount": 80,
+        "unit": "ml"
+      },
+      {
+        "name": "chicken stock powder",
         "amount": 1.5,
         "unit": "tbsp"
       },
       {
-        "name": "cinnamon",
+        "name": "garlic powder",
         "amount": 1,
-        "unit": "stick"
+        "unit": "tsp"
       },
       {
-        "name": "paprika powder",
-        "amount": 2,
+        "name": "sugar",
+        "amount": 4,
         "unit": "tbsp"
       },
       {
-        "name": "ground cumin",
+        "name": "pepper",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "salt",
         "amount": 0.5,
         "unit": "tsp"
       },
       {
-        "name": "salt"
+        "name": "water",
+        "amount": 700,
+        "unit": "ml"
       },
       {
-        "name": "pepper"
+        "name": "chili sauce",
+        "amount": 1,
+        "unit": "tbsp"
       },
       {
-        "name": "corn (optional)"
+        "name": "butter",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "name": "red wine",
+        "amount": 40,
+        "unit": "ml"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ChiliConCarne.jpg?updatedAt=1756588718180",
-    "file": "recipes/soups/ChiliConCarne.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/BoHamKieuPhap.jpg?updatedAt=1765198007545",
+    "file": "recipes/soups/BoHamKieuPhap.html"
   }
 ]
