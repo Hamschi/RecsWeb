@@ -1,146 +1,43 @@
 [
   {
-    "title": "Bò hầm kiểu Pháp",
+    "title": "Trứng tráng",
     "categories": [
       "Vietnam",
-      "stew",
-      "beef"
+      "egg"
     ],
-    "activeTime": 50,
-    "passiveTime": 50,
-    "totalTime": 100,
-    "servings": 4,
+    "activeTime": 5,
+    "passiveTime": 3,
+    "totalTime": 8,
+    "servings": 2,
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/4X2ksdsF400?si=knRAdLthJsqzWmio",
+    "source": "Mama",
     "ingredients": [
       {
-        "name": "water",
-        "amount": 500,
-        "unit": "ml"
-      },
-      {
-        "name": "salt",
-        "amount": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "potatoes",
-        "amount": 400,
-        "unit": "g"
-      },
-      {
-        "name": "carrots",
-        "amount": 300,
-        "unit": "g"
-      },
-      {
-        "name": "celery",
-        "amount": 2,
-        "unit": "stalks"
-      },
-      {
-        "name": "shallot",
-        "amount": 15,
-        "unit": "g"
-      },
-      {
-        "name": "garlic",
-        "amount": 40,
-        "unit": "g"
-      },
-      {
-        "name": "onion",
-        "amount": 1,
+        "name": "eggs",
+        "amount": 3,
         "unit": "pcs"
       },
       {
-        "name": "parsley",
-        "amount": 1,
-        "unit": "handful"
-      },
-      {
-        "name": "beef",
-        "amount": 1,
-        "unit": "kg"
-      },
-      {
-        "name": "shimeji mashroom (alternatively champignon)",
-        "amount": 100,
-        "unit": "g"
-      },
-      {
-        "name": "butter"
-      },
-      {
-        "name": "chili sauce (e.g. Chin Su)",
-        "amount": 2,
-        "unit": "tbsp"
-      },
-      {
-        "name": "strained tomatoes",
-        "amount": 200,
-        "unit": "g"
-      },
-      {
-        "name": "oyster sauce",
+        "name": "spring onion",
         "amount": 3,
-        "unit": "tbsp"
+        "unit": "stalks"
       },
       {
-        "name": "red wine",
-        "amount": 80,
-        "unit": "ml"
-      },
-      {
-        "name": "chicken stock powder",
-        "amount": 1.5,
-        "unit": "tbsp"
-      },
-      {
-        "name": "garlic powder",
-        "amount": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "sugar",
-        "amount": 4,
-        "unit": "tbsp"
-      },
-      {
-        "name": "pepper",
-        "amount": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "salt",
-        "amount": 0.5,
-        "unit": "tsp"
-      },
-      {
-        "name": "water",
-        "amount": 700,
-        "unit": "ml"
-      },
-      {
-        "name": "chili sauce",
+        "name": "fish sauce",
         "amount": 1,
         "unit": "tbsp"
       },
       {
-        "name": "butter",
-        "amount": 10,
-        "unit": "g"
+        "name": "MSG"
       },
       {
-        "name": "red wine",
-        "amount": 40,
-        "unit": "ml"
+        "name": "pepper"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/BoHamKieuPhap.jpg?updatedAt=1765198007545",
-    "file": "recipes/soups/BoHamKieuPhap.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/TrungTrang.jpg?updatedAt=1765799663719",
+    "file": "recipes/egg/TrungTrang.html"
   }
 ]

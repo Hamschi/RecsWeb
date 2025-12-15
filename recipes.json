@@ -2806,5 +2806,46 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/BoHamKieuPhap.jpg?updatedAt=1765198007545",
     "file": "recipes/soups/BoHamKieuPhap.html"
+  },
+  {
+    "title": "Trứng tráng",
+    "categories": [
+      "Vietnam",
+      "egg"
+    ],
+    "activeTime": 5,
+    "passiveTime": 3,
+    "totalTime": 8,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "Mama",
+    "ingredients": [
+      {
+        "name": "eggs",
+        "amount": 3,
+        "unit": "pcs"
+      },
+      {
+        "name": "spring onion",
+        "amount": 3,
+        "unit": "stalks"
+      },
+      {
+        "name": "fish sauce",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "MSG"
+      },
+      {
+        "name": "pepper"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/TrungTrang.jpg?updatedAt=1765799663719",
+    "file": "recipes/egg/TrungTrang.html"
   }
 ]

@@ -19,6 +19,7 @@ const CATEGORY_BADGES = {
   pork: 	  { label: "pork", cls: "bg-meat" },
   fish: {label: "fish", cls: "bg-primary"},
   seafood: {label: "seafood", cls: "bg-primary"},
+  egg: {label: "egg", cls: "bg-egg"},
   
   basics:     { label: "basics",     cls: "bg-secondary" },
   component: {label: "component", cls: "bg-secondary"},
