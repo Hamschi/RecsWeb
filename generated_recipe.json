@@ -1,43 +1,63 @@
 [
   {
-    "title": "Trứng tráng",
+    "title": "Eiersalat",
     "categories": [
-      "Vietnam",
-      "egg"
+      "Germany",
+      "egg",
+      "vegetarian"
     ],
-    "activeTime": 5,
-    "passiveTime": 3,
-    "totalTime": 8,
-    "servings": 2,
+    "activeTime": 10,
+    "passiveTime": 190,
+    "totalTime": 200,
+    "servings": 4,
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "Mama",
+    "source": "https://www.gutekueche.at/klassischer-eiersalat-rezept-24947",
     "ingredients": [
       {
         "name": "eggs",
-        "amount": 3,
+        "amount": 8,
         "unit": "pcs"
       },
       {
-        "name": "spring onion",
-        "amount": 3,
-        "unit": "stalks"
+        "name": "mayonnaise",
+        "amount": 2,
+        "unit": "tbsp"
       },
       {
-        "name": "fish sauce",
+        "name": "salt",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "pepper",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "vinegar",
         "amount": 1,
         "unit": "tbsp"
       },
       {
-        "name": "MSG"
+        "name": "sour cream",
+        "amount": 2,
+        "unit": "tbsp"
       },
       {
-        "name": "pepper"
+        "name": "mustard",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "name": "chives",
+        "amount": 1,
+        "unit": "handful"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/TrungTrang.jpg?updatedAt=1765799663719",
-    "file": "recipes/egg/TrungTrang.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Eiersalat.jpg?updatedAt=1756588726115",
+    "file": "recipes/egg/Eiersalat.html"
   }
 ]
