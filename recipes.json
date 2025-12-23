@@ -3069,5 +3069,93 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/FriedPorkBelly.jpg?updatedAt=1766530727615",
     "file": "recipes/pork/FriedPorkBelly.html"
+  },
+  {
+    "title": "Thịt Kho Tàu",
+    "categories": [
+      "Vietnam",
+      "pork"
+    ],
+    "activeTime": 30,
+    "passiveTime": 180,
+    "totalTime": 210,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "N/A",
+    "ingredients": [
+      {
+        "name": "eggs",
+        "amount": 6,
+        "unit": "pcs"
+      },
+      {
+        "name": "pork belly",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "garlic",
+        "amount": 1,
+        "unit": "clove"
+      },
+      {
+        "name": "sugar",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "chicken stock powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "fish sauce",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "soy sauce (dark)",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "garlic",
+        "amount": 2,
+        "unit": "cloves"
+      },
+      {
+        "name": "onion",
+        "amount": 0.5,
+        "unit": "pcs"
+      },
+      {
+        "name": "sugar",
+        "amount": 2,
+        "unit": "tsp"
+      },
+      {
+        "name": "coconut water (optional)",
+        "amount": "500-800",
+        "unit": "ml"
+      },
+      {
+        "name": "boiling water"
+      },
+      {
+        "name": "Thai chili",
+        "amount": 1,
+        "unit": "pcs"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ThitKhoTau.jpg?updatedAt=1756589007940",
+    "file": "recipes/pork/ThitKhoTau.html"
   }
 ]
