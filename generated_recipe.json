@@ -1,62 +1,45 @@
 [
   {
-    "title": "Pork in oyster sauce",
+    "title": "Fried Vietnamese Pork Belly",
     "categories": [
       "Vietnam",
       "pork"
     ],
-    "activeTime": 25,
-    "passiveTime": 60,
-    "totalTime": 85,
-    "servings": 4,
+    "activeTime": 10,
+    "passiveTime": 40,
+    "totalTime": 50,
+    "servings": 2,
     "difficulty": "easy",
     "originality": 5,
     "taste": 4,
-    "status": "done",
+    "status": "",
     "source": "Mama",
     "ingredients": [
       {
-        "name": "pork loin",
+        "name": "pork belly",
         "amount": 500,
         "unit": "g"
       },
       {
-        "name": "oyster sauce",
+        "name": "fish sauce",
         "amount": 3,
         "unit": "tbsp"
       },
       {
-        "name": "fish sauce",
-        "amount": 3,
-        "unit": "tsp"
-      },
-      {
-        "name": "sugar",
-        "amount": 1,
-        "unit": "heaped tsp"
-      },
-      {
-        "name": "salt",
-        "amount": 0.5,
-        "unit": "tsp"
-      },
-      {
-        "name": "soy sauce (dark)",
-        "amount": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "onion",
-        "amount": 1,
-        "unit": "pcs"
+        "name": "pepper"
       },
       {
         "name": "water",
-        "amount": 1,
-        "unit": "dash"
+        "amount": "2-3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "soy sauce (dark)",
+        "amount": 0.5,
+        "unit": "tsp"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/PorkInOysterSauce.jpg?updatedAt=1766530298584",
-    "file": "recipes/pork/PorkInOysterSauce.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/FriedPorkBelly.jpg?updatedAt=1766530727615",
+    "file": "recipes/pork/FriedPorkBelly.html"
   }
 ]
