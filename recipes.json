@@ -2966,5 +2966,65 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ThitGian.jpg?updatedAt=1756588999750",
     "file": "recipes/pork/ThitGian.html"
+  },
+  {
+    "title": "Pork in oyster sauce",
+    "categories": [
+      "Vietnam",
+      "pork"
+    ],
+    "activeTime": 25,
+    "passiveTime": 60,
+    "totalTime": 85,
+    "servings": 4,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 4,
+    "status": "done",
+    "source": "Mama",
+    "ingredients": [
+      {
+        "name": "pork loin",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "oyster sauce",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "fish sauce",
+        "amount": 3,
+        "unit": "tsp"
+      },
+      {
+        "name": "sugar",
+        "amount": 1,
+        "unit": "heaped tsp"
+      },
+      {
+        "name": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "soy sauce (dark)",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "onion",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "water",
+        "amount": 1,
+        "unit": "dash"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/PorkInOysterSauce.jpg?updatedAt=1766530298584",
+    "file": "recipes/pork/PorkInOysterSauce.html"
   }
 ]
