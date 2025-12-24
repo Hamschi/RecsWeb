@@ -3372,5 +3372,104 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ChickenChopSuey.jpg?updatedAt=1757778230397",
     "file": "recipes/chicken/ChickenChopSuey.html"
+  },
+  {
+    "title": "Hühnerfrikassee",
+    "categories": [
+      "Germany",
+      "stew",
+      "chicken"
+    ],
+    "activeTime": 30,
+    "passiveTime": 25,
+    "totalTime": 55,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/u1x5jUxGUI4?si=uw99joTSQC5v5v43",
+    "ingredients": [
+      {
+        "name": "butter",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "chicken breast",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "flour",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "pepper",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "champignons (white, large)",
+        "amount": 4,
+        "unit": "pcs"
+      },
+      {
+        "name": "onion (white)",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "butter",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "white wine",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "name": "vegetable stock",
+        "amount": 400,
+        "unit": "ml"
+      },
+      {
+        "name": "cream",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "name": "salt"
+      },
+      {
+        "name": "flour",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "lemon juice",
+        "amount": "1-2",
+        "unit": "splashes"
+      },
+      {
+        "name": "crème fraîche",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "lemon zest (optional)",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Huehnerfrikassee.jpg?updatedAt=1756588887710",
+    "file": "recipes/chicken/Huehnerfrikassee.html"
   }
 ]

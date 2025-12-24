@@ -1,67 +1,33 @@
 [
   {
-    "title": "Chicken Chop Suey",
+    "title": "Hühnerfrikassee",
     "categories": [
-      "China",
+      "Germany",
+      "stew",
       "chicken"
     ],
-    "activeTime": 20,
-    "passiveTime": 5,
-    "totalTime": 25,
+    "activeTime": 30,
+    "passiveTime": 25,
+    "totalTime": 55,
     "servings": 2,
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/ebc6PG9_oNs?si=lPn5uf6q0WB2iQ3-",
+    "source": "https://youtu.be/u1x5jUxGUI4?si=uw99joTSQC5v5v43",
     "ingredients": [
       {
+        "name": "butter",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
         "name": "chicken breast",
-        "amount": 180,
+        "amount": 400,
         "unit": "g"
       },
       {
-        "name": "tapioca starch (alternatively: corn starch)",
-        "amount": 0.5,
-        "unit": "tsp"
-      },
-      {
-        "name": "salt",
-        "amount": 1,
-        "unit": "pinch"
-      },
-      {
-        "name": "water",
-        "amount": 1,
-        "unit": "tbsp"
-      },
-      {
-        "name": "oil",
-        "amount": 1,
-        "unit": "drop"
-      },
-      {
-        "name": "soy sauce (light)",
-        "amount": 1,
-        "unit": "tbsp"
-      },
-      {
-        "name": "soy sauce (dark)",
-        "amount": 0.5,
-        "unit": "tbsp"
-      },
-      {
-        "name": "oyster sauce",
-        "amount": 2,
-        "unit": "tbsp"
-      },
-      {
-        "name": "sesame oil",
-        "amount": 0.5,
-        "unit": "tsp"
-      },
-      {
-        "name": "tapioca starch (alternatively corn starch)",
+        "name": "flour",
         "amount": 1,
         "unit": "tbsp"
       },
@@ -71,52 +37,65 @@
         "unit": "pinch"
       },
       {
-        "name": "pepper (white)",
-        "amount": 0.25,
-        "unit": "tsp"
+        "name": "pepper",
+        "amount": 1,
+        "unit": "pinch"
       },
       {
-        "name": "water",
+        "name": "champignons (white, large)",
         "amount": 4,
+        "unit": "pcs"
+      },
+      {
+        "name": "onion (white)",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "butter",
+        "amount": 1,
         "unit": "tbsp"
       },
       {
-        "name": "onion",
-        "amount": 0.5,
-        "unit": "pcs"
+        "name": "white wine",
+        "amount": 100,
+        "unit": "ml"
       },
       {
-        "name": "garlic",
+        "name": "vegetable stock",
+        "amount": 400,
+        "unit": "ml"
+      },
+      {
+        "name": "cream",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "name": "salt"
+      },
+      {
+        "name": "flour",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "lemon juice",
+        "amount": "1-2",
+        "unit": "splashes"
+      },
+      {
+        "name": "crème fraîche",
         "amount": 2,
-        "unit": "cloves"
+        "unit": "tbsp"
       },
       {
-        "name": "carrot (small)",
+        "name": "lemon zest (optional)",
         "amount": 1,
-        "unit": "pcs"
-      },
-      {
-        "name": "sugar snap peas",
-        "amount": 1,
-        "unit": "handful"
-      },
-      {
-        "name": "baby corn",
-        "amount": 3,
-        "unit": "pcs"
-      },
-      {
-        "name": "champignon",
-        "amount": 3,
-        "unit": "pcs"
-      },
-      {
-        "name": "mung bean sprouts",
-        "amount": 1,
-        "unit": "handful"
+        "unit": "tsp"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ChickenChopSuey.jpg?updatedAt=1757778230397",
-    "file": "recipes/chicken/ChickenChopSuey.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Huehnerfrikassee.jpg?updatedAt=1756588887710",
+    "file": "recipes/chicken/Huehnerfrikassee.html"
   }
 ]
