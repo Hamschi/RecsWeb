@@ -1,24 +1,24 @@
 [
   {
-    "title": "Wiener Schnitzel",
+    "title": "Steak",
     "categories": [
-      "Austria",
-      "beef"
+      "beef",
+      "basics"
     ],
-    "activeTime": 25,
+    "activeTime": 15,
     "passiveTime": 0,
-    "totalTime": 25,
-    "servings": 2,
-    "difficulty": "easy",
+    "totalTime": 15,
+    "servings": 1,
+    "difficulty": "medium",
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/B-wd3wuER3Y?si=qNQtl0le072t9jCq",
+    "source": "https://youtu.be/7qX18EdNpVk?si=EbnvYPenqEZC5umU",
     "ingredients": [
       {
-        "name": "veal schnitzels (top round)",
-        "amount": 2,
-        "unit": "pcs"
+        "name": "steak (about 2cm thick)",
+        "amount": 300,
+        "unit": "g"
       },
       {
         "name": "salt"
@@ -27,26 +27,25 @@
         "name": "pepper"
       },
       {
-        "name": "eggs",
+        "name": "vegetable oil for frying"
+      },
+      {
+        "name": "garlic",
         "amount": 3,
-        "unit": "pcs"
+        "unit": "cloves"
       },
       {
-        "name": "breadcrumps"
-      },
-      {
-        "name": "flour"
+        "name": "thyme",
+        "amount": 0.5,
+        "unit": "handful"
       },
       {
         "name": "butter",
         "amount": 1,
-        "unit": "knob"
-      },
-      {
-        "name": "oil for frying"
+        "unit": "tbsp"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Wienerschnitzel.jpg?updatedAt=1756589018295",
-    "file": "recipes/beef/WienerSchnitzel.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Steak2.jpg?updatedAt=1756588997016",
+    "file": "recipes/beef/Steak.html"
   }
 ]
