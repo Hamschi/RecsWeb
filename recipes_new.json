@@ -3471,5 +3471,117 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Huehnerfrikassee.jpg?updatedAt=1756588887710",
     "file": "recipes/chicken/Huehnerfrikassee.html"
+  },
+  {
+    "title": "Chicken Shawarma",
+    "categories": [
+      "Lebanon",
+      "sandwiches",
+      "chicken"
+    ],
+    "activeTime": 40,
+    "passiveTime": 45,
+    "totalTime": 95,
+    "servings": 4,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://amateurprochef.com/2025/01/14/chicken-shawarma-super-easy/",
+    "ingredients": [
+      {
+        "name": "chicken (breast or tighs)",
+        "amount": 900,
+        "unit": "g"
+      },
+      {
+        "name": "salt"
+      },
+      {
+        "name": "pepper",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "garlic powder",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "onion powder",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "cumin",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "turmeric",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "red chili powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "tomato paste",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "lemon",
+        "amount": 0.5,
+        "unit": "pcs"
+      },
+      {
+        "name": "olive oil",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "tomato",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "cucumber",
+        "amount": 0.5,
+        "unit": "pcs"
+      },
+      {
+        "name": "garlic toum"
+      },
+      {
+        "name": "lemon juice",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "coriander (chopped)",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "onion (red, large)",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "sumac",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "pita bread",
+        "amount": 8,
+        "unit": "pcs"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ChickenShawarma.jpg?updatedAt=1756588718844",
+    "file": "recipes/breadAndBakedDishes/ChickenShawarma.html"
   }
 ]

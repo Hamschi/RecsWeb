@@ -135,6 +135,7 @@ CATEGORIE_BADGE = {
     "Italy": "bg-country",
     "Japan": "bg-country",
 	"Hungary": "bg-country",
+	"Lebanon": "bg-country",
     "Korea": "bg-country",
     "Mexico": "bg-country", 
     "Spain": "bg-country",
