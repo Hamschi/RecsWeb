@@ -3583,5 +3583,55 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ChickenShawarma.jpg?updatedAt=1756588718844",
     "file": "recipes/breadAndBakedDishes/ChickenShawarma.html"
+  },
+  {
+    "title": "Wiener Schnitzel",
+    "categories": [
+      "Austria",
+      "beef"
+    ],
+    "activeTime": 25,
+    "passiveTime": 0,
+    "totalTime": 25,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/B-wd3wuER3Y?si=qNQtl0le072t9jCq",
+    "ingredients": [
+      {
+        "name": "veal schnitzels (top round)",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "salt"
+      },
+      {
+        "name": "pepper"
+      },
+      {
+        "name": "eggs",
+        "amount": 3,
+        "unit": "pcs"
+      },
+      {
+        "name": "breadcrumps"
+      },
+      {
+        "name": "flour"
+      },
+      {
+        "name": "butter",
+        "amount": 1,
+        "unit": "knob"
+      },
+      {
+        "name": "oil for frying"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Wienerschnitzel.jpg?updatedAt=1756589018295",
+    "file": "recipes/beef/WienerSchnitzel.html"
   }
 ]

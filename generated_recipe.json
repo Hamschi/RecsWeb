@@ -1,114 +1,52 @@
 [
   {
-    "title": "Chicken Shawarma",
+    "title": "Wiener Schnitzel",
     "categories": [
-      "Lebanon",
-      "sandwiches",
-      "chicken"
+      "Austria",
+      "beef"
     ],
-    "activeTime": 40,
-    "passiveTime": 45,
-    "totalTime": 95,
-    "servings": 4,
+    "activeTime": 25,
+    "passiveTime": 0,
+    "totalTime": 25,
+    "servings": 2,
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "https://amateurprochef.com/2025/01/14/chicken-shawarma-super-easy/",
+    "source": "https://youtu.be/B-wd3wuER3Y?si=qNQtl0le072t9jCq",
     "ingredients": [
       {
-        "name": "chicken (breast or tighs)",
-        "amount": 900,
-        "unit": "g"
+        "name": "veal schnitzels (top round)",
+        "amount": 2,
+        "unit": "pcs"
       },
       {
         "name": "salt"
       },
       {
-        "name": "pepper",
-        "amount": 1,
-        "unit": "tsp"
+        "name": "pepper"
       },
       {
-        "name": "garlic powder",
-        "amount": 1,
-        "unit": "tbsp"
-      },
-      {
-        "name": "onion powder",
-        "amount": 1,
-        "unit": "tbsp"
-      },
-      {
-        "name": "cumin",
-        "amount": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "turmeric",
-        "amount": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "red chili powder",
-        "amount": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "tomato paste",
-        "amount": 2,
-        "unit": "tbsp"
-      },
-      {
-        "name": "lemon",
-        "amount": 0.5,
-        "unit": "pcs"
-      },
-      {
-        "name": "olive oil",
+        "name": "eggs",
         "amount": 3,
-        "unit": "tbsp"
-      },
-      {
-        "name": "tomato",
-        "amount": 2,
         "unit": "pcs"
       },
       {
-        "name": "cucumber",
-        "amount": 0.5,
-        "unit": "pcs"
+        "name": "breadcrumps"
       },
       {
-        "name": "garlic toum"
+        "name": "flour"
       },
       {
-        "name": "lemon juice",
-        "amount": 2,
-        "unit": "tbsp"
-      },
-      {
-        "name": "coriander (chopped)",
+        "name": "butter",
         "amount": 1,
-        "unit": "tbsp"
+        "unit": "knob"
       },
       {
-        "name": "onion (red, large)",
-        "amount": 1,
-        "unit": "pcs"
-      },
-      {
-        "name": "sumac",
-        "amount": 1,
-        "unit": "tbsp"
-      },
-      {
-        "name": "pita bread",
-        "amount": 8,
-        "unit": "pcs"
+        "name": "oil for frying"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ChickenShawarma.jpg?updatedAt=1756588718844",
-    "file": "recipes/breadAndBakedDishes/ChickenShawarma.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Wienerschnitzel.jpg?updatedAt=1756589018295",
+    "file": "recipes/beef/WienerSchnitzel.html"
   }
 ]
