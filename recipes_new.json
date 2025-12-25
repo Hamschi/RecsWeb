@@ -3807,5 +3807,64 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/BlackPepperSteak.jpg?updatedAt=1756588687122",
     "file": "recipes/beef/StirBlackPepperSteak.html"
+  },
+  {
+    "title": "Thịt bò xào",
+    "categories": [
+      "Vietnam",
+      "beef"
+    ],
+    "activeTime": 15,
+    "passiveTime": 60,
+    "totalTime": 75,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 4,
+    "status": "need pic",
+    "source": "Mama",
+    "ingredients": [
+      {
+        "name": "beef",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "fish sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "pepper"
+      },
+      {
+        "name": "MSG"
+      },
+      {
+        "name": "oil for frying"
+      },
+      {
+        "name": "garlic",
+        "amount": 1,
+        "unit": "clove"
+      },
+      {
+        "name": "onion (red)",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "oyster sauce",
+        "amount": 2,
+        "unit": "tsp"
+      },
+      {
+        "name": "spring onion",
+        "amount": 2,
+        "unit": "stalks"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ThitBoXao.jpg?updatedAt=1766620332089",
+    "file": "recipes/beef/ThitBoXao.html"
   }
 ]

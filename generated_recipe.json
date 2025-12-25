@@ -1,127 +1,61 @@
 [
   {
-    "title": "Stir Black Pepper Steak",
+    "title": "Thịt bò xào",
     "categories": [
-      "China",
+      "Vietnam",
       "beef"
     ],
-    "activeTime": 35,
-    "passiveTime": 40,
+    "activeTime": 15,
+    "passiveTime": 60,
     "totalTime": 75,
-    "servings": 3,
+    "servings": 2,
     "difficulty": "easy",
     "originality": 5,
-    "taste": 5,
-    "status": "done",
-    "source": "https://www.youtube.com/watch?v=OamwXhsfIlM&list=PLwXqhx9ZM-a_VsqCvTGJoXphf10mSI_Jf&index=39&ab_channel=LamThaiDimSum",
+    "taste": 4,
+    "status": "need pic",
+    "source": "Mama",
     "ingredients": [
       {
-        "name": "beef (preferably flank steak)",
-        "amount": 450,
+        "name": "beef",
+        "amount": 200,
         "unit": "g"
       },
       {
-        "name": "water",
-        "amount": 60,
-        "unit": "ml"
-      },
-      {
-        "name": "baking soda",
-        "amount": 0.5,
-        "unit": "tsp"
-      },
-      {
-        "name": "egg",
-        "amount": 1,
-        "unit": "pcs"
-      },
-      {
-        "name": "garlic powder",
-        "amount": 0.5,
-        "unit": "tsp"
-      },
-      {
-        "name": "potato starch (alternatively: tapioca starch)",
-        "amount": 0.5,
-        "unit": "handful"
-      },
-      {
-        "name": "oil",
-        "amount": 1,
-        "unit": "splash"
-      },
-      {
-        "name": "chicken stock (alternatively water + MSG)",
-        "amount": 230,
-        "unit": "ml"
-      },
-      {
-        "name": "salt",
-        "amount": 0.3,
-        "unit": "tsp"
-      },
-      {
-        "name": "chicken stock powder",
-        "amount": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "sugar",
-        "amount": 3,
-        "unit": "tsp"
-      },
-      {
-        "name": "oyster sauce",
-        "amount": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "soy sauce (light)",
-        "amount": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "soy sauce (dark)",
-        "amount": 0.25,
-        "unit": "tsp"
-      },
-      {
-        "name": "pepper",
-        "amount": 0.3,
-        "unit": "tsp"
-      },
-      {
-        "name": "sesame oil",
-        "amount": 0.5,
-        "unit": "tsp"
-      },
-      {
-        "name": "bell pepper (green)",
-        "amount": 1,
-        "unit": "pcs"
-      },
-      {
-        "name": "bell pepper (red)",
-        "amount": 1,
-        "unit": "pcs"
-      },
-      {
-        "name": "onion",
-        "amount": 1,
-        "unit": "pcs"
-      },
-      {
-        "name": "potato starch (alternatively tapioca starch)",
-        "amount": 1,
+        "name": "fish sauce",
+        "amount": 2,
         "unit": "tbsp"
       },
       {
-        "name": "water",
-        "amount": 60,
-        "unit": "ml"
+        "name": "pepper"
+      },
+      {
+        "name": "MSG"
+      },
+      {
+        "name": "oil for frying"
+      },
+      {
+        "name": "garlic",
+        "amount": 1,
+        "unit": "clove"
+      },
+      {
+        "name": "onion (red)",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "oyster sauce",
+        "amount": 2,
+        "unit": "tsp"
+      },
+      {
+        "name": "spring onion",
+        "amount": 2,
+        "unit": "stalks"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/BlackPepperSteak.jpg?updatedAt=1756588687122",
-    "file": "recipes/beef/StirBlackPepperSteak.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ThitBoXao.jpg?updatedAt=1766620332089",
+    "file": "recipes/beef/ThitBoXao.html"
   }
 ]
