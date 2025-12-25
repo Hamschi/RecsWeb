@@ -1,61 +1,65 @@
 [
   {
-    "title": "Thịt bò xào",
+    "title": "Ćevapčići",
     "categories": [
-      "Vietnam",
-      "beef"
+      "Bosnia",
+      "beef",
+      "sandwich"
     ],
-    "activeTime": 15,
-    "passiveTime": 60,
-    "totalTime": 75,
-    "servings": 2,
+    "activeTime": 60,
+    "passiveTime": 1440,
+    "totalTime": 1500,
+    "servings": 5,
     "difficulty": "easy",
     "originality": 5,
-    "taste": 4,
-    "status": "need pic",
-    "source": "Mama",
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/Ypqi4zh6yec?si=SItG4Ap1n0UW0LFr",
     "ingredients": [
       {
-        "name": "beef",
-        "amount": 200,
-        "unit": "g"
-      },
-      {
-        "name": "fish sauce",
-        "amount": 2,
-        "unit": "tbsp"
-      },
-      {
-        "name": "pepper"
-      },
-      {
-        "name": "MSG"
-      },
-      {
-        "name": "oil for frying"
+        "name": "water",
+        "amount": 100,
+        "unit": "ml"
       },
       {
         "name": "garlic",
-        "amount": 1,
-        "unit": "clove"
+        "amount": 3,
+        "unit": "cloves"
       },
       {
-        "name": "onion (red)",
-        "amount": 1,
-        "unit": "pcs"
+        "name": "salt",
+        "amount": 20,
+        "unit": "g"
       },
       {
-        "name": "oyster sauce",
+        "name": "pepper (white)",
         "amount": 2,
         "unit": "tsp"
       },
       {
-        "name": "spring onion",
-        "amount": 2,
-        "unit": "stalks"
+        "name": "baking soda",
+        "amount": 1,
+        "unit": "g"
+      },
+      {
+        "name": "ground meat (mixed beef/pork)",
+        "amount": 1,
+        "unit": "kg"
+      },
+      {
+        "name": "beef stock (for spraying while grilling)"
+      },
+      {
+        "name": "Kaymak"
+      },
+      {
+        "name": "onion (diced)"
+      },
+      {
+        "name": "Lepinja bread"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ThitBoXao.jpg?updatedAt=1766620332089",
-    "file": "recipes/beef/ThitBoXao.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Cevapcici.jpg?updatedAt=1757778263765",
+    "file": "recipes/beef/Cevapcici.html"
   }
 ]

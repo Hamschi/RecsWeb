@@ -37,6 +37,7 @@ const CATEGORY_BADGES = {
 
   america: {label: "america", cls: "bg-country"},
   austria: {label: "austria", cls: "bg-country"},
+  bosnia: {label: "bosnia", cls: "bg-country"},
   china:      { label: "china",      cls: "bg-country" },
   mongolia: {label: "mongolia", cls: "bg-country"},
   italy:      { label: "italy",      cls: "bg-country" },
@@ -64,6 +65,7 @@ const CATEGORY_BADGES = {
 // Countries → flag code (for flag-icons CSS)
 const COUNTRY_FLAGS = {
   austria: "at",
+  bosnia: "ba",
   italy: "it",
   germany: "de",
   france: "fr",
