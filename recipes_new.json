@@ -3998,5 +3998,59 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Windbeutel.jpg?updatedAt=1756589018211",
     "file": "recipes/cakesAndPastries/Profiterole.html"
+  },
+  {
+    "title": "Ausstechplätzchen",
+    "categories": [
+      "Germany",
+      "biscuit",
+      "snack"
+    ],
+    "activeTime": 30,
+    "passiveTime": 75,
+    "totalTime": 105,
+    "servings": 6,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 4,
+    "status": "done",
+    "source": "https://www.chefkoch.de/rezepte/899741195381381/RRs-unverwuestliche-Ausstech-Plaetzchen.html",
+    "ingredients": [
+      {
+        "name": "butter",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "sugar",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "name": "egg",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "vanilla sugar",
+        "amount": 1,
+        "unit": "pck"
+      },
+      {
+        "name": "flour",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "baking powder",
+        "amount": 0.5,
+        "unit": "pck"
+      },
+      {
+        "name": "flour when cutting the biscuits"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Ausstechplaetzchen.jpg?updatedAt=1756588648623",
+    "file": "recipes/cakesAndPastries/Ausstechplaetzchen.html"
   }
 ]

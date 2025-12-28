@@ -1,71 +1,56 @@
 [
   {
-    "title": "Profiterole",
+    "title": "Ausstechplätzchen",
     "categories": [
-      "France",
-      "pastry",
-      "snacks"
+      "Germany",
+      "biscuit",
+      "snack"
     ],
     "activeTime": 30,
-    "passiveTime": 70,
-    "totalTime": 100,
-    "servings": 2,
+    "passiveTime": 75,
+    "totalTime": 105,
+    "servings": 6,
     "difficulty": "easy",
     "originality": 5,
-    "taste": 5,
+    "taste": 4,
     "status": "done",
-    "source": "https://youtu.be/h0-izQRo8Xc?feature=shared",
+    "source": "https://www.chefkoch.de/rezepte/899741195381381/RRs-unverwuestliche-Ausstech-Plaetzchen.html",
     "ingredients": [
       {
-        "name": "water",
-        "amount": 125,
-        "unit": "ml"
-      },
-      {
-        "name": "milk",
-        "amount": 125,
-        "unit": "ml"
-      },
-      {
         "name": "butter",
-        "amount": 125,
+        "amount": 250,
         "unit": "g"
       },
       {
-        "name": "salt",
-        "amount": 5,
+        "name": "sugar",
+        "amount": 300,
         "unit": "g"
       },
       {
-        "name": "salt",
-        "amount": 10,
-        "unit": "g"
+        "name": "egg",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "vanilla sugar",
+        "amount": 1,
+        "unit": "pck"
       },
       {
         "name": "flour",
-        "amount": 150,
+        "amount": 500,
         "unit": "g"
       },
       {
-        "name": "eggs",
-        "amount": 4,
-        "unit": "pcs"
+        "name": "baking powder",
+        "amount": 0.5,
+        "unit": "pck"
       },
       {
-        "name": "cream",
-        "amount": 200,
-        "unit": "ml"
-      },
-      {
-        "name": "vanilla pod",
-        "amount": 1,
-        "unit": "pcs"
-      },
-      {
-        "name": "powdered sugar"
+        "name": "flour when cutting the biscuits"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Windbeutel.jpg?updatedAt=1756589018211",
-    "file": "recipes/cakesAndPastries/Profiterole.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Ausstechplaetzchen.jpg?updatedAt=1756588648623",
+    "file": "recipes/cakesAndPastries/Ausstechplaetzchen.html"
   }
 ]
