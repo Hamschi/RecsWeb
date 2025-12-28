@@ -1,58 +1,51 @@
 [
   {
-    "title": "Vanillekipferl",
+    "title": "Heidesand",
     "categories": [
       "Germany",
       "biscuit",
       "snacks"
     ],
     "activeTime": 35,
-    "passiveTime": 85,
-    "totalTime": 120,
+    "passiveTime": 640,
+    "totalTime": 675,
     "servings": 4,
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "https://www.chefkoch.de/rezepte/403911129675192/Uromas-Vanillekipferl.html",
+    "source": "Familie Gherke",
     "ingredients": [
       {
         "name": "butter",
-        "amount": 210,
-        "unit": "g"
-      },
-      {
-        "name": "sugar",
-        "amount": 80,
-        "unit": "g"
-      },
-      {
-        "name": "flour",
         "amount": 250,
         "unit": "g"
       },
       {
+        "name": "sugar",
+        "amount": 160,
+        "unit": "g"
+      },
+      {
         "name": "vanilla sugar",
-        "amount": 2,
+        "amount": 1,
         "unit": "pck"
       },
       {
-        "name": "almonds (grounded)",
-        "amount": 100,
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "flour",
+        "amount": 375,
         "unit": "g"
       },
       {
-        "name": "vanilla sugar (for coating)",
-        "amount": 4,
-        "unit": "pck"
-      },
-      {
-        "name": "sugar (for coating)",
-        "amount": 100,
-        "unit": "g"
+        "name": "sugar (for rolling, option)"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Vanillekipferl.jpg?updatedAt=1756589017558",
-    "file": "recipes/cakesAndPastries/Vanillekipferl.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Heidesand.jpg",
+    "file": "recipes/cakesAndPastries/Heidesand.html"
   }
 ]

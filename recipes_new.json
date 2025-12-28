@@ -4108,5 +4108,54 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Vanillekipferl.jpg?updatedAt=1756589017558",
     "file": "recipes/cakesAndPastries/Vanillekipferl.html"
+  },
+  {
+    "title": "Heidesand",
+    "categories": [
+      "Germany",
+      "biscuit",
+      "snacks"
+    ],
+    "activeTime": 35,
+    "passiveTime": 640,
+    "totalTime": 675,
+    "servings": 4,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "Familie Gherke",
+    "ingredients": [
+      {
+        "name": "butter",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "sugar",
+        "amount": 160,
+        "unit": "g"
+      },
+      {
+        "name": "vanilla sugar",
+        "amount": 1,
+        "unit": "pck"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "flour",
+        "amount": 375,
+        "unit": "g"
+      },
+      {
+        "name": "sugar (for rolling, option)"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Heidesand.jpg",
+    "file": "recipes/cakesAndPastries/Heidesand.html"
   }
 ]
