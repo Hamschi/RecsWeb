@@ -1,51 +1,43 @@
 [
   {
-    "title": "Heidesand",
+    "title": "Avocado Cream",
     "categories": [
-      "Germany",
-      "biscuit",
-      "snacks"
+      "Vietnam",
+      "dessert"
     ],
-    "activeTime": 35,
-    "passiveTime": 640,
-    "totalTime": 675,
-    "servings": 4,
+    "activeTime": 5,
+    "passiveTime": 0,
+    "totalTime": 5,
+    "servings": 1,
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "Familie Gherke",
+    "source": "N/A",
     "ingredients": [
       {
-        "name": "butter",
-        "amount": 250,
-        "unit": "g"
+        "name": "avocado",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "sweetened condensed milk",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "milk (to your liking)"
       },
       {
         "name": "sugar",
-        "amount": 160,
-        "unit": "g"
-      },
-      {
-        "name": "vanilla sugar",
         "amount": 1,
-        "unit": "pck"
+        "unit": "tbsp"
       },
       {
-        "name": "salt",
-        "amount": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "flour",
-        "amount": 375,
-        "unit": "g"
-      },
-      {
-        "name": "sugar (for rolling, option)"
+        "name": "toppings: shredded coconut, coconut chips, dried fruits,... (optional)"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Heidesand.jpg",
-    "file": "recipes/cakesAndPastries/Heidesand.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/AvocadoCream.jpg?updatedAt=1766943243568",
+    "file": "recipes/otherDesserts/AvocadoCream.html"
   }
 ]
