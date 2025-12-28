@@ -56,6 +56,7 @@ const CATEGORY_BADGES = {
   appetizer:    	  { label: "appetizer",    cls: "bg-appetizer" },
   streetfood:    	  { label: "streetfood",    cls: "bg-streetfood" },
   dessert:    { label: "dessert",    cls: "bg-dessert" },
+  otherdesserts:    { label: "otherDesserts",    cls: "bg-dessert" },
   pastry: {label: "pastry", cls: "bg-dessert"},
   biscuit: {label: "biscuit", cls: "bg-dessert"},
   cake:    	  { label: "cake",    cls: "bg-dessert" },

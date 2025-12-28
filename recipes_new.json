@@ -4198,5 +4198,75 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/AvocadoCream.jpg?updatedAt=1766943243568",
     "file": "recipes/otherDesserts/AvocadoCream.html"
+  },
+  {
+    "title": "Carrot Cake Ice Cream",
+    "categories": [
+      "dessert",
+      "otherDesserts"
+    ],
+    "activeTime": 35,
+    "passiveTime": 245,
+    "totalTime": 280,
+    "servings": 8,
+    "difficulty": "easy",
+    "originality": 2,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/_wIry8n-_KM?si=MI25ZcISRVSlsB0C",
+    "ingredients": [
+      {
+        "name": "butter",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "carrots",
+        "amount": "4-5",
+        "unit": "pcs"
+      },
+      {
+        "name": "sugar (brown)",
+        "amount": 180,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "cinnamon",
+        "amount": 1.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "cream cheese",
+        "amount": 113,
+        "unit": "g"
+      },
+      {
+        "name": "sweetened condensed milk",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "vanilla extract",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "heavy cream",
+        "amount": 600,
+        "unit": "ml"
+      },
+      {
+        "name": "mixed nuts",
+        "amount": 100,
+        "unit": "g"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/CarrotCakeIceCream.jpg?updatedAt=1756588700999",
+    "file": "recipes/otherDesserts/CarrotCakeIceCream.html"
   }
 ]
