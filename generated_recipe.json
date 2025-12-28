@@ -1,65 +1,71 @@
 [
   {
-    "title": "Ćevapčići",
+    "title": "Profiterole",
     "categories": [
-      "Bosnia",
-      "beef",
-      "sandwich"
+      "France",
+      "pastry",
+      "snacks"
     ],
-    "activeTime": 60,
-    "passiveTime": 1440,
-    "totalTime": 1500,
-    "servings": 5,
+    "activeTime": 30,
+    "passiveTime": 70,
+    "totalTime": 100,
+    "servings": 2,
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/Ypqi4zh6yec?si=SItG4Ap1n0UW0LFr",
+    "source": "https://youtu.be/h0-izQRo8Xc?feature=shared",
     "ingredients": [
       {
         "name": "water",
-        "amount": 100,
+        "amount": 125,
         "unit": "ml"
       },
       {
-        "name": "garlic",
-        "amount": 3,
-        "unit": "cloves"
+        "name": "milk",
+        "amount": 125,
+        "unit": "ml"
+      },
+      {
+        "name": "butter",
+        "amount": 125,
+        "unit": "g"
       },
       {
         "name": "salt",
-        "amount": 20,
+        "amount": 5,
         "unit": "g"
       },
       {
-        "name": "pepper (white)",
-        "amount": 2,
-        "unit": "tsp"
-      },
-      {
-        "name": "baking soda",
-        "amount": 1,
+        "name": "salt",
+        "amount": 10,
         "unit": "g"
       },
       {
-        "name": "ground meat (mixed beef/pork)",
+        "name": "flour",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "eggs",
+        "amount": 4,
+        "unit": "pcs"
+      },
+      {
+        "name": "cream",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "name": "vanilla pod",
         "amount": 1,
-        "unit": "kg"
+        "unit": "pcs"
       },
       {
-        "name": "beef stock (for spraying while grilling)"
-      },
-      {
-        "name": "Kaymak"
-      },
-      {
-        "name": "onion (diced)"
-      },
-      {
-        "name": "Lepinja bread"
+        "name": "powdered sugar"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Cevapcici.jpg?updatedAt=1757778263765",
-    "file": "recipes/beef/Cevapcici.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Windbeutel.jpg?updatedAt=1756589018211",
+    "file": "recipes/cakesAndPastries/Profiterole.html"
   }
 ]

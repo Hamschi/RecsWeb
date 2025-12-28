@@ -3872,7 +3872,7 @@
     "categories": [
       "Bosnia",
       "beef",
-      "sandwich"
+      "sandwiches"
     ],
     "activeTime": 60,
     "passiveTime": 1440,
@@ -3929,5 +3929,74 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Cevapcici.jpg?updatedAt=1757778263765",
     "file": "recipes/beef/Cevapcici.html"
+  },
+  {
+    "title": "Profiterole",
+    "categories": [
+      "France",
+      "pastry",
+      "snacks"
+    ],
+    "activeTime": 30,
+    "passiveTime": 70,
+    "totalTime": 100,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/h0-izQRo8Xc?feature=shared",
+    "ingredients": [
+      {
+        "name": "water",
+        "amount": 125,
+        "unit": "ml"
+      },
+      {
+        "name": "milk",
+        "amount": 125,
+        "unit": "ml"
+      },
+      {
+        "name": "butter",
+        "amount": 125,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "name": "flour",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "eggs",
+        "amount": 4,
+        "unit": "pcs"
+      },
+      {
+        "name": "cream",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "name": "vanilla pod",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "powdered sugar"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Windbeutel.jpg?updatedAt=1756589018211",
+    "file": "recipes/cakesAndPastries/Profiterole.html"
   }
 ]
