@@ -4830,5 +4830,50 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Griessbrei.jpg?updatedAt=1767036518684",
     "file": "recipes/otherDesserts/Griessbrei.html"
+  },
+  {
+    "title": "Sinh Tố Xoài",
+    "categories": [
+      "Vietnam",
+      "drinks",
+      "vegetarian",
+      "streetfood"
+    ],
+    "activeTime": 5,
+    "passiveTime": 0,
+    "totalTime": 5,
+    "servings": 1,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "N/A",
+    "ingredients": [
+      {
+        "name": "mango (soft, ripe)",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "sweetened condensed milk",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "name": "milk",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "name": "sugar",
+        "amount": "1-1.5",
+        "unit": "tbsp"
+      },
+      {
+        "name": "ice"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/SinhToXoai.jpg?updatedAt=1767039143547",
+    "file": "recipes/drinks/SinhToXoai.html"
   }
 ]
