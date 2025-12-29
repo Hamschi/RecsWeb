@@ -4978,5 +4978,35 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MangoLassi.jpg?updatedAt=1757778199846",
     "file": "recipes/drinks/MangoLassi.html"
+  },
+  {
+    "title": "Banana milk",
+    "categories": [
+      "drinks",
+      "vegetarian"
+    ],
+    "activeTime": 3,
+    "passiveTime": 0,
+    "totalTime": 0,
+    "servings": 1,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "N/A",
+    "ingredients": [
+      {
+        "name": "banana",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "milk",
+        "amount": 250,
+        "unit": "ml"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Bananenmilch.jpg?updatedAt=1756588649499",
+    "file": "recipes/drinks/BananaMilk.html"
   }
 ]

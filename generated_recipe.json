@@ -1,51 +1,32 @@
 [
   {
-    "title": "Mango Lassi",
+    "title": "Banana milk",
     "categories": [
-      "India",
       "drinks",
       "vegetarian"
     ],
-    "activeTime": 5,
+    "activeTime": 3,
     "passiveTime": 0,
-    "totalTime": 5,
+    "totalTime": 0,
     "servings": 1,
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/wXQXhLEk_hI?si=va7JuUBCrgagqOdR",
+    "source": "N/A",
     "ingredients": [
       {
-        "name": "mango",
-        "amount": 2,
-        "unit": "cup"
-      },
-      {
-        "name": "joghurt",
+        "name": "banana",
         "amount": 1,
-        "unit": "cup"
+        "unit": "pcs"
       },
       {
         "name": "milk",
-        "amount": 0.5,
-        "unit": "cup"
-      },
-      {
-        "name": "sugar",
-        "amount": 3,
-        "unit": "tbsp"
-      },
-      {
-        "name": "cardamom powder",
-        "amount": 0.5,
-        "unit": "tsp"
-      },
-      {
-        "name": "mint (for garnish)"
+        "amount": 250,
+        "unit": "ml"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MangoLassi.jpg?updatedAt=1757778199846",
-    "file": "recipes/drinks/MangoLassi.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Bananenmilch.jpg?updatedAt=1756588649499",
+    "file": "recipes/drinks/BananaMilk.html"
   }
 ]
