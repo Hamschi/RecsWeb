@@ -1,56 +1,84 @@
 [
   {
-    "title": "Panna Cotta",
+    "title": "Pastéis de Nata",
     "categories": [
-      "Italy",
+      "Portugal",
+      "pastry",
       "dessert",
-      "otherDesserts"
+      "snacks"
     ],
-    "activeTime": 15,
-    "passiveTime": 480,
-    "totalTime": 495,
-    "servings": 6,
-    "difficulty": "easy",
+    "activeTime": 60,
+    "passiveTime": 150,
+    "totalTime": 210,
+    "servings": 12,
+    "difficulty": "medium",
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/XUMGyrLY1TY?si=7KRpmBsSD7Kcsvvf",
+    "source": "https://youtu.be/MA4LEjxZ7io",
     "ingredients": [
       {
-        "name": "cream",
-        "amount": 375,
-        "unit": "ml"
-      },
-      {
-        "name": "sugar",
-        "amount": 100,
+        "name": "flour",
+        "amount": 140,
         "unit": "g"
       },
       {
-        "name": "gelatin",
-        "amount": 3,
-        "unit": "sheets"
+        "name": "water",
+        "amount": 90,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "g"
+      },
+      {
+        "name": "butter (soft spreadable)",
+        "amount": 90,
+        "unit": "g"
+      },
+      {
+        "name": "flour",
+        "amount": 20,
+        "unit": "g"
       },
       {
         "name": "milk",
-        "amount": 40,
-        "unit": "ml"
-      },
-      {
-        "name": "vanilla pod",
-        "amount": 0.5,
-        "unit": "pcs"
-      },
-      {
-        "name": "sugar",
-        "amount": 70,
+        "amount": 30,
         "unit": "g"
       },
       {
-        "name": "berry sauce"
+        "name": "milk",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "name": "vanilla paste",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "name": "water",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "name": "caster sugar",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "name": "cinnamon",
+        "amount": 1,
+        "unit": "stick"
+      },
+      {
+        "name": "egg yolk",
+        "amount": 3,
+        "unit": "pcs"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/PannaCotta.jpg?updatedAt=1757778290989",
-    "file": "recipes/otherDesserts/PannaCotta.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/PasteisDeNata.jpg",
+    "file": "recipes/cakesAndPastries/PasteisDeNata.html"
   }
 ]

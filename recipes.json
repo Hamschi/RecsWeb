@@ -4323,5 +4323,87 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/PannaCotta.jpg?updatedAt=1757778290989",
     "file": "recipes/otherDesserts/PannaCotta.html"
+  },
+  {
+    "title": "Pastéis de Nata",
+    "categories": [
+      "Portugal",
+      "pastry",
+      "dessert",
+      "snacks"
+    ],
+    "activeTime": 60,
+    "passiveTime": 150,
+    "totalTime": 210,
+    "servings": 12,
+    "difficulty": "medium",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/MA4LEjxZ7io",
+    "ingredients": [
+      {
+        "name": "flour",
+        "amount": 140,
+        "unit": "g"
+      },
+      {
+        "name": "water",
+        "amount": 90,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "g"
+      },
+      {
+        "name": "butter (soft spreadable)",
+        "amount": 90,
+        "unit": "g"
+      },
+      {
+        "name": "flour",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "name": "milk",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "name": "milk",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "name": "vanilla paste",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "name": "water",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "name": "caster sugar",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "name": "cinnamon",
+        "amount": 1,
+        "unit": "stick"
+      },
+      {
+        "name": "egg yolk",
+        "amount": 3,
+        "unit": "pcs"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/PasteisDeNata.jpg",
+    "file": "recipes/cakesAndPastries/PasteisDeNata.html"
   }
 ]
