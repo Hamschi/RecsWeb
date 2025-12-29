@@ -1,52 +1,63 @@
 [
   {
-    "title": "Crème brûlée",
+    "title": "Tiramisu",
     "categories": [
-      "France",
+      "Italy",
       "otherDesserts"
     ],
-    "activeTime": 25,
+    "activeTime": 30,
     "passiveTime": 240,
-    "totalTime": 265,
-    "servings": 4,
+    "totalTime": 270,
+    "servings": 8,
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/25NHHLXwGrU?si=WxiL3IhTh_DjhuDH",
+    "source": "https://youtu.be/HykFyrhuyMk?si=ToAQTzpUZxChkDm-",
     "ingredients": [
       {
-        "name": "whole milk",
-        "amount": 250,
-        "unit": "g"
-      },
-      {
-        "name": "cream (35% fat)",
-        "amount": 250,
-        "unit": "g"
-      },
-      {
-        "name": "vanilla extract",
-        "amount": 1,
-        "unit": "tbsp"
-      },
-      {
-        "name": "egg yolk (large)",
-        "amount": 4,
+        "name": "eggs",
+        "amount": 2,
         "unit": "pcs"
       },
       {
-        "name": "sugar (white)",
-        "amount": 90,
+        "name": "sugar",
+        "amount": 125,
         "unit": "g"
       },
       {
-        "name": "sugar (brown)",
-        "amount": 50,
+        "name": "mascarpone",
+        "amount": 450,
         "unit": "g"
+      },
+      {
+        "name": "cream",
+        "amount": 300,
+        "unit": "ml"
+      },
+      {
+        "name": "lemon juice",
+        "amount": "a few",
+        "unit": "drops"
+      },
+      {
+        "name": "coffee"
+      },
+      {
+        "name": "Vin Santo (alternatively: liqueur, optional)",
+        "amount": 1,
+        "unit": "splash"
+      },
+      {
+        "name": "ladyfingers",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "chocolate or cocoa powder"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/CremeBrulee.jpg?updatedAt=1756588722883",
-    "file": "recipes/otherDesserts/CremeBrulee.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Tiramisu1.jpg?updatedAt=1756589010473",
+    "file": "recipes/otherDesserts/Tiramisu.html"
   }
 ]
