@@ -1,84 +1,52 @@
 [
   {
-    "title": "Pastéis de Nata",
+    "title": "Crème brûlée",
     "categories": [
-      "Portugal",
-      "pastry",
-      "dessert",
-      "snacks"
+      "France",
+      "otherDesserts"
     ],
-    "activeTime": 60,
-    "passiveTime": 150,
-    "totalTime": 210,
-    "servings": 12,
-    "difficulty": "medium",
+    "activeTime": 25,
+    "passiveTime": 240,
+    "totalTime": 265,
+    "servings": 4,
+    "difficulty": "easy",
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/MA4LEjxZ7io",
+    "source": "https://youtu.be/25NHHLXwGrU?si=WxiL3IhTh_DjhuDH",
     "ingredients": [
       {
-        "name": "flour",
-        "amount": 140,
+        "name": "whole milk",
+        "amount": 250,
         "unit": "g"
       },
       {
-        "name": "water",
-        "amount": 90,
+        "name": "cream (35% fat)",
+        "amount": 250,
         "unit": "g"
       },
       {
-        "name": "salt",
+        "name": "vanilla extract",
         "amount": 1,
-        "unit": "g"
+        "unit": "tbsp"
       },
       {
-        "name": "butter (soft spreadable)",
-        "amount": 90,
-        "unit": "g"
-      },
-      {
-        "name": "flour",
-        "amount": 20,
-        "unit": "g"
-      },
-      {
-        "name": "milk",
-        "amount": 30,
-        "unit": "g"
-      },
-      {
-        "name": "milk",
-        "amount": 120,
-        "unit": "g"
-      },
-      {
-        "name": "vanilla paste",
-        "amount": 5,
-        "unit": "g"
-      },
-      {
-        "name": "water",
-        "amount": 80,
-        "unit": "g"
-      },
-      {
-        "name": "caster sugar",
-        "amount": 120,
-        "unit": "g"
-      },
-      {
-        "name": "cinnamon",
-        "amount": 1,
-        "unit": "stick"
-      },
-      {
-        "name": "egg yolk",
-        "amount": 3,
+        "name": "egg yolk (large)",
+        "amount": 4,
         "unit": "pcs"
+      },
+      {
+        "name": "sugar (white)",
+        "amount": 90,
+        "unit": "g"
+      },
+      {
+        "name": "sugar (brown)",
+        "amount": 50,
+        "unit": "g"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/PasteisDeNata.jpg",
-    "file": "recipes/cakesAndPastries/PasteisDeNata.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/CremeBrulee.jpg?updatedAt=1756588722883",
+    "file": "recipes/otherDesserts/CremeBrulee.html"
   }
 ]

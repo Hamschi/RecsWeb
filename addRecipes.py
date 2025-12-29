@@ -114,7 +114,7 @@ CATEGORIE_BADGE = {
     "cake": "bg-dessert",
     "pastry": "bg-dessert",
 	"biscuit": "bg-dessert",
-    "other desserts": "bg-dessert", 
+    "otherDesserts": "bg-dessert", 
     "dessert": "bg-dessert",
     "snacks": "bg-snacks",
 
