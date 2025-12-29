@@ -4531,7 +4531,7 @@
     "categories": [
       "Vietnam",
       "otherDesserts",
-      "snacks", 
+      "snacks",
       "vegetarian"
     ],
     "activeTime": 10,
@@ -4773,5 +4773,62 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Apfelmus.jpg?updatedAt=1756588648682",
     "file": "recipes/otherDesserts/Apfelmus.html"
+  },
+  {
+    "title": "Grießbrei",
+    "categories": [
+      "Germany",
+      "otherDesserts",
+      "snacks",
+      "vegetarian"
+    ],
+    "activeTime": 15,
+    "passiveTime": 10,
+    "totalTime": 25,
+    "servings": 4,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 4,
+    "status": "done",
+    "source": "https://www.chefkoch.de/rezepte/914031196710118/Griessbrei-von-Grossmutter.html",
+    "ingredients": [
+      {
+        "name": "milk",
+        "amount": 800,
+        "unit": "ml"
+      },
+      {
+        "name": "Weichweizengrieß",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "name": "sugar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "vanilla sugar",
+        "amount": 1,
+        "unit": "pck"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "egg",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "butter",
+        "amount": 25,
+        "unit": "g"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Griessbrei.jpg?updatedAt=1767036518684",
+    "file": "recipes/otherDesserts/Griessbrei.html"
   }
 ]

@@ -1,38 +1,31 @@
 [
   {
-    "title": "Apfelmus",
+    "title": "Grießbrei",
     "categories": [
       "Germany",
       "otherDesserts",
-      "sideDish",
-      "vegetarian",
-      "vegan",
-      "snacks"
+      "snacks",
+      "vegetarian"
     ],
-    "activeTime": 17,
-    "passiveTime": 33,
-    "totalTime": 50,
-    "servings": 3,
+    "activeTime": 15,
+    "passiveTime": 10,
+    "totalTime": 25,
+    "servings": 4,
     "difficulty": "easy",
     "originality": 5,
     "taste": 4,
     "status": "done",
-    "source": "N/A",
+    "source": "https://www.chefkoch.de/rezepte/914031196710118/Griessbrei-von-Grossmutter.html",
     "ingredients": [
       {
-        "name": "apples",
-        "amount": 1,
-        "unit": "kg"
-      },
-      {
-        "name": "water (alternatively: apple juice)",
-        "amount": 80,
+        "name": "milk",
+        "amount": 800,
         "unit": "ml"
       },
       {
-        "name": "vanilla pods",
-        "amount": 2,
-        "unit": "pcs"
+        "name": "Weichweizengrieß",
+        "amount": 80,
+        "unit": "g"
       },
       {
         "name": "sugar",
@@ -40,17 +33,27 @@
         "unit": "tbsp"
       },
       {
-        "name": "cinnamon",
+        "name": "vanilla sugar",
         "amount": 1,
-        "unit": "stick"
+        "unit": "pck"
       },
       {
-        "name": "lemon",
-        "amount": 0.5,
+        "name": "salt",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "egg",
+        "amount": 1,
         "unit": "pcs"
+      },
+      {
+        "name": "butter",
+        "amount": 25,
+        "unit": "g"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Apfelmus.jpg?updatedAt=1756588648682",
-    "file": "recipes/otherDesserts/Apfelmus.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Griessbrei.jpg?updatedAt=1767036518684",
+    "file": "recipes/otherDesserts/Griessbrei.html"
   }
 ]
