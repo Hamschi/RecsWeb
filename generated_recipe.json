@@ -1,56 +1,51 @@
 [
   {
-    "title": "Thai Iced Tea",
+    "title": "Mango Lassi",
     "categories": [
-      "Thailand",
+      "India",
       "drinks",
       "vegetarian"
     ],
     "activeTime": 5,
-    "passiveTime": 5,
-    "totalTime": 10,
+    "passiveTime": 0,
+    "totalTime": 5,
     "servings": 1,
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/rIncobztk6E?si=KeIE6hjX_11g1dSf",
+    "source": "https://youtu.be/wXQXhLEk_hI?si=va7JuUBCrgagqOdR",
     "ingredients": [
       {
-        "name": "Thai Tea Mix",
-        "amount": 3,
-        "unit": "tbsp"
+        "name": "mango",
+        "amount": 2,
+        "unit": "cup"
       },
       {
-        "name": "water",
+        "name": "joghurt",
         "amount": 1,
         "unit": "cup"
       },
       {
-        "name": "sweetened condensed milk",
-        "amount": 1.5,
-        "unit": "tbsp"
+        "name": "milk",
+        "amount": 0.5,
+        "unit": "cup"
       },
       {
         "name": "sugar",
-        "amount": 2,
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "cardamom powder",
+        "amount": 0.5,
         "unit": "tsp"
       },
       {
-        "name": "salt",
-        "amount": 1,
-        "unit": "pinch"
-      },
-      {
-        "name": "ice"
-      },
-      {
-        "name": "evaporated milk (unsweetened)",
-        "amount": 2,
-        "unit": "tbsp"
+        "name": "mint (for garnish)"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ThaiIcedTea.jpg?updatedAt=1756588997829",
-    "file": "recipes/drinks/ThaiIcedTea.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MangoLassi.jpg?updatedAt=1757778199846",
+    "file": "recipes/drinks/MangoLassi.html"
   }
 ]

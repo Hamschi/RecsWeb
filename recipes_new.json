@@ -4929,5 +4929,54 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ThaiIcedTea.jpg?updatedAt=1756588997829",
     "file": "recipes/drinks/ThaiIcedTea.html"
+  },
+  {
+    "title": "Mango Lassi",
+    "categories": [
+      "India",
+      "drinks",
+      "vegetarian"
+    ],
+    "activeTime": 5,
+    "passiveTime": 0,
+    "totalTime": 5,
+    "servings": 1,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/wXQXhLEk_hI?si=va7JuUBCrgagqOdR",
+    "ingredients": [
+      {
+        "name": "mango",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "joghurt",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "milk",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "sugar",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "cardamom powder",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "mint (for garnish)"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MangoLassi.jpg?updatedAt=1757778199846",
+    "file": "recipes/drinks/MangoLassi.html"
   }
 ]
