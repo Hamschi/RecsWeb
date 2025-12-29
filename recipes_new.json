@@ -4980,33 +4980,51 @@
     "file": "recipes/drinks/MangoLassi.html"
   },
   {
-    "title": "Banana milk",
+    "title": "Canh Cà chua",
     "categories": [
-      "drinks",
-      "vegetarian"
+      "Vietnam",
+      "soup"
     ],
     "activeTime": 3,
-    "passiveTime": 0,
-    "totalTime": 0,
-    "servings": 1,
+    "passiveTime": 20,
+    "totalTime": 23,
+    "servings": 4,
     "difficulty": "easy",
     "originality": 5,
-    "taste": 5,
+    "taste": 3,
     "status": "done",
-    "source": "N/A",
+    "source": "Mama",
     "ingredients": [
       {
-        "name": "banana",
+        "name": "tomato",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "water",
+        "amount": 1,
+        "unit": "l"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "chicken bouillon powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Garcinia cowa",
         "amount": 1,
         "unit": "pcs"
       },
       {
-        "name": "milk",
-        "amount": 250,
-        "unit": "ml"
+        "name": "vegetables: kohlrabi, iceberg lettuce,... (optional)"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Bananenmilch.jpg?updatedAt=1756588649499",
-    "file": "recipes/drinks/BananaMilk.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
+    "file": "recipes/soups/CanhCaChua.html"
   }
 ]
