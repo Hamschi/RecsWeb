@@ -4203,7 +4203,8 @@
     "title": "Carrot Cake Ice Cream",
     "categories": [
       "dessert",
-      "otherDesserts"
+      "otherDesserts",
+      "snacks"
     ],
     "activeTime": 35,
     "passiveTime": 245,
@@ -4268,5 +4269,59 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/CarrotCakeIceCream.jpg?updatedAt=1756588700999",
     "file": "recipes/otherDesserts/CarrotCakeIceCream.html"
+  },
+  {
+    "title": "Panna Cotta",
+    "categories": [
+      "Italy",
+      "dessert",
+      "otherDesserts"
+    ],
+    "activeTime": 15,
+    "passiveTime": 480,
+    "totalTime": 495,
+    "servings": 6,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/XUMGyrLY1TY?si=7KRpmBsSD7Kcsvvf",
+    "ingredients": [
+      {
+        "name": "cream",
+        "amount": 375,
+        "unit": "ml"
+      },
+      {
+        "name": "sugar",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "gelatin",
+        "amount": 3,
+        "unit": "sheets"
+      },
+      {
+        "name": "milk",
+        "amount": 40,
+        "unit": "ml"
+      },
+      {
+        "name": "vanilla pod",
+        "amount": 0.5,
+        "unit": "pcs"
+      },
+      {
+        "name": "sugar",
+        "amount": 70,
+        "unit": "g"
+      },
+      {
+        "name": "berry sauce"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/PannaCotta.jpg?updatedAt=1757778290989",
+    "file": "recipes/otherDesserts/PannaCotta.html"
   }
 ]
