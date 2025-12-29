@@ -4708,31 +4708,39 @@
     "file": "recipes/otherDesserts/Milchreis.html"
   },
   {
-    "title": "Griessbrei",
+    "title": "Apfelmus",
     "categories": [
       "Germany",
       "otherDesserts",
+      "sideDish",
+      "vegetarian",
+      "vegan",
       "snacks"
     ],
-    "activeTime": 15,
-    "passiveTime": 10,
-    "totalTime": 25,
-    "servings": 4,
+    "activeTime": 17,
+    "passiveTime": 33,
+    "totalTime": 50,
+    "servings": 3,
     "difficulty": "easy",
     "originality": 5,
     "taste": 4,
     "status": "done",
-    "source": "https://www.chefkoch.de/rezepte/914031196710118/Griessbrei-von-Grossmutter.html",
+    "source": "N/A",
     "ingredients": [
       {
-        "name": "whole milk",
-        "amount": 800,
+        "name": "apples",
+        "amount": 1,
+        "unit": "kg"
+      },
+      {
+        "name": "water (alternatively: apple juice)",
+        "amount": 80,
         "unit": "ml"
       },
       {
-        "name": "Weichweizengrieß",
-        "amount": 80,
-        "unit": "g"
+        "name": "vanilla pods",
+        "amount": 2,
+        "unit": "pcs"
       },
       {
         "name": "sugar",
@@ -4740,30 +4748,17 @@
         "unit": "tbsp"
       },
       {
-        "name": "vanilla sugar",
+        "name": "cinnamon",
         "amount": 1,
-        "unit": "pck"
+        "unit": "stick"
       },
       {
-        "name": "salt",
-        "amount": 1,
-        "unit": "pinch"
-      },
-      {
-        "name": "egg",
-        "amount": 1,
+        "name": "lemon",
+        "amount": 0.5,
         "unit": "pcs"
-      },
-      {
-        "name": "butter",
-        "amount": 25,
-        "unit": "g"
-      },
-      {
-        "name": "cinnamon sugar"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Griessbrei.jpg?updatedAt=1767036518684",
-    "file": "recipes/otherDesserts/Griessbrei.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Apfelmus.jpg?updatedAt=1756588648682",
+    "file": "recipes/otherDesserts/Apfelmus.html"
   }
 ]

@@ -3935,7 +3935,8 @@
     "categories": [
       "France",
       "pastry",
-      "snacks"
+      "snacks",
+      "vegetarian"
     ],
     "activeTime": 30,
     "passiveTime": 70,
@@ -4004,7 +4005,8 @@
     "categories": [
       "Germany",
       "biscuit",
-      "snacks"
+      "snacks",
+      "vegetarian"
     ],
     "activeTime": 30,
     "passiveTime": 75,
@@ -4058,7 +4060,8 @@
     "categories": [
       "Germany",
       "biscuit",
-      "snacks"
+      "snacks",
+      "vegetarian"
     ],
     "activeTime": 35,
     "passiveTime": 85,
@@ -4114,7 +4117,8 @@
     "categories": [
       "Germany",
       "biscuit",
-      "snacks"
+      "snacks",
+      "vegetarian"
     ],
     "activeTime": 35,
     "passiveTime": 640,
@@ -4162,7 +4166,8 @@
     "title": "Avocado Cream",
     "categories": [
       "Vietnam",
-      "dessert"
+      "dessert",
+      "vegetarian"
     ],
     "activeTime": 5,
     "passiveTime": 0,
@@ -4204,7 +4209,8 @@
     "categories": [
       "dessert",
       "otherDesserts",
-      "snacks"
+      "snacks",
+      "vegetarian"
     ],
     "activeTime": 35,
     "passiveTime": 245,
@@ -4330,7 +4336,8 @@
       "Portugal",
       "pastry",
       "dessert",
-      "snacks"
+      "snacks",
+      "vegetarian"
     ],
     "activeTime": 60,
     "passiveTime": 150,
@@ -4410,7 +4417,8 @@
     "title": "Crème brûlée",
     "categories": [
       "France",
-      "otherDesserts"
+      "otherDesserts",
+      "vegetarian"
     ],
     "activeTime": 25,
     "passiveTime": 240,
@@ -4460,7 +4468,8 @@
     "title": "Tiramisu",
     "categories": [
       "Italy",
-      "otherDesserts"
+      "otherDesserts",
+      "vegetarian"
     ],
     "activeTime": 30,
     "passiveTime": 240,
@@ -4522,7 +4531,8 @@
     "categories": [
       "Vietnam",
       "otherDesserts",
-      "snacks"
+      "snacks", 
+      "vegetarian"
     ],
     "activeTime": 10,
     "passiveTime": 0,
@@ -4598,7 +4608,9 @@
       "Thailand",
       "rice",
       "otherDesserts",
-      "snacks"
+      "snacks",
+      "vegetarian",
+      "vegan"
     ],
     "activeTime": 20,
     "passiveTime": 65,
@@ -4663,7 +4675,8 @@
       "Germany",
       "rice",
       "snacks",
-      "otherDesserts"
+      "otherDesserts",
+      "vegetarian"
     ],
     "activeTime": 10,
     "passiveTime": 35,
@@ -4706,5 +4719,59 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Milchreis.jpg?updatedAt=1756588930723",
     "file": "recipes/otherDesserts/Milchreis.html"
+  },
+  {
+    "title": "Apfelmus",
+    "categories": [
+      "Germany",
+      "otherDesserts",
+      "sideDish",
+      "vegetarian",
+      "vegan",
+      "snacks"
+    ],
+    "activeTime": 17,
+    "passiveTime": 33,
+    "totalTime": 50,
+    "servings": 3,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 4,
+    "status": "done",
+    "source": "N/A",
+    "ingredients": [
+      {
+        "name": "apples",
+        "amount": 1,
+        "unit": "kg"
+      },
+      {
+        "name": "water (alternatively: apple juice)",
+        "amount": 80,
+        "unit": "ml"
+      },
+      {
+        "name": "vanilla pods",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "sugar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "cinnamon",
+        "amount": 1,
+        "unit": "stick"
+      },
+      {
+        "name": "lemon",
+        "amount": 0.5,
+        "unit": "pcs"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Apfelmus.jpg?updatedAt=1756588648682",
+    "file": "recipes/otherDesserts/Apfelmus.html"
   }
 ]
