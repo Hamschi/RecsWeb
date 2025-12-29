@@ -4521,7 +4521,8 @@
     "title": "Chè Thái/ Chè Thập Cẩm",
     "categories": [
       "Vietnam",
-      "otherDesserts"
+      "otherDesserts",
+      "snacks"
     ],
     "activeTime": 10,
     "passiveTime": 0,
@@ -4590,5 +4591,70 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/CheThapCam.jpg?updatedAt=1757778249464",
     "file": "recipes/otherDesserts/CheThai.html"
+  },
+  {
+    "title": "Mango Sticky Rice",
+    "categories": [
+      "Thailand",
+      "rice",
+      "otherDesserts",
+      "snacks"
+    ],
+    "activeTime": 20,
+    "passiveTime": 65,
+    "totalTime": 85,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/M7_WdFhI7Hk?si=lQCkJ7R-ySDUCo1e",
+    "ingredients": [
+      {
+        "name": "rice",
+        "amount": 3.5,
+        "unit": "cups"
+      },
+      {
+        "name": "pandan leaf",
+        "amount": 3,
+        "unit": "pcs"
+      },
+      {
+        "name": "sugar",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "name": "coconut milk",
+        "amount": 300,
+        "unit": "ml"
+      },
+      {
+        "name": "coconut milk",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "corn starch",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "crispy mung bean (alternatively sesame)"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MangoStickyRice.jpg?updatedAt=1756588925964",
+    "file": "recipes/otherDesserts/MangoStickyRice.html"
   }
 ]

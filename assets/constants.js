@@ -51,6 +51,7 @@ const CATEGORY_BADGES = {
   lebanon: {label: "lebanon", cls: "bg-country"},
   mexico: {label: "mexico", cls: "bg-country"},
   spain: {label: "spain", cls: "bg-country"},
+  thailand: {label: "thailand", cls: "bg-country"},
   vietnam:    { label: "vietnam",    cls: "bg-country" },
 
   fingerfood:    { label: "fingerfood",    cls: "bg-fingerfood" },
@@ -82,6 +83,7 @@ const COUNTRY_FLAGS = {
   china: "cn",
   lebanon: "lb",
   mexico: "mx",
+  thailand: "th",
   vietnam: "vn",
   india: "in",
   mongolia: "mn"
