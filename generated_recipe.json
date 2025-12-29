@@ -1,63 +1,76 @@
 [
   {
-    "title": "Tiramisu",
+    "title": "Chè Thái",
     "categories": [
-      "Italy",
+      "Vietnam",
       "otherDesserts"
     ],
-    "activeTime": 30,
-    "passiveTime": 240,
-    "totalTime": 270,
+    "activeTime": 10,
+    "passiveTime": 0,
+    "totalTime": 10,
     "servings": 8,
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/HykFyrhuyMk?si=ToAQTzpUZxChkDm-",
+    "source": "https://youtu.be/7C6Bj4f2Yv0?si=A1JVwUFosDwXiP5s",
     "ingredients": [
       {
-        "name": "eggs",
-        "amount": 2,
-        "unit": "pcs"
-      },
-      {
-        "name": "sugar",
-        "amount": 125,
-        "unit": "g"
-      },
-      {
-        "name": "mascarpone",
-        "amount": 450,
-        "unit": "g"
-      },
-      {
-        "name": "cream",
-        "amount": 300,
+        "name": "coconut cream",
+        "amount": 350,
         "unit": "ml"
       },
       {
-        "name": "lemon juice",
-        "amount": "a few",
-        "unit": "drops"
+        "name": "whole milk",
+        "amount": 350,
+        "unit": "ml"
       },
       {
-        "name": "coffee"
+        "name": "cream",
+        "amount": 50,
+        "unit": "ml"
       },
       {
-        "name": "Vin Santo (alternatively: liqueur, optional)",
-        "amount": 1,
-        "unit": "splash"
+        "name": "water",
+        "amount": 200,
+        "unit": "ml"
       },
       {
-        "name": "ladyfingers",
+        "name": "sugar",
         "amount": 200,
         "unit": "g"
       },
       {
-        "name": "chocolate or cocoa powder"
+        "name": "lychees",
+        "amount": 1,
+        "unit": "can"
+      },
+      {
+        "name": "jackfruit",
+        "amount": 1,
+        "unit": "can"
+      },
+      {
+        "name": "palm's seeds in heavy sirup",
+        "amount": 1,
+        "unit": "can"
+      },
+      {
+        "name": "pandan jelly"
+      },
+      {
+        "name": "hạt lựu"
+      },
+      {
+        "name": "durian"
+      },
+      {
+        "name": "ice cubes",
+        "amount": 250,
+        "unit": "g"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Tiramisu1.jpg?updatedAt=1756589010473",
-    "file": "recipes/otherDesserts/Tiramisu.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/CheThapCam.jpg?updatedAt=1757778249464",
+    "file": "recipes/otherDesserts/CheThai.html"
   }
 ]

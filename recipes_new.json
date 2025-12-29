@@ -4516,5 +4516,79 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Tiramisu1.jpg?updatedAt=1756589010473",
     "file": "recipes/otherDesserts/Tiramisu.html"
+  },
+  {
+    "title": "Chè Thái",
+    "categories": [
+      "Vietnam",
+      "otherDesserts"
+    ],
+    "activeTime": 10,
+    "passiveTime": 0,
+    "totalTime": 10,
+    "servings": 8,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/7C6Bj4f2Yv0?si=A1JVwUFosDwXiP5s",
+    "ingredients": [
+      {
+        "name": "coconut cream",
+        "amount": 350,
+        "unit": "ml"
+      },
+      {
+        "name": "whole milk",
+        "amount": 350,
+        "unit": "ml"
+      },
+      {
+        "name": "cream",
+        "amount": 50,
+        "unit": "ml"
+      },
+      {
+        "name": "water",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "name": "sugar",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "lychees",
+        "amount": 1,
+        "unit": "can"
+      },
+      {
+        "name": "jackfruit",
+        "amount": 1,
+        "unit": "can"
+      },
+      {
+        "name": "palm's seeds in heavy sirup",
+        "amount": 1,
+        "unit": "can"
+      },
+      {
+        "name": "pandan jelly"
+      },
+      {
+        "name": "hạt lựu"
+      },
+      {
+        "name": "durian"
+      },
+      {
+        "name": "ice cubes",
+        "amount": 250,
+        "unit": "g"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/CheThapCam.jpg?updatedAt=1757778249464",
+    "file": "recipes/otherDesserts/CheThai.html"
   }
 ]
