@@ -1,51 +1,36 @@
 [
   {
-    "title": "Mango Sticky Rice",
+    "title": "Milchreis",
     "categories": [
-      "Thailand",
+      "Germany",
       "rice",
-      "otherDesserts",
-      "snacks"
+      "snacks",
+      "otherDesserts"
     ],
-    "activeTime": 20,
-    "passiveTime": 65,
-    "totalTime": 85,
+    "activeTime": 10,
+    "passiveTime": 35,
+    "totalTime": 45,
     "servings": 2,
     "difficulty": "easy",
     "originality": 5,
-    "taste": 5,
+    "taste": 4,
     "status": "done",
-    "source": "https://youtu.be/M7_WdFhI7Hk?si=lQCkJ7R-ySDUCo1e",
+    "source": "https://youtu.be/Mh5iUFNYfBg?si=mKQSYQvRjcWeTCJb",
     "ingredients": [
       {
-        "name": "rice",
-        "amount": 3.5,
-        "unit": "cups"
-      },
-      {
-        "name": "pandan leaf",
-        "amount": 3,
-        "unit": "pcs"
-      },
-      {
-        "name": "sugar",
-        "amount": 250,
+        "name": "Milchreis",
+        "amount": 200,
         "unit": "g"
       },
       {
-        "name": "salt",
-        "amount": 0.5,
-        "unit": "tbsp"
-      },
-      {
-        "name": "coconut milk",
-        "amount": 300,
+        "name": "whole milk",
+        "amount": 800,
         "unit": "ml"
       },
       {
-        "name": "coconut milk",
-        "amount": 200,
-        "unit": "ml"
+        "name": "vanilla pod",
+        "amount": 1,
+        "unit": "pcs"
       },
       {
         "name": "salt",
@@ -53,15 +38,15 @@
         "unit": "pinch"
       },
       {
-        "name": "corn starch",
-        "amount": 1,
-        "unit": "tsp"
+        "name": "sugar",
+        "amount": 4,
+        "unit": "tbsp"
       },
       {
-        "name": "crispy mung bean (alternatively sesame)"
+        "name": "cinnamon sugar"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MangoStickyRice.jpg?updatedAt=1756588925964",
-    "file": "recipes/otherDesserts/MangoStickyRice.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Milchreis.jpg?updatedAt=1756588930723",
+    "file": "recipes/otherDesserts/Milchreis.html"
   }
 ]

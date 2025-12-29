@@ -4521,7 +4521,8 @@
     "title": "Chè Thái/ Chè Thập Cẩm",
     "categories": [
       "Vietnam",
-      "otherDesserts"
+      "otherDesserts",
+      "snacks"
     ],
     "activeTime": 10,
     "passiveTime": 0,
@@ -4655,5 +4656,55 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MangoStickyRice.jpg?updatedAt=1756588925964",
     "file": "recipes/otherDesserts/MangoStickyRice.html"
+  },
+  {
+    "title": "Milchreis",
+    "categories": [
+      "Germany",
+      "rice",
+      "snacks",
+      "otherDesserts"
+    ],
+    "activeTime": 10,
+    "passiveTime": 35,
+    "totalTime": 45,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 4,
+    "status": "done",
+    "source": "https://youtu.be/Mh5iUFNYfBg?si=mKQSYQvRjcWeTCJb",
+    "ingredients": [
+      {
+        "name": "Milchreis",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "whole milk",
+        "amount": 800,
+        "unit": "ml"
+      },
+      {
+        "name": "vanilla pod",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "sugar",
+        "amount": 4,
+        "unit": "tbsp"
+      },
+      {
+        "name": "cinnamon sugar"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Milchreis.jpg?updatedAt=1756588930723",
+    "file": "recipes/otherDesserts/Milchreis.html"
   }
 ]
