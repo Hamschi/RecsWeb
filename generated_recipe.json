@@ -1,59 +1,72 @@
 [
   {
-    "title": "Bánh Flan",
+    "title": "Gà Xì Dầu",
     "categories": [
-      "France",
-      "dessert",
-      "otherDesserts",
-      "vegetarian"
+      "Vietnam",
+      "chicken"
     ],
-    "activeTime": 25,
-    "passiveTime": 110,
-    "totalTime": 135,
-    "servings": 6,
+    "activeTime": 20,
+    "passiveTime": 30,
+    "totalTime": 50,
+    "servings": 2,
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/XmHZyot3H94?si=Lo4OgaJXkuMwAgio",
+    "source": "https://youtu.be/hfPmRR2wY9k?si=UdCkiwmaIBRtyb5o",
     "ingredients": [
       {
-        "name": "water",
-        "amount": 30,
+        "name": "chicken tighs",
+        "amount": 750,
         "unit": "g"
       },
       {
-        "name": "sugar",
-        "amount": 55,
+        "name": "scallions",
+        "amount": 20,
         "unit": "g"
       },
       {
-        "name": "water",
-        "amount": 30,
+        "name": "ginger",
+        "amount": 20,
         "unit": "g"
       },
       {
-        "name": "eggs",
+        "name": "soy sauce (light)",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "oyster sauce",
         "amount": 2,
-        "unit": "pcs"
+        "unit": "tbsp"
+      },
+      {
+        "name": "soy sauce (dark)",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "chicken stock powder",
+        "amount": 1,
+        "unit": "tsp"
       },
       {
         "name": "sugar",
-        "amount": 25,
-        "unit": "g"
+        "amount": 2,
+        "unit": "tsp"
       },
       {
-        "name": "cream",
-        "amount": 240,
-        "unit": "g"
+        "name": "glutinous rice wine",
+        "amount": 1,
+        "unit": "tbsp"
       },
       {
-        "name": "milk",
-        "amount": 250,
-        "unit": "g"
+        "name": "water",
+        "amount": 2,
+        "unit": "tbsp"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/BanhFlan.jpg?updatedAt=1769903107430",
-    "file": "recipes/otherDesserts/BanhFlan.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/GaXiDau.jpg?updatedAt=1769903730124",
+    "file": "recipes/chicken/GaXiDau.html"
   }
 ]
