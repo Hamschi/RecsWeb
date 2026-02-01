@@ -5016,7 +5016,7 @@
         "unit": "tsp"
       },
       {
-        "name": "Garcinia cowa",
+        "name": "Tai Chua",
         "amount": 1,
         "unit": "pcs"
       },
@@ -5024,7 +5024,64 @@
         "name": "vegetables: kohlrabi, iceberg lettuce,... (optional)"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/CanhCaChua.jpg?updatedAt=1767043306516",
     "file": "recipes/soups/CanhCaChua.html"
+  },
+  {
+    "title": "Bánh Flan",
+    "categories": [
+      "France",
+      "dessert",
+      "otherDesserts",
+      "vegetarian"
+    ],
+    "activeTime": 25,
+    "passiveTime": 110,
+    "totalTime": 135,
+    "servings": 6,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/XmHZyot3H94?si=Lo4OgaJXkuMwAgio",
+    "ingredients": [
+      {
+        "name": "water",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "name": "sugar",
+        "amount": 55,
+        "unit": "g"
+      },
+      {
+        "name": "water",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "name": "eggs",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "sugar",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "name": "cream",
+        "amount": 240,
+        "unit": "g"
+      },
+      {
+        "name": "milk",
+        "amount": 250,
+        "unit": "g"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/BanhFlan.jpg?updatedAt=1769903107430",
+    "file": "recipes/otherDesserts/BanhFlan.html"
   }
 ]

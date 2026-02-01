@@ -1,50 +1,59 @@
 [
   {
-    "title": "Canh Cà chua",
+    "title": "Bánh Flan",
     "categories": [
-      "Vietnam",
-      "soup"
+      "France",
+      "dessert",
+      "otherDesserts",
+      "vegetarian"
     ],
-    "activeTime": 3,
-    "passiveTime": 20,
-    "totalTime": 23,
-    "servings": 4,
+    "activeTime": 25,
+    "passiveTime": 110,
+    "totalTime": 135,
+    "servings": 6,
     "difficulty": "easy",
     "originality": 5,
-    "taste": 3,
+    "taste": 5,
     "status": "done",
-    "source": "Mama",
+    "source": "https://youtu.be/XmHZyot3H94?si=Lo4OgaJXkuMwAgio",
     "ingredients": [
       {
-        "name": "tomato",
+        "name": "water",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "name": "sugar",
+        "amount": 55,
+        "unit": "g"
+      },
+      {
+        "name": "water",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "name": "eggs",
         "amount": 2,
         "unit": "pcs"
       },
       {
-        "name": "water",
-        "amount": 1,
-        "unit": "l"
+        "name": "sugar",
+        "amount": 25,
+        "unit": "g"
       },
       {
-        "name": "salt",
-        "amount": 1,
-        "unit": "tsp"
+        "name": "cream",
+        "amount": 240,
+        "unit": "g"
       },
       {
-        "name": "chicken bouillon powder",
-        "amount": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "Garcinia cowa",
-        "amount": 1,
-        "unit": "pcs"
-      },
-      {
-        "name": "vegetables: kohlrabi, iceberg lettuce,... (optional)"
+        "name": "milk",
+        "amount": 250,
+        "unit": "g"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
-    "file": "recipes/soups/CanhCaChua.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/BanhFlan.jpg?updatedAt=1769903107430",
+    "file": "recipes/otherDesserts/BanhFlan.html"
   }
 ]
