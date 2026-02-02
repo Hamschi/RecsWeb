@@ -5153,5 +5153,58 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/GaXiDau.jpg?updatedAt=1769903730124",
     "file": "recipes/chicken/GaXiDau.html"
+  },
+  {
+    "title": "Đậu Tẩm Hành",
+    "categories": [
+      "Vietnam",
+      "vegetables"
+    ],
+    "activeTime": 25,
+    "passiveTime": 10,
+    "totalTime": 25,
+    "servings": 4,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 4,
+    "status": "done",
+    "source": "https://youtu.be/BZ1gZ4bCKgc?si=CwuicbxXcO_99F4Y",
+    "ingredients": [
+      {
+        "name": "tofu",
+        "amount": 2,
+        "unit": "blocks"
+      },
+      {
+        "name": "spring onions (ca. 500g)",
+        "amount": 1,
+        "unit": "bunch"
+      },
+      {
+        "name": "fish sauce",
+        "amount": "4-6",
+        "unit": "tbsp"
+      },
+      {
+        "name": "sugar",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "MSG",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "oil (for frying)"
+      },
+      {
+        "name": "warm/hot water",
+        "amount": 120,
+        "unit": "ml"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
+    "file": "recipes/vegetables/DauTamHanh.html"
   }
 ]
