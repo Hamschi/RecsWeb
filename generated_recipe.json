@@ -1,55 +1,68 @@
 [
   {
-    "title": "Đậu Tẩm Hành",
+    "title": "Zigeunerschnitzel",
     "categories": [
-      "Vietnam",
-      "vegetables"
+      "Germany",
+      "pork"
     ],
-    "activeTime": 25,
-    "passiveTime": 10,
-    "totalTime": 25,
-    "servings": 4,
+    "activeTime": 35,
+    "passiveTime": 5,
+    "totalTime": 40,
+    "servings": 2,
     "difficulty": "easy",
     "originality": 5,
-    "taste": 4,
+    "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/BZ1gZ4bCKgc?si=CwuicbxXcO_99F4Y",
+    "source": "https://youtu.be/KcJeslKA9HY?si=I_JuV61o3XH3vkuC",
     "ingredients": [
       {
-        "name": "tofu",
+        "name": "schnitzels",
         "amount": 2,
-        "unit": "blocks"
+        "unit": "pcs"
       },
       {
-        "name": "spring onions (ca. 500g)",
+        "name": "bell pepper",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "diced tomatoes",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "name": "onion",
         "amount": 1,
-        "unit": "bunch"
+        "unit": "pcs"
       },
       {
-        "name": "fish sauce",
-        "amount": "4-6",
+        "name": "garlic",
+        "amount": 2,
+        "unit": "cloves"
+      },
+      {
+        "name": "apple cider vinegar",
+        "amount": 3,
         "unit": "tbsp"
       },
       {
-        "name": "sugar",
+        "name": "honey",
         "amount": 1,
-        "unit": "tsp"
+        "unit": "tbsp"
       },
       {
-        "name": "MSG",
+        "name": "rose paprika",
         "amount": 1,
-        "unit": "tsp"
+        "unit": "tbsp"
       },
       {
-        "name": "oil (for frying)"
+        "name": "salt"
       },
       {
-        "name": "warm/hot water",
-        "amount": 120,
-        "unit": "ml"
+        "name": "pepper"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
-    "file": "recipes/vegetables/DauTamHanh.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Zigeunerschnitzel.jpg?updatedAt=1769903728777",
+    "file": "recipes/pork/ZigeunerSchnitzel.html"
   }
 ]
