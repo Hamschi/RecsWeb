@@ -1,41 +1,55 @@
 [
   {
-    "title": "Apple & Cinnamon Jam",
+    "title": "Soy milk",
     "categories": [
-      "basics",
+      "drinks",
+      "component",
       "vegan",
-      "vegetarian"
+      "vegetarian",
+      "China"
     ],
-    "activeTime": 35,
-    "passiveTime": 725,
-    "totalTime": 760,
-    "servings": 4,
+    "activeTime": 25,
+    "passiveTime": 480,
+    "totalTime": 505,
+    "servings": 2,
     "difficulty": "easy",
     "originality": 5,
     "taste": 4,
     "status": "done",
-    "source": "https://youtu.be/UwmqdFTneQo?si=aPLuD_0YvFUwR8E1",
+    "source": "https://youtu.be/pCXmqNtKfOg?si=RnRYncsART7eeFpT",
     "ingredients": [
       {
-        "name": "apples (e.g. Elstar, already prepared)",
-        "amount": 750,
-        "unit": "g"
-      },
-      {
-        "name": "1:3 gelling sugar (alternatively 375g 1:2 gelling sugar)",
+        "name": "soy beans",
         "amount": 250,
         "unit": "g"
       },
       {
-        "name": "water (alternatively apple juice)"
+        "name": "water",
+        "amount": 1,
+        "unit": "l"
       },
       {
-        "name": "cinnamon",
+        "name": "water",
         "amount": 1,
-        "unit": "TL"
+        "unit": "l"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "sugar",
+        "amount": 3,
+        "unit": "tsp"
+      },
+      {
+        "name": "pandan leaf",
+        "amount": 2,
+        "unit": "pcs"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/AppleJam.jpg",
-    "file": "recipes/component/AppleJam.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/SoyMilk.jpg",
+    "file": "recipes/drinks/SoyMilk.html"
   }
 ]
