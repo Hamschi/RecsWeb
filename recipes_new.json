@@ -5339,5 +5339,81 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/TaoPho.jpg",
     "file": "recipes/otherDesserts/TaoPho.html"
+  },
+  {
+    "title": "Mango Crepe Roll",
+    "categories": [
+      "otherDesserts",
+      "vegetarian",
+      "dessert"
+    ],
+    "activeTime": 45,
+    "passiveTime": 30,
+    "totalTime": 75,
+    "servings": 4,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 4,
+    "status": "done",
+    "source": "https://u-taste.com/recipe/mango-crepe-roll/",
+    "ingredients": [
+      {
+        "name": "butter",
+        "amount": 16,
+        "unit": "g"
+      },
+      {
+        "name": "sugar",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "name": "eggs",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "milk",
+        "amount": 238,
+        "unit": "g"
+      },
+      {
+        "name": "flour",
+        "amount": 75,
+        "unit": "g"
+      },
+      {
+        "name": "starch",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "name": "vanilla extract",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "whip cream",
+        "amount": 220,
+        "unit": "g"
+      },
+      {
+        "name": "sugar",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "name": "turmeric",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "mango",
+        "amount": 1,
+        "unit": "pcs"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MangoCrepeRole.jpg",
+    "file": "recipes/otherDesserts/MangoCrepeRole.html"
   }
 ]
