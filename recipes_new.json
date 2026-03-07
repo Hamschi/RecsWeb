@@ -5298,5 +5298,46 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/SoyMilk.jpg",
     "file": "recipes/drinks/SoyMilk.html"
+  },
+  {
+    "title": "Tào Phớ",
+    "categories": [
+      "Vietnam",
+      "vegan",
+      "vegetarian",
+      "otherDesserts",
+      "dessert"
+    ],
+    "activeTime": 10,
+    "passiveTime": 30,
+    "totalTime": 40,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/7f8H8IToruI?si=2i1ia3qlHdKIwzdA",
+    "ingredients": [
+      {
+        "name": "soy milk",
+        "amount": 350,
+        "unit": "ml"
+      },
+      {
+        "name": "sugar ((more if the soy milk is unsweetened))",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "name": "agar agar",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "nước đường"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/TaoPho.jpg",
+    "file": "recipes/otherDesserts/TaoPho.html"
   }
 ]

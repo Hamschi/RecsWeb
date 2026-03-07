@@ -1,55 +1,43 @@
 [
   {
-    "title": "Soy milk",
+    "title": "Tào Phớ",
     "categories": [
-      "drinks",
-      "component",
+      "Vietnam",
       "vegan",
       "vegetarian",
-      "China"
+      "otherDesserts",
+      "dessert"
     ],
-    "activeTime": 25,
-    "passiveTime": 480,
-    "totalTime": 505,
+    "activeTime": 10,
+    "passiveTime": 30,
+    "totalTime": 40,
     "servings": 2,
     "difficulty": "easy",
     "originality": 5,
-    "taste": 4,
+    "taste": 5,
     "status": "done",
-    "source": "https://youtu.be/pCXmqNtKfOg?si=RnRYncsART7eeFpT",
+    "source": "https://youtu.be/7f8H8IToruI?si=2i1ia3qlHdKIwzdA",
     "ingredients": [
       {
-        "name": "soy beans",
-        "amount": 250,
+        "name": "soy milk",
+        "amount": 350,
+        "unit": "ml"
+      },
+      {
+        "name": "sugar ((more if the soy milk is unsweetened))",
+        "amount": 20,
         "unit": "g"
       },
       {
-        "name": "water",
-        "amount": 1,
-        "unit": "l"
-      },
-      {
-        "name": "water",
-        "amount": 1,
-        "unit": "l"
-      },
-      {
-        "name": "salt",
-        "amount": 1,
-        "unit": "pinch"
-      },
-      {
-        "name": "sugar",
-        "amount": 3,
+        "name": "agar agar",
+        "amount": 0.5,
         "unit": "tsp"
       },
       {
-        "name": "pandan leaf",
-        "amount": 2,
-        "unit": "pcs"
+        "name": "nước đường"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/SoyMilk.jpg",
-    "file": "recipes/drinks/SoyMilk.html"
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/TaoPho.jpg",
+    "file": "recipes/otherDesserts/TaoPho.html"
   }
 ]
