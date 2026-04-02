@@ -211,16 +211,19 @@ def generate_html(data: dict, instructions: list[str]) -> str:
 	if source_raw.lower().startswith(("http://", "https://")):
 		source_href = tk_attr_escape(source_raw)
 
-	# Category badges (all same color as requested)
 	cat_badges = "".join(
-		[f'<a href="../../recipeFilter.html#{tk_html_escape(c)}" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-{get_category_badge(c)}">{tk_html_escape(c)}</span></a>' for c in categories]
+		[
+			f'<a href="../../recipeFilter.html#{tk_html_escape(c)}" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-{get_category_badge(c)}">{tk_html_escape(c)}</span></a>'
+			for c in categories
+		]
 	)
-	# Ingredients list items (handle name-only gracefully)
+
 	ingredients_li = []
 	for ing in data.get("ingredients", []):
 		name = tk_html_escape(ing.get("name", "")).strip()
 		has_amount = ("amount" in ing) and str(ing.get("amount", "")).strip() != ""
 		unit = tk_html_escape(ing.get("unit", "")) if has_amount else ""
+
 		if not has_amount:
 			li = (
 				'''<li class="list-group-item d-flex align-items-center gap-2">'''
@@ -246,13 +249,14 @@ def generate_html(data: dict, instructions: list[str]) -> str:
 
 	ingredients_html = "".join(ingredients_li)
 
-	# Instructions list items
 	instr_li = []
 	for step in instructions:
 		step = tk_html_escape(step)
 		if step:
-			instr_li.append(f'''<li class="list-group-item">{step}</li>
-							''')
+			instr_li.append(
+				f'''<li class="list-group-item">{step}</li>
+							'''
+			)
 	instructions_html = "".join(instr_li)
 
 	html = f"""<!DOCTYPE html>
@@ -268,10 +272,11 @@ def generate_html(data: dict, instructions: list[str]) -> str:
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
 <div id="site-navbar"></div>
 
+<main class="flex-grow-1">
 <section class="overview-section py-4">
 <div class="container">
 	<h1 class="mb-3">{tk_html_escape(title)}</h1>
@@ -331,8 +336,6 @@ def generate_html(data: dict, instructions: list[str]) -> str:
 </div>
 </section>
 
-
-
 <section class="ingredients-section">
 <div class="overview-div">
 	<div class="container my-4">
@@ -388,9 +391,8 @@ def generate_html(data: dict, instructions: list[str]) -> str:
 		</div>
 	</div>
 </div>
-
 </section>
-
+</main>
 
 <div id="site-footer"></div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

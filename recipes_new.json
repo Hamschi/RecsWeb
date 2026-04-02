@@ -5415,5 +5415,21 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MangoCrepeRole.jpg",
     "file": "recipes/otherDesserts/MangoCrepeRole.html"
+  },
+  {
+    "title": "asdfadfsafasdf",
+    "categories": [],
+    "activeTime": 0,
+    "passiveTime": 0,
+    "totalTime": 0,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "",
+    "source": "",
+    "ingredients": [],
+    "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
+    "file": "recipes/basics/NewRecipe.html"
   }
 ]

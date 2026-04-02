@@ -1,3 +1,13 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 /*Overwrite Bootstrap*/
 .navbar {
 	background-color: #F5ECDC !important;
@@ -460,4 +470,21 @@ footer {
     max-width: 100%;
     margin-top: 12px;
   }
+}
+
+
+/*search html recipe-search cards*/
+.recipe-search-card {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.recipe-search-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.12);
+}
+
+.recipe-search-card .card-img-top {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
