@@ -16,36 +16,36 @@
 }
 
 .navbar .navbar-toggler-icon {
-background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(51,51,51,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(51,51,51,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .navbar .navbar-toggler {
-border-color: #333 !important;
+	border-color: #333 !important;
 }
 
 .navbar .navbar-toggler:hover,
 .navbar .navbar-toggler:focus {
-border-color: #333 !important;
-box-shadow: 0 0 0 0.2rem rgba(51, 51, 51, 0.4);
+	border-color: #333 !important;
+	box-shadow: 0 0 0 0.2rem rgba(51, 51, 51, 0.4);
 }
 
 
 /*General*/
 body {
-background-color: #FAF7F2;
-color: #333333;
+	background-color: #FAF7F2;
+	color: #333333;
 }
 
 footer {
-background-color: #333333;  
-color: #F5ECDC;
-padding: 1.25em;
-text-align: center;
+	background-color: #333333;
+	color: #F5ECDC;
+	padding: 1.25em;
+	text-align: center;
 }
 
 
 /*Custom Classes*/
-.overview-section{
+.overview-section {
 	font-family: 'Poppins', sans-serif;
 	color: white;
 	background-color: #004D40;
@@ -54,21 +54,19 @@ text-align: center;
 	padding: 2em;
 }
 
-
 .overview-section img {
-max-width: 30vw;
-max-height: 30vh;
-width: auto;
-height: auto;
-object-fit: contain;
-display: block;
-margin: 0 auto;
+	max-width: 30vw;
+	max-height: 30vh;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+	display: block;
+	margin: 0 auto;
 }
 
-
 .time-item {
-margin-top: 1rem;
-margin-bottom: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 .banner-section {
@@ -119,121 +117,145 @@ margin-bottom: 1rem;
 
 
 /* Viewport & Track */
-.mi-viewport { 
-  overflow: hidden; 
-  position: relative; 
+.mi-viewport {
+	position: relative;
+	overflow-x: auto;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+	scroll-behavior: smooth;
+	scrollbar-width: none; /* Firefox */
+	touch-action: pan-x;
+	scroll-snap-type: x mandatory;
 }
-.mi-track { 
-  display: flex; 
-  will-change: transform; 
-  gap: 1rem; 
-  padding: 0.5rem 0; /* Added some vertical padding */
+
+.mi-viewport::-webkit-scrollbar {
+	display: none; /* Chrome/Safari */
+}
+
+.mi-track {
+	display: flex;
+	flex-wrap: nowrap;
+	will-change: transform;
+	gap: 1rem;
+	padding: 0.5rem 0;
 }
 
 /* Kartenbreiten: 4 auf lg, 3 auf md, 2 auf sm, 1 auf xs */
-.mi-item { 
-  flex: 0 0 100%; 
-  max-width: 100%; 
-}
-@media (min-width: 576px) { 
-  .mi-item { 
-    flex-basis: 49%;  
-    max-width: 49%;  
-  } 
-}
-@media (min-width: 768px) { 
-  .mi-item { 
-    flex-basis: 32%;  
-    max-width: 32%;  
-  } 
-}
-@media (min-width: 992px) { 
-  .mi-item { 
-    flex-basis: 24%;  
-    max-width: 24%;  
-  } 
+.mi-item {
+	flex: 0 0 100%;
+	max-width: 100%;
+	scroll-snap-align: start;
 }
 
-/* Seitliche Pfeile - FIXED POSITION */
+@media (min-width: 576px) {
+	.mi-item {
+		flex-basis: 49%;
+		max-width: 49%;
+	}
+}
+
+@media (min-width: 768px) {
+	.mi-item {
+		flex-basis: 32%;
+		max-width: 32%;
+	}
+}
+
+@media (min-width: 992px) {
+	.mi-item {
+		flex-basis: 24%;
+		max-width: 24%;
+	}
+}
+
+/* Seitliche Pfeile */
 .mi-control {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 42px; 
-  height: 42px;
-  border-radius: 9999px;
-  border: 0;
-  background: rgba(0,0,0,.75);
-  color: #FAF7F2;
-  display: grid; 
-  place-items: center;
-  z-index: 20; /* Higher z-index to ensure they're above everything */
-  transition: all 0.2s ease;
-  cursor: pointer;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 42px;
+	height: 42px;
+	border-radius: 9999px;
+	border: 0;
+	background: rgba(0, 0, 0, .75);
+	color: #FAF7F2;
+	display: grid;
+	place-items: center;
+	z-index: 20;
+	transition: all 0.2s ease;
+	cursor: pointer;
 }
-.mi-prev { 
-  left: 1rem; /* Adjusted from .25rem to 1rem for better positioning */
+
+.mi-prev {
+	left: 1rem;
 }
-.mi-next { 
-  right: 1rem; /* Adjusted from .25rem to 1rem for better positioning */
+
+.mi-next {
+	right: 1rem;
 }
+
 .mi-control:hover {
-  background: rgba(0,0,0,.9);
-  transform: translateY(-50%) scale(1.05);
+	background: rgba(0, 0, 0, .9);
+	transform: translateY(-50%) scale(1.05);
 }
-.mi-control:focus-visible { 
-  outline: 2px solid #0d6efd; 
-  outline-offset: 2px; 
+
+.mi-control:focus-visible {
+	outline: 2px solid #0d6efd;
+	outline-offset: 2px;
 }
 
 /* Hide buttons on mobile */
 @media (max-width: 576px) {
-  .mi-control {
-    display: none;
-  }
+	.mi-control {
+		display: none;
+	}
 }
 
 @media (hover: hover) {
-  .mi-control { 
-    opacity: 0.7; 
-  }
-  /* Update hover to show buttons more prominently */
-  .mi-control:hover,
-  .col-12.position-relative:hover .mi-control { 
-    opacity: 1; 
-  }
+	.mi-control {
+		opacity: 0.7;
+	}
+
+	.mi-control:hover,
+	.col-12.position-relative:hover .mi-control {
+		opacity: 1;
+	}
 }
 
-/* Kanten-Shader - update to work with new structure */
+/* Kanten-Shader */
 .mi-viewport::before,
 .mi-viewport::after {
-  content: "";
-  position: absolute; 
-  top: 0; 
-  bottom: 0; 
-  width: 3rem; 
-  z-index: 10; /* Lower than buttons */
-  pointer-events: none;
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 3rem;
+	z-index: 10;
+	pointer-events: none;
 }
-.mi-viewport::before { 
-  left: 0; 
-  background: linear-gradient(90deg, rgba(250,247,242,0.9), rgba(255,255,255,0)); 
+
+.mi-viewport::before {
+	left: 0;
+	background: linear-gradient(90deg, rgba(250, 247, 242, 0.9), rgba(255, 255, 255, 0));
 }
-.mi-viewport::after { 
-  right: 0; 
-  background: linear-gradient(270deg, rgba(250,247,242,0.9), rgba(255,255,255,0)); 
+
+.mi-viewport::after {
+	right: 0;
+	background: linear-gradient(270deg, rgba(250, 247, 242, 0.9), rgba(255, 255, 255, 0));
 }
 
 /* Card styling for recipe items */
 .card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  border: 1px solid rgba(0,0,0,0.125);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	border: 1px solid rgba(0, 0, 0, 0.125);
 }
+
 .card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .card-img-top {
-  height: 200px;
-  object-fit: cover;
+	height: 200px;
+	object-fit: cover;
 }
