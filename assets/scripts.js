@@ -6,16 +6,22 @@ const $qs = (sel, root = document) => root.querySelector(sel);
 const on = (el, ev, fn, opts) => el && el.addEventListener(ev, fn, opts);
 
 // defensives console-Wrapper
-const warn = (...args) => console.warn('[script.js]', ...args);
+const warn = (...args) => console.warn('[scripts.js]', ...args);
 
 // =====================================================
 // Start, wenn DOM bereit ist
 // =====================================================
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   try {
-    initPartials();
+    await initPartials();
   } catch (e) {
     warn('Fehler in initPartials:', e);
+  }
+
+  try {
+    await initRecipeSearch();
+  } catch (e) {
+    warn('Fehler in initRecipeSearch:', e);
   }
 
   try {
@@ -29,23 +35,177 @@ document.addEventListener('DOMContentLoaded', () => {
   } catch (e) {
     warn('Fehler in initCustomMarqueeCarousel:', e);
   }
+
+  try {
+    await initRecipeSections();
+  } catch (e) {
+    warn('Fehler in initRecipeSections:', e);
+  }
 });
 
 // =====================================================
 // Partials (Navbar & Footer) nur laden, wenn Ziel existiert
 // =====================================================
-function initPartials() {
-  const loadPartial = (id, url) => {
+async function initPartials() {
+  const loadPartial = async (id, url) => {
     const el = $id(id);
     if (!el) return;
-    fetch(url)
-      .then(r => r.text())
-      .then(html => (el.innerHTML = html))
-      .catch(err => warn(`Fehler beim Laden von ${url}:`, err));
+
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`${url} konnte nicht geladen werden. Status: ${response.status}`);
+    }
+
+    const html = await response.text();
+    el.innerHTML = html;
   };
 
-  loadPartial('site-navbar', '../../partials/navbar.html');
-  loadPartial('site-footer', '../../partials/footer.html');
+  const jobs = [];
+
+  if ($id('site-navbar')) {
+    jobs.push(
+      loadPartial('site-navbar', '../../partials/navbar.html').catch(err =>
+        warn('Fehler beim Laden von ../../partials/navbar.html:', err)
+      )
+    );
+  }
+
+  if ($id('site-footer')) {
+    jobs.push(
+      loadPartial('site-footer', '../../partials/footer.html').catch(err =>
+        warn('Fehler beim Laden von ../../partials/footer.html:', err)
+      )
+    );
+  }
+
+  await Promise.all(jobs);
+}
+
+// =====================================================
+// Navbar-Rezeptsuche
+// WICHTIG: läuft erst NACH initPartials()
+// =====================================================
+async function initRecipeSearch() {
+  const form = $id('recipeSearchForm');
+  const input = $id('recipeSearchInput');
+  const suggestionsBox = $id('recipeSuggestions');
+
+  if (!form || !input || !suggestionsBox) {
+    return;
+  }
+
+  const RECIPES_JSON = '../../recipes.json';
+  const SEARCH_PAGE = '../../search.html';
+  const FALLBACK_IMG = 'https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935';
+
+  let recipes = [];
+
+  const normalizeText = (text = '') =>
+    String(text)
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '');
+
+  const hideSuggestions = () => {
+    suggestionsBox.innerHTML = '';
+    suggestionsBox.classList.add('d-none');
+  };
+
+  const showSuggestions = (matches) => {
+    suggestionsBox.innerHTML = '';
+
+    if (!matches.length) {
+      const empty = document.createElement('div');
+      empty.className = 'recipe-suggestion-empty';
+      empty.textContent = 'No matching recipes';
+      suggestionsBox.appendChild(empty);
+      suggestionsBox.classList.remove('d-none');
+      return;
+    }
+
+    for (const recipe of matches) {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'recipe-suggestion-item';
+      button.dataset.title = recipe.title || '';
+
+      const img = document.createElement('img');
+      img.src = recipe.image && recipe.image !== 'N/A' ? recipe.image : FALLBACK_IMG;
+      img.alt = recipe.title || 'Rezeptbild';
+
+      const span = document.createElement('span');
+      span.textContent = recipe.title || 'Ohne Titel';
+
+      button.append(img, span);
+      suggestionsBox.appendChild(button);
+    }
+
+    suggestionsBox.classList.remove('d-none');
+  };
+
+  try {
+    const response = await fetch(RECIPES_JSON);
+    if (!response.ok) {
+      throw new Error(`recipes.json konnte nicht geladen werden. Status: ${response.status}`);
+    }
+
+    recipes = await response.json();
+    if (!Array.isArray(recipes)) recipes = [];
+  } catch (error) {
+    console.error('Fehler beim Laden der Rezepte für die Suche:', error);
+    return;
+  }
+
+  input.addEventListener('input', () => {
+    const query = input.value.trim();
+    const normalizedQuery = normalizeText(query);
+
+    if (normalizedQuery.length < 1) {
+      hideSuggestions();
+      return;
+    }
+
+    const matches = recipes
+      .filter(recipe => normalizeText(recipe?.title || '').includes(normalizedQuery))
+      .slice(0, 8);
+
+    showSuggestions(matches);
+  });
+
+  suggestionsBox.addEventListener('click', (event) => {
+    const button = event.target.closest('.recipe-suggestion-item');
+    if (!button) return;
+
+    const selectedTitle = button.dataset.title || '';
+    input.value = selectedTitle;
+    hideSuggestions();
+
+    window.location.href = `${SEARCH_PAGE}?q=${encodeURIComponent(selectedTitle)}`;
+  });
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const query = input.value.trim();
+    if (!query) {
+      hideSuggestions();
+      return;
+    }
+
+    window.location.href = `${SEARCH_PAGE}?q=${encodeURIComponent(query)}`;
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!form.contains(event.target)) {
+      hideSuggestions();
+    }
+  });
+
+  input.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      hideSuggestions();
+    }
+  });
 }
 
 // =====================================================
@@ -270,11 +430,14 @@ function initCustomMarqueeCarousel() {
 // =====================================================
 // Recipe Carousel Initialization
 // =====================================================
-(async () => {
-  const RECIPES_JSON_URL = "recipes.json";
-  const FALLBACK_IMG = "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935";
+async function initRecipeSections() {
+  const sections = Array.from(document.querySelectorAll('section[data-category], section[data-categorie]'));
+  if (!sections.length) return;
 
-  const toKey = (s) => (s || "").toString().trim().toLowerCase();
+  const RECIPES_JSON_URL = 'recipes.json';
+  const FALLBACK_IMG = 'https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935';
+
+  const toKey = (s) => (s || '').toString().trim().toLowerCase();
 
   const pickCountryFlag = (categories = []) => {
     for (const c of categories) {
@@ -296,8 +459,8 @@ function initCustomMarqueeCarousel() {
       const conf = CATEGORY_BADGES[k];
       const label = (conf && conf.label) ? conf.label : k;
 
-      const span = document.createElement("span");
-      span.className = `badge ${conf ? conf.cls : "bg-light text-dark border"} me-1 mb-1`;
+      const span = document.createElement('span');
+      span.className = `badge ${conf ? conf.cls : 'bg-light text-dark border'} me-1 mb-1`;
       span.textContent = label;
       frag.appendChild(span);
     }
@@ -306,44 +469,44 @@ function initCustomMarqueeCarousel() {
   };
 
   const buildCard = (recipe) => {
-    const a = document.createElement("a");
-    a.href = recipe.file || "#";
-    a.className = "text-decoration-none text-dark";
+    const a = document.createElement('a');
+    a.href = recipe.file || '#';
+    a.className = 'text-decoration-none text-dark';
 
-    const card = document.createElement("div");
-    card.className = "card h-100";
+    const card = document.createElement('div');
+    card.className = 'card h-100';
 
-    const img = document.createElement("img");
-    img.className = "card-img-top";
-    img.src = (recipe.image && recipe.image !== "N/A") ? recipe.image : FALLBACK_IMG;
-    img.alt = recipe.title || "Rezeptbild";
+    const img = document.createElement('img');
+    img.className = 'card-img-top';
+    img.src = (recipe.image && recipe.image !== 'N/A') ? recipe.image : FALLBACK_IMG;
+    img.alt = recipe.title || 'Rezeptbild';
 
-    const body = document.createElement("div");
-    body.className = "card-body";
+    const body = document.createElement('div');
+    body.className = 'card-body';
 
-    const h4 = document.createElement("h4");
-    h4.className = "card-title mb-2";
-    h4.textContent = recipe.title || "Rezept";
+    const h4 = document.createElement('h4');
+    h4.className = 'card-title mb-2';
+    h4.textContent = recipe.title || 'Rezept';
 
-    const pCountry = document.createElement("p");
-    pCountry.className = "card-text mb-1";
+    const pCountry = document.createElement('p');
+    pCountry.className = 'card-text mb-1';
     const flag = pickCountryFlag(recipe.categories);
-    pCountry.innerHTML = `<strong>Country:</strong> ${flag ? `<span class="fi fi-${flag}"></span>` : "-"}`;
+    pCountry.innerHTML = `<strong>Country:</strong> ${flag ? `<span class="fi fi-${flag}"></span>` : '-'}`;
 
-    const pDiff = document.createElement("p");
-    pDiff.className = "card-text mb-1";
-    pDiff.innerHTML = `<strong>Difficulty:</strong> ${recipe.difficulty || "-"}`;
+    const pDiff = document.createElement('p');
+    pDiff.className = 'card-text mb-1';
+    pDiff.innerHTML = `<strong>Difficulty:</strong> ${recipe.difficulty || '-'}`;
 
-    const badges = document.createElement("div");
-    badges.className = "mt-2 d-flex flex-wrap";
+    const badges = document.createElement('div');
+    badges.className = 'mt-2 d-flex flex-wrap';
     badges.appendChild(buildBadges(recipe.categories));
 
     body.append(h4, pCountry, pDiff, badges);
     card.append(img, body);
     a.appendChild(card);
 
-    const item = document.createElement("div");
-    item.className = "mi-item";
+    const item = document.createElement('div');
+    item.className = 'mi-item';
     item.appendChild(a);
 
     return item;
@@ -355,10 +518,10 @@ function initCustomMarqueeCarousel() {
     return cats.includes(wanted);
   };
 
-  const getTrack = (section) => section.querySelector(".mi-track");
-  const getPrevBtn = (section) => section.querySelector(".mi-prev");
-  const getNextBtn = (section) => section.querySelector(".mi-next");
-  const getViewport = (section) => section.querySelector(".mi-viewport");
+  const getTrack = (section) => section.querySelector('.mi-track');
+  const getPrevBtn = (section) => section.querySelector('.mi-prev');
+  const getNextBtn = (section) => section.querySelector('.mi-next');
+  const getViewport = (section) => section.querySelector('.mi-viewport');
 
   const enableControls = (section) => {
     const viewport = getViewport(section);
@@ -430,22 +593,19 @@ function initCustomMarqueeCarousel() {
       resumeTimeout = setTimeout(startAutoSlide, delay);
     };
 
-    prev?.addEventListener("click", () => {
+    prev?.addEventListener('click', () => {
       prevSlide();
       restartAutoSlideDelayed();
     });
 
-    next?.addEventListener("click", () => {
+    next?.addEventListener('click', () => {
       nextSlide();
       restartAutoSlideDelayed();
     });
 
-    // Maus-Hover pausiert nur auf Geräten mit Hover
     viewport.addEventListener('mouseenter', stopAutoSlide);
     viewport.addEventListener('mouseleave', startAutoSlide);
 
-    // Touch / Drag auf mobilen Geräten:
-    // User kann nativ wischen, Autoscroll pausiert kurz und startet wieder
     viewport.addEventListener('touchstart', () => {
       restartAutoSlideDelayed(2500);
     }, { passive: true });
@@ -475,40 +635,38 @@ function initCustomMarqueeCarousel() {
     startAutoSlide();
   };
 
-  const sections = Array.from(document.querySelectorAll("section[data-category], section[data-categorie]"));
-  if (!sections.length) return;
-
   let recipes = [];
   try {
-    const res = await fetch(RECIPES_JSON_URL, { cache: "no-cache" });
+    const res = await fetch(RECIPES_JSON_URL, { cache: 'no-cache' });
     recipes = await res.json();
     if (!Array.isArray(recipes)) recipes = [];
   } catch (err) {
-    console.error("Failed to load recipes.json:", err);
+    console.error('Failed to load recipes.json:', err);
+    return;
   }
 
   for (const section of sections) {
-    const wanted = toKey(section.dataset.category || section.dataset.categorie || "");
+    const wanted = toKey(section.dataset.category || section.dataset.categorie || '');
     const track = getTrack(section);
     if (!track) continue;
 
     const list = recipes
       .filter(r => recipeMatches(r, wanted))
-      .sort((a, b) => (a.title || "").localeCompare(b.title || "", "de"));
+      .sort((a, b) => (a.title || '').localeCompare(b.title || '', 'de'));
 
-    track.innerHTML = "";
+    track.innerHTML = '';
 
     for (const r of list) {
       track.appendChild(buildCard(r));
     }
 
     if (!track.children.length) {
-      const empty = document.createElement("div");
-      empty.className = "text-muted p-3 text-center";
-      empty.textContent = "No recipes found.";
+      const empty = document.createElement('div');
+      empty.className = 'text-muted p-3 text-center';
+      empty.textContent = 'No recipes found.';
       track.appendChild(empty);
     }
 
     enableControls(section);
   }
-})();
+}

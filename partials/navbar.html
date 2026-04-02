@@ -93,6 +93,29 @@
 		</ul>
 		</li>
 	</ul>
+	<form
+		id="recipeSearchForm"
+		class="d-flex ms-auto position-relative navbar-search-form"
+		action="../../search.html"
+		method="get"
+		autocomplete="off"
+		>
+		<div class="position-relative w-100">
+			<input
+			id="recipeSearchInput"
+			class="form-control"
+			type="search"
+			name="q"
+			placeholder="Search recipes..."
+			aria-label="Search recipes"
+			>
+			<div id="recipeSuggestions" class="recipe-suggestions d-none"></div>
+		</div>
+
+		<button class="btn btn-outline-light ms-2" type="submit">
+			Suchen
+		</button>
+	</form>
 	</div>
 </div>
 </nav>
