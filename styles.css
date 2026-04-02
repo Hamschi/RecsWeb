@@ -205,10 +205,10 @@ footer {
 }
 
 /* Hide buttons on mobile */
-@media (max-width: 576px) {
-	.mi-control {
-		display: none;
-	}
+@media (hover: none) and (pointer: coarse) {
+  .mi-control {
+    display: none;
+  }
 }
 
 @media (hover: hover) {
