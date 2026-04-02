@@ -95,26 +95,31 @@
 	</ul>
 	<form
 		id="recipeSearchForm"
-		class="d-flex ms-auto position-relative navbar-search-form"
+		class="navbar-search-form ms-auto"
 		action="../../search.html"
 		method="get"
 		autocomplete="off"
 		>
-		<div class="position-relative w-100">
+		<div class="navbar-search-wrap">
+			<span class="navbar-search-icon" aria-hidden="true">
+			<i class="fa-solid fa-magnifying-glass"></i>
+			</span>
+
 			<input
 			id="recipeSearchInput"
-			class="form-control"
+			class="form-control navbar-search-input"
 			type="search"
 			name="q"
-			placeholder="Search recipes..."
-			aria-label="Search recipes"
+			placeholder="Find recipe..."
+			aria-label="Find recipe"
 			>
+
+			<button class="navbar-search-submit" type="submit" aria-label="Search">
+			<i class="fa-solid fa-arrow-right"></i>
+			</button>
+
 			<div id="recipeSuggestions" class="recipe-suggestions d-none"></div>
 		</div>
-
-		<button class="btn btn-outline-light ms-2" type="submit">
-			Suchen
-		</button>
 	</form>
 	</div>
 </div>
