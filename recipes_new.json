@@ -5417,8 +5417,10 @@
     "file": "recipes/otherDesserts/MangoCrepeRole.html"
   },
   {
-    "title": "asdfadfsafasdf",
-    "categories": [],
+    "title": "sdfsf",
+    "categories": [
+      "basics"
+    ],
     "activeTime": 0,
     "passiveTime": 0,
     "totalTime": 0,
@@ -5426,9 +5428,35 @@
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
-    "status": "",
-    "source": "",
-    "ingredients": [],
+    "status": "sdfsfdsf",
+    "source": "sdfsf",
+    "ingredients": [
+      {
+        "name": "sdfsfd",
+        "amount": "sdfsdf",
+        "unit": "sdfsf"
+      },
+      {
+        "name": "dfssf",
+        "amount": "sdfsf",
+        "unit": "sdg"
+      },
+      {
+        "name": "sdf",
+        "amount": "sdfs",
+        "unit": "sfd"
+      },
+      {
+        "name": "gg",
+        "amount": "g",
+        "unit": "d"
+      },
+      {
+        "name": "gadf",
+        "amount": "fgdsgdg",
+        "unit": "dgf"
+      }
+    ],
     "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
     "file": "recipes/basics/NewRecipe.html"
   }

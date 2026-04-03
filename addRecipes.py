@@ -171,7 +171,6 @@ def minutes_text_short(n):
 # Allowed recipe folders (selectable)
 RECIPE_FOLDERS = [
 	"appetizers",
-	"basics",
 	"beef",
 	"breadAndBakedDishes",
 	"cakesAndPastries",
@@ -506,7 +505,7 @@ class RecipeApp(tk.Tk):
 		ttk.Separator(self.inner).grid(row=row, column=0, columnspan=4, sticky="ew", pady=(10, 6))
 		row += 1
 		ttk.Label(self.inner, text="Category Folder (recipes/<folder>/...)").grid(row=row, column=0, sticky="w", **pad)
-		self.folder_var = tk.StringVar(value="basics")
+		self.folder_var = tk.StringVar(value="choose folder...")
 		ttk.Combobox(self.inner, textvariable=self.folder_var, values=RECIPE_FOLDERS, state="readonly", width=28).grid(row=row, column=1, sticky="w", **pad)
 
 		ttk.Label(self.inner, text="Filename (.html)").grid(row=row, column=2, sticky="w", **pad)
@@ -559,6 +558,40 @@ class RecipeApp(tk.Tk):
 		row += 1
 		ttk.Button(self.inner, text="Submit", command=self.on_submit).grid(row=row, column=0, sticky="w", padx=6, pady=10)
 
+
+	def refresh_ingredient_rows(self):
+		for r, *_rest in self.ing_rows:
+			r.pack_forget()
+		for r, *_rest in self.ing_rows:
+			r.pack(fill=tk.X, pady=2)
+
+	def move_ingredient(self, row, direction):
+		for i, (r, *_rest) in enumerate(self.ing_rows):
+			if r is row:
+				new_i = i + direction
+				if 0 <= new_i < len(self.ing_rows):
+					self.ing_rows[i], self.ing_rows[new_i] = self.ing_rows[new_i], self.ing_rows[i]
+					self.refresh_ingredient_rows()
+				break
+
+	def refresh_instruction_rows(self):
+		for r, _e in self.instruction_entries:
+			r.pack_forget()
+		for r, _e in self.instruction_entries:
+			r.pack(fill=tk.X, pady=2)
+
+	def move_instruction(self, row, direction):
+		for i, (r, _e) in enumerate(self.instruction_entries):
+			if r is row:
+				new_i = i + direction
+				if 0 <= new_i < len(self.instruction_entries):
+					self.instruction_entries[i], self.instruction_entries[new_i] = (
+						self.instruction_entries[new_i],
+						self.instruction_entries[i],
+					)
+					self.refresh_instruction_rows()
+				break
+
 	# ------- dynamic rows -------
 	def add_category(self):
 		row = ttk.Frame(self.categories_frame)
@@ -591,11 +624,17 @@ class RecipeApp(tk.Tk):
 		name_e.insert(0, "")
 		name_e.pack(side=tk.LEFT, padx=(0, 6))
 
-		btn = ttk.Button(row, text="–", width=3, command=lambda r=row: self.remove_ingredient(r))
-		btn.pack(side=tk.LEFT)
+		up_btn = ttk.Button(row, text="↑", width=3, command=lambda r=row: self.move_ingredient(r, -1))
+		up_btn.pack(side=tk.LEFT, padx=(0, 2))
 
-		row.pack(fill=tk.X, pady=2)
+		down_btn = ttk.Button(row, text="↓", width=3, command=lambda r=row: self.move_ingredient(r, 1))
+		down_btn.pack(side=tk.LEFT, padx=(0, 6))
+
+		del_btn = ttk.Button(row, text="–", width=3, command=lambda r=row: self.remove_ingredient(r))
+		del_btn.pack(side=tk.LEFT)
+
 		self.ing_rows.append((row, name_e, amount_e, unit_e))
+		self.refresh_ingredient_rows()
 
 	def remove_ingredient(self, row):
 		for i, (r, *_rest) in enumerate(self.ing_rows):
@@ -603,16 +642,27 @@ class RecipeApp(tk.Tk):
 				self.ing_rows.pop(i)
 				r.destroy()
 				break
+		self.refresh_ingredient_rows()
+
 
 	def add_instruction(self):
 		row = ttk.Frame(self.instructions_frame)
+
 		step_e = ttk.Entry(row, width=80)
 		step_e.insert(0, "")
 		step_e.pack(side=tk.LEFT, padx=(0, 6))
-		btn = ttk.Button(row, text="–", width=3, command=lambda r=row: self.remove_instruction(r))
-		btn.pack(side=tk.LEFT)
-		row.pack(fill=tk.X, pady=2)
+
+		up_btn = ttk.Button(row, text="↑", width=3, command=lambda r=row: self.move_instruction(r, -1))
+		up_btn.pack(side=tk.LEFT, padx=(0, 2))
+
+		down_btn = ttk.Button(row, text="↓", width=3, command=lambda r=row: self.move_instruction(r, 1))
+		down_btn.pack(side=tk.LEFT, padx=(0, 6))
+
+		del_btn = ttk.Button(row, text="–", width=3, command=lambda r=row: self.remove_instruction(r))
+		del_btn.pack(side=tk.LEFT)
+
 		self.instruction_entries.append((row, step_e))
+		self.refresh_instruction_rows()
 
 	def remove_instruction(self, row):
 		for i, (r, _e) in enumerate(self.instruction_entries):
@@ -620,6 +670,7 @@ class RecipeApp(tk.Tk):
 				self.instruction_entries.pop(i)
 				r.destroy()
 				break
+		self.refresh_instruction_rows()
 
 	# ------- submit -------
 	def on_submit(self):
