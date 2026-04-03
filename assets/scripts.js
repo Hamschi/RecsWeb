@@ -94,8 +94,8 @@ async function initRecipeSearch() {
     return;
   }
 
-  const RECIPES_JSON = '../../recipes.json';
-  const SEARCH_PAGE = '../../search.html';
+  const RECIPES_JSON = siteUrl('recipes.json');
+  const SEARCH_PAGE = siteUrl('search.html');
   const FALLBACK_IMG = 'https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935';
 
   let recipes = [];
@@ -434,7 +434,7 @@ async function initRecipeSections() {
   const sections = Array.from(document.querySelectorAll('section[data-category], section[data-categorie]'));
   if (!sections.length) return;
 
-  const RECIPES_JSON_URL = 'recipes.json';
+  const RECIPES_JSON_URL = siteUrl('recipes.json');
   const FALLBACK_IMG = 'https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935';
 
   const toKey = (s) => (s || '').toString().trim().toLowerCase();

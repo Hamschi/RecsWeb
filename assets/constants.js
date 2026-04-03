@@ -95,3 +95,12 @@ const FALLBACK_IMG = "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not
 
 // Optional: global JSON URL (alternativ via data-json an einer Section)
 window.RECIPES_JSON_URL = "data/recipes.json";
+
+
+const SITE_BASE = window.location.pathname.startsWith('/RecsWeb/')
+  ? '/RecsWeb/'
+  : '/';
+
+const siteUrl = (path = '') => {
+  return `${SITE_BASE}${String(path).replace(/^\/+/, '')}`;
+};
