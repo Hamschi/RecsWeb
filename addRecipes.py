@@ -220,27 +220,33 @@ def generate_html(data: dict, instructions: list[str]) -> str:
 	ingredients_li = []
 	for ing in data.get("ingredients", []):
 		name = tk_html_escape(ing.get("name", "")).strip()
+		link = str(ing.get("link", "")).strip()
 		has_amount = ("amount" in ing) and str(ing.get("amount", "")).strip() != ""
 		unit = tk_html_escape(ing.get("unit", "")) if has_amount else ""
+
+		if link:
+			name_html = f'<a href="{tk_attr_escape(link)}" class="ingredient flex-fill">{name}</a>'
+		else:
+			name_html = f'<span class="ingredient flex-fill">{name}</span>'
 
 		if not has_amount:
 			li = (
 				'''<li class="list-group-item d-flex align-items-center gap-2">'''
-				f'''   <span class="ingredient flex-fill">{name}</span>'''
+				f'''   {name_html}'''
 				'''</li>
 				'''
 			)
 		else:
 			amount_val = ing.get("amount", "")
-			amount_attr = f'data-basis="{amount_val}"' if amount_val != "" else ''
-			unit_attr = f'data-basis="{unit}"' if unit != "" else ''
+			amount_attr = f'data-basis="{tk_attr_escape(amount_val)}"' if amount_val != "" else ''
+			unit_attr = f'data-basis="{tk_attr_escape(unit)}"' if unit != "" else ''
 			amount_disp = f"{amount_val}" if amount_val != "" else ""
 			unit_span = f'<span class="unit" {unit_attr}>{unit}</span>' if unit != "" else ""
 			li = (
 				'''<li class="list-group-item d-flex align-items-center gap-2">'''
-				f'''   <span class="amount" {amount_attr}>{amount_disp}</span>'''
+				f'''   <span class="amount" {amount_attr}>{tk_html_escape(amount_disp)}</span>'''
 				f'''{unit_span}'''
-				f'''   <span class="ingredient flex-fill">{name}</span>'''
+				f'''   {name_html}'''
 				'''</li>
 				'''
 			)
@@ -532,6 +538,13 @@ class RecipeApp(tk.Tk):
 		row += 1
 		ttk.Label(self.inner, text="Ingredients").grid(row=row, column=0, sticky="w", **pad)
 		ttk.Button(self.inner, text="+ Ingredient", command=self.add_ingredient).grid(row=row, column=1, sticky="w", **pad)
+		row += 1
+		header = ttk.Frame(self.inner)
+		header.grid(row=row, column=0, columnspan=4, sticky="w", **pad)
+		ttk.Label(header, text="Amount", width=8).pack(side=tk.LEFT, padx=(0, 6))
+		ttk.Label(header, text="Unit", width=12).pack(side=tk.LEFT, padx=(0, 6))
+		ttk.Label(header, text="Name", width=26).pack(side=tk.LEFT, padx=(0, 6))
+		ttk.Label(header, text="Link (optional)", width=30).pack(side=tk.LEFT, padx=(0, 6))
 
 		row += 1
 		self.ing_frame = ttk.Frame(self.inner)
@@ -620,9 +633,13 @@ class RecipeApp(tk.Tk):
 		unit_e.insert(0, "")
 		unit_e.pack(side=tk.LEFT, padx=(0, 6))
 		
-		name_e = ttk.Entry(row, width=30)
+		name_e = ttk.Entry(row, width=26)
 		name_e.insert(0, "")
 		name_e.pack(side=tk.LEFT, padx=(0, 6))
+
+		link_e = ttk.Entry(row, width=30)
+		link_e.insert(0, "")
+		link_e.pack(side=tk.LEFT, padx=(0, 6))
 
 		up_btn = ttk.Button(row, text="↑", width=3, command=lambda r=row: self.move_ingredient(r, -1))
 		up_btn.pack(side=tk.LEFT, padx=(0, 2))
@@ -633,7 +650,7 @@ class RecipeApp(tk.Tk):
 		del_btn = ttk.Button(row, text="–", width=3, command=lambda r=row: self.remove_ingredient(r))
 		del_btn.pack(side=tk.LEFT)
 
-		self.ing_rows.append((row, name_e, amount_e, unit_e))
+		self.ing_rows.append((row, name_e, amount_e, unit_e, link_e))
 		self.refresh_ingredient_rows()
 
 	def remove_ingredient(self, row):
@@ -687,22 +704,27 @@ class RecipeApp(tk.Tk):
 		status = self.status_var.get().strip()
 
 		ingredients = []
-		for _row, n_e, a_e, u_e in self.ing_rows:
+		for _row, n_e, a_e, u_e, l_e in self.ing_rows:
 			name = n_e.get().strip()
 			if not name:
 				continue
+
 			amount_raw = a_e.get().strip()
 			unit_raw = u_e.get().strip()
+			link_raw = l_e.get().strip()
 
-			if amount_raw == "":
-				# If no amount is provided, only store the name (omit amount & unit)
-				ingredients.append({"name": name})
-			else:
-				amount_val = parse_amount(amount_raw)
-				ing_obj = {"name": name, "amount": amount_val}
-				if unit_raw:
-					ing_obj["unit"] = unit_raw
-				ingredients.append(ing_obj)
+			ing_obj = {"name": name}
+
+			if amount_raw != "":
+				ing_obj["amount"] = parse_amount(amount_raw)
+
+			if unit_raw:
+				ing_obj["unit"] = unit_raw
+
+			if link_raw:
+				ing_obj["link"] = link_raw
+
+			ingredients.append(ing_obj)
 
 		instructions = []
 		for _row, s_e in self.instruction_entries:
