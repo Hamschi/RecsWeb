@@ -1,6 +1,6 @@
 [
   {
-    "title": "sdfsf",
+    "title": "test",
     "categories": [
       "basics"
     ],
@@ -11,36 +11,21 @@
     "difficulty": "easy",
     "originality": 5,
     "taste": 5,
-    "status": "sdfsfdsf",
-    "source": "sdfsf",
+    "status": "done",
+    "source": "n/a",
     "ingredients": [
       {
-        "name": "sdfsfd",
-        "amount": "sdfsdf",
-        "unit": "sdfsf"
+        "name": "water",
+        "amount": 100,
+        "unit": "g"
       },
       {
-        "name": "dfssf",
-        "amount": "sdfsf",
-        "unit": "sdg"
-      },
-      {
-        "name": "sdf",
-        "amount": "sdfs",
-        "unit": "sfd"
-      },
-      {
-        "name": "gg",
-        "amount": "g",
-        "unit": "d"
-      },
-      {
-        "name": "gadf",
-        "amount": "fgdsgdg",
-        "unit": "dgf"
+        "name": "pasta",
+        "amount": 10,
+        "unit": "g"
       }
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
-    "file": "recipes/basics/NewRecipe.html"
+    "file": "recipes/dressings-dips-sauces/test.html"
   }
 ]
