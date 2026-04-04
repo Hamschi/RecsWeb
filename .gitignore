@@ -1,4 +1,4 @@
 recipes_latex
-.bak
+*.bak
 generated_recipe.json
 recipes_new.json
