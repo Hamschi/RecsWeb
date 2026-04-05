@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>RecsWeb - Recipe Scaler</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/logo.png?updatedAt=1756760270932">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+body {
+	background: #f8f9fa;
+}
+
+.scaler-card,
+.recipe-card {
+	border: 1px solid rgba(0,0,0,.08);
+	border-radius: 1rem;
+	background: #fff;
+	box-shadow: 0 0.35rem 1rem rgba(0,0,0,.05);
+}
+
+.recipe-image {
+	width: 100%;
+	max-height: 320px;
+	object-fit: cover;
+	border-radius: 1rem;
+	background: #eee;
+}
+
+.ingredient-row {
+	border-bottom: 1px solid rgba(0,0,0,.06);
+	padding: .75rem 0;
+}
+
+.ingredient-row:last-child {
+	border-bottom: 0;
+}
+
+.amount-input {
+	max-width: 120px;
+}
+
+.badge-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .4rem;
+}
+
+.step-list li {
+	margin-bottom: .75rem;
+}
+
+.muted-label {
+	font-size: .8rem;
+	text-transform: uppercase;
+	letter-spacing: .03em;
+	color: #6c757d;
+	font-weight: 600;
+}
+
+.scale-note {
+	font-size: .95rem;
+	color: #6c757d;
+}
+</style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<div class="container-fluid">
+	<a class="navbar-brand" href="../../index.html">
+		<img src="https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/logo.png?updatedAt=1756760270932" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+	</a>
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+	<ul class="navbar-nav">
+		<li class="nav-item dropdown">
+		<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Tools</a>
+		<ul class="dropdown-menu">
+			<li><a class="dropdown-item" href="#">Convert measurements</a></li>
+			<li><a class="dropdown-item" href="../../filter.html">Filter Recipes</a></li>
+			<li><a class="dropdown-item" href="#">Tips and Tricks</a></li>
+		</ul>
+		</li>
+		<li class="nav-item dropdown">
+		<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Basic Ingredients</a>
+		<ul class="dropdown-menu">
+			<li><a class="dropdown-item" href="../../filter.html?category=component">Components</a></li>
+			<li><a class="dropdown-item" href="../../filter.html?category=dressing&category=sauce&category=dip">Dressing, Dips and Sauces</a></li>
+		</ul>
+		</li>
+		<li class="nav-item dropdown">
+		<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Snacks and Appetizers</a>
+		<ul class="dropdown-menu">
+			<li><a class="dropdown-item" href="../../filter.html?category=snacks">Snacks</a></li>
+			<li><a class="dropdown-item" href="../../filter.html?category=appetizer">Appetizers</a></li>
+			<li><a class="dropdown-item" href="../../filter.html?category=streetfood">Streetfood</a></li>
+		</ul>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="../../filter.html?category=vegetables">Vegetables</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="../../filter.html?category=soup">Soups</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="../../filter.html?category=sandwiches">Sandwiches</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="../../filter.html?category=breads">Breads</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="../../filter.html?category=potato">Potatoes</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="../../filter.html?category=noodles">Noodles</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="../../filter.html?category=rice">Rice</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="../../filter.html?category=egg">Eggs</a>
+		</li>
+		<li class="nav-item dropdown">
+		<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Meat and Fish</a>
+		<ul class="dropdown-menu">
+			<li><a class="dropdown-item" href="../../filter.html?category=pork">Pork</a></li>
+			<li><a class="dropdown-item" href="../../filter.html?category=chicken">Chicken</a></li>
+			<li><a class="dropdown-item" href="../../filter.html?category=beef">Beef</a></li>
+			<li><a class="dropdown-item" href="../../filter.html?category=fish">Fish</a></li>
+		</ul>
+		</li>
+		<li class="nav-item dropdown">
+		<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Sweet</a>
+		<ul class="dropdown-menu">
+			<li><a class="dropdown-item" href="../../filter.html?category=cake&category=pastry">Cakes and Pastries</a></li>
+			<li><a class="dropdown-item" href="../../filter.html?category=otherDesserts">Other Desserts</a></li>
+		</ul>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="../../filter.html?category=drinks">Drinks</a>
+		</li>
+		<li class="nav-item dropdown">
+		<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Cuisine</a>
+		<ul class="dropdown-menu">
+			<li><a class="dropdown-item" href="../../filter.html?country=America"><span class="fi fi-us"></span> American</a></li>
+			<li><a class="dropdown-item" href="../../filter.html?country=Great%20Britain"><span class="fi fi-gb"></span> British</a></li>
+			<li><a class="dropdown-item" href="../../filter.html?country=China"><span class="fi fi-cn"></span> Chinese</a></li>
+			<li><a class="dropdown-item" href="../../filter.html?country=France"><span class="fi fi-fr"></span> French</a></li>
+			<li><a class="dropdown-item" href="../../filter.html?country=Germany"><span class="fi fi-de"></span> German</a></li>
+			<li><a class="dropdown-item" href="../../filter.html?country=Greece"><span class="fi fi-gr"></span> Greek</a></li>
+			<li><a class="dropdown-item" href="../../filter.html?country=India"><span class="fi fi-in"></span> Indian</a></li>
+			<li><a class="dropdown-item" href="../../filter.html?country=Italy"><span class="fi fi-it"></span> Italian</a></li>
+			<li><a class="dropdown-item" href="../../filter.html?country=Japan"><span class="fi fi-jp"></span> Japanese</a></li>
+			<li><a class="dropdown-item" href="../../filter.html?country=Mexico"><span class="fi fi-mx"></span> Mexican</a></li>
+			<li><a class="dropdown-item" href="../../filter.html?country=Thailand"><span class="fi fi-th"></span> Thai</a></li>
+			<li><a class="dropdown-item" href="../../filter.html?country=Turkey"><span class="fi fi-tr"></span> Turkish</a></li>
+			<li><a class="dropdown-item" href="../../filter.html?country=Vietnam"><span class="fi fi-vn"></span> Vietnamese</a></li>
+		</ul>
+		</li>
+	</ul>
+	<form
+		id="recipeSearchForm"
+		class="navbar-search-form ms-auto"
+		action="../../search.html"
+		method="get"
+		autocomplete="off"
+		>
+		<div class="navbar-search-wrap">
+			<span class="navbar-search-icon" aria-hidden="true">
+			<i class="fa-solid fa-magnifying-glass"></i>
+			</span>
+
+			<input
+			id="recipeSearchInput"
+			class="form-control navbar-search-input"
+			type="search"
+			name="q"
+			placeholder="Find recipe..."
+			aria-label="Find recipe"
+			>
+
+			<button class="navbar-search-submit" type="submit" aria-label="Search">
+			<i class="fa-solid fa-arrow-right"></i>
+			</button>
+
+			<div id="recipeSuggestions" class="recipe-suggestions d-none"></div>
+		</div>
+	</form>
+	</div>
+</div>
+</nav>
+
+<main class="flex-grow-1 py-4">
+<div class="container">
+	<div class="mb-4">
+		<h1 class="fw-bold mb-2">Recipe Scaler</h1>
+		<p class="text-muted mb-0">
+			Choose a recipe and change one ingredient amount to scale all other numeric ingredients proportionally.
+		</p>
+	</div>
+
+	<div class="scaler-card p-4 mb-4">
+		<div class="row g-3 align-items-end">
+			<div class="col-12 col-lg-8">
+				<label for="recipeSelect" class="form-label">Choose recipe</label>
+				<select id="recipeSelect" class="form-select">
+					<option value="">Loading recipes...</option>
+				</select>
+			</div>
+
+			<div class="col-12 col-sm-6 col-lg-2">
+				<button id="resetScaleBtn" class="btn btn-outline-secondary w-100" type="button" disabled>Reset amounts</button>
+			</div>
+
+			<div class="col-12 col-sm-6 col-lg-2">
+				<a id="openRecipeLink" href="#" class="btn btn-dark w-100 disabled" tabindex="-1" aria-disabled="true">Open recipe</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="recipeContainer">
+		<div class="recipe-card p-4">
+			<div class="alert alert-secondary mb-0">
+				Choose a recipe to start scaling.
+			</div>
+		</div>
+	</div>
+</div>
+</main>
+
+<footer class="mt-5">
+<div class="container">
+	<div class="row">
+	<div class="col-md-6 mb-3 mb-md-0">
+		<p class="mb-0">&copy; 2025 RecsWeb</p>
+		<small>Created with ❤️ and hunger</small>
+	</div>
+	<div class="col-md-6 text-md-end">
+		<a href="test.html" class="text-decoration-none me-3 text-light">Legal Notice</a>
+		<a href="footer_pages/datenschutz" class="text-decoration-none me-3 text-light">Privacy Policy</a>
+		<a href="https://github.com/Hamschi/RecsWeb" target="_blank" class="text-decoration-none text-light">GitHub</a>
+	</div>
+	</div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/constants.js"></script>
+<script src="./assets/scripts.js"></script>
+
+<script>
+let allRecipes = [];
+let currentRecipe = null;
+let currentScaleFactor = 1;
+
+const recipeSelect = document.getElementById("recipeSelect");
+const recipeContainer = document.getElementById("recipeContainer");
+const resetScaleBtn = document.getElementById("resetScaleBtn");
+const openRecipeLink = document.getElementById("openRecipeLink");
+
+function escapeHtml(text) {
+	return String(text ?? "")
+		.replaceAll("&", "&amp;")
+		.replaceAll("<", "&lt;")
+		.replaceAll(">", "&gt;")
+		.replaceAll('"', "&quot;")
+		.replaceAll("'", "&#39;");
+}
+
+function normalizeText(text) {
+	return String(text ?? "")
+		.toLowerCase()
+		.normalize("NFD")
+		.replace(/[\u0300-\u036f]/g, "")
+		.trim();
+}
+
+function badgeClass(category) {
+	const countryList = [
+		"America", "Austria", "Bosnia", "Great Britain", "China", "Mongolia",
+		"Portugal", "Germany", "France", "Greece", "India", "Italy", "Japan",
+		"Hungary", "Lebanon", "Korea", "Mexico", "Spain", "Thailand", "Turkey",
+		"Vietnam"
+	];
+
+	const map = {
+		pork: "text-bg-danger",
+		chicken: "text-bg-danger",
+		beef: "text-bg-danger",
+		fish: "text-bg-primary",
+		seafood: "text-bg-primary",
+		vegan: "text-bg-success",
+		vegetarian: "text-bg-success",
+		vegetables: "text-bg-success",
+		salad: "text-bg-success",
+		noodles: "text-bg-warning",
+		pasta: "text-bg-warning",
+		rice: "text-bg-warning",
+		potato: "text-bg-warning",
+		breads: "text-bg-secondary",
+		sandwiches: "text-bg-secondary",
+		bakedDishes: "text-bg-secondary",
+		egg: "text-bg-warning",
+		streetfood: "text-bg-dark",
+		basics: "text-bg-secondary",
+		component: "text-bg-secondary",
+		drinks: "text-bg-info",
+		appetizer: "text-bg-info",
+		fingerfood: "text-bg-info",
+		cake: "text-bg-warning",
+		pastry: "text-bg-warning",
+		biscuit: "text-bg-warning",
+		otherDesserts: "text-bg-warning",
+		dessert: "text-bg-warning",
+		snacks: "text-bg-warning",
+		sauce: "text-bg-dark",
+		dressing: "text-bg-dark",
+		stew: "text-bg-dark",
+		curry: "text-bg-dark",
+		soup: "text-bg-dark"
+	};
+
+	if (countryList.includes(category)) {
+		return "text-bg-primary";
+	}
+
+	return map[category] || "text-bg-secondary";
+}
+
+function formatScaledNumber(value) {
+	const n = Number(value);
+	if (!Number.isFinite(n)) {
+		return "";
+	}
+
+	if (Number.isInteger(n)) {
+		return String(n);
+	}
+
+	return String(Number(n.toFixed(2))).replace(/\.00$/, "");
+}
+
+function parseScaleableAmount(value) {
+	if (typeof value === "number" && Number.isFinite(value)) {
+		return {
+			type: "single",
+			values: [value]
+		};
+	}
+
+	const text = String(value ?? "").trim();
+	if (!text) {
+		return null;
+	}
+
+	const normalized = text.replace(",", ".").trim();
+
+	const rangeMatch = normalized.match(/^(-?\d+(?:\.\d+)?)\s*[-–—]\s*(-?\d+(?:\.\d+)?)$/);
+	if (rangeMatch) {
+		const first = Number(rangeMatch[1]);
+		const second = Number(rangeMatch[2]);
+
+		if (Number.isFinite(first) && Number.isFinite(second)) {
+			return {
+				type: "range",
+				values: [first, second]
+			};
+		}
+	}
+
+	const single = Number(normalized);
+	if (Number.isFinite(single)) {
+		return {
+			type: "single",
+			values: [single]
+		};
+	}
+
+	return null;
+}
+
+function formatScaledAmount(value, factor) {
+	const parsed = parseScaleableAmount(value);
+
+	if (!parsed) {
+		return String(value ?? "");
+	}
+
+	if (parsed.type === "range") {
+		return `${formatScaledNumber(parsed.values[0] * factor)}-${formatScaledNumber(parsed.values[1] * factor)}`;
+	}
+
+	return formatScaledNumber(parsed.values[0] * factor);
+}
+
+function getScaleFactorFromEditedValue(originalValue, editedValue) {
+	const originalParsed = parseScaleableAmount(originalValue);
+	const editedParsed = parseScaleableAmount(editedValue);
+
+	if (!originalParsed || !editedParsed) {
+		return null;
+	}
+
+	const originalBase = originalParsed.values[0];
+	const editedBase = editedParsed.values[0];
+
+	if (!Number.isFinite(originalBase) || originalBase <= 0) {
+		return null;
+	}
+
+	if (!Number.isFinite(editedBase) || editedBase <= 0) {
+		return null;
+	}
+
+	return editedBase / originalBase;
+}
+
+function getImageUrl(recipe) {
+	if (recipe.image && recipe.image !== "N/A") {
+		return recipe.image;
+	}
+	return "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935";
+}
+
+function getInstructionsFromHtml(htmlText) {
+	const parser = new DOMParser();
+	const doc = parser.parseFromString(htmlText, "text/html");
+	const items = doc.querySelectorAll("ol.list-group-numbered > li");
+	return Array.from(items)
+		.map(li => li.textContent.trim())
+		.filter(Boolean);
+}
+
+async function fetchInstructions(recipe) {
+	if (!recipe.file) {
+		return [];
+	}
+
+	try {
+		const response = await fetch(recipe.file, { cache: "no-store" });
+		if (!response.ok) {
+			return [];
+		}
+		const htmlText = await response.text();
+		return getInstructionsFromHtml(htmlText);
+	} catch (err) {
+		console.error(err);
+		return [];
+	}
+}
+
+function updateOpenRecipeLink(recipe) {
+	if (recipe && recipe.file) {
+		openRecipeLink.href = recipe.file;
+		openRecipeLink.classList.remove("disabled");
+		openRecipeLink.removeAttribute("aria-disabled");
+		openRecipeLink.removeAttribute("tabindex");
+	} else {
+		openRecipeLink.href = "#";
+		openRecipeLink.classList.add("disabled");
+		openRecipeLink.setAttribute("aria-disabled", "true");
+		openRecipeLink.setAttribute("tabindex", "-1");
+	}
+}
+
+function renderRecipe(recipe, instructions) {
+	const categories = Array.isArray(recipe.categories) ? recipe.categories : [];
+	const ingredients = Array.isArray(recipe.ingredients) ? recipe.ingredients : [];
+	const servings = Number(recipe.servings ?? 0);
+	const scaledServings = servings > 0 ? formatScaledNumber(servings * currentScaleFactor) : "–";
+
+	const badgeHtml = categories.map(category =>
+		`<span class="badge ${badgeClass(category)}">${escapeHtml(category)}</span>`
+	).join("");
+
+	const ingredientHtml = ingredients.map((ingredient, index) => {
+		const parsedAmount = parseScaleableAmount(ingredient.amount);
+		const hasScaleableAmount = parsedAmount !== null;
+		const hasAmountText = ingredient.amount !== undefined && ingredient.amount !== null && String(ingredient.amount).trim() !== "";
+		const scaledAmount = hasScaleableAmount ? formatScaledAmount(ingredient.amount, currentScaleFactor) : "";
+		const unit = ingredient.unit ? escapeHtml(ingredient.unit) : "";
+		const name = escapeHtml(ingredient.name || "");
+		const link = ingredient.link ? escapeHtml(ingredient.link) : "";
+
+		let nameHtml = name;
+		if (link) {
+			nameHtml = `<a href="${link}">${name}</a>`;
+		}
+
+		let amountHtml = `<span class="text-muted">—</span>`;
+
+		if (hasScaleableAmount) {
+			amountHtml = `
+				<input
+					type="text"
+					class="form-control amount-input"
+					value="${escapeHtml(scaledAmount)}"
+					data-original-amount="${escapeHtml(String(ingredient.amount))}"
+					data-index="${index}"
+				>
+			`;
+		} else if (hasAmountText) {
+			amountHtml = `<span>${escapeHtml(String(ingredient.amount))}</span>`;
+		}
+
+		return `
+			<div class="ingredient-row row g-2 align-items-center" data-index="${index}">
+				<div class="col-12 col-sm-3 col-lg-2">
+					${amountHtml}
+				</div>
+				<div class="col-12 col-sm-2 col-lg-2">
+					<span>${unit || "—"}</span>
+				</div>
+				<div class="col-12 col-sm-7 col-lg-8">
+					<span>${nameHtml}</span>
+				</div>
+			</div>
+		`;
+	}).join("");
+
+	const instructionHtml = instructions.length > 0
+		? `<ol class="step-list mb-0">${instructions.map(step => `<li>${escapeHtml(step)}</li>`).join("")}</ol>`
+		: `<div class="text-muted">No instructions found.</div>`;
+
+	recipeContainer.innerHTML = `
+		<div class="recipe-card p-4">
+			<div class="row g-4 align-items-start">
+				<div class="col-12 col-lg-4">
+					<img src="${escapeHtml(getImageUrl(recipe))}" alt="${escapeHtml(recipe.title || "Recipe image")}" class="recipe-image" loading="lazy">
+				</div>
+
+				<div class="col-12 col-lg-8">
+					<h2 class="fw-bold mb-3">${escapeHtml(recipe.title || "Untitled")}</h2>
+
+					<div class="badge-wrap mb-3">
+						${badgeHtml || '<span class="text-muted">No categories</span>'}
+					</div>
+
+					<div class="row g-3 mb-4">
+						<div class="col-6 col-md-4">
+							<div class="muted-label">Servings</div>
+							<div id="scaledServingsValue">${scaledServings}</div>
+						</div>
+						<div class="col-6 col-md-4">
+							<div class="muted-label">Difficulty</div>
+							<div>${escapeHtml(recipe.difficulty || "—")}</div>
+						</div>
+						<div class="col-6 col-md-4">
+							<div class="muted-label">Scale factor</div>
+							<div id="scaleFactorValue">${formatScaledNumber(currentScaleFactor)}x</div>
+						</div>
+						<div class="col-6 col-md-4">
+							<div class="muted-label">Active time</div>
+							<div>${Number(recipe.activeTime ?? 0)} min.</div>
+						</div>
+						<div class="col-6 col-md-4">
+							<div class="muted-label">Passive time</div>
+							<div>${Number(recipe.passiveTime ?? 0)} min.</div>
+						</div>
+						<div class="col-6 col-md-4">
+							<div class="muted-label">Total time</div>
+							<div>${Number(recipe.totalTime ?? 0)} min.</div>
+						</div>
+					</div>
+
+					<div class="scale-note mb-4">
+						Change any numeric ingredient amount and all other numeric amounts will update proportionally.
+					</div>
+				</div>
+			</div>
+
+			<div class="row g-4 mt-1">
+				<div class="col-12 col-lg-5">
+					<h3 class="h4 mb-3">Ingredients</h3>
+					<div>${ingredientHtml || '<div class="text-muted">No ingredients found.</div>'}</div>
+				</div>
+
+				<div class="col-12 col-lg-7">
+					<h3 class="h4 mb-3">Instructions</h3>
+					${instructionHtml}
+				</div>
+			</div>
+		</div>
+	`;
+
+	bindAmountInputs();
+	resetScaleBtn.disabled = false;
+}
+
+function updateScaledAmounts() {
+	if (!currentRecipe) {
+		return;
+	}
+
+	const amountInputs = recipeContainer.querySelectorAll(".amount-input");
+	amountInputs.forEach(input => {
+		const originalAmount = input.dataset.originalAmount;
+		input.value = formatScaledAmount(originalAmount, currentScaleFactor);
+	});
+
+	const scaledServingsValue = document.getElementById("scaledServingsValue");
+	if (scaledServingsValue) {
+		const servings = Number(currentRecipe.servings ?? 0);
+		scaledServingsValue.textContent = servings > 0
+			? formatScaledNumber(servings * currentScaleFactor)
+			: "–";
+	}
+
+	const scaleFactorValue = document.getElementById("scaleFactorValue");
+	if (scaleFactorValue) {
+		scaleFactorValue.textContent = `${formatScaledNumber(currentScaleFactor)}x`;
+	}
+}
+
+function handleAmountInputChange(event) {
+	const input = event.target;
+	const originalAmount = input.dataset.originalAmount;
+	const newFactor = getScaleFactorFromEditedValue(originalAmount, input.value);
+
+	if (!Number.isFinite(newFactor) || newFactor <= 0) {
+		updateScaledAmounts();
+		return;
+	}
+
+	currentScaleFactor = newFactor;
+	updateScaledAmounts();
+}
+
+function bindAmountInputs() {
+	const amountInputs = recipeContainer.querySelectorAll(".amount-input");
+	amountInputs.forEach(input => {
+		input.addEventListener("change", handleAmountInputChange);
+		input.addEventListener("blur", handleAmountInputChange);
+	});
+}
+
+async function renderSelectedRecipe(recipeIndex) {
+	if (recipeIndex === "") {
+		currentRecipe = null;
+		currentScaleFactor = 1;
+		updateOpenRecipeLink(null);
+		resetScaleBtn.disabled = true;
+		recipeContainer.innerHTML = `
+			<div class="recipe-card p-4">
+				<div class="alert alert-secondary mb-0">
+					Choose a recipe to start scaling.
+				</div>
+			</div>
+		`;
+		return;
+	}
+
+	currentRecipe = allRecipes[Number(recipeIndex)];
+	currentScaleFactor = 1;
+	updateOpenRecipeLink(currentRecipe);
+
+	recipeContainer.innerHTML = `
+		<div class="recipe-card p-4">
+			<div class="alert alert-light mb-0">
+				Loading recipe...
+			</div>
+		</div>
+	`;
+
+	const instructions = await fetchInstructions(currentRecipe);
+	renderRecipe(currentRecipe, instructions);
+}
+
+function populateRecipeSelect(recipes) {
+	const sorted = [...recipes]
+		.map((recipe, index) => ({ recipe, index }))
+		.sort((a, b) => String(a.recipe.title || "").localeCompare(String(b.recipe.title || ""), "en"));
+
+	recipeSelect.innerHTML = `<option value="">Choose recipe...</option>` + sorted.map(item => {
+		return `<option value="${item.index}">${escapeHtml(item.recipe.title || "Untitled")}</option>`;
+	}).join("");
+}
+
+async function loadRecipes() {
+	try {
+		const response = await fetch("./recipes.json", { cache: "no-store" });
+		if (!response.ok) {
+			throw new Error(`HTTP ${response.status}`);
+		}
+
+		const data = await response.json();
+		allRecipes = Array.isArray(data) ? data : [];
+		populateRecipeSelect(allRecipes);
+
+		const params = new URLSearchParams(window.location.search);
+		const fileParam = params.get("file");
+		const titleParam = params.get("title");
+
+		if (fileParam) {
+			const index = allRecipes.findIndex(recipe => String(recipe.file || "") === fileParam);
+			if (index >= 0) {
+				recipeSelect.value = String(index);
+				await renderSelectedRecipe(String(index));
+			}
+		} else if (titleParam) {
+			const index = allRecipes.findIndex(recipe => normalizeText(recipe.title || "") === normalizeText(titleParam));
+			if (index >= 0) {
+				recipeSelect.value = String(index);
+				await renderSelectedRecipe(String(index));
+			}
+		}
+	} catch (err) {
+		console.error(err);
+		recipeSelect.innerHTML = `<option value="">Could not load recipes</option>`;
+		recipeContainer.innerHTML = `
+			<div class="recipe-card p-4">
+				<div class="alert alert-danger mb-0">
+					Error while loading recipes.json
+				</div>
+			</div>
+		`;
+	}
+}
+
+recipeSelect.addEventListener("change", async function() {
+	await renderSelectedRecipe(this.value);
+});
+
+resetScaleBtn.addEventListener("click", function() {
+	if (!currentRecipe) {
+		return;
+	}
+	currentScaleFactor = 1;
+	updateScaledAmounts();
+});
+
+loadRecipes();
+</script>
+</body>
+</html>
