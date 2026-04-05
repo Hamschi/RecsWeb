@@ -388,6 +388,120 @@
     `).join("");
   }
 
+  function getQueryValues(paramName) {
+  const params = new URLSearchParams(window.location.search);
+  return params.getAll(paramName).map(v => v.trim()).filter(Boolean);
+}
+
+function getQueryValue(paramName) {
+  const params = new URLSearchParams(window.location.search);
+  const value = params.get(paramName);
+  return value ? value.trim() : "";
+}
+
+function setCheckboxesFromQuery(paramName, inputName) {
+  const wanted = getQueryValues(paramName).map(v => normalizeText(v));
+  if (wanted.length === 0) return false;
+
+  let foundAny = false;
+
+  document.querySelectorAll(`input[name="${inputName}"]`).forEach(input => {
+    const inputValue = normalizeText(input.value);
+    if (wanted.includes(inputValue)) {
+      input.checked = true;
+      foundAny = true;
+    }
+  });
+
+  return foundAny;
+}
+
+function applyQueryParamsToFilters() {
+  let hasAnyFilter = false;
+
+  const name = getQueryValue("name");
+  if (name) {
+    document.getElementById("nameFilter").value = name;
+    hasAnyFilter = true;
+  }
+
+  const difficulty = getQueryValue("difficulty");
+  if (difficulty) {
+    document.getElementById("difficultyFilter").value = difficulty;
+    hasAnyFilter = true;
+  }
+
+  const status = getQueryValue("status");
+  if (status) {
+    document.getElementById("statusFilter").value = status;
+    hasAnyFilter = true;
+  }
+
+  const activeMin = getQueryValue("activeMin");
+  if (activeMin) {
+    document.getElementById("activeMin").value = activeMin;
+    hasAnyFilter = true;
+  }
+
+  const activeMax = getQueryValue("activeMax");
+  if (activeMax) {
+    document.getElementById("activeMax").value = activeMax;
+    hasAnyFilter = true;
+  }
+
+  const passiveMin = getQueryValue("passiveMin");
+  if (passiveMin) {
+    document.getElementById("passiveMin").value = passiveMin;
+    hasAnyFilter = true;
+  }
+
+  const passiveMax = getQueryValue("passiveMax");
+  if (passiveMax) {
+    document.getElementById("passiveMax").value = passiveMax;
+    hasAnyFilter = true;
+  }
+
+  const totalMin = getQueryValue("totalMin");
+  if (totalMin) {
+    document.getElementById("totalMin").value = totalMin;
+    hasAnyFilter = true;
+  }
+
+  const totalMax = getQueryValue("totalMax");
+  if (totalMax) {
+    document.getElementById("totalMax").value = totalMax;
+    hasAnyFilter = true;
+  }
+
+  const originalityMin = getQueryValue("originalityMin");
+  if (originalityMin) {
+    document.getElementById("originalityMin").value = originalityMin;
+    hasAnyFilter = true;
+  }
+
+  const tasteMin = getQueryValue("tasteMin");
+  if (tasteMin) {
+    document.getElementById("tasteMin").value = tasteMin;
+    hasAnyFilter = true;
+  }
+
+  const ingredients = getQueryValues("ingredient");
+  if (ingredients.length > 0) {
+    document.getElementById("ingredientsFilter").value = ingredients.join("\n");
+    hasAnyFilter = true;
+  }
+
+  if (setCheckboxesFromQuery("category", "category")) {
+    hasAnyFilter = true;
+  }
+
+  if (setCheckboxesFromQuery("country", "country")) {
+    hasAnyFilter = true;
+  }
+
+  return hasAnyFilter;
+}
+
   function getCheckedValues(name) {
     return Array.from(document.querySelectorAll(`input[name="${name}"]:checked`)).map(el => el.value);
   }
@@ -653,14 +767,24 @@
   }
 
   renderCheckboxGroup("categoryGroup", FOOD_CATEGORIES, "category");
-  renderCheckboxGroup("countryGroup", COUNTRIES, "country");
+renderCheckboxGroup("countryGroup", COUNTRIES, "country");
 
-  form.addEventListener("submit", async (event) => {
-    event.preventDefault();
+form.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  await applyFilters();
+});
+
+resetBtn.addEventListener("click", resetFilters);
+
+(async function initFromQuery() {
+  const hasQueryFilters = applyQueryParamsToFilters();
+
+  if (hasQueryFilters) {
     await applyFilters();
-  });
+  }
+})();
 
-  resetBtn.addEventListener("click", resetFilters);
+
 </script>
 </body>
 </html>
