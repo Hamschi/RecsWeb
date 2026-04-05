@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>RecsWeb - Recipe Filter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/logo.png?updatedAt=1756760270932">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    body {
+      background: #f8f9fa;
+    }
+
+    .filter-card,
+    .results-card {
+      border: 1px solid rgba(0,0,0,.08);
+      border-radius: 1rem;
+      background: #fff;
+      box-shadow: 0 0.35rem 1rem rgba(0,0,0,.05);
+    }
+
+    .recipe-link {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .recipe-link:hover {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .recipe-card {
+      border: 1px solid rgba(0,0,0,.08);
+      border-radius: 1rem;
+      background: #fff;
+      box-shadow: 0 0.35rem 1rem rgba(0,0,0,.05);
+      transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+      cursor: pointer;
+      height: 100%;
+    }
+
+    .recipe-link:hover .recipe-card,
+    .recipe-link:focus .recipe-card {
+      transform: translateY(-2px);
+      box-shadow: 0 0.6rem 1.2rem rgba(0,0,0,.08);
+      border-color: rgba(0,0,0,.16);
+    }
+
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .compact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: .35rem .75rem;
+    }
+
+    .compact-grid .form-check {
+      margin-bottom: 0;
+    }
+
+    .recipe-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: .9rem;
+      background: #eee;
+    }
+
+    .badge-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .4rem;
+    }
+
+    .active-filters-list li {
+      margin-bottom: .25rem;
+    }
+
+    .small-label {
+      font-size: .8rem;
+      text-transform: uppercase;
+      color: #6c757d;
+      font-weight: 600;
+      letter-spacing: .02em;
+    }
+
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      word-break: break-all;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background: #f8f9fa;
+      box-shadow: none;
+    }
+
+    .filter-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+    }
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<div id="site-navbar"></div>
+
+<main class="flex-grow-1 py-4">
+  <div class="container">
+    <div class="mb-4">
+      <h1 class="fw-bold mb-2">Recipe Filter</h1>
+      <p class="text-muted mb-0">
+        Search recipes by name, times, ingredients, categories, countries, and other properties.
+      </p>
+    </div>
+
+    <div class="filter-card p-4 mb-4">
+      <h2 class="h4 section-title">Filters</h2>
+
+      <form id="filterForm">
+        <div class="row g-3 mb-3">
+          <div class="col-12 col-lg-6">
+            <label for="nameFilter" class="form-label">Name</label>
+            <input type="text" class="form-control" id="nameFilter" placeholder="e.g. curry, noodle, tiramisu">
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <label for="difficultyFilter" class="form-label">Difficulty</label>
+            <select class="form-select" id="difficultyFilter">
+              <option value="">any</option>
+              <option value="easy">easy</option>
+              <option value="medium">medium</option>
+              <option value="hard">hard</option>
+            </select>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <label for="statusFilter" class="form-label">Status</label>
+            <select class="form-select" id="statusFilter">
+              <option value="">any</option>
+              <option value="done">done</option>
+              <option value="noPicture">noPicture</option>
+              <option value="notDoneYet">notDoneYet</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row g-3 mb-3">
+          <div class="col-6 col-md-4 col-lg-2">
+            <label for="activeMin" class="form-label">Active min</label>
+            <input type="number" min="0" class="form-control" id="activeMin" placeholder="0">
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <label for="activeMax" class="form-label">Active max</label>
+            <input type="number" min="0" class="form-control" id="activeMax" placeholder="999">
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <label for="passiveMin" class="form-label">Passive min</label>
+            <input type="number" min="0" class="form-control" id="passiveMin" placeholder="0">
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <label for="passiveMax" class="form-label">Passive max</label>
+            <input type="number" min="0" class="form-control" id="passiveMax" placeholder="999">
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <label for="totalMin" class="form-label">Total min</label>
+            <input type="number" min="0" class="form-control" id="totalMin" placeholder="0">
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <label for="totalMax" class="form-label">Total max</label>
+            <input type="number" min="0" class="form-control" id="totalMax" placeholder="999">
+          </div>
+        </div>
+
+        <div class="row g-3 mb-3">
+          <div class="col-12 col-md-6">
+            <label for="ingredientsFilter" class="form-label">Ingredients</label>
+            <textarea
+              class="form-control"
+              id="ingredientsFilter"
+              rows="5"
+              placeholder="One ingredient per line, e.g.&#10;salt&#10;yogurt&#10;sugar"
+            ></textarea>
+            <div class="form-text">
+              A recipe must contain all entered ingredients.
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <label for="originalityMin" class="form-label">Originality min.</label>
+            <select class="form-select" id="originalityMin">
+              <option value="">any</option>
+              <option value="1">1+</option>
+              <option value="2">2+</option>
+              <option value="3">3+</option>
+              <option value="4">4+</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <label for="tasteMin" class="form-label">Taste min.</label>
+            <select class="form-select" id="tasteMin">
+              <option value="">any</option>
+              <option value="1">1+</option>
+              <option value="2">2+</option>
+              <option value="3">3+</option>
+              <option value="4">4+</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="accordion mb-3" id="filterAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingCategories">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCategories" aria-expanded="false" aria-controls="collapseCategories">
+                Select categories
+              </button>
+            </h2>
+            <div id="collapseCategories" class="accordion-collapse collapse" aria-labelledby="headingCategories" data-bs-parent="#filterAccordion">
+              <div class="accordion-body">
+                <div class="compact-grid" id="categoryGroup"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingCountries">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCountries" aria-expanded="false" aria-controls="collapseCountries">
+                Select countries
+              </button>
+            </h2>
+            <div id="collapseCountries" class="accordion-collapse collapse" aria-labelledby="headingCountries" data-bs-parent="#filterAccordion">
+              <div class="accordion-body">
+                <div class="compact-grid" id="countryGroup"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-actions">
+          <button type="submit" class="btn btn-dark">
+            <i class="fa-solid fa-magnifying-glass me-2"></i>Search
+          </button>
+          <button type="button" class="btn btn-outline-secondary" id="resetBtn">
+            <i class="fa-solid fa-rotate-left me-2"></i>Reset filters
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="results-card p-4 mb-4">
+      <h2 class="h4 section-title mb-3">Active Filters</h2>
+      <div id="activeFiltersBox" class="text-muted">
+        No search started yet.
+      </div>
+    </div>
+
+    <div class="results-card p-4">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+        <h2 class="h4 section-title mb-0">Results</h2>
+        <div id="resultsCount" class="text-muted">No search started yet</div>
+      </div>
+
+      <div id="resultsBox" class="row g-4">
+        <div class="col-12">
+          <div class="alert alert-secondary mb-0">
+            No recipes have been loaded yet. Click <strong>Search</strong> to load matching recipes.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/constants.js"></script>
+<script src="./assets/scripts.js"></script>
+
+<script>
+  const FOOD_CATEGORIES = [
+    "pork", "chicken", "beef", "fish", "seafood", "vegan", "vegetarian",
+    "vegetables", "salad", "noodles", "pasta", "rice", "potato", "breads",
+    "sandwiches", "bakedDishes", "egg", "streetfood", "basics", "component",
+    "drinks", "appetizer", "fingerfood", "cake", "pastry", "biscuit",
+    "otherDesserts", "dessert", "snacks", "sauce", "dressing", "stew",
+    "curry", "soup"
+  ];
+
+  const COUNTRIES = [
+    "America", "Austria", "Bosnia", "Great Britain", "China", "Mongolia",
+    "Portugal", "Germany", "France", "Greece", "India", "Italy", "Japan",
+    "Hungary", "Lebanon", "Korea", "Mexico", "Spain", "Thailand", "Turkey",
+    "Vietnam"
+  ];
+
+  let allRecipes = null;
+
+  const form = document.getElementById("filterForm");
+  const resetBtn = document.getElementById("resetBtn");
+  const resultsBox = document.getElementById("resultsBox");
+  const resultsCount = document.getElementById("resultsCount");
+  const activeFiltersBox = document.getElementById("activeFiltersBox");
+
+  function escapeHtml(value) {
+    return String(value ?? "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#39;");
+  }
+
+  function normalizeText(value) {
+    return String(value ?? "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .trim();
+  }
+
+  function toNumber(value) {
+    if (value === "" || value === null || value === undefined) return null;
+    const n = Number(value);
+    return Number.isFinite(n) ? n : null;
+  }
+
+  function badgeClass(category) {
+    const map = {
+      pork: "text-bg-danger",
+      chicken: "text-bg-danger",
+      beef: "text-bg-danger",
+      fish: "text-bg-primary",
+      seafood: "text-bg-primary",
+      vegan: "text-bg-success",
+      vegetarian: "text-bg-success",
+      vegetables: "text-bg-success",
+      salad: "text-bg-success",
+      noodles: "text-bg-warning",
+      pasta: "text-bg-warning",
+      rice: "text-bg-warning",
+      potato: "text-bg-warning",
+      breads: "text-bg-secondary",
+      sandwiches: "text-bg-secondary",
+      bakedDishes: "text-bg-secondary",
+      egg: "text-bg-warning",
+      streetfood: "text-bg-dark",
+      basics: "text-bg-secondary",
+      component: "text-bg-secondary",
+      drinks: "text-bg-info",
+      appetizer: "text-bg-info",
+      fingerfood: "text-bg-info",
+      cake: "text-bg-warning",
+      pastry: "text-bg-warning",
+      biscuit: "text-bg-warning",
+      otherDesserts: "text-bg-warning",
+      dessert: "text-bg-warning",
+      snacks: "text-bg-warning",
+      sauce: "text-bg-dark",
+      dressing: "text-bg-dark",
+      stew: "text-bg-dark",
+      curry: "text-bg-dark",
+      soup: "text-bg-dark"
+    };
+
+    if (COUNTRIES.includes(category)) return "text-bg-primary";
+    return map[category] || "text-bg-secondary";
+  }
+
+  function renderCheckboxGroup(containerId, values, groupName) {
+    const container = document.getElementById(containerId);
+    container.innerHTML = values.map((value, index) => `
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="${escapeHtml(value)}" id="${groupName}_${index}" name="${groupName}">
+        <label class="form-check-label" for="${groupName}_${index}">${escapeHtml(value)}</label>
+      </div>
+    `).join("");
+  }
+
+  function getCheckedValues(name) {
+    return Array.from(document.querySelectorAll(`input[name="${name}"]:checked`)).map(el => el.value);
+  }
+
+  function getIngredientTerms() {
+    return document.getElementById("ingredientsFilter").value
+      .split("\n")
+      .map(v => v.trim())
+      .filter(Boolean);
+  }
+
+  function collectFilters() {
+    return {
+      name: document.getElementById("nameFilter").value.trim(),
+      activeMin: toNumber(document.getElementById("activeMin").value),
+      activeMax: toNumber(document.getElementById("activeMax").value),
+      passiveMin: toNumber(document.getElementById("passiveMin").value),
+      passiveMax: toNumber(document.getElementById("passiveMax").value),
+      totalMin: toNumber(document.getElementById("totalMin").value),
+      totalMax: toNumber(document.getElementById("totalMax").value),
+      difficulty: document.getElementById("difficultyFilter").value,
+      status: document.getElementById("statusFilter").value,
+      ingredients: getIngredientTerms(),
+      originalityMin: toNumber(document.getElementById("originalityMin").value),
+      tasteMin: toNumber(document.getElementById("tasteMin").value),
+      categories: getCheckedValues("category"),
+      countries: getCheckedValues("country")
+    };
+  }
+
+  function inRange(value, min, max) {
+    const n = Number(value ?? 0);
+    if (min !== null && n < min) return false;
+    if (max !== null && n > max) return false;
+    return true;
+  }
+
+  function recipeMatches(recipe, filters) {
+    const recipeTitle = normalizeText(recipe.title || "");
+    const recipeDifficulty = String(recipe.difficulty || "").trim();
+    const recipeStatus = String(recipe.status || "").trim();
+    const recipeCategories = Array.isArray(recipe.categories) ? recipe.categories : [];
+    const recipeIngredients = Array.isArray(recipe.ingredients) ? recipe.ingredients : [];
+
+    if (filters.name) {
+      const needle = normalizeText(filters.name);
+      if (!recipeTitle.includes(needle)) return false;
+    }
+
+    if (!inRange(recipe.activeTime, filters.activeMin, filters.activeMax)) return false;
+    if (!inRange(recipe.passiveTime, filters.passiveMin, filters.passiveMax)) return false;
+    if (!inRange(recipe.totalTime, filters.totalMin, filters.totalMax)) return false;
+
+    if (filters.difficulty && recipeDifficulty !== filters.difficulty) return false;
+    if (filters.status && recipeStatus !== filters.status) return false;
+
+    if (filters.originalityMin !== null && Number(recipe.originality ?? 0) < filters.originalityMin) return false;
+    if (filters.tasteMin !== null && Number(recipe.taste ?? 0) < filters.tasteMin) return false;
+
+    if (filters.categories.length > 0) {
+      const hasCategory = filters.categories.some(cat => recipeCategories.includes(cat));
+      if (!hasCategory) return false;
+    }
+
+    if (filters.countries.length > 0) {
+      const hasCountry = filters.countries.some(country => recipeCategories.includes(country));
+      if (!hasCountry) return false;
+    }
+
+    if (filters.ingredients.length > 0) {
+      const ingredientNames = recipeIngredients.map(ing => normalizeText(ing?.name || ""));
+      const allFound = filters.ingredients.every(term => {
+        const wanted = normalizeText(term);
+        return ingredientNames.some(name => name.includes(wanted));
+      });
+      if (!allFound) return false;
+    }
+
+    return true;
+  }
+
+  function renderActiveFilters(filters) {
+    const rows = [];
+
+    if (filters.name) rows.push(`<li><strong>Name:</strong> ${escapeHtml(filters.name)}</li>`);
+    if (filters.activeMin !== null || filters.activeMax !== null) rows.push(`<li><strong>Active time:</strong> ${filters.activeMin ?? "–"} to ${filters.activeMax ?? "–"} min.</li>`);
+    if (filters.passiveMin !== null || filters.passiveMax !== null) rows.push(`<li><strong>Passive time:</strong> ${filters.passiveMin ?? "–"} to ${filters.passiveMax ?? "–"} min.</li>`);
+    if (filters.totalMin !== null || filters.totalMax !== null) rows.push(`<li><strong>Total time:</strong> ${filters.totalMin ?? "–"} to ${filters.totalMax ?? "–"} min.</li>`);
+    if (filters.difficulty) rows.push(`<li><strong>Difficulty:</strong> ${escapeHtml(filters.difficulty)}</li>`);
+    if (filters.status) rows.push(`<li><strong>Status:</strong> ${escapeHtml(filters.status)}</li>`);
+    if (filters.ingredients.length > 0) rows.push(`<li><strong>Ingredients (all):</strong> ${filters.ingredients.map(escapeHtml).join(", ")}</li>`);
+    if (filters.originalityMin !== null) rows.push(`<li><strong>Originality:</strong> at least ${filters.originalityMin}</li>`);
+    if (filters.tasteMin !== null) rows.push(`<li><strong>Taste:</strong> at least ${filters.tasteMin}</li>`);
+    if (filters.categories.length > 0) rows.push(`<li><strong>Categories:</strong> ${filters.categories.map(escapeHtml).join(", ")}</li>`);
+    if (filters.countries.length > 0) rows.push(`<li><strong>Countries:</strong> ${filters.countries.map(escapeHtml).join(", ")}</li>`);
+
+    if (rows.length === 0) {
+      activeFiltersBox.innerHTML = `<div class="text-muted">No filters active.</div>`;
+      return;
+    }
+
+    activeFiltersBox.innerHTML = `<ul class="active-filters-list mb-0">${rows.join("")}</ul>`;
+  }
+
+  function renderResults(recipes) {
+    resultsCount.textContent = `${recipes.length} recipe${recipes.length === 1 ? "" : "s"} found`;
+
+    if (recipes.length === 0) {
+      resultsBox.innerHTML = `
+        <div class="col-12">
+          <div class="alert alert-warning mb-0">
+            No recipes found.
+          </div>
+        </div>
+      `;
+      return;
+    }
+
+    const sorted = [...recipes].sort((a, b) =>
+      String(a.title || "").localeCompare(String(b.title || ""), "en")
+    );
+
+    resultsBox.innerHTML = sorted.map(recipe => {
+      const image = recipe.image && recipe.image !== "N/A"
+        ? recipe.image
+        : "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935";
+
+      const cats = Array.isArray(recipe.categories) ? recipe.categories : [];
+      const badgeHtml = cats.map(cat =>
+        `<span class="badge ${badgeClass(cat)}">${escapeHtml(cat)}</span>`
+      ).join("");
+
+      const sourceHtml = recipe.source
+        ? `<a href="${escapeHtml(recipe.source)}" target="_blank" rel="noopener noreferrer" class="small mono" onclick="event.stopPropagation()">${escapeHtml(recipe.source)}</a>`
+        : `<span class="text-muted">–</span>`;
+
+      const fileHref = recipe.file ? escapeHtml(recipe.file) : "#";
+
+      return `
+        <div class="col-12">
+          <a href="${fileHref}" class="recipe-link">
+            <div class="recipe-card p-3 p-md-4">
+              <div class="row g-4 align-items-start">
+                <div class="col-12 col-md-4">
+                  <img src="${escapeHtml(image)}" alt="${escapeHtml(recipe.title || "Recipe image")}" class="recipe-img" loading="lazy">
+                </div>
+
+                <div class="col-12 col-md-8">
+                  <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
+                    <h3 class="h4 mb-0">${escapeHtml(recipe.title || "Untitled")}</h3>
+                  </div>
+
+                  <div class="badge-wrap mb-3">
+                    ${badgeHtml || '<span class="text-muted">No categories</span>'}
+                  </div>
+
+                  <div class="row g-3 mb-3">
+                    <div class="col-6 col-md-4">
+                      <div class="small-label">Active</div>
+                      <div>${Number(recipe.activeTime ?? 0)} min.</div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="small-label">Passive</div>
+                      <div>${Number(recipe.passiveTime ?? 0)} min.</div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="small-label">Total</div>
+                      <div>${Number(recipe.totalTime ?? 0)} min.</div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="small-label">Difficulty</div>
+                      <div>${escapeHtml(recipe.difficulty || "–")}</div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="small-label">Status</div>
+                      <div>${escapeHtml(recipe.status || "–")}</div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="small-label">Servings</div>
+                      <div>${escapeHtml(recipe.servings ?? "–")}</div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="small-label">Originality</div>
+                      <div>${escapeHtml(recipe.originality ?? "–")}</div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="small-label">Taste</div>
+                      <div>${escapeHtml(recipe.taste ?? "–")}</div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="small-label mb-1">Source</div>
+                    <div>${sourceHtml}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      `;
+    }).join("");
+  }
+
+  async function loadRecipesIfNeeded() {
+    if (Array.isArray(allRecipes)) return allRecipes;
+
+    const response = await fetch("./recipes.json", { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+
+    const data = await response.json();
+    allRecipes = Array.isArray(data) ? data : [];
+    return allRecipes;
+  }
+
+  async function applyFilters() {
+    const filters = collectFilters();
+    renderActiveFilters(filters);
+
+    resultsCount.textContent = "Loading recipes ...";
+    resultsBox.innerHTML = `
+      <div class="col-12">
+        <div class="alert alert-light mb-0">
+          Loading recipes ...
+        </div>
+      </div>
+    `;
+
+    try {
+      const recipes = await loadRecipesIfNeeded();
+      const filtered = recipes.filter(recipe => recipeMatches(recipe, filters));
+      renderResults(filtered);
+    } catch (err) {
+      resultsCount.textContent = "Error";
+      resultsBox.innerHTML = `
+        <div class="col-12">
+          <div class="alert alert-danger mb-0">
+            Error while loading <code>recipes.json</code>.
+          </div>
+        </div>
+      `;
+      console.error(err);
+    }
+  }
+
+  function resetFilters() {
+    form.reset();
+    document.querySelectorAll('#filterForm input[type="checkbox"]').forEach(cb => {
+      cb.checked = false;
+    });
+
+    activeFiltersBox.innerHTML = `<div class="text-muted">No search started yet.</div>`;
+    resultsCount.textContent = "No search started yet";
+    resultsBox.innerHTML = `
+      <div class="col-12">
+        <div class="alert alert-secondary mb-0">
+          No recipes have been loaded yet. Click <strong>Search</strong> to load matching recipes.
+        </div>
+      </div>
+    `;
+  }
+
+  renderCheckboxGroup("categoryGroup", FOOD_CATEGORIES, "category");
+  renderCheckboxGroup("countryGroup", COUNTRIES, "country");
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    await applyFilters();
+  });
+
+  resetBtn.addEventListener("click", resetFilters);
+</script>
+</body>
+</html>

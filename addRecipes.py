@@ -106,7 +106,6 @@ CATEGORIE_BADGE = {
     "streetfood": "bg-streetfood",
     "basics": "bg-secondary",
 	"component": "bg-secondary",
-    "component": "bg-secondary",
     "drinks": "bg-secondary",
     "appetizer": "bg-appetizer",
     "fingerfood": "bg-fingerfood",
