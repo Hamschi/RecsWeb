@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>RecsWeb - Search</title>
+  <title>RecsWeb - Tips and Tricks</title>
   <link rel="icon" type="image/x-icon" href="https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/logo.png?updatedAt=1756760270932">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -141,16 +141,7 @@
 </nav>
 
   <main class="flex-grow-1">
-    <section class="py-5">
-      <div class="container">
-        <div class="mb-4">
-          <h1 class="fw-bold mb-2">Search results</h1>
-          <p class="mb-0 text-muted" id="searchInfo">Loading recipes...</p>
-        </div>
-
-        <div id="searchResults" class="row g-4"></div>
-      </div>
-    </section>
+Page under construction
   </main>
 
   <footer class="mt-5">
@@ -173,160 +164,5 @@
   <script src="assets/constants.js"></script>
   <script src="assets/scripts.js"></script>
 
-  <script>
-    async function initSearchPage() {
-      const resultsContainer = document.getElementById("searchResults");
-      const searchInfo = document.getElementById("searchInfo");
-
-      if (!resultsContainer || !searchInfo) return;
-
-      const params = new URLSearchParams(window.location.search);
-      const query = (params.get("q") || "").trim();
-
-      const normalizeText = (text = "") =>
-        String(text)
-          .toLowerCase()
-          .normalize("NFD")
-          .replace(/[\u0300-\u036f]/g, "");
-
-      const toKey = (s) => (s || "").toString().trim().toLowerCase();
-
-      const FALLBACK_IMG = "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935";
-
-      const pickCountryFlag = (categories = []) => {
-        for (const c of categories) {
-          const k = toKey(c);
-          if (typeof COUNTRY_FLAGS !== "undefined" && COUNTRY_FLAGS[k]) {
-            return COUNTRY_FLAGS[k];
-          }
-        }
-        return null;
-      };
-
-      const buildBadges = (categories = []) => {
-        const frag = document.createDocumentFragment();
-        const seen = new Set();
-
-        for (const raw of categories) {
-          const k = toKey(raw);
-          if (seen.has(k)) continue;
-          seen.add(k);
-
-          const conf = typeof CATEGORY_BADGES !== "undefined" ? CATEGORY_BADGES[k] : null;
-          const label = conf && conf.label ? conf.label : k;
-
-          const span = document.createElement("span");
-          span.className = `badge ${conf ? conf.cls : "bg-light text-dark border"} me-1 mb-1`;
-          span.textContent = label;
-          frag.appendChild(span);
-        }
-
-        return frag;
-      };
-
-      const buildCard = (recipe) => {
-        const col = document.createElement("div");
-        col.className = "col-12 col-sm-6 col-lg-4 col-xl-3";
-
-        const link = document.createElement("a");
-        link.href = recipe.file || "#";
-        link.className = "text-decoration-none text-dark";
-
-        const card = document.createElement("div");
-        card.className = "card h-100 recipe-search-card";
-
-        const img = document.createElement("img");
-        img.className = "card-img-top";
-        img.src = recipe.image && recipe.image !== "N/A" ? recipe.image : FALLBACK_IMG;
-        img.alt = recipe.title || "Recipe image";
-
-        const body = document.createElement("div");
-        body.className = "card-body";
-
-        const h4 = document.createElement("h4");
-        h4.className = "card-title mb-2";
-        h4.textContent = recipe.title || "Recipe";
-
-        const pCountry = document.createElement("p");
-        pCountry.className = "card-text mb-1";
-        const flag = pickCountryFlag(recipe.categories);
-        pCountry.innerHTML = `<strong>Country:</strong> ${flag ? `<span class="fi fi-${flag}"></span>` : "-"}`;
-
-        const pDiff = document.createElement("p");
-        pDiff.className = "card-text mb-1";
-        pDiff.innerHTML = `<strong>Difficulty:</strong> ${recipe.difficulty || "-"}`;
-
-        const badges = document.createElement("div");
-        badges.className = "mt-2 d-flex flex-wrap";
-        badges.appendChild(buildBadges(recipe.categories || []));
-
-        body.append(h4, pCountry, pDiff, badges);
-        card.append(img, body);
-        link.appendChild(card);
-        col.appendChild(link);
-
-        return col;
-      };
-
-      if (!query) {
-        searchInfo.textContent = "Please enter a search term.";
-        resultsContainer.innerHTML = `
-          <div class="col-12">
-            <div class="alert alert-light border">No search term was provided.</div>
-          </div>
-        `;
-        return;
-      }
-
-      let recipes = [];
-      try {
-        const response = await fetch("recipes.json", { cache: "no-cache" });
-        if (!response.ok) {
-          throw new Error(`recipes.json could not be loaded. Status: ${response.status}`);
-        }
-        recipes = await response.json();
-        if (!Array.isArray(recipes)) recipes = [];
-      } catch (error) {
-        console.error(error);
-        searchInfo.textContent = "An error occurred while loading the recipes.";
-        resultsContainer.innerHTML = `
-          <div class="col-12">
-            <div class="alert alert-danger">Failed to load recipes.json.</div>
-          </div>
-        `;
-        return;
-      }
-
-      const normalizedQuery = normalizeText(query);
-
-      const matches = recipes.filter(recipe =>
-        normalizeText(recipe?.title || "").includes(normalizedQuery)
-      );
-
-      document.title = `RecsWeb - Search: ${query}`;
-      searchInfo.textContent = `${matches.length} result${matches.length === 1 ? "" : "s"} for "${query}"`;
-
-      resultsContainer.innerHTML = "";
-
-      if (!matches.length) {
-        resultsContainer.innerHTML = `
-          <div class="col-12">
-            <div class="alert alert-light border">
-              No recipes found for "<strong>${query}</strong>".
-            </div>
-          </div>
-        `;
-        return;
-      }
-
-      matches
-        .sort((a, b) => (a.title || "").localeCompare(b.title || "", "de"))
-        .forEach(recipe => {
-          resultsContainer.appendChild(buildCard(recipe));
-        });
-    }
-
-    document.addEventListener("DOMContentLoaded", initSearchPage);
-  </script>
 </body>
 </html>
