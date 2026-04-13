@@ -5415,5 +5415,38 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MangoCrepeRole.jpg",
     "file": "recipes/otherDesserts/MangoCrepeRole.html"
+  },
+  {
+    "title": "Măng xào",
+    "categories": [
+      "Vietnam",
+      "vegetables"
+    ],
+    "activeTime": 10,
+    "passiveTime": 25,
+    "totalTime": 35,
+    "servings": 3,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 4,
+    "status": "done",
+    "source": "Mama",
+    "ingredients": [
+      {
+        "name": "bamboo shoots",
+        "amount": 1,
+        "unit": "kg"
+      },
+      {
+        "name": "fish sauce",
+        "amount": "7-8",
+        "unit": "tbs"
+      },
+      {
+        "name": "spring onions"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MangXao.jpg?updatedAt=1772151263104",
+    "file": "recipes/vegetables/MangXao.html"
   }
 ]
