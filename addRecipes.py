@@ -1,8 +1,8 @@
 import json
-import os
 from pathlib import Path
 import tkinter as tk
 from tkinter import ttk, messagebox
+import shutil   # Add this import at the top of your script
 
 # --------------------- helpers ---------------------
 def to_int(val, default=0):
@@ -732,7 +732,6 @@ class RecipeApp(tk.Tk):
 				instructions.append(step)
 
 		image = self.image_var.get().strip()
-
 		source = self.source_var.get().strip()
 
 		# Build file paths from folder+filename
@@ -748,7 +747,7 @@ class RecipeApp(tk.Tk):
 		# Disk path relative to where this script (and index.html) live
 		html_path = Path("recipes") / folder / filename
 
-		# Build JSON entry (WITHOUT instructions, per your requirement)
+		# Build JSON entry (WITHOUT instructions)
 		entry = {
 			"title": title,
 			"categories": categories,
@@ -772,11 +771,14 @@ class RecipeApp(tk.Tk):
 		with single_json_path.open("w", encoding="utf-8") as f:
 			json.dump(json_out, f, ensure_ascii=False, indent=2)
 
-		# Merge with existing recipes.json -> recipes_new.json
+		# Merge with existing recipes.json and overwrite it
 		base_json_path = Path("recipes.json")
-		merged_json_path = Path("recipes_new.json")
 		merged = []
 		if base_json_path.exists():
+			# Create a backup before modifying
+			backup_path = base_json_path.with_suffix(".json.bak")
+			shutil.copy2(base_json_path, backup_path)
+
 			try:
 				with base_json_path.open("r", encoding="utf-8") as f:
 					loaded = json.load(f)
@@ -792,8 +794,10 @@ class RecipeApp(tk.Tk):
 						merged = loaded
 			except Exception:
 				merged = []
+
 		merged.append(entry)
-		with merged_json_path.open("w", encoding="utf-8") as f:
+		# Write back to recipes.json (overwriting it)
+		with base_json_path.open("w", encoding="utf-8") as f:
 			json.dump(merged, f, ensure_ascii=False, indent=2)
 
 		# Save HTML
@@ -810,7 +814,7 @@ class RecipeApp(tk.Tk):
 			"Success",
 			(
 				f"Single-entry JSON: {single_json_path.resolve()}\n"
-				f"Merged JSON: {merged_json_path.resolve()}\n"
+				f"Merged JSON: {base_json_path.resolve()} (backup created as {base_json_path}.bak)\n"
 				f"HTML saved as: {html_path.resolve()}\n"
 				f"JSON 'file' path: {file_rel}"
 			),
