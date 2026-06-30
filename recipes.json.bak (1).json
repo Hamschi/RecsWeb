@@ -5452,23 +5452,23 @@
     {
         "title": "Test",
         "categories": [
+            "Germany",
             "vegan",
-            "component",
-            "Vietnam"
+            "component"
         ],
-        "activeTime": 300,
+        "activeTime": 30,
         "passiveTime": 0,
-        "totalTime": 300,
-        "servings": 20,
+        "totalTime": 30,
+        "servings": 2,
         "difficulty": "easy",
-        "originality": 3,
-        "taste": 3,
-        "status": "need testing",
+        "originality": 5,
+        "taste": 5,
+        "status": "done",
         "source": "N/A",
         "ingredients": [
             {
                 "name": "Test",
-                "amount": 3000,
+                "amount": 300,
                 "unit": "g"
             },
             {
@@ -5478,6 +5478,6 @@
             }
         ],
         "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
-        "file": "recipes/component/NewRecipeTested.html"
+        "file": "recipes/component/NewRecipe.html"
     }
 ]
