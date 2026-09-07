@@ -90,6 +90,7 @@ footer {
 }
 
 .bg-country { background-color: #000000; color: white; }
+.bg-grill {background-color: #000000; color: #ff4D00; }
 .bg-stew { background-color: #3a140c; color: white; }
 .bg-curry { background-color: #f1c214; color: black; }
 .bg-meat { background-color: #ef888b; color: white; }
@@ -108,6 +109,7 @@ footer {
 .bg-egg { background-color: #f4b600; color: white; }
 
 .text-bg-country { background-color: #000000; color: white; }
+.text-bg-grill {background-color: #000000; color: #ff4D00; }
 .text-bg-stew { background-color: #3a140c; color: white; }
 .text-bg-curry { background-color: #f1c214; color: black; }
 .text-bg-meat { background-color: #ef888b; color: white; }

@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 import tkinter as tk
-from tkinter import ttk, messagebox
+from tkinter import ttk, messagebox, filedialog
 import shutil   # Add this import at the top of your script
 
 # --------------------- helpers ---------------------
@@ -88,6 +88,7 @@ CATEGORIE_BADGE = {
     "beef": "bg-meat",
     "fish": "bg-primary",
     "seafood": "bg-primary",
+	"grill": "bg-grill",
 
     "vegan": "bg-vegetarian",
     "vegetarian": "bg-vegetarian",

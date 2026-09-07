@@ -167,6 +167,7 @@ CATEGORIE_BADGE = {
     "beef": "bg-meat",
     "fish": "bg-primary",
     "seafood": "bg-primary",
+    "grill": "bg-grill",
     "vegan": "bg-vegetarian",
     "vegetarian": "bg-vegetarian",
     "vegetables": "bg-success",
