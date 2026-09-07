@@ -565,11 +565,22 @@ class RecipeApp(tk.Tk):
 		self.instruction_entries = []
 		self.add_instruction()  # start with one step
 
-		# Submit
+		# Submit / Import
 		row += 1
 		ttk.Separator(self.inner).grid(row=row, column=0, columnspan=4, sticky="ew", pady=(10, 6))
 		row += 1
-		ttk.Button(self.inner, text="Submit", command=self.on_submit).grid(row=row, column=0, sticky="w", padx=6, pady=10)
+
+		ttk.Button(
+			self.inner,
+			text="Import JSON",
+			command=self.import_json
+		).grid(row=row, column=0, sticky="w", padx=6, pady=10)
+
+		ttk.Button(
+			self.inner,
+			text="Submit",
+			command=self.on_submit
+		).grid(row=row, column=1, sticky="w", padx=6, pady=10)
 
 
 	def refresh_ingredient_rows(self):
@@ -606,12 +617,21 @@ class RecipeApp(tk.Tk):
 				break
 
 	# ------- dynamic rows -------
-	def add_category(self):
+	def add_category(self, value=""):
 		row = ttk.Frame(self.categories_frame)
+
 		entry = ttk.Entry(row, width=40)
+		entry.insert(0, str(value))
 		entry.pack(side=tk.LEFT, padx=(0, 6))
-		btn = ttk.Button(row, text="–", width=3, command=lambda r=row, e=entry: self.remove_category(r, e))
+
+		btn = ttk.Button(
+			row,
+			text="–",
+			width=3,
+			command=lambda r=row, e=entry: self.remove_category(r, e)
+		)
 		btn.pack(side=tk.LEFT)
+
 		row.pack(fill=tk.X, pady=2)
 		self.categories_entries.append(entry)
 
@@ -622,36 +642,52 @@ class RecipeApp(tk.Tk):
 			pass
 		container.destroy()
 
-	def add_ingredient(self):
+	def add_ingredient(self, name="", amount="", unit="", link=""):
 		row = ttk.Frame(self.ing_frame)
 
 		amount_e = ttk.Entry(row, width=8)
-		amount_e.insert(0, "")
+		amount_e.insert(0, str(amount) if amount is not None else "")
 		amount_e.pack(side=tk.LEFT, padx=(0, 6))
 
 		unit_e = ttk.Entry(row, width=12)
-		unit_e.insert(0, "")
+		unit_e.insert(0, str(unit) if unit is not None else "")
 		unit_e.pack(side=tk.LEFT, padx=(0, 6))
-		
+
 		name_e = ttk.Entry(row, width=26)
-		name_e.insert(0, "")
+		name_e.insert(0, str(name) if name is not None else "")
 		name_e.pack(side=tk.LEFT, padx=(0, 6))
 
 		link_e = ttk.Entry(row, width=30)
-		link_e.insert(0, "")
+		link_e.insert(0, str(link) if link is not None else "")
 		link_e.pack(side=tk.LEFT, padx=(0, 6))
 
-		up_btn = ttk.Button(row, text="↑", width=3, command=lambda r=row: self.move_ingredient(r, -1))
+		up_btn = ttk.Button(
+			row,
+			text="↑",
+			width=3,
+			command=lambda r=row: self.move_ingredient(r, -1)
+		)
 		up_btn.pack(side=tk.LEFT, padx=(0, 2))
 
-		down_btn = ttk.Button(row, text="↓", width=3, command=lambda r=row: self.move_ingredient(r, 1))
+		down_btn = ttk.Button(
+			row,
+			text="↓",
+			width=3,
+			command=lambda r=row: self.move_ingredient(r, 1)
+		)
 		down_btn.pack(side=tk.LEFT, padx=(0, 6))
 
-		del_btn = ttk.Button(row, text="–", width=3, command=lambda r=row: self.remove_ingredient(r))
+		del_btn = ttk.Button(
+			row,
+			text="–",
+			width=3,
+			command=lambda r=row: self.remove_ingredient(r)
+		)
 		del_btn.pack(side=tk.LEFT)
 
 		self.ing_rows.append((row, name_e, amount_e, unit_e, link_e))
 		self.refresh_ingredient_rows()
+
 
 	def remove_ingredient(self, row):
 		for i, (r, *_rest) in enumerate(self.ing_rows):
@@ -662,20 +698,35 @@ class RecipeApp(tk.Tk):
 		self.refresh_ingredient_rows()
 
 
-	def add_instruction(self):
+	def add_instruction(self, text=""):
 		row = ttk.Frame(self.instructions_frame)
 
 		step_e = ttk.Entry(row, width=80)
-		step_e.insert(0, "")
+		step_e.insert(0, str(text) if text is not None else "")
 		step_e.pack(side=tk.LEFT, padx=(0, 6))
 
-		up_btn = ttk.Button(row, text="↑", width=3, command=lambda r=row: self.move_instruction(r, -1))
+		up_btn = ttk.Button(
+			row,
+			text="↑",
+			width=3,
+			command=lambda r=row: self.move_instruction(r, -1)
+		)
 		up_btn.pack(side=tk.LEFT, padx=(0, 2))
 
-		down_btn = ttk.Button(row, text="↓", width=3, command=lambda r=row: self.move_instruction(r, 1))
+		down_btn = ttk.Button(
+			row,
+			text="↓",
+			width=3,
+			command=lambda r=row: self.move_instruction(r, 1)
+		)
 		down_btn.pack(side=tk.LEFT, padx=(0, 6))
 
-		del_btn = ttk.Button(row, text="–", width=3, command=lambda r=row: self.remove_instruction(r))
+		del_btn = ttk.Button(
+			row,
+			text="–",
+			width=3,
+			command=lambda r=row: self.remove_instruction(r)
+		)
 		del_btn.pack(side=tk.LEFT)
 
 		self.instruction_entries.append((row, step_e))
@@ -688,6 +739,255 @@ class RecipeApp(tk.Tk):
 				r.destroy()
 				break
 		self.refresh_instruction_rows()
+
+
+	def import_json(self):
+		file_path = filedialog.askopenfilename(
+			title="Import Recipe JSON",
+			filetypes=[
+				("JSON files", "*.json"),
+				("All files", "*.*"),
+			]
+		)
+
+		if not file_path:
+			return
+
+		try:
+			with open(file_path, "r", encoding="utf-8") as f:
+				data = json.load(f)
+
+		except Exception as e:
+			messagebox.showerror(
+				"Import Error",
+				f"Could not read JSON:\n{e}"
+			)
+			return
+
+		# Also accept the same one-entry-list format
+		# used by generated_recipe.json:
+		#
+		# [
+		#     { ... }
+		# ]
+		if isinstance(data, list):
+			if len(data) == 0:
+				messagebox.showerror(
+					"Import Error",
+					"The JSON list is empty."
+				)
+				return
+
+			if len(data) > 1:
+				messagebox.showerror(
+					"Import Error",
+					"The JSON contains more than one recipe.\n"
+					"Please import a JSON containing exactly one recipe."
+				)
+				return
+
+			data = data[0]
+
+		if not isinstance(data, dict):
+			messagebox.showerror(
+				"Import Error",
+				"The JSON must contain a recipe object."
+			)
+			return
+
+		imported_fields = []
+
+		# -------------------------------------------------
+		# Simple fields
+		# Only change them if the key exists in the JSON
+		# -------------------------------------------------
+
+		field_map = {
+			"title": self.title_var,
+			"servings": self.servings_var,
+			"activeTime": self.active_var,
+			"passiveTime": self.passive_var,
+			"totalTime": self.total_var,
+			"difficulty": self.diff_var,
+			"originality": self.orig_var,
+			"taste": self.taste_var,
+			"status": self.status_var,
+			"image": self.image_var,
+			"source": self.source_var,
+		}
+
+		for key, variable in field_map.items():
+			if key in data:
+				value = data[key]
+
+				if value is None:
+					value = ""
+
+				variable.set(str(value))
+				imported_fields.append(key)
+
+		# -------------------------------------------------
+		# File / folder
+		# -------------------------------------------------
+
+		if "file" in data:
+			file_value = str(data["file"]).replace("\\", "/").strip()
+
+			if file_value:
+				parts = Path(file_value).parts
+
+				# Example:
+				# recipes/otherDesserts/CheThai.html
+				if len(parts) >= 3 and parts[0] == "recipes":
+					folder = parts[-2]
+					filename = parts[-1]
+
+					if folder in RECIPE_FOLDERS:
+						self.folder_var.set(folder)
+
+					self.filename_var.set(filename)
+
+				imported_fields.append("file")
+
+		# Optional alternative:
+		#
+		# {
+		#     "folder": "otherDesserts",
+		#     "filename": "CheThai.html"
+		# }
+		#
+		# These overwrite the values derived from "file"
+		# if they are explicitly present.
+
+		if "folder" in data:
+			folder = str(data["folder"]).strip()
+
+			if folder in RECIPE_FOLDERS:
+				self.folder_var.set(folder)
+
+			imported_fields.append("folder")
+
+		if "filename" in data:
+			filename = str(data["filename"]).strip()
+
+			if filename:
+				self.filename_var.set(filename)
+
+			imported_fields.append("filename")
+
+		# -------------------------------------------------
+		# Categories
+		# -------------------------------------------------
+
+		if "categories" in data:
+			categories = data["categories"]
+
+			if isinstance(categories, str):
+				categories = [categories]
+
+			if not isinstance(categories, list):
+				messagebox.showerror(
+					"Import Error",
+					"'categories' must be a list."
+				)
+				return
+
+			# Remove current category rows
+			for entry in self.categories_entries[:]:
+				entry.master.destroy()
+
+			self.categories_entries.clear()
+
+			for category in categories:
+				self.add_category(category)
+
+			# Keep one empty row if imported list is empty
+			if len(categories) == 0:
+				self.add_category()
+
+			imported_fields.append("categories")
+
+		# -------------------------------------------------
+		# Ingredients
+		# -------------------------------------------------
+
+		if "ingredients" in data:
+			ingredients = data["ingredients"]
+
+			if not isinstance(ingredients, list):
+				messagebox.showerror(
+					"Import Error",
+					"'ingredients' must be a list."
+				)
+				return
+
+			# Remove current ingredients
+			for row, *_rest in self.ing_rows[:]:
+				row.destroy()
+
+			self.ing_rows.clear()
+
+			for ingredient in ingredients:
+				if not isinstance(ingredient, dict):
+					continue
+
+				self.add_ingredient(
+					name=ingredient.get("name", ""),
+					amount=ingredient.get("amount", ""),
+					unit=ingredient.get("unit", ""),
+					link=ingredient.get("link", ""),
+				)
+
+			# Keep one empty row if list is empty
+			if len(self.ing_rows) == 0:
+				self.add_ingredient()
+
+			imported_fields.append("ingredients")
+
+		# -------------------------------------------------
+		# Instructions
+		# -------------------------------------------------
+
+		if "instructions" in data:
+			instructions = data["instructions"]
+
+			if not isinstance(instructions, list):
+				messagebox.showerror(
+					"Import Error",
+					"'instructions' must be a list."
+				)
+				return
+
+			# Remove current instruction rows
+			for row, _entry in self.instruction_entries[:]:
+				row.destroy()
+
+			self.instruction_entries.clear()
+
+			for instruction in instructions:
+				self.add_instruction(instruction)
+
+			if len(self.instruction_entries) == 0:
+				self.add_instruction()
+
+			imported_fields.append("instructions")
+
+		# -------------------------------------------------
+		# Finished
+		# -------------------------------------------------
+
+		if imported_fields:
+			messagebox.showinfo(
+				"Import Successful",
+				"Imported fields:\n\n"
+				+ ", ".join(imported_fields)
+			)
+		else:
+			messagebox.showwarning(
+				"Import",
+				"No recognized recipe fields were found in the JSON."
+			)
+
 
 	# ------- submit -------
 	def on_submit(self):
