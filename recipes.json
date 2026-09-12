@@ -5675,5 +5675,71 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/RaguAllaBolognese.jpg?updatedAt=1786021051900",
     "file": "recipes/noodle/RaguAllaBolognese.html"
+  },
+  {
+    "title": "Cantonese-Style Steamed Fish",
+    "categories": [
+      "China",
+      "fish"
+    ],
+    "activeTime": 15,
+    "passiveTime": 10,
+    "totalTime": 25,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/mimj-PJ20Jo?si=ZNSjP26gTk3Gddgv",
+    "ingredients": [
+      {
+        "name": "white fish fillets",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "salt"
+      },
+      {
+        "name": "Shaoxing wine"
+      },
+      {
+        "name": "ginger",
+        "amount": 35,
+        "unit": "g"
+      },
+      {
+        "name": "spring onions",
+        "amount": 5,
+        "unit": "pcs"
+      },
+      {
+        "name": "soy sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "sugar",
+        "amount": 1.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "sesame oil",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "warm water",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "vegetable oil",
+        "amount": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/CantoneseSteamedFish.jpg",
+    "file": "recipes/fish/CantoneseSteamedFish.html"
   }
 ]
