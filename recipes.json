@@ -5741,5 +5741,188 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/CantoneseSteamedFish.jpg",
     "file": "recipes/fish/CantoneseSteamedFish.html"
+  },
+  {
+    "title": "Mắm Tôm (sauce/dressing)",
+    "categories": [
+      "Vietnam",
+      "sauce",
+      "dressing"
+    ],
+    "activeTime": 5,
+    "passiveTime": 0,
+    "totalTime": 5,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 4,
+    "status": "done",
+    "source": "https://youtu.be/g-jzn_GZ3DU?si=gn6cvPB3WGhXlqow",
+    "ingredients": [
+      {
+        "name": "Mắm Tôm",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "alcohol, e.g. Shaoxing wine",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "name": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "lemon juice",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "hot oil",
+        "amount": 0.5,
+        "unit": "tbsp"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MamTom.jpg?updatedAt=1789256978599",
+    "file": "recipes/dressings-dips-sauces/MamTomSauce.html"
+  },
+  {
+    "title": "Mắm Tôm",
+    "categories": [
+      "Vietnam",
+      "sauce",
+      "dressing"
+    ],
+    "activeTime": 5,
+    "passiveTime": 0,
+    "totalTime": 5,
+    "servings": 3,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 4,
+    "status": "done",
+    "source": "https://youtu.be/g-jzn_GZ3DU?si=gn6cvPB3WGhXlqow",
+    "ingredients": [
+      {
+        "name": "Mắm Tôm (paste)",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "alcohol, e.g. Shaoxing wine",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "name": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "lemon juice",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "hot oil",
+        "amount": 0.5,
+        "unit": "tbsp"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MamTom.jpg?updatedAt=1789256978599",
+    "file": "recipes/dressings-dips-sauces/MamTom.html"
+  },
+  {
+    "title": "Chả Cá Lã Vọng",
+    "categories": [
+      "Vietnam",
+      "fish",
+      "noodles"
+    ],
+    "activeTime": 35,
+    "passiveTime": 30,
+    "totalTime": 75,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/g-jzn_GZ3DU?si=gn6cvPB3WGhXlqow",
+    "ingredients": [
+      {
+        "name": "fish",
+        "amount": 450,
+        "unit": "g"
+      },
+      {
+        "name": "galangal",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "name": "shallot",
+        "amount": 1
+      },
+      {
+        "name": "chili",
+        "amount": 1
+      },
+      {
+        "name": "garlic cloves",
+        "amount": 3
+      },
+      {
+        "name": "fresh turmeric",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "name": "chicken bouillon powder",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "name": "MSG",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "oil",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mắm Tôm (paste)",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "sugar",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "cơm mẻ (alternatively yogurt)",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "name": "black pepper"
+      },
+      {
+        "name": "spring onions",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "dill",
+        "amount": 100,
+        "unit": "g"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ChaCaLaVong.jpg?updatedAt=1789256981635",
+    "file": "recipes/fish/ChaCaLaVong.html"
   }
 ]
