@@ -5924,5 +5924,89 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ChaCaLaVong.jpg?updatedAt=1789256981635",
     "file": "recipes/fish/ChaCaLaVong.html"
+  },
+  {
+    "title": "Memil Guksu (Cold Soba Noodles)",
+    "categories": [
+      "Korean",
+      "Japan",
+      "noodles"
+    ],
+    "activeTime": 20,
+    "passiveTime": 80,
+    "totalTime": 100,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 3,
+    "taste": 4,
+    "status": "done",
+    "source": "https://youtu.be/EhDkjUoqMYo?si=guphW0VNNQsZjGVl",
+    "ingredients": [
+      {
+        "name": "soba noodles",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "cucumber",
+        "amount": 0.5,
+        "unit": "pcs"
+      },
+      {
+        "name": "spring onions",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "roasted seaweed (gim/nori)",
+        "amount": 1,
+        "unit": "sheet"
+      },
+      {
+        "name": "daikon radish",
+        "amount": 140,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "amount": 0.5,
+        "unit": "pcs"
+      },
+      {
+        "name": "carrot",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "kombu",
+        "amount": 1,
+        "unit": "small piece"
+      },
+      {
+        "name": "soy sauce",
+        "amount": 8,
+        "unit": "tbsp"
+      },
+      {
+        "name": "sugar",
+        "amount": 6,
+        "unit": "tbsp"
+      },
+      {
+        "name": "water",
+        "amount": 1,
+        "unit": "l"
+      },
+      {
+        "name": "katsuobushi (bonito flakes)",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "wasabi (optional)"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MemilGuksu.jpg?updatedAt=1790357169009",
+    "file": "recipes/noodle/MemilGuksu.html"
   }
 ]
