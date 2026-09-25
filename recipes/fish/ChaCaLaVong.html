@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>RecsWeb - Chả Cá Lã Vọng</title>
+<link rel="icon" type="image/x-icon" href="https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/logo.png?updatedAt=1756760270932"> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<div id="site-navbar"></div>
+
+<main class="flex-grow-1">
+<section class="overview-section py-4">
+<div class="container">
+	<h1 class="mb-3">Chả Cá Lã Vọng</h1>
+
+	<div class="row g-4 align-items-center">
+	<div class="col-12 col-md-auto">
+		<img src="https://ik.imagekit.io/o9fejv2tr/Food%20Images/ChaCaLaVong.jpg?updatedAt=1789256981635"
+			class="img-thumbnail overview-img"
+			alt="image not found">
+	</div>
+
+	<div class="col">
+		<div class="d-flex flex-wrap gap-2 mb-3">
+		<a href="../../recipeFilter.html#Vietnam" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-bg-country">Vietnam</span></a><a href="../../recipeFilter.html#fish" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-bg-primary">fish</span></a><a href="../../recipeFilter.html#noodles" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-bg-grain">noodles</span></a>
+		</div>
+
+		<div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3 mb-3">
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Total Time</div>
+			<div class="fs-5">
+				<span class="text-warning">75 minutes</span>
+			</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Difficulty</div>
+			<div class="fs-5">
+				<span class="text-warning">Easy</span>
+			</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Originality</div>
+			<div class="fs-5">
+				<span class="text-warning">★ ★ ★ ★ ★</span>
+			</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Taste</div>
+			<div class="fs-5">
+				<span class="text-warning">★ ★ ★ ★ ★</span>
+			</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="small text">
+		Source: <a href="https://youtu.be/g-jzn_GZ3DU?si=gn6cvPB3WGhXlqow" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover">https://youtu.be/g-jzn_GZ3DU?si=gn6cvPB3WGhXlqow</a>
+		</div>
+	</div>
+	</div>
+</div>
+</section>
+
+<section class="ingredients-section">
+<div class="overview-div">
+	<div class="container my-4">
+	<div class="border rounded-3 p-3 shadow-sm bg-white">
+		<div class="row row-cols-1 row-cols-md-3 text-center time-grid">
+
+		<div class="col my-3 time-item">
+			<div class="small text-uppercase text-muted mb-1">Active Time</div>
+			<div class="d-flex justify-content-center align-items-center gap-2">
+			<i class="fa-regular fa-clock"></i><span>35 min.</span>
+			</div>
+		</div>
+
+		<div class="col my-3 time-item">
+			<div class="small text-uppercase text-muted mb-1">Passive Time</div>
+			<div class="d-flex justify-content-center align-items-center gap-2">
+			<i class="fa-regular fa-clock"></i><span>30 min.</span>
+			</div>
+		</div>
+
+		<div class="col my-3 time-item">
+			<div class="small text-uppercase text-muted mb-1">Total Time</div>
+			<div class="d-flex justify-content-center align-items-center gap-2">
+			<i class="fa-regular fa-clock"></i><span>75 min.</span>
+			</div>
+		</div>
+
+		</div>
+	</div>
+	</div>
+</div>
+
+<div class="ingredient-div">
+	<div class="container my-4">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="border rounded-3 p-3 shadow-sm bg-white">
+					<h2 class="h4 mb-3 fw-bold">Ingredients</h2>
+					<ul class="list-group list-group-flush" id="ingredients">
+						<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="450">450</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">fish</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="25">25</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">galangal</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="1">1</span>   <span class="ingredient flex-fill">shallot</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="1">1</span>   <span class="ingredient flex-fill">chili</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="3">3</span>   <span class="ingredient flex-fill">garlic cloves</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="10">10</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">fresh turmeric</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="0.5">0.5</span><span class="unit" data-basis="tbsp">tbsp</span>   <span class="ingredient flex-fill">chicken bouillon powder</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="1">1</span><span class="unit" data-basis="pinch">pinch</span>   <span class="ingredient flex-fill">MSG</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="1">1</span><span class="unit" data-basis="tbsp">tbsp</span>   <span class="ingredient flex-fill">oil</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="1">1</span><span class="unit" data-basis="tbsp">tbsp</span>   <span class="ingredient flex-fill">Mắm Tôm (paste)</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="1">1</span><span class="unit" data-basis="tsp">tsp</span>   <span class="ingredient flex-fill">sugar</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="25">25</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">cơm mẻ (alternatively yogurt)</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="ingredient flex-fill">black pepper</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="100">100</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">spring onions</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="100">100</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">dill</span></li>
+				
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-7">
+				<div class="border rounded-3 p-3 shadow-sm bg-light h-100">
+					<h2 class="h4 mb-3 fw-bold">Instructions</h2>
+					<ol class="list-group list-group-numbered">
+						<li class="list-group-item">Cut the fish into bite-sized pieces.</li>
+							<li class="list-group-item">Cut the galangal into slices about 1 mm thick and roughly chop them in a food processor.</li>
+							<li class="list-group-item">Add the garlic, shallot and chili and roughly process everything together.</li>
+							<li class="list-group-item">Cut the fresh turmeric into slices about 1 mm thick and roughly crush it in a mortar.</li>
+							<li class="list-group-item">Add the cơm mẻ (or yogurt) and a little water to the turmeric and mix well.</li>
+							<li class="list-group-item">Strain the mixture through a sieve. For a more intense color, add some turmeric powder if desired.</li>
+							<li class="list-group-item">Add the turmeric liquid, the chopped galangal-garlic-shallot-chili mixture, Mắm Tôm, chicken bouillon powder, MSG, oil and black pepper to the fish and mix well. Marinate the fish for at least 30 minutes.</li>
+							<li class="list-group-item">Quarter the spring onions and dill. Cut the white parts of the spring onions into thin strips.</li>
+							<li class="list-group-item">Cover the bottom of the air fryer basket densely with dill and spring onions.</li>
+							<li class="list-group-item">Arrange the fish on top and air fry at 180°C for 8 minutes.</li>
+							<li class="list-group-item">Turn the fish over and air fry for another 5 minutes at 180°C.</li>
+							<li class="list-group-item">Heat some oil in a pan and fry all of the dill and spring onions.</li>
+							<li class="list-group-item">Add the fish to the vegetables and briefly sear it on both sides.</li>
+							<li class="list-group-item">Serve Chả Cá Lã Vọng with bún and <a href="../dressing-dips-sauces/MamTom.html">Mắm Tôm</a>.</li>
+							
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+</main>
+
+<div id="site-footer"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../assets/constants.js"></script>
+<script src="../../assets/scripts.js"></script>
+</body>
+
+</html>
