@@ -5741,5 +5741,51 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/CantoneseSteamedFish.jpg",
     "file": "recipes/fish/CantoneseSteamedFish.html"
+  },
+  {
+    "title": "Mắm Tôm (sauce/dressing)",
+    "categories": [
+      "Vietnam",
+      "sauce",
+      "dressing"
+    ],
+    "activeTime": 5,
+    "passiveTime": 0,
+    "totalTime": 5,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 4,
+    "status": "done",
+    "source": "https://youtu.be/g-jzn_GZ3DU?si=gn6cvPB3WGhXlqow",
+    "ingredients": [
+      {
+        "name": "Mắm Tôm",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "alcohol, e.g. Shaoxing wine",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "name": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "lemon juice",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "hot oil",
+        "amount": 0.5,
+        "unit": "tbsp"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MamTom.jpg?updatedAt=1789256978599",
+    "file": "recipes/dressings-dips-sauces/MamTomSauce.html"
   }
 ]

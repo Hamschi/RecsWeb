@@ -1,5 +1,4 @@
 Filter categories
-
 - ingredients in plural form if possible
 - Country-category as their Country-name
 - Category-names start with a capital letter
@@ -7,6 +6,9 @@ Filter categories
 python -m http.server 8000
 http://localhost:8000/
 <li class="list-group-item d-flex align-items-center gap-2"></li>
+
+For References
+../folder/file.html
 
 
 Tips
