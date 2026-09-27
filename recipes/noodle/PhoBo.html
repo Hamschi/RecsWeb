@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>RecsWeb - Phở Bò</title>
+<link rel="icon" type="image/x-icon" href="https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/logo.png?updatedAt=1756760270932"> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<div id="site-navbar"></div>
+
+<main class="flex-grow-1">
+<section class="overview-section py-4">
+<div class="container">
+	<h1 class="mb-3">Phở Bò</h1>
+
+	<div class="row g-4 align-items-center">
+	<div class="col-12 col-md-auto">
+		<img src="https://ik.imagekit.io/o9fejv2tr/Food%20Images/PhoBo.jpg?updatedAt=1772151411627"
+			class="img-thumbnail overview-img"
+			alt="image not found">
+	</div>
+
+	<div class="col">
+		<div class="d-flex flex-wrap gap-2 mb-3">
+		<a href="../../recipeFilter.html#Vietnam" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-bg-country">Vietnam</span></a><a href="../../recipeFilter.html#beef" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-bg-meat">beef</span></a><a href="../../recipeFilter.html#noodles" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-bg-grain">noodles</span></a>
+		</div>
+
+		<div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3 mb-3">
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Total Time</div>
+			<div class="fs-5">
+				<span class="text-warning">400 minutes</span>
+			</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Difficulty</div>
+			<div class="fs-5">
+				<span class="text-warning">Medium</span>
+			</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Originality</div>
+			<div class="fs-5">
+				<span class="text-warning">★ ★ ★ ★ ★</span>
+			</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Taste</div>
+			<div class="fs-5">
+				<span class="text-warning">★ ★ ★ ★ ★</span>
+			</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="small text">
+		Source: <a href="https://youtu.be/c9GfHgMk1ac?si=1C-sJUDkknZDxtPQ" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover">https://youtu.be/c9GfHgMk1ac?si=1C-sJUDkknZDxtPQ</a>
+		</div>
+	</div>
+	</div>
+</div>
+</section>
+
+<section class="ingredients-section">
+<div class="overview-div">
+	<div class="container my-4">
+	<div class="border rounded-3 p-3 shadow-sm bg-white">
+		<div class="row row-cols-1 row-cols-md-3 text-center time-grid">
+
+		<div class="col my-3 time-item">
+			<div class="small text-uppercase text-muted mb-1">Active Time</div>
+			<div class="d-flex justify-content-center align-items-center gap-2">
+			<i class="fa-regular fa-clock"></i><span>30 min.</span>
+			</div>
+		</div>
+
+		<div class="col my-3 time-item">
+			<div class="small text-uppercase text-muted mb-1">Passive Time</div>
+			<div class="d-flex justify-content-center align-items-center gap-2">
+			<i class="fa-regular fa-clock"></i><span>370 min.</span>
+			</div>
+		</div>
+
+		<div class="col my-3 time-item">
+			<div class="small text-uppercase text-muted mb-1">Total Time</div>
+			<div class="d-flex justify-content-center align-items-center gap-2">
+			<i class="fa-regular fa-clock"></i><span>400 min.</span>
+			</div>
+		</div>
+
+		</div>
+	</div>
+	</div>
+</div>
+
+<div class="ingredient-div">
+	<div class="container my-4">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="border rounded-3 p-3 shadow-sm bg-white">
+					<h2 class="h4 mb-3 fw-bold">Ingredients</h2>
+					<ul class="list-group list-group-flush" id="ingredients">
+						<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="1.5">1.5</span><span class="unit" data-basis="kg">kg</span>   <span class="ingredient flex-fill">beef marrow bones</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="2">2</span><span class="unit" data-basis="l">l</span>   <span class="ingredient flex-fill">water</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="2">2</span><span class="unit" data-basis="tbsp">tbsp</span>   <span class="ingredient flex-fill">salt</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="2">2</span><span class="unit" data-basis="tbsp">tbsp</span>   <span class="ingredient flex-fill">vinegar</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="600">600</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">beef for soup</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="ingredient flex-fill">water</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="0.5">0.5</span><span class="unit" data-basis="tsp">tsp</span>   <span class="ingredient flex-fill">salt</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="2">2</span><span class="unit" data-basis="small pieces">small pieces</span>   <span class="ingredient flex-fill">ginger</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="2">2</span><span class="unit" data-basis="pcs">pcs</span>   <span class="ingredient flex-fill">shallots</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="0.5">0.5</span><span class="unit" data-basis="tsp">tsp</span>   <span class="ingredient flex-fill">salt</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2"></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="4">4</span><span class="unit" data-basis="l">l</span>   <span class="ingredient flex-fill">water</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="0.5">0.5</span><span class="unit" data-basis="tbsp">tbsp</span>   <span class="ingredient flex-fill">salt</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="10">10</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">rock sugar</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2"></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="60">60</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">ginger</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="1">1</span><span class="unit" data-basis="pcs">pcs</span>   <span class="ingredient flex-fill">onion (big)</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2"></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="6">6</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">cinnamon</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="3">3</span><span class="unit" data-basis="pcs">pcs</span>   <span class="ingredient flex-fill">star anise</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="7">7</span><span class="unit" data-basis="pcs">pcs</span>   <span class="ingredient flex-fill">cloves</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="5">5</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">mandarin peel (dried, optional)</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="5">5</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">coriander seeds</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="10">10</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">white pepper</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="3">3</span><span class="unit" data-basis="pcs">pcs</span>   <span class="ingredient flex-fill">black cardamom pods</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="3">3</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">cumin seeds</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2"></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="22">22</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">salt</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="48">48</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">chicken bouillon powder</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="45">45</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">rock sugar</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="13">13</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">MSG</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2"></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="ingredient flex-fill">phở noodles</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="600">600</span><span class="unit" data-basis="g">g</span>   <span class="ingredient flex-fill">beef for serving</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="ingredient flex-fill">cilantro</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="ingredient flex-fill">spring onions</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="ingredient flex-fill">onion</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="ingredient flex-fill">chili (optional)</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="ingredient flex-fill">mung bean sprouts (optional)</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="ingredient flex-fill">lime (optional)</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="ingredient flex-fill">chili sauce (optional)</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="ingredient flex-fill">hoisin sauce (optional)</span></li>
+				
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-7">
+				<div class="border rounded-3 p-3 shadow-sm bg-light h-100">
+					<h2 class="h4 mb-3 fw-bold">Instructions</h2>
+					<ol class="list-group list-group-numbered">
+						<li class="list-group-item">Soak the beef bones in 2 liters of water with 2 tbsp of salt and 2 tbsp of vinegar for 2 hours.</li>
+							<li class="list-group-item">Rinse the bones thoroughly several times under running water.</li>
+							<li class="list-group-item">Slice 2 small pieces of ginger and 2 shallots.</li>
+							<li class="list-group-item">Blanch 600 g of beef for 2 minutes in plenty of water with 0.5 tsp of salt and half of the ginger and shallots.</li>
+							<li class="list-group-item">Rinse the beef thoroughly under running water.</li>
+							<li class="list-group-item">Place the beef marrow bones in a large pot with plenty of water, 0.5 tsp of salt and the remaining ginger and shallots.</li>
+							<li class="list-group-item">Bring the water to a boil over high heat and boil for 5 minutes.</li>
+							<li class="list-group-item">Turn off the heat and rinse the bones thoroughly under running water.</li>
+							<li class="list-group-item">Place the bones and beef in a large pot with 0.5 tbsp of salt and 10 g of rock sugar. Add 4 liters of water and bring to a boil. Skim off any foam that rises to the surface.</li>
+							<li class="list-group-item">Remove the beef once tender, after about 2 hours, and place it in cold water for 10 minutes. Continue simmering the broth for a total of 6–8 hours.</li>
+							<li class="list-group-item">After 3.5 hours, wrap 60 g of ginger and 1 large onion in aluminum foil and roast at 190°C for about 15 minutes.</li>
+							<li class="list-group-item">Meanwhile, heat a dry pan and toast the larger spices: cinnamon, star anise, black cardamom and dried mandarin peel.</li>
+							<li class="list-group-item">After 30 seconds, add the smaller spices: cloves, cumin seeds and coriander seeds.</li>
+							<li class="list-group-item">Once the spices become fragrant, place them all in a tea infuser.</li>
+							<li class="list-group-item">Fill a large soup bowl with boiling water, add the tea infuser and let the spices steep until needed.</li>
+							<li class="list-group-item">Once the ginger and onion have softened in the oven, peel, wash and crush the ginger. Peel the onion and make cuts from the top as if quartering it.</li>
+							<li class="list-group-item">After the broth has simmered for 4 hours in total, add the roasted onion and ginger.</li>
+							<li class="list-group-item">After another 90 minutes, add the tea infuser containing the spices to the broth.</li>
+							<li class="list-group-item">After another 40 minutes, remove the tea infuser and add water until there are 4 liters of liquid again.</li>
+							<li class="list-group-item">Remove the bones from the broth.</li>
+							<li class="list-group-item">Mix 22 g of salt, 48 g of chicken bouillon powder, 45 g of rock sugar, 13 g of MSG and 3 ladles of broth. Add the mixture to the pot.</li>
+							<li class="list-group-item">Optionally, continue simmering the broth for up to 2 more hours.</li>
+							<li class="list-group-item">About 30 minutes before the broth is finished, prepare the remaining ingredients.</li>
+							<li class="list-group-item">Prepare the pho noodles according to the package instructions.</li>
+							<li class="list-group-item">Cut a fresh onion into thin strips and place them in ice water.</li>
+							<li class="list-group-item">Cut the dark green parts of the spring onions into very thin rings. Cut the white parts into very thin strips. Roughly cut or chop the cilantro.</li>
+							<li class="list-group-item">Cut the limes into wedges that are easy to squeeze.</li>
+							<li class="list-group-item">Cut the cooked beef into very thin slices.</li>
+							<li class="list-group-item">Cut the raw beef into very thin slices.</li>
+							<li class="list-group-item">Place the pho noodles, both parts of the spring onions, cilantro, fresh onion and both types of beef in serving bowls. Pour the piping-hot pho broth over everything.</li>
+							<li class="list-group-item">Serve with chili sauce, hoisin sauce, mung bean sprouts or lime juice to taste.</li>
+							<li class="list-group-item">The raw beef should cook through in the hot pho broth. If preferred, place the beef in a fine-mesh strainer and hold it in the simmering broth until completely cooked before serving.</li>
+							
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+</main>
+
+<div id="site-footer"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../assets/constants.js"></script>
+<script src="../../assets/scripts.js"></script>
+</body>
+
+</html>
