@@ -5962,5 +5962,136 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MemilGuksu.jpg?updatedAt=1790357169009",
     "file": "recipes/noodle/MemilGuksu.html"
+  },
+  {
+    "title": "Chè Khúc Bạch",
+    "categories": [
+      "Vietnam",
+      "dessert",
+      "otherDesserts"
+    ],
+    "activeTime": 30,
+    "passiveTime": 540,
+    "totalTime": 570,
+    "servings": 10,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/6--SDXaRNRI?si=x8lX_fBbUWRATqdF",
+    "ingredients": [
+      {
+        "name": "gelatin leaves",
+        "amount": 15,
+        "unit": "pcs"
+      },
+      {
+        "name": "whole milk",
+        "amount": 300,
+        "unit": "ml"
+      },
+      {
+        "name": "sugar",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "heavy cream",
+        "amount": 400,
+        "unit": "ml"
+      },
+      {
+        "name": "vanilla extract",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "pandan extract",
+        "amount": 0.225,
+        "unit": "tsp"
+      },
+      {
+        "name": "rock sugar",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "water",
+        "amount": 1,
+        "unit": "l"
+      },
+      {
+        "name": "pandan leaves",
+        "amount": 5,
+        "unit": "pcs"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "sliced almonds",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "name": "canned longan in syrup",
+        "amount": 1,
+        "unit": "can"
+      },
+      {
+        "name": "chia seeds",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/CheKhucBach.jpg?updatedAt=1789256975212",
+    "file": "recipes/otherDesserts/CheKhucBach.html"
+  },
+  {
+    "title": "Nước mắm",
+    "categories": [
+      "Vietnam",
+      "dressing"
+    ],
+    "activeTime": 5,
+    "passiveTime": 5,
+    "totalTime": 10,
+    "servings": 3,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/SQ1j8WkOUZM?si=UXA1g7nha3cj3kf9",
+    "ingredients": [
+      {
+        "name": "water",
+        "amount": 300,
+        "unit": "ml"
+      },
+      {
+        "name": "sugar",
+        "amount": 2.5,
+        "unit": "tbsp"
+      },
+      {
+        "name": "fish sauce",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "lemon juice (alternatively lime juice)",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/NuocChamBunCha.jpg?updatedAt=1757778248190",
+    "file": "recipes/dressings-dips-sauces/NuocMam.html"
   }
 ]
