@@ -6093,5 +6093,262 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/NuocChamBunCha.jpg?updatedAt=1757778248190",
     "file": "recipes/dressings-dips-sauces/NuocMam.html"
+  },
+  {
+    "title": "Hamburger/Cheeseburger",
+    "categories": [
+      "America",
+      "beef",
+      "sandwiches",
+      "streetfood"
+    ],
+    "activeTime": 25,
+    "passiveTime": 0,
+    "totalTime": 25,
+    "servings": 1,
+    "difficulty": "easy",
+    "originality": 4,
+    "taste": 5,
+    "status": "done",
+    "source": "N/A",
+    "ingredients": [
+      {
+        "name": "burger buns",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "ground beef",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "name": "salt"
+      },
+      {
+        "name": "black pepper"
+      },
+      {
+        "name": "oil"
+      },
+      {
+        "name": "Cheddar cheese (optional)",
+        "amount": 2,
+        "unit": "slices"
+      },
+      {
+        "name": "iceberg lettuce"
+      },
+      {
+        "name": "tomato",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "onion",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "pickled cucumber",
+        "amount": 1
+      },
+      {
+        "name": "burger sauce"
+      },
+      {
+        "name": "butter",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Hamburger.jpg?updatedAt=1789256980716",
+    "file": "recipes/sandwiches/Cheeseburger.html"
+  },
+  {
+    "title": "Phở Bò",
+    "categories": [
+      "Vietnam",
+      "beef",
+      "noodles"
+    ],
+    "activeTime": 30,
+    "passiveTime": 370,
+    "totalTime": 400,
+    "servings": 6,
+    "difficulty": "medium",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/c9GfHgMk1ac?si=1C-sJUDkknZDxtPQ",
+    "ingredients": [
+      {
+        "name": "beef marrow bones",
+        "amount": 1.5,
+        "unit": "kg"
+      },
+      {
+        "name": "water",
+        "amount": 2,
+        "unit": "l"
+      },
+      {
+        "name": "salt",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "vinegar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "beef for soup",
+        "amount": 600,
+        "unit": "g"
+      },
+      {
+        "name": "water"
+      },
+      {
+        "name": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "ginger",
+        "amount": 2,
+        "unit": "small pieces"
+      },
+      {
+        "name": "shallots",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "water",
+        "amount": 4,
+        "unit": "l"
+      },
+      {
+        "name": "salt",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "name": "rock sugar",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "name": "ginger",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "name": "onion (big)",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "cinnamon",
+        "amount": 6,
+        "unit": "g"
+      },
+      {
+        "name": "star anise",
+        "amount": 3,
+        "unit": "pcs"
+      },
+      {
+        "name": "cloves",
+        "amount": 7,
+        "unit": "pcs"
+      },
+      {
+        "name": "mandarin peel (dried, optional)",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "name": "coriander seeds",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "name": "white pepper",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "name": "black cardamom pods",
+        "amount": 3,
+        "unit": "pcs"
+      },
+      {
+        "name": "cumin seeds",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "amount": 22,
+        "unit": "g"
+      },
+      {
+        "name": "chicken bouillon powder",
+        "amount": 48,
+        "unit": "g"
+      },
+      {
+        "name": "rock sugar",
+        "amount": 45,
+        "unit": "g"
+      },
+      {
+        "name": "MSG",
+        "amount": 13,
+        "unit": "g"
+      },
+      {
+        "name": "phở noodles"
+      },
+      {
+        "name": "beef for serving",
+        "amount": 600,
+        "unit": "g"
+      },
+      {
+        "name": "cilantro"
+      },
+      {
+        "name": "spring onions"
+      },
+      {
+        "name": "onion"
+      },
+      {
+        "name": "chili (optional)"
+      },
+      {
+        "name": "mung bean sprouts (optional)"
+      },
+      {
+        "name": "lime (optional)"
+      },
+      {
+        "name": "chili sauce (optional)"
+      },
+      {
+        "name": "hoisin sauce (optional)"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/PhoBo.jpg?updatedAt=1772151411627",
+    "file": "recipes/noodle/PhoBo.html"
   }
 ]
