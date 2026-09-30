@@ -6350,5 +6350,264 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/PhoBo.jpg?updatedAt=1772151411627",
     "file": "recipes/noodle/PhoBo.html"
+  },
+  {
+    "title": "Mọc",
+    "categories": [
+      "Vietnam",
+      "pork",
+      "component"
+    ],
+    "activeTime": 5,
+    "passiveTime": 5,
+    "totalTime": 10,
+    "servings": 4,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 4,
+    "status": "not done yet",
+    "source": "N/A",
+    "ingredients": [
+      {
+        "name": "minced pork",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "wood ear mushroom",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "amount": 0.5,
+        "unit": "pcs"
+      },
+      {
+        "name": "fish sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "black pepper",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "chicken bouillon powder",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
+    "file": "recipes/pork/Moc.html"
+  },
+  {
+    "title": "Bún Măng Vịt",
+    "categories": [
+      "Vietnam",
+      "noodles"
+    ],
+    "activeTime": 25,
+    "passiveTime": 70,
+    "totalTime": 95,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "Mai",
+    "ingredients": [
+      {
+        "name": "water",
+        "amount": 1.5,
+        "unit": "l"
+      },
+      {
+        "name": "duck legs",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "amount": 1.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "onions",
+        "amount": 1.5,
+        "unit": "pcs"
+      },
+      {
+        "name": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "name": "chicken bouillon powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "fish sauce"
+      },
+      {
+        "name": "Mọc meatballs",
+        "link": "../pork/Moc.html"
+      },
+      {
+        "name": "spring onions"
+      },
+      {
+        "name": "cilantro"
+      },
+      {
+        "name": "Mùi tàu (optional)"
+      },
+      {
+        "name": "bamboo shoots",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "fish sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "black pepper"
+      },
+      {
+        "name": "bún rice noodles"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/BunMangVit.jpg?updatedAt=1790455701597",
+    "file": "recipes/noodle/BunMangVit.html"
+  },
+  {
+    "title": "Bún Măng Vịt Trộn",
+    "categories": [
+      "Vietnam",
+      "noodles"
+    ],
+    "activeTime": 30,
+    "passiveTime": 70,
+    "totalTime": 95,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "Mai",
+    "ingredients": [
+      {
+        "name": "water",
+        "amount": 1.5,
+        "unit": "l"
+      },
+      {
+        "name": "duck legs",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "amount": 1.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "onions",
+        "amount": 1.5,
+        "unit": "pcs"
+      },
+      {
+        "name": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "name": "chicken bouillon powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "fish sauce"
+      },
+      {
+        "name": "Mọc meatballs",
+        "link": "../pork/Moc.html"
+      },
+      {
+        "name": "spring onions"
+      },
+      {
+        "name": "cilantro"
+      },
+      {
+        "name": "Mùi tàu (optional)"
+      },
+      {
+        "name": "bamboo shoots",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "fish sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "black pepper"
+      },
+      {
+        "name": "bún rice noodles"
+      },
+      {
+        "name": "garlic",
+        "amount": 3,
+        "unit": "cloves"
+      },
+      {
+        "name": "shallot",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "chili",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "soy sauce",
+        "amount": 4,
+        "unit": "tbsp"
+      },
+      {
+        "name": "lime juice"
+      },
+      {
+        "name": "chicken bouillon powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "water (alternatively duck broth)",
+        "amount": 50,
+        "unit": "ml"
+      },
+      {
+        "name": "black pepper"
+      },
+      {
+        "name": "oil for frying"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/BunMangVitTron.jpg?updatedAt=1790455701671",
+    "file": "recipes/noodle/BunMangVitTron.html"
   }
 ]
