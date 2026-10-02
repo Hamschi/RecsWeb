@@ -197,6 +197,11 @@ CATEGORIE_BADGE = {
     "stew": "bg-stew",
     "curry": "bg-curry",
     "soup": "bg-soup",
+
+
+	"Tex-Mex": "bg-texmex",
+
+    # Countries
     "America": "bg-country",
     "Austria": "bg-country",
     "Bosnia": "bg-country",

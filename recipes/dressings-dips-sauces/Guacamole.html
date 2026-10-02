@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>RecsWeb - Guacamole</title>
+<link rel="icon" type="image/x-icon" href="https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/logo.png?updatedAt=1756760270932"> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<div id="site-navbar"></div>
+
+<main class="flex-grow-1">
+<section class="overview-section py-4">
+<div class="container">
+	<h1 class="mb-3">Guacamole</h1>
+
+	<div class="row g-4 align-items-center">
+	<div class="col-12 col-md-auto">
+		<img src="https://ik.imagekit.io/o9fejv2tr/Food%20Images/Guacamole.jpg?updatedAt=1756588881590"
+			class="img-thumbnail overview-img"
+			alt="image not found">
+	</div>
+
+	<div class="col">
+		<div class="d-flex flex-wrap gap-2 mb-3">
+		<a href="../../recipeFilter.html#Mexico" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-bg-country">Mexico</span></a><a href="../../recipeFilter.html#dip" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-bg-secondary">dip</span></a><a href="../../recipeFilter.html#component" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-bg-secondary">component</span></a><a href="../../recipeFilter.html#vegan" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-bg-vegetarian">vegan</span></a><a href="../../recipeFilter.html#vegetarian" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover"><span class="badge text-bg-vegetarian">vegetarian</span></a>
+		</div>
+
+		<div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3 mb-3">
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Total Time</div>
+			<div class="fs-5">
+				<span class="text-warning">10 minutes</span>
+			</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Difficulty</div>
+			<div class="fs-5">
+				<span class="text-warning">Easy</span>
+			</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Originality</div>
+			<div class="fs-5">
+				<span class="text-warning">★ ★ ★ ★ ★</span>
+			</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="p-3 border rounded-3 bg-body">
+			<div class="small text-uppercase text-muted fw-semibold">Taste</div>
+			<div class="fs-5">
+				<span class="text-warning">★ ★ ★ ★ ★</span>
+			</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="small text">
+		Source: <a href="#" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover">N/A</a>
+		</div>
+	</div>
+	</div>
+</div>
+</section>
+
+<section class="ingredients-section">
+<div class="overview-div">
+	<div class="container my-4">
+	<div class="border rounded-3 p-3 shadow-sm bg-white">
+		<div class="row row-cols-1 row-cols-md-3 text-center time-grid">
+
+		<div class="col my-3 time-item">
+			<div class="small text-uppercase text-muted mb-1">Active Time</div>
+			<div class="d-flex justify-content-center align-items-center gap-2">
+			<i class="fa-regular fa-clock"></i><span>10 min.</span>
+			</div>
+		</div>
+
+		<div class="col my-3 time-item">
+			<div class="small text-uppercase text-muted mb-1">Passive Time</div>
+			<div class="d-flex justify-content-center align-items-center gap-2">
+			<i class="fa-regular fa-clock"></i><span>0 min.</span>
+			</div>
+		</div>
+
+		<div class="col my-3 time-item">
+			<div class="small text-uppercase text-muted mb-1">Total Time</div>
+			<div class="d-flex justify-content-center align-items-center gap-2">
+			<i class="fa-regular fa-clock"></i><span>10 min.</span>
+			</div>
+		</div>
+
+		</div>
+	</div>
+	</div>
+</div>
+
+<div class="ingredient-div">
+	<div class="container my-4">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="border rounded-3 p-3 shadow-sm bg-white">
+					<h2 class="h4 mb-3 fw-bold">Ingredients</h2>
+					<ul class="list-group list-group-flush" id="ingredients">
+						<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="3">3</span><span class="unit" data-basis="pcs">pcs</span>   <span class="ingredient flex-fill">avocado</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="1">1</span><span class="unit" data-basis="pcs">pcs</span>   <span class="ingredient flex-fill">tomato</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="1">1</span><span class="unit" data-basis="clove">clove</span>   <span class="ingredient flex-fill">garlic</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="1">1</span><span class="unit" data-basis="pcs">pcs</span>   <span class="ingredient flex-fill">red onion</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="1">1</span><span class="unit" data-basis="pcs">pcs</span>   <span class="ingredient flex-fill">lime</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="1">1</span><span class="unit" data-basis="tsp">tsp</span>   <span class="ingredient flex-fill">cumin</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="ingredient flex-fill">salt</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="ingredient flex-fill">pepper</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="0.5">0.5</span><span class="unit" data-basis="pcs">pcs</span>   <span class="ingredient flex-fill">jalapeno (optional)</span></li>
+				<li class="list-group-item d-flex align-items-center gap-2">   <span class="amount" data-basis="2">2</span><span class="unit" data-basis="tbsp">tbsp</span>   <span class="ingredient flex-fill">cilantro</span></li>
+				
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-7">
+				<div class="border rounded-3 p-3 shadow-sm bg-light h-100">
+					<h2 class="h4 mb-3 fw-bold">Instructions</h2>
+					<ol class="list-group list-group-numbered">
+						<li class="list-group-item">Cut the tomato, remove the flesh and cut into cubes.</li>
+							<li class="list-group-item">Mince or crush the garlic and dice the onion. Finely chop the cilantro and the jalapeno.</li>
+							<li class="list-group-item">Slice the avocados in half, remove the pit, and scoop into a mixing bowl.</li>
+							<li class="list-group-item">Mash the avocado with a fork and make it as chunky or smooth as you’d like.</li>
+							<li class="list-group-item">Add the remaining ingredients and stir together. Give it a taste test and add a pinch more salt or lime juice if needed.</li>
+							
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+</main>
+
+<div id="site-footer"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../assets/constants.js"></script>
+<script src="../../assets/scripts.js"></script>
+</body>
+
+</html>

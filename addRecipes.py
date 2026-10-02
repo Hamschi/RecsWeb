@@ -124,6 +124,9 @@ CATEGORIE_BADGE = {
     "curry": "bg-curry",
     "soup": "bg-soup",
 
+	
+	"Tex-Mex": "bg-texmex",
+
     # Countries
     "America": "bg-country",
 	"Austria": "bg-country",

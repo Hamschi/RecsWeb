@@ -107,6 +107,7 @@ footer {
 .bg-drink { background-color: #9dc9e3; color: white; }
 .bg-bakedDishes { background-color: #d8a661; color: white; }
 .bg-egg { background-color: #f4b600; color: white; }
+.bg-Tex-Mex {background-color: #C65D32; color: #FFF0C2;}
 
 .text-bg-country { background-color: #000000; color: white; }
 .text-bg-grill {background-color: #000000; color: #ff4D00; }
@@ -126,6 +127,7 @@ footer {
 .text-bg-drink { background-color: #9dc9e3; color: white; }
 .text-bg-bakedDishes { background-color: #d8a661; color: white; }
 .text-bg-egg { background-color: #f4b600; color: white; }
+.text-bg-Tex-Mex {background-color: #C65D32; color: #FFF0C2;}
 
 
 /* Viewport & Track */
