@@ -35,6 +35,7 @@ const CATEGORY_BADGES = {
   rice:    { label: "rice",    cls: "bg-grain" },
   potato: {label: "potato", cls: "bg-grain"},
   breads: {label: "breads", cls: "bg-grain"},
+  texmex: {label: "texmex", cls: "bg-texmex"},
 
   america: {label: "america", cls: "bg-country"},
   austria: {label: "austria", cls: "bg-country"},

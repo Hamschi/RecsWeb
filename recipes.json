@@ -6990,94 +6990,6 @@
     "file": "recipes/dressings-dips-sauces/Guacamole.html"
   },
   {
-    "title": "Mexican Ground Beef",
-    "categories": [
-      "Mexico",
-      "beef"
-    ],
-    "activeTime": 20,
-    "passiveTime": 0,
-    "totalTime": 20,
-    "servings": 2,
-    "difficulty": "easy",
-    "originality": 3,
-    "taste": 4,
-    "status": "done",
-    "source": "https://youtu.be/OSRR-PfAW_Y?si=dAsbrvYpuBw2c66j",
-    "ingredients": [
-      {
-        "name": "ground beef",
-        "amount": 500,
-        "unit": "g"
-      },
-      {
-        "name": "garlic cloves",
-        "amount": 2,
-        "unit": "cloves"
-      },
-      {
-        "name": "onion powder",
-        "amount": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "dried oregano",
-        "amount": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "salt",
-        "amount": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "ground cumin",
-        "amount": 2,
-        "unit": "tsp"
-      },
-      {
-        "name": "paprika",
-        "amount": 2,
-        "unit": "tsp"
-      },
-      {
-        "name": "black pepper",
-        "amount": 1,
-        "unit": "pinch"
-      },
-      {
-        "name": "cayenne pepper",
-        "amount": 1,
-        "unit": "pinch"
-      },
-      {
-        "name": "olive oil"
-      },
-      {
-        "name": "onion",
-        "amount": 0.5,
-        "unit": "whole"
-      },
-      {
-        "name": "tomato paste",
-        "amount": 2,
-        "unit": "tbsp"
-      },
-      {
-        "name": "water",
-        "amount": 3,
-        "unit": "tbsp"
-      },
-      {
-        "name": "bell pepper",
-        "amount": 1,
-        "unit": "small"
-      }
-    ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MexicanGroundBeef.jpg?updatedAt=1790891601177",
-    "file": "recipes/beef/MexicanGroundBeef.html"
-  },
-  {
     "title": "Cheese Sauce",
     "categories": [
       "America",
@@ -7192,7 +7104,7 @@
     "title": "Taco Beef",
     "categories": [
       "America",
-      "Tex-Mex",
+      "Texmex",
       "beef"
     ],
     "activeTime": 20,
