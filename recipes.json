@@ -6609,5 +6609,672 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/BunMangVitTron.jpg?updatedAt=1790455701671",
     "file": "recipes/noodle/BunMangVitTron.html"
+  },
+  {
+    "title": "Sốt Dầu Trứng",
+    "categories": [
+      "Vietnam",
+      "component",
+      "vegetarian",
+      "egg"
+    ],
+    "activeTime": 10,
+    "passiveTime": 5,
+    "totalTime": 15,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://vm.tiktok.com/ZGdQKTrxx/",
+    "ingredients": [
+      {
+        "name": "egg yolk",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "cane sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "lime juice",
+        "amount": 0.33,
+        "unit": "tsp"
+      },
+      {
+        "name": "vegetable oil",
+        "amount": 50,
+        "unit": "ml"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/SotDauTrung.jpg?updatedAt=1789256979180",
+    "file": "recipes/component/SotDauTrung.html"
+  },
+  {
+    "title": "Vietnamese Pork Belly Skewers",
+    "categories": [
+      "Vietnam",
+      "pork",
+      "grill"
+    ],
+    "activeTime": 30,
+    "passiveTime": 30,
+    "totalTime": 65,
+    "servings": 3,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "N/A",
+    "ingredients": [
+      {
+        "name": "pork belly",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "red onion",
+        "amount": 1.5,
+        "unit": "whole"
+      },
+      {
+        "name": "lemongrass",
+        "amount": 1,
+        "unit": "stalk"
+      },
+      {
+        "name": "fish sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "oyster sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "dark soy sauce",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "sesame oil",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "salt",
+        "amount": 0.33,
+        "unit": "tsp"
+      },
+      {
+        "name": "sugar",
+        "amount": 0.33,
+        "unit": "tsp"
+      },
+      {
+        "name": "MSG",
+        "amount": 0.33,
+        "unit": "tsp"
+      },
+      {
+        "name": "yellow onion",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "sesame seeds"
+      },
+      {
+        "name": "honey",
+        "amount": 1.5,
+        "unit": "tsp"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/VietnamesePorkSkewers.jpg?updatedAt=1790848274259",
+    "file": "recipes/pork/VietnamesePorkBellySkewers.html"
+  },
+  {
+    "title": "Butter Chicken",
+    "categories": [
+      "India",
+      "chicken",
+      "curry",
+      "stew",
+      "rice"
+    ],
+    "activeTime": 30,
+    "passiveTime": 500,
+    "totalTime": 530,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 4,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/w1QHMyIf6rg?si=8ID7uKrlFY-jcPRP",
+    "ingredients": [
+      {
+        "name": "cloves",
+        "amount": 2,
+        "unit": "whole"
+      },
+      {
+        "name": "cinnamon stick",
+        "amount": 1,
+        "unit": "small"
+      },
+      {
+        "name": "cardamom pods (green)",
+        "amount": 3,
+        "unit": "pcs"
+      },
+      {
+        "name": "cardamom pods (black)",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "ground coriander",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "chili powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "garlic paste",
+        "amount": 1.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "butter",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "yogurt",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "chicken breast fillets",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "amount": 2,
+        "unit": "whole"
+      },
+      {
+        "name": "tomato paste",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "name": "ginger paste",
+        "amount": 1.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "butter",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "cream",
+        "amount": 150,
+        "unit": "ml"
+      },
+      {
+        "name": "kasoori methi",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/ButterChicken.jpg?updatedAt=1790866788514",
+    "file": "recipes/chicken/ButterChicken.html"
+  },
+  {
+    "title": "Mango Crêpe Roll",
+    "categories": [
+      "pastry",
+      "dessert",
+      "snacks"
+    ],
+    "activeTime": 20,
+    "passiveTime": 35,
+    "totalTime": 55,
+    "servings": 4,
+    "difficulty": "medium",
+    "originality": 4,
+    "taste": 4,
+    "status": "done",
+    "source": "https://u-taste.com/recipe/mango-crepe-roll/",
+    "ingredients": [
+      {
+        "name": "unsalted butter",
+        "amount": 16,
+        "unit": "g"
+      },
+      {
+        "name": "sugar",
+        "amount": 45,
+        "unit": "g"
+      },
+      {
+        "name": "eggs",
+        "amount": 2,
+        "unit": "whole"
+      },
+      {
+        "name": "milk",
+        "amount": 238,
+        "unit": "g"
+      },
+      {
+        "name": "flour",
+        "amount": 73,
+        "unit": "g"
+      },
+      {
+        "name": "starch",
+        "amount": 9,
+        "unit": "g"
+      },
+      {
+        "name": "vanilla extract",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "turmeric",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "cream",
+        "amount": 220,
+        "unit": "g"
+      },
+      {
+        "name": "fresh mango",
+        "amount": 300,
+        "unit": "g"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MangoCrepeRole.jpg?updatedAt=1772918321839",
+    "file": "recipes/cakesAndPastries/MangoCrepeRoll.html"
+  },
+  {
+    "title": "Guacamole",
+    "categories": [
+      "Mexico",
+      "dip",
+      "component",
+      "vegan",
+      "vegetarian"
+    ],
+    "activeTime": 10,
+    "passiveTime": 0,
+    "totalTime": 10,
+    "servings": 3,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "N/A",
+    "ingredients": [
+      {
+        "name": "avocado",
+        "amount": 3,
+        "unit": "pcs"
+      },
+      {
+        "name": "tomato",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "garlic",
+        "amount": 1,
+        "unit": "clove"
+      },
+      {
+        "name": "red onion",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "lime",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "cumin",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "salt"
+      },
+      {
+        "name": "pepper"
+      },
+      {
+        "name": "jalapeno (optional)",
+        "amount": 0.5,
+        "unit": "pcs"
+      },
+      {
+        "name": "cilantro",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/Guacamole.jpg?updatedAt=1756588881590",
+    "file": "recipes/dressings-dips-sauces/Guacamole.html"
+  },
+  {
+    "title": "Mexican Ground Beef",
+    "categories": [
+      "Mexico",
+      "beef"
+    ],
+    "activeTime": 20,
+    "passiveTime": 0,
+    "totalTime": 20,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 3,
+    "taste": 4,
+    "status": "done",
+    "source": "https://youtu.be/OSRR-PfAW_Y?si=dAsbrvYpuBw2c66j",
+    "ingredients": [
+      {
+        "name": "ground beef",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "garlic cloves",
+        "amount": 2,
+        "unit": "cloves"
+      },
+      {
+        "name": "onion powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "dried oregano",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "ground cumin",
+        "amount": 2,
+        "unit": "tsp"
+      },
+      {
+        "name": "paprika",
+        "amount": 2,
+        "unit": "tsp"
+      },
+      {
+        "name": "black pepper",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "cayenne pepper",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "olive oil"
+      },
+      {
+        "name": "onion",
+        "amount": 0.5,
+        "unit": "whole"
+      },
+      {
+        "name": "tomato paste",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "water",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "bell pepper",
+        "amount": 1,
+        "unit": "small"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MexicanGroundBeef.jpg?updatedAt=1790891601177",
+    "file": "recipes/beef/MexicanGroundBeef.html"
+  },
+  {
+    "title": "Cheese Sauce",
+    "categories": [
+      "America",
+      "sauce",
+      "dip",
+      "vegetarian"
+    ],
+    "activeTime": 10,
+    "passiveTime": 0,
+    "totalTime": 10,
+    "servings": 4,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 4,
+    "status": "done",
+    "source": "https://www.youtube.com/watch?v=LgzudBvmd08",
+    "ingredients": [
+      {
+        "name": "butter",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "all-purpose flour",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "milk",
+        "amount": 300,
+        "unit": "ml"
+      },
+      {
+        "name": "Cheddar",
+        "amount": 227,
+        "unit": "g"
+      },
+      {
+        "name": "salt"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/CheeseSauce.jpg?updatedAt=1789256980729",
+    "file": "recipes/dressings-dips-sauces/CheeseSauce.html"
+  },
+  {
+    "title": "Loaded Nachos",
+    "categories": [
+      "America",
+      "streetfood",
+      "beef"
+    ],
+    "activeTime": 15,
+    "passiveTime": 20,
+    "totalTime": 35,
+    "servings": 3,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/LgzudBvmd08?si=b8kn7UK8hIc6wTqC",
+    "ingredients": [
+      {
+        "name": "nachos",
+        "amount": 1,
+        "unit": "bag"
+      },
+      {
+        "name": "cheese (e.g. Cheddar, Pepper Jack, Mozzarella,...)",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "Taco Beef",
+        "amount": 500,
+        "unit": "g",
+        "link": "../beef/TacoBeef.html"
+      },
+      {
+        "name": "Cheese Sauce",
+        "amount": 450,
+        "unit": "ml",
+        "link": "../dressings-dips-sauces/CheeseSauce.html"
+      },
+      {
+        "name": "tomato",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "white onion",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "black beans"
+      },
+      {
+        "name": "pickled jalapeno"
+      },
+      {
+        "name": "guacamole",
+        "link": "../dressings-dips-sauces/Guacamole.html"
+      },
+      {
+        "name": "crème fraîche (alternatively sour cream)"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/LoadedNachos,.jpg?updatedAt=1789292200430",
+    "file": "recipes/streetfood/LoadedNachos.html"
+  },
+  {
+    "title": "Taco Beef",
+    "categories": [
+      "America",
+      "Tex-Mex",
+      "beef"
+    ],
+    "activeTime": 20,
+    "passiveTime": 0,
+    "totalTime": 20,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 4,
+    "taste": 4,
+    "status": "done",
+    "source": "https://youtu.be/OSRR-PfAW_Y?si=dAsbrvYpuBw2c66j",
+    "ingredients": [
+      {
+        "name": "ground beef",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "garlic cloves",
+        "amount": 2,
+        "unit": "cloves"
+      },
+      {
+        "name": "onion powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "dried oregano",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "ground cumin",
+        "amount": 2,
+        "unit": "tsp"
+      },
+      {
+        "name": "paprika",
+        "amount": 2,
+        "unit": "tsp"
+      },
+      {
+        "name": "black pepper",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "cayenne pepper",
+        "amount": 1,
+        "unit": "pinch"
+      },
+      {
+        "name": "olive oil"
+      },
+      {
+        "name": "onion",
+        "amount": 0.5,
+        "unit": "whole"
+      },
+      {
+        "name": "tomato paste",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "water",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "bell pepper",
+        "amount": 1,
+        "unit": "small"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/TacoBeef.jpg?updatedAt=1790933921363",
+    "file": "recipes/beef/TacoBeef.html"
   }
 ]
