@@ -1,0 +1,42 @@
+{
+  "title": "Crispy Double-Fried French Fries",
+  "categories": ["Belgium", "potato", "vegetarian", "vegan"],
+  "activeTime": 35,
+  "passiveTime": 330,
+  "totalTime": 365,
+  "servings": 4,
+  "difficulty": "medium",
+  "originality": 4,
+  "taste": 5,
+  "status": "done",
+  "source": "N/A",
+  "image": "https://ik.imagekit.io/o9fejv2tr/RecsWeb%20Icons/image_not_found.png?updatedAt=1756760226935",
+  "filename": "CrispyDoubleFriedFrenchFries.html",
+  "ingredients": [
+    {
+      "name": "potatoes",
+      "amount": 900,
+      "unit": "g"
+    },
+    {
+      "name": "ice water",
+      "amount": 1,
+      "unit": "bowl"
+    },
+    {
+      "name": "vegetable oil for frying"
+    },
+    {
+      "name": "salt"
+    }
+  ],
+  "instructions": [
+    "Peel the potatoes and keep them submerged in water while preparing them. Cut them into evenly sized sticks about 6 mm (0.25 inch) thick.",
+    "Rinse the potato sticks under cold water, then soak them in ice water for at least 90 minutes.",
+    "Drain the potatoes and dry them thoroughly with paper towels. Refrigerate them for another 90 minutes to help them firm up.",
+    "Heat the vegetable oil to 135°C. Fry the potato sticks for exactly 3 minutes, working in batches if necessary.",
+    "Drain the fries and spread them in a single layer on a parchment-lined baking sheet. Freeze for 2–3 hours. They can also be prepared and frozen several days in advance.",
+    "Heat the oil to 200°C. Fry the frozen potatoes in batches until golden brown and crispy, stirring occasionally for even cooking.",
+    "Drain the fries on paper towels and season with salt while still hot. Serve immediately."
+  ]
+}
