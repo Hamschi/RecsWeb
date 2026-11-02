@@ -10,7 +10,8 @@ http://localhost:8000/
 For References
 ../folder/file.html
 
+command for current branch name: git branch --show-current
 
 Tips
-- Nudeln aus einer Bronzeform
+- Nudeln aus einer Bronzeform sind besser geeignet
 - Cake Flour: 360 Mehl Typ 405 + 45g Speisestärke vermengen und sieben

@@ -130,6 +130,7 @@ CATEGORIE_BADGE = {
     # Countries
     "America": "bg-country",
 	"Austria": "bg-country",
+	"Belgium": "bg-country",
 	"Bosnia": "bg-country",
     "Great Britain": "bg-country", 
     "China": "bg-country",

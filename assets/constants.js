@@ -7,7 +7,6 @@ const DIFFICULTY = {
   hard: "hard",
 };
 
-// Categories → badge class (labels in English; translation happens in translations.js)
 const CATEGORY_BADGES = {
   vegan:      { label: "vegan",      cls: "bg-vegetarian" },
   vegetarian: { label: "vegetarian", cls: "bg-vegetarian" },
@@ -39,6 +38,7 @@ const CATEGORY_BADGES = {
 
   america: {label: "america", cls: "bg-country"},
   austria: {label: "austria", cls: "bg-country"},
+  belgium: {label: "belgium", cls: "bg-country"},
   bosnia: {label: "bosnia", cls: "bg-country"},
   china:      { label: "china",      cls: "bg-country" },
   mongolia: {label: "mongolia", cls: "bg-country"},
@@ -72,10 +72,12 @@ const CATEGORY_BADGES = {
 // Countries → flag code (for flag-icons CSS)
 const COUNTRY_FLAGS = {
   austria: "at",
+  belgium: "be",
   bosnia: "ba",
   italy: "it",
   germany: "de",
   france: "fr",
+  hungary: "hu",
   portugal: "pt",
   spain: "es",
   usa: "us",

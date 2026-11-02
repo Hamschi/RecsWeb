@@ -7188,5 +7188,41 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/TacoBeef.jpg?updatedAt=1790933921363",
     "file": "recipes/beef/TacoBeef.html"
+  },
+  {
+    "title": "French Fries",
+    "categories": [
+      "Belgium",
+      "potato",
+      "vegetarian",
+      "vegan"
+    ],
+    "activeTime": 35,
+    "passiveTime": 400,
+    "totalTime": 435,
+    "servings": 4,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/AF5qxJTb0k8?si=Rd76LwTg4E9c3frB",
+    "ingredients": [
+      {
+        "name": "potatoes",
+        "amount": 900,
+        "unit": "g"
+      },
+      {
+        "name": "ice water"
+      },
+      {
+        "name": "vegetable oil"
+      },
+      {
+        "name": "salt"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/FrenchFries.jpg",
+    "file": "recipes/potatoe/FrenchFries.html"
   }
 ]
