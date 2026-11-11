@@ -279,10 +279,10 @@
       "Streetfood"
     ],
     "activeTime": 25,
-    "passiveTime": 85,
-    "totalTime": 110,
-    "servings": 8,
-    "difficulty": "medium",
+    "passiveTime": 75,
+    "totalTime": 100,
+    "servings": 4,
+    "difficulty": "easy",
     "originality": 5,
     "taste": 5,
     "status": "done",
@@ -317,7 +317,7 @@
         "name": "giò"
       }
     ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/BanhGiay.jpg?updatedAt=1757778203905",
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/BanhDay.jpg",
     "file": "recipes/streetfood/BanhDay.html"
   },
   {
@@ -5341,82 +5341,6 @@
     "file": "recipes/otherDesserts/TaoPho.html"
   },
   {
-    "title": "Mango Crepe Roll",
-    "categories": [
-      "otherDesserts",
-      "vegetarian",
-      "dessert"
-    ],
-    "activeTime": 45,
-    "passiveTime": 30,
-    "totalTime": 75,
-    "servings": 4,
-    "difficulty": "easy",
-    "originality": 5,
-    "taste": 4,
-    "status": "done",
-    "source": "https://u-taste.com/recipe/mango-crepe-roll/",
-    "ingredients": [
-      {
-        "name": "butter",
-        "amount": 16,
-        "unit": "g"
-      },
-      {
-        "name": "sugar",
-        "amount": 25,
-        "unit": "g"
-      },
-      {
-        "name": "eggs",
-        "amount": 2,
-        "unit": "pcs"
-      },
-      {
-        "name": "milk",
-        "amount": 238,
-        "unit": "g"
-      },
-      {
-        "name": "flour",
-        "amount": 75,
-        "unit": "g"
-      },
-      {
-        "name": "starch",
-        "amount": 8,
-        "unit": "g"
-      },
-      {
-        "name": "vanilla extract",
-        "amount": 1,
-        "unit": "tbsp"
-      },
-      {
-        "name": "whip cream",
-        "amount": 220,
-        "unit": "g"
-      },
-      {
-        "name": "sugar",
-        "amount": 20,
-        "unit": "g"
-      },
-      {
-        "name": "turmeric",
-        "amount": 1,
-        "unit": "pinch"
-      },
-      {
-        "name": "mango",
-        "amount": 1,
-        "unit": "pcs"
-      }
-    ],
-    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/MangoCrepeRole.jpg",
-    "file": "recipes/otherDesserts/MangoCrepeRole.html"
-  },
-  {
     "title": "Măng xào",
     "categories": [
       "Vietnam",
@@ -6873,7 +6797,7 @@
       },
       {
         "name": "sugar",
-        "amount": 45,
+        "amount": 25,
         "unit": "g"
       },
       {
@@ -6909,6 +6833,11 @@
       {
         "name": "cream",
         "amount": 220,
+        "unit": "g"
+      },
+      {
+        "name": "sugar",
+        "amount": 20,
         "unit": "g"
       },
       {
@@ -7224,5 +7153,167 @@
     ],
     "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/FrenchFries.jpg",
     "file": "recipes/potatoe/FrenchFries.html"
+  },
+  {
+    "title": "Hayashi Rice",
+    "categories": [
+      "Japan",
+      "rice",
+      "beef",
+      "stew"
+    ],
+    "activeTime": 25,
+    "passiveTime": 0,
+    "totalTime": 25,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 5,
+    "taste": 4,
+    "status": "done",
+    "source": "https://youtu.be/k47wI1Ti1PI?si=XEqnFrv-lJ60lhmt",
+    "ingredients": [
+      {
+        "name": "beef",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "salt"
+      },
+      {
+        "name": "pepper"
+      },
+      {
+        "name": "flour",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "onion",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "mushroom",
+        "amount": 4,
+        "unit": "pcs"
+      },
+      {
+        "name": "red wine",
+        "amount": 6,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Tonkatsu Sauce (alternatively Okonomiyaki sauce, Worcestershire sauce)",
+        "amount": 4,
+        "unit": "tbsp"
+      },
+      {
+        "name": "ketchup",
+        "amount": 4,
+        "unit": "tbsp"
+      },
+      {
+        "name": "instant coffee powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "butter",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "name": "garlic",
+        "amount": 2,
+        "unit": "clove"
+      },
+      {
+        "name": "water",
+        "amount": 475,
+        "unit": "ml"
+      },
+      {
+        "name": "salt"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/HayashiRice.jpg",
+    "file": "recipes/rice/HayashiRice.html"
+  },
+  {
+    "title": "Pasta al Salmone",
+    "categories": [
+      "Italy",
+      "noodles",
+      "pasta",
+      "fish"
+    ],
+    "activeTime": 10,
+    "passiveTime": 10,
+    "totalTime": 10,
+    "servings": 2,
+    "difficulty": "easy",
+    "originality": 4,
+    "taste": 5,
+    "status": "done",
+    "source": "https://youtu.be/SycBlEuAfU4?si=xH-Ay63BEQiPiodE",
+    "ingredients": [
+      {
+        "name": "pasta (e.g. Fettucine, Tagliatelle)",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "name": "shallot",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "garlic",
+        "amount": 1,
+        "unit": "glove"
+      },
+      {
+        "name": "butter",
+        "amount": 1,
+        "unit": "knob"
+      },
+      {
+        "name": "white wine",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "name": "cream",
+        "amount": 400,
+        "unit": "ml"
+      },
+      {
+        "name": "lemon zest"
+      },
+      {
+        "name": "lemon juice",
+        "amount": 1,
+        "unit": "sprinkle"
+      },
+      {
+        "name": "salmon",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "dill",
+        "amount": 1,
+        "unit": "handful"
+      },
+      {
+        "name": "salt"
+      },
+      {
+        "name": "pepper"
+      }
+    ],
+    "image": "https://ik.imagekit.io/o9fejv2tr/Food%20Images/PastaAlSalmone.jpg?updatedAt=1786002587477",
+    "file": "recipes/noodle/PastaAlSalmone.html"
   }
 ]
